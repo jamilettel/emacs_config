@@ -1,9 +1,12 @@
+
 ;;
 ;; EPITECH PROJECT, 2017
 ;; emacs configuration
 ;; File description:
 ;; standard epitech header configuration
 ;;
+
+;;; Code:
 
 (global-set-key	"" 'std-file-header)
 (setq header-epitech		"EPITECH PROJECT, "
