@@ -1,0 +1,9 @@
+ls
+clear
+clear-scrollback 
+clear
+clear-scrollback 
+make CC="gcc -g"
+make re CC="gcc -g"
+debug
+debug
