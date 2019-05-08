@@ -19,6 +19,8 @@
 (xterm-mouse-mode)
 (global-company-mode)
 (global-display-line-numbers-mode)
+(show-paren-mode)
+
 
 (defun split-and-follow-horizontally ()
   (interactive)
@@ -43,20 +45,26 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(auto-hscroll-mode (quote current-line))
  '(company-c-headers-path-user
    (quote
-    ("." "../include" "../../include" "../../../include/")))
+    ("." "../include" "../../include" "../../../include/" "../../" "../")))
  '(company-clang-arguments
    (quote
-    ("-I../include" "-I../../include" "-I../../../include")))
+    ("-I../include" "-I../../include" "-I../../../include" "-I../" "-I../../")))
  '(company-dabbrev-minimum-length 2)
  '(company-idle-delay 0)
  '(company-minimum-prefix-length 2)
  '(custom-safe-themes
    (quote
     ("36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" default)))
- '(flycheck-clang-include-path (quote ("../include" "../../include" "../../../include")))
- '(package-selected-packages (quote (company-c-headers company flycheck))))
+ '(flycheck-clang-include-path
+   (quote
+    ("../include" "../../include" "../../../include" "../../" "../")))
+ '(package-selected-packages (quote (company-c-headers company flycheck)))
+ '(scroll-down-aggressively 0.01)
+ '(scroll-margin 1)
+ '(scroll-up-aggressively 0.01))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
