@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: forij
+# key: forij
+# --
+for (int i = 0, j = 0; $1; i++, j++) {
+$0
+}
