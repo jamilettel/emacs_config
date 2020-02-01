@@ -51,10 +51,10 @@
     ("/usr/include/" "/usr/local/include/" "/usr/include/c++/9/")))
  '(company-c-headers-path-user
    (quote
-    ("." "../include" "../../include" "../../../include/" "../../" "../")))
+    ("." "../include" "../../include" "../../../include/" "../../../../include/" "../../" "../" "./rsrc/" "../rsrc")))
  '(company-clang-arguments
    (quote
-    ("-I../include" "-I../../include" "-I../../../include" "-I../" "-I../../" "-I../corewar/include" "-I../../corewar/include" "-I../../../corewar/include")))
+    ("-I../include" "-I../../include" "-I../../../include" "-I../../../../include" "-I../" "-I../../" "-I../corewar/include" "-I../../corewar/include" "-I../../../corewar/include" "-I../rsrc" "-Irsrc")))
  '(company-dabbrev-minimum-length 2)
  '(company-idle-delay 0)
  '(company-minimum-prefix-length 2)
@@ -63,10 +63,11 @@
     ("080fd60366fb1d6e7aea9f8fd0de03e2a40ac995e51b1ed21de37431d43b4d88" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "c335adbb7d7cb79bc34de77a16e12d28e6b927115b992bccc109fb752a365c72" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" default)))
  '(flycheck-clang-include-path
    (quote
-    ("../include" "../../include" "../../../include" "../../" "../" "../corewar/include" "../../corewar/include" "../../../corewar/include")))
+    ("../include" "../../include" "../../../include" "../../../../include" "../../" "../" "../corewar/include" "../../corewar/include" "../../../corewar/include" "./rsrc/" "../rsrc")))
+ '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (## yasnippet 2048-game term+ company-c-headers company flycheck)))
+    (nyan-mode srefactor clipboard-collector eww-lnum multiple-cursors flycheck-clang-analyzer magit ## yasnippet 2048-game term+ company-c-headers company flycheck)))
  '(pixel-scroll-mode t)
  '(scroll-down-aggressively 0.0)
  '(scroll-margin 1)
@@ -90,18 +91,38 @@
 (add-hook 'c-mode-hook (lambda () (interactive) (column-marker-2 80)))
 (add-hook 'c++-mode-hook (lambda () (interactive) (column-marker-2 80)))
 
-(defvar company-mode/enable-yas t
-  "Enable yasnippet for all backends.")
+;; (defvar company-mode/enable-yas t
+;;   "Enable yasnippet for all backends.")
 
-(defun company-mode/backend-with-yas (backend)
-  (if (or (not company-mode/enable-yas) (and (listp backend) (member 'company-yasnippet backend)))
-      backend
-    (append (if (consp backend) backend (list backend))
-            '(:with company-yasnippet))))
+;; (defun company-mode/backend-with-yas (backend)
+;;   (if (or (not company-mode/enable-yas) (and (listp backend) (member 'company-yasnippet backend)))
+;;       backend
+;;     (append (if (consp backend) backend (list backend))
+;;             '(:with company-yasnippet))))
 
-(setq company-backends (mapcar #'company-mode/backend-with-yas company-backends))
+;; (setq company-backends (mapcar #'company-mode/backend-with-yas company-backends))
+
+(add-hook 'c-mode-hook (lambda () (interactive) (hs-minor-mode)))
+(add-hook 'c++-mode-hook (lambda () (interactive) (hs-minor-mode)))
+(global-set-key (kbd "C-c h") 'hs-hide-block)
+(global-set-key (kbd "C-c s") 'hs-show-block)
+(global-set-key (kbd "C-c M-h") 'hs-hide-all)
+(global-set-key (kbd "C-c M-s") 'hs-show-all)
 
 (yas-global-mode)
+
+(require 'multiple-cursors)
+(add-hook 'c++-mode-hook (lambda () (interactive) (multiple-cursors-mode)))
+(add-hook 'c-mode-hook (lambda () (interactive) (multiple-cursors-mode)))
+(global-set-key (kbd "C-c m") 'mc/edit-lines)
+(global-set-key (kbd "C-x [") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-x ]") 'mc/unmark-next-like-this)
+(global-set-key (kbd "C-x <mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "C-x ESC ] <") 'mc/add-cursor-on-click)
+
+(global-set-key (kbd "C-x y") 'company-yasnippet)
+(global-set-key (kbd "C-c ;") 'comment-line)
+
 
 ;;; .emacs ends here
 ;;

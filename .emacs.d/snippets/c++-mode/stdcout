@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: stdcout
+# key: stdcout
+# --
+std::cout << "$1" << std::endl;
