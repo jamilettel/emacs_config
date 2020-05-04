@@ -4,14 +4,20 @@
 (setq mc/cmds-to-run-for-all
       '(
         backward-delete-char
+        c-electric-brace
         c-electric-lt-gt
+        c-electric-paren
         c-electric-semi&comma
+        c-electric-star
         c-indent-line-or-region
         indent-for-tab-command
+        overwrite-mode
+        upcase-region
         xterm-paste
         ))
 
 (setq mc/cmds-to-run-once
       '(
         c-electric-colon
+        helm-confirm-and-exit-minibuffer
         ))

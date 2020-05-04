@@ -1,0 +1,100 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "magit-autoloads.el"
+      :pointmax 349
+      :fsize 84469
+      :lastmodtime '(24222 63408 115007 495000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("subr-x" include nil nil [978 995])
+            ("magit" include nil nil [998 1014])
+            ("declare-function" code nil nil [1016 1090])
+            ("ido-exit" variable nil nil [1092 1109])
+            ("ido-fallback" variable nil nil [1110 1131])
+            ("magit-extras" customgroup (:user-visible-flag t) nil [1133 1227])
+            ("magit-gitk-executable" variable (:default-value (or (and (eq system-type (quote windows-nt)) (let ((exe (magit-git-string "-c" "alias.X=!x() { which \"$1\" | cygpath -mf -; }; x" "X" "gitk.exe"))) (and exe (file-executable-p exe) exe))) (executable-find "gitk") "gitk")) nil [1249 1676])
+            ("magit-run-git-gui" function (:user-visible-flag t) nil [1693 1873])
+            ("magit-run-git-gui-blame" function
+               (:user-visible-flag t
+                :arguments ("commit" "filename" "linenum"))
+                nil [1890 3022])
+            ("magit-run-gitk" function (:user-visible-flag t) nil [3039 3173])
+            ("magit-run-gitk-branches" function (:user-visible-flag t) nil [3190 3361])
+            ("magit-run-gitk-all" function (:user-visible-flag t) nil [3378 3534])
+            ("ido-enter-magit-status" function (:user-visible-flag t) nil [3568 4466])
+            ("magit-dired-jump" function
+               (:user-visible-flag t
+                :arguments ("other-window"))
+                nil [4483 4966])
+            ("magit-dired-log" function
+               (:user-visible-flag t
+                :arguments ("follow"))
+                nil [4983 5790])
+            ("magit-do-async-shell-command" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [5807 6258])
+            ("magit--turn-on-shift-select-mode-p" function nil nil [6281 6474])
+            ("magit-previous-line" function (:arguments ("arg" "try-vscroll")) nil [6491 7507])
+            ("magit-next-line" function (:arguments ("arg" "try-vscroll")) nil [7524 8474])
+            ("magit-clean" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8502 9088])
+            ("put" code nil nil [9090 9120])
+            ("magit-add-change-log-entry" function
+               (:user-visible-flag t
+                :arguments ("whoami" "file-name" "other-window"))
+                nil [9152 9874])
+            ("magit-add-change-log-entry-other-window" function
+               (:user-visible-flag t
+                :arguments ("whoami" "file-name"))
+                nil [9891 10396])
+            ("magit-edit-line-commit" function
+               (:user-visible-flag t
+                :arguments ("type"))
+                nil [10435 12307])
+            ("put" code nil nil [12309 12350])
+            ("magit-diff-edit-hunk-commit" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [12367 13411])
+            ("put" code nil nil [13413 13459])
+            ("magit-reshelve-since" function
+               (:user-visible-flag t
+                :arguments ("rev"))
+                nil [13490 16834])
+            ("magit-revision-stack" variable nil nil [16856 16889])
+            ("magit-pop-revision-stack-format" variable (:default-value (quote ("[%N: %h] " "%N: %H
+   %s
+" "\\[\\([0-9]+\\)[]:]"))) nil [16891 19150])
+            ("magit-copy-revision-abbreviated" variable nil nil [19152 19368])
+            ("magit-pop-revision-stack" function
+               (:user-visible-flag t
+                :arguments ("rev" "toplevel"))
+                nil [19385 22823])
+            ("define-key" code nil nil [22825 22901])
+            ("magit-copy-section-value" function (:user-visible-flag t) nil [22918 25095])
+            ("magit-copy-buffer-revision" function (:user-visible-flag t) nil [25112 26875])
+            ("magit-abort-dwim" function (:user-visible-flag t) nil [26911 27417])
+            ("magit-extras" package nil nil [27425 27448]))          
+      :file "magit-extras.el"
+      :pointmax 27479
+      :fsize 27478
+      :lastmodtime '(24222 63407 394009 827000)
+      :unmatched-syntax '((close-paren 995 . 996) (symbol 958 . 975) (open-paren 957 . 958)))
+    (semanticdb-table "semanticdb-table"
+      :file "magit.el"
+      :fsize 22182
+      :lastmodtime '(24222 63407 418009 749000)))
+  :file "!home!Jamil!.emacs.d!elpa!magit-20200420.310!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

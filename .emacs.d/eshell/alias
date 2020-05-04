@@ -1,0 +1,5 @@
+alias ... cd ../.. $*
+alias fclean if /bin/ls | grep Makefile > /dev/null; then make fclean; fi > /dev/null && clean $*
+alias ll ls -lh
+alias l ls -lah $*
+alias la ls -lAh $*

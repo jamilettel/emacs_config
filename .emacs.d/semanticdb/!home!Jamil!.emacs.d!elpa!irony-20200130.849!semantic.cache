@@ -1,0 +1,275 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony-cdb" include nil nil [993 1013])
+            ("cl-lib" include nil nil [1015 1032])
+            ("json" include nil nil [1034 1049])
+            ("pp" include nil nil [1050 1063])
+            ("irony-cdb-json--project-alist" variable nil nil [1065 1257])
+            ("irony-cdb-json--project-alist-file" variable
+               (:constant-flag t
+                :default-value (concat irony-user-dir "cdb-json-projects"))
+                nil [1259 1350])
+            ("irony-cdb-json" function (:arguments ("command" "args")) nil [1367 1494])
+            ("irony-cdb-json-add-compile-commands-path" function
+               (:user-visible-flag t
+                :arguments ("project-root" "compile-commands-path"))
+                nil [1511 2469])
+            ("irony-cdb-json--put-first" function (:arguments ("pos" "target-list")) nil [2471 2668])
+            ("irony-cdb-json--choose-cdb" function nil nil [2670 3182])
+            ("irony-cdb-json-select" function (:user-visible-flag t) nil [3199 3986])
+            ("irony-cdb-json--last-mod" function (:arguments ("file")) nil [3988 4145])
+            ("irony-cdb-json-select-most-recent" function (:user-visible-flag t) nil [4162 4590])
+            ("irony-cdb-json--get-compile-options" function nil nil [4592 4911])
+            ("irony-cdb-json--target-path" function nil nil [4913 5015])
+            ("irony-cdb-json--ensure-project-alist-loaded" function nil nil [5017 5153])
+            ("irony-cdb-json--save-project-alist" function nil nil [5155 5476])
+            ("irony-cdb-json--load-project-alist" function nil nil [5478 5759])
+            ("irony-cdb-json--find-best-prefix-path" function (:arguments ("file" "prefixes")) nil [5761 6096])
+            ("irony-cdb-json--locate-db" function nil nil [6098 6737])
+            ("irony-cdb-json--cache-key" variable nil nil [6739 6846])
+            ("irony-cdb-json--cache-cdb" variable nil nil [6847 6927])
+            ("irony-cdb-json--make-cache-key" function (:arguments ("file")) nil [6929 7041])
+            ("irony-cdb-json--load-db" function (:arguments ("json-file")) nil [7043 7526])
+            ("irony-cdb-json--exact-flags" function (:arguments ("file-cdb")) nil [7528 7728])
+            ("irony-cdb-json--guess-flags" function (:arguments ("dir-cdb")) nil [7730 8164])
+            ("irony-cdb-json--compile-command-directory" function (:arguments ("compile-command")) nil [8166 8278])
+            ("irony-cdb-json--compile-command-file" function (:arguments ("compile-command")) nil [8280 8382])
+            ("irony-cdb-json--compile-command-options" function (:arguments ("compile-command")) nil [8384 8776])
+            ("irony-cdb-json--adjust-compile-options" function (:arguments ("compile-options" "file" "default-dir")) nil [8778 10183])
+            ("irony-cdb-json--transform-compile-command" function (:arguments ("compile-command")) nil [10185 11090])
+            ("irony-cdb-json--compute-directory-cdb" function (:arguments ("file-cdb")) nil [11092 11523])
+            ("irony-cdb-json--collect-compile-options-by-dir" function (:arguments ("file-cdb")) nil [11525 12345])
+            ("irony-cdb-json--collect-compile-options-for-include-dirs" function (:arguments ("dir-cdb")) nil [12347 12949])
+            ("irony-cdb-json" package nil nil [12951 12976]))          
+      :file "irony-cdb-json.el"
+      :pointmax 13081
+      :fsize 13080
+      :lastmodtime '(24172 45738 542827 70000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony" include nil nil [1248 1264])
+            ("cl-lib" include nil nil [1266 1283])
+            ("irony-cdb-clang-complete" function (:prototype-flag t) nil [1285 1348])
+            ("irony-cdb-json" function (:prototype-flag t) nil [1349 1392])
+            ("irony-cdb-libclang" function (:prototype-flag t) nil [1393 1444])
+            ("irony-cdb" customgroup (:user-visible-flag t) nil [1481 1565])
+            ("irony-cdb-compilation-databases" variable (:default-value (quote (irony-cdb-clang-complete irony-cdb-libclang irony-cdb-json))) nil [1567 2274])
+            ("irony-cdb-search-directory-list" variable (:default-value (quote ("." "build"))) nil [2276 2903])
+            ("defvar-local" code nil nil [2936 2986])
+            ("irony-cdb-autosetup-compile-options" function nil nil [3052 3287])
+            ("irony-cdb-menu" function nil nil [3304 4472])
+            ("irony-cdb--choose-closest-path" function (:arguments ("file" "paths")) nil [4496 6049])
+            ("irony-cdb--locate-dominating-file-with-dirs" function (:arguments ("file" "name" "subdirectories")) nil [6051 6974])
+            ("irony-cdb--update-compile-options" function (:arguments ("compile-options" "working-directory")) nil [6977 7205])
+            ("irony-cdb--autodetect-compile-options" function nil nil [7207 7623])
+            ("irony-cdb--string-suffix-p" function (:arguments ("suffix" "string" "ignore-case")) nil [7625 7948])
+            ("irony-cdb--remove-compiler-from-flags" function (:arguments ("flags")) nil [7950 8303])
+            ("irony-cdb" package nil nil [8305 8325]))          
+      :file "irony-cdb.el"
+      :pointmax 8428
+      :fsize 8427
+      :lastmodtime '(24172 45738 646826 915000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony-iotask" include nil nil [1699 1722])
+            ("irony-completion--enter" function (:prototype-flag t) nil [1724 1778])
+            ("irony-completion--exit" function (:prototype-flag t) nil [1779 1832])
+            ("cl-lib" include nil nil [1834 1851])
+            ("find-library-name" function (:prototype-flag t) nil [1853 1894])
+            ("lm-version" function (:prototype-flag t) nil [1895 1928])
+            ("unless" code nil nil [2310 2740])
+            ("unless" code nil nil [2064 2255])
+            ("irony" customgroup (:user-visible-flag t) nil [2802 2876])
+            ("irony-lighter" variable (:default-value " Irony") nil [2878 3004])
+            ("irony-extra-cmake-args" variable nil nil [3006 3141])
+            ("irony-user-dir" variable (:default-value (locate-user-emacs-file "irony/")) nil [3143 3336])
+            ("irony-supported-major-modes" variable (:default-value (quote (c++-mode c-mode objc-mode))) nil [3338 3582])
+            ("irony-additional-clang-options" variable nil nil [3599 4022])
+            ("irony-lang-compile-option-alist" variable (:default-value (quote ((c++-mode . "c++") (c-mode . "c") (objc-mode . "objective-c")))) nil [4024 4290])
+            ("irony-cmake-executable" variable (:default-value "cmake") nil [4292 4408])
+            ("irony-server-source-dir" variable nil nil [4410 4747])
+            ("irony-server-build-dir" variable nil nil [4749 4986])
+            ("irony-server-install-prefix" variable (:default-value irony-user-dir) nil [4988 5217])
+            ("irony-server-w32-pipe-buffer-size" variable nil nil [5219 5538])
+            ("defvar-local" code nil nil [5817 5976])
+            ("defvar-local" code nil nil [6042 6140])
+            ("irony--eot" variable
+               (:constant-flag t
+                :default-value "
+;;EOT
+")
+                nil [6369 6465])
+            ("irony--define-error" function (:arguments ("name" "message" "parent")) nil [6562 7481])
+            ("irony--define-error" code nil nil [7483 7536])
+            ("irony--define-error" code nil nil [7537 7617])
+            ("irony--define-error" code nil nil [7618 7698])
+            ("irony--aif" function (:arguments ("test" "if-expr" "else-body")) nil [7815 7970])
+            ("irony--awhen" function (:arguments ("test" "body")) nil [8050 8173])
+            ("irony--assoc-all" function (:arguments ("key" "list")) nil [8175 8345])
+            ("irony--without-narrowing" function (:arguments ("body")) nil [8347 8634])
+            ("irony--buffer-size-in-bytes" function nil nil [8636 8748])
+            ("irony--read-char-choice" function (:arguments ("prompt" "chars")) nil [8750 9185])
+            ("irony--shorten-path" function (:arguments ("path")) nil [9187 9614])
+            ("irony--split-command-line-1" function (:arguments ("quoted-str")) nil [9616 10258])
+            ("irony--split-command-line" function (:arguments ("cmd-line")) nil [10428 12423])
+            ("irony--get-buffer-path-for-server" function (:arguments ("buffer")) nil [12425 12742])
+            ("irony-mode-map" variable (:default-value (make-sparse-keymap)) nil [12761 12846])
+            ("define-minor-mode" code nil nil [12863 13079])
+            ("irony--mode-enter" function nil nil [13081 13785])
+            ("irony--mode-exit" function nil nil [13787 13841])
+            ("irony-version" function
+               (:user-visible-flag t
+                :arguments ("show-version"))
+                nil [13858 14268])
+            ("irony--lang-compile-option" function nil nil [14307 14441])
+            ("irony--extract-working-directory-option" function (:arguments ("flags")) nil [14443 14911])
+            ("irony--adjust-compile-options" function nil nil [14913 15469])
+            ("irony--extract-user-search-paths" function (:arguments ("compile-options" "work-dir")) nil [15471 16598])
+            ("irony--server-install-command-history" variable nil nil [16631 16681])
+            ("irony--install-server-read-command" function (:arguments ("command")) nil [16682 16952])
+            ("irony-install-server" function
+               (:user-visible-flag t
+                :arguments ("command"))
+                nil [16954 18875])
+            ("irony--server-install-finish-function" function (:arguments ("buffer" "msg")) nil [18877 19097])
+            ("irony--find-server-executable" function nil nil [19099 20896])
+            ("irony--server-executable" variable nil nil [20943 20980])
+            ("irony--server-process" variable nil nil [20981 21015])
+            ("irony--server-buffer" variable (:default-value " *Irony*") nil [21016 21223])
+            ("irony--start-server-process" function nil nil [21225 22260])
+            ("irony-server-kill" function (:user-visible-flag t) nil [22277 22498])
+            ("irony--get-server-process-create" function nil nil [22500 22680])
+            ("irony--run-task" function (:arguments ("task")) nil [22682 22773])
+            ("irony--run-task-asynchronously" function (:arguments ("task" "callback")) nil [22775 22904])
+            ("irony--quote-strings" function (:arguments ("strings" "separator")) nil [22906 23604])
+            ("irony--server-send-command" function (:arguments ("command" "args")) nil [23606 24086])
+            ("irony--server-command-update" function (:arguments ("_args")) nil [24193 24829])
+            ("irony--server-query-update" function (:arguments ("_args")) nil [24999 25416])
+            ("irony-iotask-define-task" code nil nil [25446 25694])
+            ("irony--get-compile-options-task" function (:arguments ("build-dir" "file")) nil [25696 25826])
+            ("cl-defstruct" code nil nil [25828 25957])
+            ("irony--buffer-state-create" function (:arguments ("buffer")) nil [25959 26312])
+            ("irony--buffer-state-compare" function (:arguments ("old" "new")) nil [26314 26608])
+            ("irony-iotask-define-task" code nil nil [26610 28174])
+            ("irony--set-unsaved-task" function (:arguments ("process" "buffer" "buf-state")) nil [28176 28310])
+            ("irony-iotask-define-task" code nil nil [28312 29005])
+            ("irony--reset-unsaved-task" function (:arguments ("process" "buffer")) nil [29007 29125])
+            ("irony--list-unsaved-irony-mode-buffers" function (:arguments ("ignore-list")) nil [29127 29478])
+            ("irony--get-buffer-change-alist" function (:arguments ("process")) nil [29480 29896])
+            ("irony--unsaved-buffers-tasks" function nil nil [29898 30723])
+            ("irony-iotask-define-task" code nil nil [30725 30974])
+            ("irony--parse-task-1" function (:arguments ("buffer")) nil [30976 31252])
+            ("irony--parse-task" function (:arguments ("buffer")) nil [31254 31499])
+            ("irony-iotask-define-task" code nil nil [31501 31688])
+            ("irony--diagnostics-task" function (:arguments ("buffer")) nil [31690 31845])
+            ("irony-iotask-define-task" code nil nil [31847 32048])
+            ("irony--get-type-task" function (:arguments ("buffer" "pos")) nil [32050 32337])
+            ("irony-get-type" function (:user-visible-flag t) nil [32354 32710])
+            ("irony-parse-buffer-async" function (:arguments ("callback")) nil [32712 32958])
+            ("irony" package nil nil [32960 32976]))          
+      :file "irony.el"
+      :pointmax 33075
+      :fsize 33074
+      :lastmodtime '(24172 45738 526827 94000)
+      :unmatched-syntax '((close-paren 2744 . 2745) (symbol 1957 . 1973) (open-paren 1956 . 1957)))
+    (semanticdb-table "semanticdb-table"
+      :file "irony-iotask.el"
+      :fsize 17214
+      :lastmodtime '(24172 45738 529827 90000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony-cdb" include nil nil [1008 1028])
+            ("irony-cdb-json" include nil nil [1029 1054])
+            ("cl-lib" include nil nil [1056 1073])
+            ("irony-cdb-libclang" function (:arguments ("command" "args")) nil [1090 1225])
+            ("irony-cdb-libclang--get-compile-options" function nil nil [1227 1370])
+            ("irony-cdb-libclang--server-exact-flags" function (:arguments ("db-file")) nil [1372 1846])
+            ("irony-cdb-libclang--adjust-options-and-remove-compiler" function (:arguments ("file" "cmds")) nil [1848 2409])
+            ("irony-cdb-libclang" package nil nil [2411 2440]))          
+      :file "irony-cdb-libclang.el"
+      :pointmax 2549
+      :fsize 2550
+      :lastmodtime '(24172 45738 643826 920000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony" include nil nil [1031 1047])
+            ("irony-snippet" include nil nil [1048 1072])
+            ("cl-lib" include nil nil [1074 1091])
+            ("irony-completion" customgroup (:user-visible-flag t) nil [1128 1209])
+            ("irony-completion-trigger-commands" variable (:default-value (quote (self-insert-command newline-and-indent c-context-line-break c-scope-operator c-electric-backspace c-electric-brace c-electric-colon c-electric-lt-gt c-electric-paren c-electric-pound c-electric-semi&comma c-electric-slash c-electric-star))) nil [1211 2253])
+            ("irony-completion-availability-filter" variable (:default-value (quote (available deprecated))) nil [2255 2768])
+            ("irony-duplicate-candidates-filter" variable nil nil [2770 3073])
+            ("irony-completion-symbol-bounds" function nil nil [3105 3973])
+            ("irony-completion-beginning-of-symbol" function nil nil [3975 4063])
+            ("irony-completion-end-of-symbol" function nil nil [4065 4147])
+            ("irony-completion--skip-whitespaces-backward" function nil nil [4149 4307])
+            ("irony-completion--parse-context-position" function (:arguments ("pos")) nil [4309 4491])
+            ("irony--completion-line-column" function (:arguments ("pos")) nil [4493 4870])
+            ("irony-completion--enter" function nil nil [4894 5005])
+            ("irony-completion--exit" function nil nil [5007 5116])
+            ("irony-completion--post-complete-yas-snippet" function (:arguments ("str" "placeholders")) nil [5118 5857])
+            ("irony-iotask-define-task" code nil nil [5899 6181])
+            ("irony--complete-task-1" function (:arguments ("buffer" "pos")) nil [6183 6639])
+            ("irony--complete-task" function (:arguments ("buffer" "pos")) nil [6641 6909])
+            ("irony-iotask-define-task" code nil nil [6911 7278])
+            ("irony--candidates-task" function (:arguments ("buffer" "pos" "prefix" "style")) nil [7280 7470])
+            ("irony-completion-typed-text" function (:arguments ("candidate")) nil [7511 7578])
+            ("irony-completion-priority" function (:arguments ("candidate")) nil [7580 7645])
+            ("irony-completion-type" function (:arguments ("candidate")) nil [7647 7708])
+            ("irony-completion-brief" function (:arguments ("candidate")) nil [7710 7772])
+            ("irony-completion-annotation" function (:arguments ("candidate")) nil [7774 7871])
+            ("irony-completion-post-comp-str" function (:arguments ("candidate")) nil [7873 7949])
+            ("irony-completion-post-comp-placeholders" function (:arguments ("candidate")) nil [7951 8036])
+            ("irony-completion-availability" function (:arguments ("candidate")) nil [8038 8154])
+            ("irony-completion--filter-candidates" function (:arguments ("candidates")) nil [8156 9259])
+            ("irony-completion-candidates" function (:arguments ("prefix" "style")) nil [9261 10322])
+            ("irony-completion-candidates-async" function (:arguments ("callback" "prefix" "style")) nil [10324 10745])
+            ("irony-completion-post-complete" function (:arguments ("candidate")) nil [10747 11142])
+            ("irony-completion-at-trigger-point-p" function nil nil [11144 13209])
+            ("irony-completion--capf-candidate" function (:arguments ("candidate")) nil [13234 13335])
+            ("irony-completion--capf-annotate" function (:arguments ("candidate")) nil [13337 13468])
+            ("irony-completion--capf-postcomp-commonprefix" function (:arguments ("candidates")) nil [13470 14144])
+            ("irony-completion--capf-postcomp-all-equal-p" function (:arguments ("candidates")) nil [14146 14688])
+            ("irony-completion--capf-exit-function" function (:arguments ("candidates" "str" "status")) nil [14690 16626])
+            ("irony-completion-at-point" function nil nil [16643 17646])
+            ("irony-completion" package nil nil [17648 17675]))          
+      :file "irony-completion.el"
+      :pointmax 17785
+      :fsize 17784
+      :lastmodtime '(24172 45738 535827 80000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "irony-snippet.el"
+      :fsize 4839
+      :lastmodtime '(24172 45738 537827 78000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony-cdb" include nil nil [1010 1030])
+            ("cl-lib" include nil nil [1032 1049])
+            ("irony-cdb-clang-complete" function (:arguments ("command" "args")) nil [1066 1213])
+            ("irony-cdb-clang-complete--get-compile-options" function nil nil [1215 1369])
+            ("irony-cdb-clang-complete--locate-db" function nil nil [1371 2055])
+            ("irony-cdb-clang-complete--load-db" function (:arguments ("cc-file")) nil [2057 2541])
+            ("irony-cdb-clang-complete" package nil nil [2543 2578]))          
+      :file "irony-cdb-clang-complete.el"
+      :pointmax 2693
+      :fsize 2692
+      :lastmodtime '(24172 45738 532827 85000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!elpa!irony-20200130.849!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

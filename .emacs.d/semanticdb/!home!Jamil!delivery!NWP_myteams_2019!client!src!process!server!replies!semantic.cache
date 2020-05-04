@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("uuid/uuid.h" include (:system-flag t) nil [99 121])
+            ("myteams_client.h" include nil nil [122 149])
+            ("logging_client.h" include nil nil [150 177])
+            ("reply_220" function
+               (:arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [193 208])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("server_reply_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [209 232]))                  
+                :type "int")
+                nil [179 830]))          
+      :file "reply_220.c"
+      :pointmax 830
+      :fsize 829
+      :lastmodtime '(24237 32967 715992 217000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!client!src!process!server!replies!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

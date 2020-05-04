@@ -1,0 +1,204 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_ERRHANDLING_HPP" variable (:constant-flag t) nil [122 144])
+            ("Error/Error.hpp" include nil nil [146 172])
+            ("Plazza" type
+               (:members 
+                  ( ("ErrHandling" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [221 228])
+                            ("ErrHandling" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [237 251])
+                            ("checkNbArgs" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [318 325]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [294 326])
+                            ("checkArgIsInt" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [361 384]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [335 385])
+                            ("checkArgIsFloat" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("arg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [422 445]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [394 446])
+                            ("checkCookingTime" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("cookingTime" variable (:type "float") (reparse-symbol arg-sub-list) [484 502]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [455 503])
+                            ("checkNbCooks" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("nbCooks" variable (:type "int") (reparse-symbol arg-sub-list) [537 549]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [512 550])
+                            ("checkTimeReplace" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("timeReplace" variable (:type "int") (reparse-symbol arg-sub-list) [588 604]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [559 605])
+                            ("checkValidOrderType" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("type" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [646 670]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [614 671])
+                            ("checkValidOrderSize" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("type" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [712 736]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [680 737])
+                            ("checkValidOrderNumber" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("type" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [780 804]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [746 805])
+                            ("private" label nil (reparse-symbol classsubparts) [810 818]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [197 825]))                  
+                :type "namespace")
+                nil [174 828]))          
+      :file "ErrHandling.hpp"
+      :pointmax 862
+      :fsize 861
+      :lastmodtime '(24226 41914 125384 876000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZZA_ERRHANDLING_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("StringManipulation/StringManipulation.hpp" include (:system-flag t) nil [84 136])
+            ("iostream" include (:system-flag t) nil [137 156])
+            ("Error/ErrHandling/ErrHandling.hpp" include nil nil [157 201])
+            ("checkNbArgs" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [241 248]))                  
+                :type "void")
+                nil [203 386])
+            ("checkArgIsInt" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("arg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [428 451]))                  
+                :type "void")
+                nil [388 607])
+            ("checkArgIsFloat" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("arg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [651 674]))                  
+                :type "void")
+                nil [609 1200])
+            ("checkCookingTime" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("cookingTime" variable (:type "float") (reparse-symbol arg-sub-list) [1245 1263]))                  
+                :type "void")
+                nil [1202 1363])
+            ("checkNbCooks" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("nbCooks" variable (:type "int") (reparse-symbol arg-sub-list) [1404 1416]))                  
+                :type "void")
+                nil [1365 1524])
+            ("checkTimeReplace" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("timeReplace" variable (:type "int") (reparse-symbol arg-sub-list) [1569 1585]))                  
+                :type "void")
+                nil [1526 1700])
+            ("checkValidOrderType" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1748 1772]))                  
+                :type "bool")
+                nil [1702 2162])
+            ("checkValidOrderSize" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2210 2234]))                  
+                :type "bool")
+                nil [2164 2469])
+            ("checkValidOrderNumber" function
+               (:parent "Plazza::ErrHandling"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2519 2543]))                  
+                :type "bool")
+                nil [2471 2757]))          
+      :file "ErrHandling.cpp"
+      :pointmax 2758
+      :fsize 2757
+      :lastmodtime '(24226 41874 663428 556000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!Plazza!class!Error!ErrHandling!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

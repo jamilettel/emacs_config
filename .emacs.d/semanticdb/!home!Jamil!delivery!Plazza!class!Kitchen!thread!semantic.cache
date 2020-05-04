@@ -1,0 +1,522 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PlazzaThread.hpp" include nil nil [78 105])
+            ("Plazza::Kitchen" using (:type ("Plazza::Kitchen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [107 139])
+            ("PlazzaThread" function
+               (:constructor-flag t
+                :parent "PlazzaThread"
+                :arguments 
+                  ( ("fct" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("InterThread" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [180 194])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [195 209]))                          
+                        :type "void")
+                        nil nil)
+                    ("inter" variable
+                       (:reference 1
+                        :type ("InterThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [211 230])
+                    ("type" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [231 241]))                  
+                :type ("PlazzaThread" type (:type "class") nil nil))
+                nil [141 341])
+            ("getStatus" function
+               (:methodconst-flag t
+                :parent "PlazzaThread"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [343 412])
+            ("==" function
+               (:operator-flag t
+                :parent "PlazzaThread"
+                :arguments 
+                  ( ("type" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [444 454]))                  
+                :type "bool")
+                nil [414 486])
+            ("join" function
+               (:parent "PlazzaThread"
+                :type "void")
+                nil [488 537])
+            ("PlazzaThread" function
+               (:destructor-flag t
+                :parent "PlazzaThread"
+                :type "void")
+                nil [539 572]))          
+      :file "PlazzaThread.cpp"
+      :pointmax 574
+      :fsize 573
+      :lastmodtime '(24239 10034 440092 459000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_THREAD_HPP" variable (:constant-flag t) nil [115 132])
+            ("thread" include (:system-flag t) nil [134 154])
+            ("Kitchen/KitchenController.hpp" include nil nil [155 198])
+            ("Kitchen/thread/InterThread.hpp" include nil nil [199 243])
+            ("Plazza" type
+               (:members 
+                  ( ("Kitchen" type
+                       (:members 
+                          ( ("TYPE" type
+                               (:members 
+                                  ( ("STOCK" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [309 315])
+                                    ("COOK" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [316 321])
+                                    ("RECEIVE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [322 330]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [298 331])
+                            ("PlazzaThread" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [374 381])
+                                    ("PlazzaThread" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("fct" function
+                                               (:function-pointer t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("InterThread" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [423 437])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [438 452]))                                                  
+                                                :type "void")
+                                                nil nil)
+                                            ("inter" variable
+                                               (:reference 1
+                                                :type ("InterThread" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [454 473])
+                                            ("type" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [474 484]))                                          
+                                        :type ("PlazzaThread" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [398 485])
+                                    ("PlazzaThread" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [502 518])
+                                    ("==" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("type" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [552 562]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [536 563])
+                                    ("getStatus" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [580 610])
+                                    ("join" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [627 639])
+                                    ("private" label nil (reparse-symbol classsubparts) [652 660])
+                                    ("_status" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [677 697])
+                                    ("_thread" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [714 734])
+                                    ("_type" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [751 762]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [341 773]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [269 780]))                  
+                :type "namespace")
+                nil [245 783]))          
+      :file "PlazzaThread.hpp"
+      :pointmax 792
+      :fsize 791
+      :lastmodtime '(24237 29025 343360 232000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZZA_THREAD_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Kitchen/thread/CookAction.hpp" include nil nil [76 116])
+            ("iostream" include (:system-flag t) nil [117 136])
+            ("thread" include (:system-flag t) nil [137 154])
+            ("Plazza::Kitchen" using (:type ("Plazza::Kitchen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [156 188])
+            ("PizzaInfo" using (:type ("PizzaInfo" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [189 215])
+            ("InfoPizza" variable
+               (:constant-flag t
+                :default-value "{
+    {Regina, {Doe, Tomato, Gruyere, Ham, Mushrooms}},
+    {Margarita, {Doe, Tomato, Gruyere}},
+    {Americana, {Doe, Tomato, Gruyere, Steak}},
+    {Fantasia, {Doe, Tomato, Eggplant, GoatCheese, ChiefLove}}
+}"
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("PizzaType" type nil nil nil)
+                          ("std::vector" type (:template-specifier 
+                            ( ("PizzaIngredient" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [217 495])
+            ("TimePizza" variable
+               (:constant-flag t
+                :default-value "{
+    {Regina, {2}},
+    {Margarita, {1}},
+    {Americana, {2}},
+    {Fantasia, {4}}
+}"
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("PizzaType" type nil nil nil)
+                          ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [497 629])
+            ("CookAction" function
+               (:constructor-flag t
+                :parent "CookAction"
+                :arguments 
+                  ( ("inter" variable
+                       (:reference 1
+                        :type ("InterThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [654 673])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [674 694]))                  
+                :type ("CookAction" type (:type "class") nil nil))
+                nil [631 739])
+            ("deliverPizzaToReception" function
+               (:parent "CookAction"
+                :type "void")
+                nil [741 967])
+            ("getIngredient" function
+               (:parent "CookAction"
+                :type "bool")
+                nil [969 1468])
+            ("getPizzaIngredientStock" function
+               (:parent "CookAction"
+                :type "void")
+                nil [1470 1663])
+            ("loop" function
+               (:parent "CookAction"
+                :type "void")
+                nil [1665 2482])
+            ("startThread" function
+               (:parent "CookAction"
+                :arguments 
+                  ( ("inter" variable
+                       (:reference 1
+                        :type ("InterThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2513 2532])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2533 2553]))                  
+                :type "void")
+                nil [2484 2623])
+            ("CookAction" function
+               (:destructor-flag t
+                :parent "CookAction"
+                :type "void")
+                nil [2625 2654]))          
+      :file "CookAction.cpp"
+      :pointmax 2655
+      :fsize 2654
+      :lastmodtime '(24239 9466 865554 420000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "CookAction.hpp"
+      :fsize 724
+      :lastmodtime '(24236 32289 44366 547000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("INTERTHREAD_HPP" variable (:constant-flag t) nil [112 127])
+            ("mutex" include (:system-flag t) nil [129 148])
+            ("map" include (:system-flag t) nil [149 166])
+            ("queue" include (:system-flag t) nil [167 186])
+            ("Pizza.hpp" include nil nil [187 210])
+            ("condition_variable" include (:system-flag t) nil [211 243])
+            ("Kitchen/KitchenController.hpp" include nil nil [244 287])
+            ("Kitchen/Chrono.hpp" include nil nil [288 320])
+            ("Plazza" type
+               (:members 
+                  ( ("Kitchen" type
+                       (:members 
+                          ( ("PlazzaMutex" type
+                               (:members 
+                                  ( ("STOCK_MUT" variable
+                                       (:constant-flag t
+                                        :default-value (418 419)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [406 419])
+                                    ("DELIVER_MUT" variable
+                                       (:constant-flag t
+                                        :default-value (447 448)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [433 448])
+                                    ("ORDER_MUT" variable
+                                       (:constant-flag t
+                                        :default-value (474 475)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [462 475])
+                                    ("RECEIVE_MUT" variable
+                                       (:constant-flag t
+                                        :default-value (503 504)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [489 504]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [375 515])
+                            ("PlazzaCondition" type
+                               (:members 
+                                  ( ("STOCK_COND" variable
+                                       (:constant-flag t
+                                        :default-value (573 574)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [560 574])
+                                    ("DELIVER_COND" variable
+                                       (:constant-flag t
+                                        :default-value (602 603)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [588 603])
+                                    ("ORDER_COND" variable
+                                       (:constant-flag t
+                                        :default-value (630 631)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [617 631])
+                                    ("RECEIVE_COND" variable
+                                       (:constant-flag t
+                                        :default-value (660 661)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [645 661]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [525 672])
+                            ("InterThread" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [714 721])
+                                    ("InterThread" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("controller" variable
+                                               (:reference 1
+                                                :type ("Controller" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [750 773]))                                          
+                                        :type ("InterThread" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [738 774])
+                                    ("InterThread" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [791 806])
+                                    ("getNbCooks" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [824 847])
+                                    ("getTimeReplace" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [864 891])
+                                    ("getCookingTime" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "float")
+                                        (reparse-symbol classsubparts) [908 937])
+                                    ("getPendingPizzasSize" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [955 991])
+                                    ("getNextPizza" function
+                                       (:prototype-flag t
+                                        :type ("Pizza" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1008 1029])
+                                    ("getController" function
+                                       (:prototype-flag t
+                                        :type ("Controller" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1046 1074])
+                                    ("lock" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("mutex" variable (:type ("PlazzaMutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1101 1119]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1091 1120])
+                                    ("unlock" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("mutex" variable (:type ("PlazzaMutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1149 1167]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1137 1168])
+                                    ("getMutex" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("mutex" variable (:type ("PlazzaMutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1206 1224]))                                          
+                                        :type ("std::mutex" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1185 1225])
+                                    ("notify_all" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("condition" variable (:type ("PlazzaCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1258 1284]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1242 1285])
+                                    ("wait" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("condition" variable (:type ("PlazzaCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1312 1338])
+                                            ("lock" variable
+                                               (:reference 1
+                                                :type ("std::unique_lock" type
+                                                     (:template-specifier 
+                                                        ( ("std::mutex" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1339 1374]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1302 1375])
+                                    ("getWaitingOrders" function
+                                       (:prototype-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1392 1418])
+                                    ("popPizza" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1435 1451])
+                                    ("pushPizza" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pizza" variable (:type ("Pizza" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1483 1495]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1468 1496])
+                                    ("getStock" function
+                                       (:prototype-flag t
+                                        :type ("std::map" type
+                                             (:template-specifier 
+                                                ( ("PizzaInfo::PizzaIngredient" type nil nil nil)
+                                                  ("size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1513 1570])
+                                    ("getNbPizza" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1587 1610])
+                                    ("addOrder" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pizza" variable (:type ("Pizza" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1653]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1627 1654])
+                                    ("popOrder" function
+                                       (:prototype-flag t
+                                        :type ("Pizza" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1671 1688])
+                                    ("+=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("toAdd" variable (:type "int") (reparse-symbol arg-sub-list) [1721 1731]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1705 1732])
+                                    ("-=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("toMin" variable (:type "int") (reparse-symbol arg-sub-list) [1765 1775]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1749 1776])
+                                    ("getActive" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1793 1816])
+                                    ("setActive" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [1848 1860]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1833 1861])
+                                    ("getChrono" function
+                                       (:prototype-flag t
+                                        :type ("Chrono" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1878 1898])
+                                    ("private" label nil (reparse-symbol classsubparts) [1911 1919])
+                                    ("_controller" variable (:type ("Controller" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1936 1960])
+                                    ("_stock" variable (:type ("std::map" type
+                                         (:template-specifier 
+                                            ( ("PizzaInfo::PizzaIngredient" type nil nil nil)
+                                              ("size_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1977 2029])
+                                    ("_returnPizza" variable (:type ("std::queue" type
+                                         (:template-specifier 
+                                            ( ("Pizza" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2046 2077])
+                                    ("_waitingPizza" variable (:type ("std::queue" type
+                                         (:template-specifier 
+                                            ( ("Pizza" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2094 2126])
+                                    ("_mutex" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::mutex" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2143 2174])
+                                    ("_condition" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::condition_variable" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2191 2239])
+                                    ("_nbPizza" variable (:type "int") (reparse-symbol classsubparts) [2256 2269])
+                                    ("_active" variable (:type "bool") (reparse-symbol classsubparts) [2286 2299])
+                                    ("_clock" variable (:type ("Chrono" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2316 2330]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [682 2341]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [346 2348]))                  
+                :type "namespace")
+                nil [322 2350]))          
+      :file "InterThread.hpp"
+      :pointmax 2359
+      :fsize 2358
+      :lastmodtime '(24237 29025 343360 232000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INTERTHREAD_HPP")
+          )
+))
+  :file "!home!Jamil!delivery!Plazza!class!Kitchen!thread!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

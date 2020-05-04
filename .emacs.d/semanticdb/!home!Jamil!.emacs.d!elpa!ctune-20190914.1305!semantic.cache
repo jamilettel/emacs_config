@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "ctune-autoloads.el"
+      :pointmax 349
+      :fsize 1270
+      :lastmodtime '(24222 55498 815008 905000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("when" code nil nil [3357 3469])
+            ("cl-lib" include nil nil [3624 3641])
+            ("c-noise-macro-names" variable nil nil [3674 3702])
+            ("c-noise-macro-with-parens-names" variable nil nil [3703 3743])
+            ("declare-function" code nil nil [3745 3803])
+            ("ctune" customgroup (:user-visible-flag t) nil [3831 3904])
+            ("ctune-save-noise-macros-automatically" variable (:default-value (quote ask)) nil [3983 4616])
+            ("ctune-kbd-alist" variable (:default-value (quote ((ctune-add-noise-macro . "C-c C-#")))) nil [4618 4951])
+            ("ctune-prev-noise-macro-names" variable nil nil [5216 5322])
+            ("ctune-prev-noise-macro-with-parens-names" variable nil nil [5324 5454])
+            ("ctune-save-these-vars" variable nil nil [5620 5779])
+            ("ctune-symbol-at-point-strict" function (:arguments ("no-properties")) nil [5883 6614])
+            ("ctune--reset-values" function nil nil [6616 6851])
+            ("ctune--add-noise-macro" function (:arguments ("macro-name" "macro-names-list" "removep")) nil [6853 8113])
+            ("ctune-save-directory-variable" function (:arguments ("mode" "sym")) nil [8115 8438])
+            ("ctune-save-noise-macros-maybe" function nil nil [8440 9473])
+            ("ctune-add-noise-macro" function
+               (:user-visible-flag t
+                :arguments ("removep"))
+                nil [9489 10909])
+            ("ctune-save-noise-macros" function (:user-visible-flag t) nil [10911 12378])
+            ("ctune-minor-mode-map" variable (:default-value (let ((map (make-sparse-keymap)) binding) (when (setq binding (cdr (assq (quote ctune-add-noise-macro) ctune-kbd-alist))) (define-key map (kbd binding) (function ctune-add-noise-macro))) (when (setq binding (cdr (assq (quote ctune-save-noise-macros) ctune-kbd-alist))) (define-key map (kbd binding) (function ctune-save-noise-macros))) map)) nil [12396 12872])
+            ("define-minor-mode" code nil nil [12889 15286])
+            ("ctune" package nil nil [15288 15304]))          
+      :file "ctune.el"
+      :pointmax 15681
+      :fsize 15680
+      :lastmodtime '(24222 55498 726009 83000)
+      :unmatched-syntax '((close-paren 3641 . 3642) (symbol 3604 . 3621) (open-paren 3603 . 3604))))
+  :file "!home!Jamil!.emacs.d!elpa!ctune-20190914.1305!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

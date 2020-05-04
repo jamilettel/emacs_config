@@ -1,9 +1,128 @@
+ll
+ll
+clear
+fclean
+make fclean
 ls
 clear
-clear-scrollback 
+cd ../
+ls
+cd OOP_arcade_2019/
+ls
 clear
-clear-scrollback 
-make CC="gcc -g"
-make re CC="gcc -g"
-debug
-debug
+make fclean
+ls
+clear
+make -j
+ls
+ls
+clear
+clear
+l
+l
+ll
+clear
+l
+cd ../
+ls
+make -j
+cd ..
+ls
+mak e-j
+make -j
+exit
+ls
+clear
+l
+cd ../.
+ls
+c d..
+ls
+cd ..
+ls
+clear
+zsh
+ls
+ls
+cd games/
+cd lib_arcade_nibbler/
+ls
+cd src/
+ls
+cat Nibbler.cpp
+emacs Nibbler.cpp
+emacsclient Nibbler.cpp
+cd lib/lib_arcade_sdl/
+ls
+cd src/
+ls
+emacsclient InputZone.o
+emacsclient InputZone.cpp 
+ls
+emacsclient SDLGraphical.cpp 
+ls
+clear
+ll
+ll
+clear
+clear
+clear
+l
+l
+cd ..
+ls
+cd ..
+ls
+clean
+ls
+ll
+ls
+cd ~/scripts/
+ls
+disable_touch.sh 
+cd ../
+files
+files 
+files .
+ls
+cd scripts/
+ls
+./files 
+cat files 
+nautilus .
+./qwerty.sh 
+./enable_touch 
+./disable_touch.sh 
+ls
+clear
+files
+ll
+cat files 
+ls
+ls
+clear
+ll
+clear
+ll
+ll
+clear
+make
+cd ../
+fclean
+ll
+make
+clear
+ll
+make fclean
+make 
+ls
+clear
+ll
+-rw-rw-r--   1 Jamil          Jamil    6asd.3k 2020-04-07 20:01 TAGS
+clear
+ls
+c d../..
+ls
+cd ../..
+ls
+ll

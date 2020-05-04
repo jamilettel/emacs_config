@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NAME" variable (:default-value ("myteams_server")) nil [86 109])
+            ("LIB_NAME" variable (:default-value ("utils")) nil [110 127])
+            ("SRCS" variable (:default-value ("src/main.c" "src/my_teams.c" "src/help/help.c" "src/server/init_server.c" "src/server/launch_server.c" "src/server/translate_select.c" "src/server/new_connection.c" "src/server/read_data_client.c" "src/server/write_data_client.c" "src/server/delete_server.c" "src/server/translate_data_client.c" "src/signal/sig_handler.c" "src/signal/terminate.c" "src/message/message_create.c" "src/client/create_client.c" "src/client/delete_client.c" "src/client/client_utils.c" "src/buffer/concat_buffer.c" "src/buffer/erase_buffer.c" "src/utils/send_response.c" "src/utils/send_error_arguments.c" "src/utils/send_error_already_exist.c" "src/user/create_user.c" "src/user/user_utils.c" "src/utils/get_args_command.c" "src/uuid/get_uuid.c" "src/team/create_team.c" "src/team/user_is_in_team.c" "src/channel/create_channel.c" "src/thread/create_thread.c" "src/reply/create_reply.c" "src/server/commands/help/command_help.c" "src/server/commands/login/command_login.c" "src/server/commands/logout/command_logout.c" "src/server/commands/user/command_user.c" "src/server/commands/users/command_users.c" "src/server/commands/messages/command_messages.c" "src/server/commands/create/command_create.c" "src/server/commands/create/command_create_team.c" "src/server/commands/create/command_create_channel.c" "src/server/commands/create/command_create_thread.c" "src/server/commands/create/command_create_reply.c" "src/server/commands/send/command_send.c" "src/server/commands/use/command_use.c" "src/server/commands/subscribe/command_subscribe.c" "src/server/commands/unsubscribe/command_unsubscribe.c" "src/server/commands/subscribed/command_subscribed.c" "src/server/commands/info/command_info.c" "src/server/commands/list/command_list.c" "src/load/users/load_users.c" "src/load/users/read_user_data.c" "src/load/teams/load_teams.c" "src/saving/saving_utils.c" "src/saving/save_users.c" "src/saving/save_server.c" "src/saving/prepare_saving_directory.c" "src/saving/save_teams.c" "src/saving/save_channels.c" "src/saving/save_threads.c")) nil [128 2660])
+            ("CFLAGS" variable (:default-value ("-W" "-Wall" "-Wextra" "-Wshadow" "-I" "include/" "-I" "../lib/include" "-I" "../include")) nil [2660 2741])
+            ("LDFLAGS" variable (:default-value ("-l" "$(LIB_NAME)" "-L" "./../lib/" "-luuid" "-Wl,-rpath=./" "-lmyteams" "-L" "./../")) nil [2742 2822])
+            ("OBJS" variable (:default-value ("$(SRCS:.c=.o)")) nil [2823 2844])
+            ("OBJS_TESTS" variable (:default-value ("$(SRCS:.c=.gcda)" "$(SRCS:.c=.gcno)")) nil [2845 2892])
+            ("CC" variable (:default-value ("gcc")) nil [2893 2902])
+            ("RM" variable (:default-value ("rm" "-f")) nil [2903 2915])
+            ("MV" variable (:default-value ("mv")) nil [2916 2925])
+            ("all" function (:arguments ("$(NAME)")) nil [2926 2939])
+            ("$(NAME)" function (:arguments ("$(OBJS)")) nil [2940 3013])
+            ("clean" function nil nil [3014 3057])
+            ("fclean" function (:arguments ("clean")) nil [3058 3090])
+            ("tests_run" function (:arguments ("LDFLAGS" "+=" "-lgcov" "--coverage")) nil [3091 3131])
+            ("tests_run" function (:arguments ("CFLAGS" "+=" "-fprofile-arcs" "-ftest-coverage")) nil [3131 3183])
+            ("tests_run" function (:arguments ("re")) nil [3183 3217])
+            ("debug" function (:arguments ("CFLAGS" "+=" "-g")) nil [3218 3238])
+            ("debug" function (:arguments ("re")) nil [3238 3248])
+            ("re" function (:arguments ("fclean" "all")) nil [3249 3264]))          
+      :file "Makefile"
+      :pointmax 3309
+      :fsize 3351
+      :lastmodtime '(24238 63325 634360 913000)
+      :unmatched-syntax '((symbol 3303 . 3308) (symbol 3293 . 3302) (symbol 3290 . 3292) (symbol 3283 . 3289) (symbol 3277 . 3282) (symbol 3273 . 3276) (punctuation 3271 . 3272) (symbol 3265 . 3271) (bol 3265 . 3265) (symbol 3304 . 3309) (symbol 3294 . 3303) (symbol 3291 . 3293) (symbol 3284 . 3290) (symbol 3278 . 3283) (symbol 3274 . 3277) (punctuation 3272 . 3273) (symbol 3266 . 3272) (bol 3266 . 3266) (symbol 2731 . 2741) (symbol 2728 . 2730) (symbol 2713 . 2727) (symbol 2710 . 2712) (symbol 2701 . 2709) (symbol 2698 . 2700) (symbol 2689 . 2697) (symbol 2681 . 2688) (symbol 2675 . 2680) (symbol 2672 . 2674) (punctuation 2669 . 2670) (punctuation 2668 . 2669) (symbol 2661 . 2667) (bol 2659 . 2659))))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

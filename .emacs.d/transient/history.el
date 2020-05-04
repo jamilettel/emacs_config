@@ -1,1 +1,2 @@
-((magit-merge nil))
+((magit-dispatch nil)
+ (magit-merge nil))

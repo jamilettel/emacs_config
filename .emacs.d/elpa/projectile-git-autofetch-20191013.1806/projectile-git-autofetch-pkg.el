@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "projectile-git-autofetch" "20191013.1806" "automatically fetch git repositories" '((emacs "25.1") (projectile "0.14.0") (alert "1.2")) :commit "4a3eba7658a52c6e955d5f7085cd3fd62b53b9c6" :keywords '("tools" "vc") :authors '(("Andreas Müller" . "code@0x7.ch")) :maintainer '("Andreas Müller" . "code@0x7.ch") :url "https://github.com/andrmuel/projectile-git-autofetch")

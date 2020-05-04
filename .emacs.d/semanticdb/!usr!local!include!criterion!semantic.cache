@@ -1,0 +1,1805 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_H_" variable (:constant-flag t) nil [1342 1354])
+            ("types.h" include nil nil [1356 1374])
+            ("assert.h" include nil nil [1375 1394])
+            ("alloc.h" include nil nil [1395 1413])
+            ("Test" variable (:constant-flag t) nil [1776 1780])
+            ("TestSuite" variable (:constant-flag t) nil [2164 2173])
+            ("criterion_initialize" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2501 2506]))                  
+                :type ("criterion_test_set" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2453 2507])
+            ("criterion_finalize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tests" variable
+                       (:pointer 1
+                        :type ("criterion_test_set" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2763 2796]))                  
+                :type "void")
+                nil [2739 2797])
+            ("criterion_run_all_tests" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tests" variable
+                       (:pointer 1
+                        :type ("criterion_test_set" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3052 3085]))                  
+                :type "int")
+                nil [3024 3086])
+            ("criterion_handle_args" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3761 3770])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3771 3784])
+                    ("handle_unknown_arg" variable (:type "bool") (reparse-symbol arg-sub-list) [3785 3809]))                  
+                :type "int")
+                nil [3735 3810])
+            ("criterion_register_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tests" variable
+                       (:pointer 1
+                        :type ("criterion_test_set" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4039 4072])
+                    ("test" variable
+                       (:pointer 1
+                        :type ("criterion_test" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4081 4109]))                  
+                :type "void")
+                nil [4010 4110])
+            ("criterion_current_test" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type ("criterion_test" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4119 4184])
+            ("criterion_current_suite" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type ("criterion_suite" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4192 4259])
+            ("internal/test.h" include nil nil [4275 4301]))          
+      :file "criterion.h"
+      :pointmax 4330
+      :fsize 4330
+      :lastmodtime '(23483 6639 128482 814000)
+      :unmatched-syntax '((symbol 4261 . 4273) (symbol 4185 . 4191) (symbol 4112 . 4118) (symbol 4003 . 4009) (symbol 3728 . 3734) (symbol 3017 . 3023) (symbol 2732 . 2738) (symbol 2446 . 2452) (symbol 2198 . 2212))
+      :lexical-table 
+        '(("TestSuite" (spp-arg-list ("Name" "...") 2173 . 2184) . ((symbol "internal" 2188 . 2196)))
+          ("CRITERION_H_")
+          ("Test" (spp-arg-list ("Suite" "Name" "...") 1780 . 1798) . ((symbol "internal" 1802 . 1810)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRITERION_TYPES_H_" variable (:constant-flag t) nil [1334 1352])
+            ("alloc.h" include nil nil [1354 1372])
+            ("cstddef" include (:system-flag t) nil [1392 1411])
+            ("vector" include (:system-flag t) nil [1412 1430])
+            ("std::size_t" using (:type ("std::size_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1431 1449])
+            ("internal/common.h" include nil nil [1506 1534])
+            ("criterion_language" type
+               (:members 
+                  ( ("CR_LANG_C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1623 1633])
+                    ("CR_LANG_CXX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1654 1666])
+                    ("CR_LANG_OBJC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1687 1700])
+                    ("CR_LANG_OBJCXX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1728 1743])
+                    ("CR_LANG_SIZE_" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1772 1817]))                  
+                :type "enum")
+                nil [1593 1818])
+            ("criterion_test_kind" type
+               (:members 
+                  ( ("CR_TEST_NORMAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1903 1918])
+                    ("CR_TEST_PARAMETERIZED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1923 1945]))                  
+                :type "enum")
+                nil [1872 1948])
+            ("criterion_compiler" type
+               (:members 
+                  ( ("CR_COMP_UNKNOWN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1980 1996])
+                    ("CR_COMP_GCC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2001 2013])
+                    ("CR_COMP_CLANG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2018 2032])
+                    ("CR_COMP_MSVC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2037 2050]))                  
+                :type "enum")
+                nil [1950 2053])
+            ("criterion_test_params" type
+               (:prototype t
+                :type "struct")
+                nil [2124 2153])
+            ("criterion_test_extra_data" type
+               (:members 
+                  ( ("sentinel_" variable (:type "int") (reparse-symbol classsubparts) [2585 2599])
+                    ("compiler_" variable (:type ("criterion_compiler" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2604 2638])
+                    ("lang_" variable (:type ("criterion_language" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2643 2673])
+                    ("kind_" variable (:type ("criterion_test_kind" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2678 2709])
+                    ("param_" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2753 2758]))                          
+                        :type ("criterion_test_params" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2721 2759])
+                    ("identifier_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2764 2788])
+                    ("file_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2793 2811])
+                    ("line_" variable (:type "unsigned int") (reparse-symbol classsubparts) [2816 2831])
+                    ("init" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3049 3054]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3036 3055])
+                    ("fini" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3227 3232]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3214 3233])
+                    ("signal" variable (:type "int") (reparse-symbol classsubparts) [3511 3522])
+                    ("exit_code" variable (:type "int") (reparse-symbol classsubparts) [3784 3798])
+                    ("disabled" variable (:type "bool") (reparse-symbol classsubparts) [3976 3990])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4185 4209])
+                    ("timeout" variable (:type "double") (reparse-symbol classsubparts) [4645 4660])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4752 4763]))                  
+                :type "struct")
+                nil [2279 4766])
+            ("criterion_test" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4826 4843])
+                    ("category" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4848 4869])
+                    ("test" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4887 4892]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4874 4893])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("criterion_test_extra_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4898 4937]))                  
+                :type "struct")
+                nil [4798 4940])
+            ("criterion_suite" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [5007 5024])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("criterion_test_extra_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5029 5068]))                  
+                :type "struct")
+                nil [4978 5071])
+            ("criterion_ordered_set" type
+               (:prototype t
+                :type "struct")
+                nil [5073 5102])
+            ("criterion_suite_set" type
+               (:members 
+                  ( ("suite" variable (:type ("criterion_suite" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5137 5166])
+                    ("tests" variable
+                       (:pointer 1
+                        :type ("criterion_ordered_set" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5171 5207]))                  
+                :type "struct")
+                nil [5104 5210])
+            ("criterion_test_set" type
+               (:members 
+                  ( ("suites" variable
+                       (:pointer 1
+                        :type ("criterion_ordered_set" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5244 5281])
+                    ("tests" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5286 5299]))                  
+                :type "struct")
+                nil [5212 5302]))          
+      :file "types.h"
+      :pointmax 5337
+      :fsize 5337
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((STRUCT 2714 . 2720) (close-paren 2751 . 2752) (symbol 2745 . 2751) (punctuation 2744 . 2745) (open-paren 2743 . 2744) (close-paren 2751 . 2752) (symbol 2745 . 2751) (punctuation 2744 . 2745) (open-paren 2743 . 2744))
+      :lexical-table 
+        '(("CRITERION_TYPES_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_ASSERT_H_" variable (:constant-flag t) nil [1334 1353])
+            ("algorithm" include (:system-flag t) nil [1374 1395])
+            ("cr_assert_fail" variable (:constant-flag t) nil [1824 1838])
+            ("cr_skip_test" variable (:constant-flag t) nil [2066 2078])
+            ("cr_expect_fail" variable (:constant-flag t) nil [2462 2476])
+            ("cr_assert" variable (:constant-flag t) nil [2995 3004])
+            ("cr_expect" variable (:constant-flag t) nil [3518 3527])
+            ("cr_assert_not" variable (:constant-flag t) nil [4059 4072])
+            ("cr_expect_not" variable (:constant-flag t) nil [4588 4601])
+            ("cr_assert_eq" variable (:constant-flag t) nil [5294 5306])
+            ("cr_expect_eq" variable (:constant-flag t) nil [5911 5923])
+            ("cr_assert_neq" variable (:constant-flag t) nil [6559 6572])
+            ("cr_expect_neq" variable (:constant-flag t) nil [7195 7208])
+            ("cr_assert_lt" variable (:constant-flag t) nil [7837 7849])
+            ("cr_expect_lt" variable (:constant-flag t) nil [8461 8473])
+            ("cr_assert_leq" variable (:constant-flag t) nil [9115 9128])
+            ("cr_expect_leq" variable (:constant-flag t) nil [9754 9767])
+            ("cr_assert_gt" variable (:constant-flag t) nil [10401 10413])
+            ("cr_expect_gt" variable (:constant-flag t) nil [11031 11043])
+            ("cr_assert_geq" variable (:constant-flag t) nil [11691 11704])
+            ("cr_expect_geq" variable (:constant-flag t) nil [12336 12349])
+            ("cr_assert_null" variable (:constant-flag t) nil [12931 12945])
+            ("cr_expect_null" variable (:constant-flag t) nil [13419 13433])
+            ("cr_assert_not_null" variable (:constant-flag t) nil [13930 13948])
+            ("cr_expect_not_null" variable (:constant-flag t) nil [14429 14447])
+            ("cr_assert_float_eq" variable (:constant-flag t) nil [15248 15266])
+            ("cr_expect_float_eq" variable (:constant-flag t) nil [15995 16013])
+            ("cr_assert_float_neq" variable (:constant-flag t) nil [16776 16795])
+            ("cr_expect_float_neq" variable (:constant-flag t) nil [17544 17563])
+            ("cr_assert_str_empty" variable (:constant-flag t) nil [18443 18462])
+            ("cr_expect_str_empty" variable (:constant-flag t) nil [18997 19016])
+            ("cr_assert_str_not_empty" variable (:constant-flag t) nil [19575 19598])
+            ("cr_expect_str_not_empty" variable (:constant-flag t) nil [20141 20164])
+            ("cr_assert_str_eq" variable (:constant-flag t) nil [20758 20774])
+            ("cr_expect_str_eq" variable (:constant-flag t) nil [21363 21379])
+            ("cr_assert_str_neq" variable (:constant-flag t) nil [22000 22017])
+            ("cr_expect_str_neq" variable (:constant-flag t) nil [22624 22641])
+            ("cr_assert_str_lt" variable (:constant-flag t) nil [23254 23270])
+            ("cr_expect_str_lt" variable (:constant-flag t) nil [23866 23882])
+            ("cr_assert_str_leq" variable (:constant-flag t) nil [24508 24525])
+            ("cr_expect_str_leq" variable (:constant-flag t) nil [25135 25152])
+            ("cr_assert_str_gt" variable (:constant-flag t) nil [25770 25786])
+            ("cr_expect_str_gt" variable (:constant-flag t) nil [26388 26404])
+            ("cr_assert_str_geq" variable (:constant-flag t) nil [27036 27053])
+            ("cr_expect_str_geq" variable (:constant-flag t) nil [27669 27686])
+            ("cr_assert_wcs_empty" variable (:constant-flag t) nil [28616 28635])
+            ("cr_expect_wcs_empty" variable (:constant-flag t) nil [29197 29216])
+            ("cr_assert_wcs_not_empty" variable (:constant-flag t) nil [29801 29824])
+            ("cr_expect_wcs_not_empty" variable (:constant-flag t) nil [30393 30416])
+            ("cr_assert_wcs_eq" variable (:constant-flag t) nil [31031 31047])
+            ("cr_expect_wcs_eq" variable (:constant-flag t) nil [31657 31673])
+            ("cr_assert_wcs_neq" variable (:constant-flag t) nil [32315 32332])
+            ("cr_expect_wcs_neq" variable (:constant-flag t) nil [32960 32977])
+            ("cr_assert_wcs_lt" variable (:constant-flag t) nil [33611 33627])
+            ("cr_expect_wcs_lt" variable (:constant-flag t) nil [34244 34260])
+            ("cr_assert_wcs_leq" variable (:constant-flag t) nil [34907 34924])
+            ("cr_expect_wcs_leq" variable (:constant-flag t) nil [35555 35572])
+            ("cr_assert_wcs_gt" variable (:constant-flag t) nil [36211 36227])
+            ("cr_expect_wcs_gt" variable (:constant-flag t) nil [36850 36866])
+            ("cr_assert_wcs_geq" variable (:constant-flag t) nil [37519 37536])
+            ("cr_expect_wcs_geq" variable (:constant-flag t) nil [38173 38190])
+            ("cr_assert_arr_eq" variable (:constant-flag t) nil [38961 38977])
+            ("cr_expect_arr_eq" variable (:constant-flag t) nil [39664 39680])
+            ("cr_assert_arr_neq" variable (:constant-flag t) nil [40442 40459])
+            ("cr_expect_arr_neq" variable (:constant-flag t) nil [41213 41230])
+            ("cr_assert_arr_eq_cmp" variable (:constant-flag t) nil [42372 42392])
+            ("cr_expect_arr_eq_cmp" variable (:constant-flag t) nil [43349 43369])
+            ("cr_assert_arr_neq_cmp" variable (:constant-flag t) nil [44361 44382])
+            ("cr_expect_arr_neq_cmp" variable (:constant-flag t) nil [45360 45381])
+            ("cr_assert_arr_lt_cmp" variable (:constant-flag t) nil [46363 46383])
+            ("cr_expect_arr_lt_cmp" variable (:constant-flag t) nil [47348 47368])
+            ("cr_assert_arr_leq_cmp" variable (:constant-flag t) nil [48366 48387])
+            ("cr_expect_arr_leq_cmp" variable (:constant-flag t) nil [49369 49390])
+            ("cr_assert_arr_gt_cmp" variable (:constant-flag t) nil [50377 50397])
+            ("cr_expect_arr_gt_cmp" variable (:constant-flag t) nil [51368 51388])
+            ("cr_assert_arr_geq_cmp" variable (:constant-flag t) nil [52392 52413])
+            ("cr_expect_arr_geq_cmp" variable (:constant-flag t) nil [53401 53422])
+            ("cr_assert_throw" variable (:constant-flag t) nil [54287 54302])
+            ("cr_expect_throw" variable (:constant-flag t) nil [54975 54990])
+            ("cr_assert_no_throw" variable (:constant-flag t) nil [55699 55717])
+            ("cr_expect_no_throw" variable (:constant-flag t) nil [56410 56428])
+            ("cr_assert_any_throw" variable (:constant-flag t) nil [57067 57086])
+            ("cr_expect_any_throw" variable (:constant-flag t) nil [57698 57717])
+            ("cr_assert_none_throw" variable (:constant-flag t) nil [58363 58383])
+            ("cr_expect_none_throw" variable (:constant-flag t) nil [59013 59033])
+            ("CRITERION_ASSERT_DEPRECATED_B" variable (:constant-flag t) nil [59301 59330])
+            ("CRITERION_ASSERT_DEPRECATED__" variable (:constant-flag t) nil [59682 59711])
+            ("cr_abort_test" variable (:constant-flag t) nil [59793 59806])
+            ("cr_assert_strings_eq" variable (:constant-flag t) nil [59920 59940])
+            ("cr_assert_strings_neq" variable (:constant-flag t) nil [60062 60083])
+            ("cr_assert_strings_lt" variable (:constant-flag t) nil [60207 60227])
+            ("cr_assert_strings_leq" variable (:constant-flag t) nil [60349 60370])
+            ("cr_assert_strings_gt" variable (:constant-flag t) nil [60494 60514])
+            ("cr_assert_strings_geq" variable (:constant-flag t) nil [60636 60657])
+            ("cr_assert_arrays_eq" variable (:constant-flag t) nil [60782 60801])
+            ("cr_assert_arrays_neq" variable (:constant-flag t) nil [60923 60943])
+            ("cr_assert_arrays_eq_cmp" variable (:constant-flag t) nil [61068 61091])
+            ("cr_assert_arrays_neq_cmp" variable (:constant-flag t) nil [61221 61245])
+            ("internal/assert.h" include nil nil [61394 61422]))          
+      :file "assert.h"
+      :pointmax 61458
+      :fsize 61458
+      :lastmodtime '(23483 6639 128482 814000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("cr_assert_neq" (spp-arg-list ("Actual" "Unexpected" "FormatString" "...") 6572 . 6611) . ((symbol "internal" 6615 . 6623)))
+          ("cr_expect_wcs_neq" (spp-arg-list ("Actual" "Unexpected" "FormatString" "...") 32977 . 33016) . ((symbol "internal" 33020 . 33028)))
+          ("cr_expect_arr_neq_cmp" (spp-arg-list ("Actual" "Unexpected" "Size" "Cmp" "FormatString" "...") 45381 . 45431) . ((symbol "internal" 45435 . 45443)))
+          ("CRITERION_ASSERT_DEPRECATED_B" (spp-arg-list ("Name" "Newname") 59330 . 59345) . ((symbol "CRITERION_ASSERT_DEPRECATED__" 59352 . 59381) (semantic-list "(                    \\
+        message                                       \\
+            (\"The `\" #Name \"` macro is deprecated, \"  \\
+        \"please use `\" #Newname \"` instead.\")         \\
+        )" 59381 . 59581)))
+          ("cr_assert_fail" (spp-arg-list ("FormatString" "...") 1838 . 1857) . ((symbol "internal" 1861 . 1869)))
+          ("cr_expect" (spp-arg-list ("Condition" "FormatString" "...") 3527 . 3557) . ((symbol "internal" 3561 . 3569)))
+          ("cr_assert_float_neq" (spp-arg-list ("Actual" "Unexpected" "Epsilon" "FormatString" "...") 16795 . 16843) . ((symbol "internal" 16847 . 16855)))
+          ("cr_assert_wcs_not_empty" (spp-arg-list ("Value" "FormatString" "...") 29824 . 29850) . ((symbol "internal" 29854 . 29862)))
+          ("cr_assert_wcs_geq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 37536 . 37574) . ((symbol "internal" 37578 . 37586)))
+          ("cr_assert_throw" (spp-arg-list ("Statement" "Exception" "FormatString" "...") 54302 . 54343) . ((symbol "internal" 54347 . 54355)))
+          ("cr_expect_fail" (spp-arg-list ("FormatString" "...") 2476 . 2495) . ((symbol "internal" 2499 . 2507)))
+          ("cr_assert_geq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 11704 . 11742) . ((symbol "internal" 11746 . 11754)))
+          ("cr_assert_str_neq" (spp-arg-list ("Actual" "Unexpected" "FormatString" "...") 22017 . 22056) . ((symbol "internal" 22060 . 22068)))
+          ("cr_expect_wcs_not_empty" (spp-arg-list ("Value" "FormatString" "...") 30416 . 30442) . ((symbol "internal" 30446 . 30454)))
+          ("cr_expect_wcs_gt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 36866 . 36904) . ((symbol "internal" 36908 . 36916)))
+          ("cr_expect_wcs_geq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 38190 . 38228) . ((symbol "internal" 38232 . 38240)))
+          ("cr_assert_arrays_eq_cmp" (spp-arg-list ("...") 61091 . 61096) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 61101 . 61130) (semantic-list "(cr_assert_arrays_eq_cmp, cr_assert_arr_eq_cmp)" 61130 . 61177) (symbol "cr_assert_arr_eq_cmp" 61178 . 61198) (semantic-list "(__VA_ARGS__)" 61198 . 61211)))
+          ("cr_expect_not" (spp-arg-list ("Condition" "FormatString" "...") 4601 . 4631) . ((symbol "internal" 4635 . 4643)))
+          ("cr_assert_null" (spp-arg-list ("Value" "FormatString" "...") 12945 . 12971) . ((symbol "internal" 12975 . 12983)))
+          ("cr_assert_float_eq" (spp-arg-list ("Actual" "Expected" "Epsilon" "FormatString" "...") 15266 . 15312) . ((symbol "internal" 15316 . 15324)))
+          ("cr_expect_str_neq" (spp-arg-list ("Actual" "Unexpected" "FormatString" "...") 22641 . 22680) . ((symbol "internal" 22684 . 22692)))
+          ("cr_expect_str_gt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 26404 . 26442) . ((symbol "internal" 26446 . 26454)))
+          ("cr_assert_arr_eq_cmp" (spp-arg-list ("Actual" "Expected" "Size" "Cmp" "FormatString" "...") 42392 . 42440) . ((symbol "internal" 42444 . 42452)))
+          ("cr_expect_arr_lt_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 47368 . 47417) . ((symbol "internal" 47421 . 47429)))
+          ("cr_assert_arr_leq_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 48387 . 48436) . ((symbol "internal" 48440 . 48448)))
+          ("CRITERION_ASSERT_DEPRECATED__" (spp-arg-list ("Msg") 59711 . 59716) . ((symbol "_Pragma" 59723 . 59730) (semantic-list "(#Msg)" 59730 . 59736)))
+          ("CRITERION_ASSERT_H_")
+          ("cr_skip_test" (spp-arg-list ("FormatString" "...") 2078 . 2097) . ((symbol "internal" 2101 . 2109)))
+          ("cr_expect_leq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 9767 . 9805) . ((symbol "internal" 9809 . 9817)))
+          ("cr_assert_gt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 10413 . 10451) . ((symbol "internal" 10455 . 10463)))
+          ("cr_expect_null" (spp-arg-list ("Value" "FormatString" "...") 13433 . 13459) . ((symbol "internal" 13463 . 13471)))
+          ("cr_assert_not_null" (spp-arg-list ("Value" "FormatString" "...") 13948 . 13974) . ((symbol "internal" 13978 . 13986)))
+          ("cr_assert_str_not_empty" (spp-arg-list ("Value" "FormatString" "...") 19598 . 19624) . ((symbol "internal" 19628 . 19636)))
+          ("cr_assert_str_geq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 27053 . 27091) . ((symbol "internal" 27095 . 27103)))
+          ("cr_expect_wcs_lt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 34260 . 34298) . ((symbol "internal" 34302 . 34310)))
+          ("cr_assert_arr_gt_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 50397 . 50446) . ((symbol "internal" 50450 . 50458)))
+          ("cr_expect_throw" (spp-arg-list ("Statement" "Exception" "FormatString" "...") 54990 . 55031) . ((symbol "internal" 55035 . 55043)))
+          ("cr_assert_none_throw" (spp-arg-list ("Statement" "FormatString" "...") 58383 . 58413) . ((symbol "internal" 58417 . 58425)))
+          ("cr_assert_strings_leq" (spp-arg-list ("...") 60370 . 60375) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 60382 . 60411) (semantic-list "(cr_assert_strings_leq, cr_assert_str_leq)" 60411 . 60453) (symbol "cr_assert_str_leq" 60454 . 60471) (semantic-list "(__VA_ARGS__)" 60471 . 60484)))
+          ("cr_assert_arrays_neq_cmp" (spp-arg-list ("...") 61245 . 61250) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 61254 . 61283) (semantic-list "(cr_assert_arrays_neq_cmp, cr_assert_arr_neq_cmp)" 61283 . 61332) (symbol "cr_assert_arr_neq_cmp" 61333 . 61354) (semantic-list "(__VA_ARGS__)" 61354 . 61367)))
+          ("cr_expect_str_not_empty" (spp-arg-list ("Value" "FormatString" "...") 20164 . 20190) . ((symbol "internal" 20194 . 20202)))
+          ("cr_expect_str_lt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 23882 . 23920) . ((symbol "internal" 23924 . 23932)))
+          ("cr_expect_str_geq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 27686 . 27724) . ((symbol "internal" 27728 . 27736)))
+          ("cr_assert_arr_neq" (spp-arg-list ("Actual" "Unexpected" "Size" "FormatString" "...") 40459 . 40504) . ((symbol "internal" 40508 . 40516)))
+          ("cr_assert_arr_neq_cmp" (spp-arg-list ("Actual" "Unexpected" "Size" "Cmp" "FormatString" "...") 44382 . 44432) . ((symbol "internal" 44436 . 44444)))
+          ("cr_expect_any_throw" (spp-arg-list ("Statement" "FormatString" "...") 57717 . 57747) . ((symbol "internal" 57751 . 57759)))
+          ("cr_assert_strings_gt" (spp-arg-list ("...") 60514 . 60519) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 60527 . 60556) (semantic-list "(cr_assert_strings_gt, cr_assert_str_gt)" 60556 . 60596) (symbol "cr_assert_str_gt" 60597 . 60613) (semantic-list "(__VA_ARGS__)" 60613 . 60626)))
+          ("cr_assert_lt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 7849 . 7887) . ((symbol "internal" 7891 . 7899)))
+          ("cr_expect_float_eq" (spp-arg-list ("Actual" "Expected" "Epsilon" "FormatString" "...") 16013 . 16059) . ((symbol "internal" 16063 . 16071)))
+          ("cr_expect_wcs_empty" (spp-arg-list ("Value" "FormatString" "...") 29216 . 29242) . ((symbol "internal" 29246 . 29254)))
+          ("cr_expect_wcs_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 31673 . 31710) . ((symbol "internal" 31714 . 31722)))
+          ("cr_assert_wcs_gt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 36227 . 36265) . ((symbol "internal" 36269 . 36277)))
+          ("cr_expect_arr_neq" (spp-arg-list ("Actual" "Unexpected" "Size" "FormatString" "...") 41230 . 41275) . ((symbol "internal" 41279 . 41287)))
+          ("cr_expect_arr_geq_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 53422 . 53471) . ((symbol "internal" 53475 . 53483)))
+          ("cr_assert_not" (spp-arg-list ("Condition" "FormatString" "...") 4072 . 4102) . ((symbol "internal" 4106 . 4114)))
+          ("cr_expect_gt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 11043 . 11081) . ((symbol "internal" 11085 . 11093)))
+          ("cr_expect_not_null" (spp-arg-list ("Value" "FormatString" "...") 14447 . 14473) . ((symbol "internal" 14477 . 14485)))
+          ("cr_expect_str_empty" (spp-arg-list ("Value" "FormatString" "...") 19016 . 19042) . ((symbol "internal" 19046 . 19054)))
+          ("cr_expect_str_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 21379 . 21416) . ((symbol "internal" 21420 . 21428)))
+          ("cr_assert_str_gt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 25786 . 25824) . ((symbol "internal" 25828 . 25836)))
+          ("cr_assert_wcs_leq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 34924 . 34962) . ((symbol "internal" 34966 . 34974)))
+          ("cr_assert_strings_lt" (spp-arg-list ("...") 60227 . 60232) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 60240 . 60269) (semantic-list "(cr_assert_strings_lt, cr_assert_str_lt)" 60269 . 60309) (symbol "cr_assert_str_lt" 60310 . 60326) (semantic-list "(__VA_ARGS__)" 60326 . 60339)))
+          ("cr_assert_arrays_eq" (spp-arg-list ("...") 60801 . 60806) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 60815 . 60844) (semantic-list "(cr_assert_arrays_eq, cr_assert_arr_eq)" 60844 . 60883) (symbol "cr_assert_arr_eq" 60884 . 60900) (semantic-list "(__VA_ARGS__)" 60900 . 60913)))
+          ("cr_assert_arrays_neq" (spp-arg-list ("...") 60943 . 60948) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 60956 . 60985) (semantic-list "(cr_assert_arrays_neq, cr_assert_arr_neq)" 60985 . 61026) (symbol "cr_assert_arr_neq" 61027 . 61044) (semantic-list "(__VA_ARGS__)" 61044 . 61057)))
+          ("cr_assert_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 5306 . 5343) . ((symbol "internal" 5347 . 5355)))
+          ("cr_assert_leq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 9128 . 9166) . ((symbol "internal" 9170 . 9178)))
+          ("cr_assert_wcs_lt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 33627 . 33665) . ((symbol "internal" 33669 . 33677)))
+          ("cr_expect_wcs_leq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 35572 . 35610) . ((symbol "internal" 35614 . 35622)))
+          ("cr_expect_arr_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 39680 . 39717) . ((symbol "internal" 39721 . 39729)))
+          ("cr_assert_no_throw" (spp-arg-list ("Statement" "Exception" "FormatString" "...") 55717 . 55758) . ((symbol "internal" 55762 . 55770)))
+          ("cr_expect_neq" (spp-arg-list ("Actual" "Unexpected" "FormatString" "...") 7208 . 7247) . ((symbol "internal" 7251 . 7259)))
+          ("cr_expect_lt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 8473 . 8511) . ((symbol "internal" 8515 . 8523)))
+          ("cr_assert_str_lt" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 23270 . 23308) . ((symbol "internal" 23312 . 23320)))
+          ("cr_expect_arr_eq_cmp" (spp-arg-list ("Actual" "Expected" "Size" "Cmp" "FormatString" "...") 43369 . 43417) . ((symbol "internal" 43421 . 43429)))
+          ("cr_assert_any_throw" (spp-arg-list ("Statement" "FormatString" "...") 57086 . 57116) . ((symbol "internal" 57120 . 57128)))
+          ("cr_abort_test" (spp-arg-list ("Message") 59806 . 59815) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 59826 . 59855) (semantic-list "(cr_abort_test, cr_assert_fail)" 59855 . 59886) (symbol "cr_assert_fail" 59887 . 59901) (semantic-list "(Message)" 59901 . 59910)))
+          ("cr_assert_strings_eq" (spp-arg-list ("...") 59940 . 59945) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 59953 . 59982) (semantic-list "(cr_assert_strings_eq, cr_assert_str_eq)" 59982 . 60022) (symbol "cr_assert_str_eq" 60023 . 60039) (semantic-list "(__VA_ARGS__)" 60039 . 60052)))
+          ("cr_assert_strings_neq" (spp-arg-list ("...") 60083 . 60088) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 60095 . 60124) (semantic-list "(cr_assert_strings_neq, cr_assert_str_neq)" 60124 . 60166) (symbol "cr_assert_str_neq" 60167 . 60184) (semantic-list "(__VA_ARGS__)" 60184 . 60197)))
+          ("cr_expect_float_neq" (spp-arg-list ("Actual" "Unexpected" "Epsilon" "FormatString" "...") 17563 . 17611) . ((symbol "internal" 17615 . 17623)))
+          ("cr_assert_str_leq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 24525 . 24563) . ((symbol "internal" 24567 . 24575)))
+          ("cr_assert_wcs_empty" (spp-arg-list ("Value" "FormatString" "...") 28635 . 28661) . ((symbol "internal" 28665 . 28673)))
+          ("cr_assert_wcs_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 31047 . 31084) . ((symbol "internal" 31088 . 31096)))
+          ("cr_assert_arr_lt_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 46383 . 46432) . ((symbol "internal" 46436 . 46444)))
+          ("cr_expect_arr_gt_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 51388 . 51437) . ((symbol "internal" 51441 . 51449)))
+          ("cr_expect_none_throw" (spp-arg-list ("Statement" "FormatString" "...") 59033 . 59063) . ((symbol "internal" 59067 . 59075)))
+          ("cr_assert" (spp-arg-list ("Condition" "FormatString" "...") 3004 . 3034) . ((symbol "internal" 3038 . 3046)))
+          ("cr_expect_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 5923 . 5960) . ((symbol "internal" 5964 . 5972)))
+          ("cr_expect_geq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 12349 . 12387) . ((symbol "internal" 12391 . 12399)))
+          ("cr_assert_str_empty" (spp-arg-list ("Value" "FormatString" "...") 18462 . 18488) . ((symbol "internal" 18492 . 18500)))
+          ("cr_assert_str_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 20774 . 20811) . ((symbol "internal" 20815 . 20823)))
+          ("cr_expect_str_leq" (spp-arg-list ("Actual" "Reference" "FormatString" "...") 25152 . 25190) . ((symbol "internal" 25194 . 25202)))
+          ("cr_expect_arr_leq_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 49390 . 49439) . ((symbol "internal" 49443 . 49451)))
+          ("cr_assert_arr_geq_cmp" (spp-arg-list ("Actual" "Reference" "Size" "Cmp" "FormatString" "...") 52413 . 52462) . ((symbol "internal" 52466 . 52474)))
+          ("cr_expect_no_throw" (spp-arg-list ("Statement" "Exception" "FormatString" "...") 56428 . 56469) . ((symbol "internal" 56473 . 56481)))
+          ("cr_assert_strings_geq" (spp-arg-list ("...") 60657 . 60662) . 
+              ((symbol "CRITERION_ASSERT_DEPRECATED_B" 60669 . 60698) (semantic-list "(cr_assert_strings_geq, cr_assert_str_geq)" 60698 . 60740) (symbol "cr_assert_str_geq" 60741 . 60758) (semantic-list "(__VA_ARGS__)" 60758 . 60771)))
+          ("cr_assert_wcs_neq" (spp-arg-list ("Actual" "Unexpected" "FormatString" "...") 32332 . 32371) . ((symbol "internal" 32375 . 32383)))
+          ("cr_assert_arr_eq" (spp-arg-list ("Actual" "Expected" "FormatString" "...") 38977 . 39014) . ((symbol "internal" 39018 . 39026)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRITERION_ALLOC_H_" variable (:constant-flag t) nil [1347 1365])
+            ("memory" include (:system-flag t) nil [1386 1404])
+            ("cstddef" include (:system-flag t) nil [1405 1424])
+            ("std::size_t" using (:type ("std::size_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1425 1443])
+            ("internal/common.h" include nil nil [1478 1506])
+            ("cr_malloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1998 2010]))                  
+                :type "void")
+                nil [1982 2011])
+            ("cr_calloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("nmemb" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2540 2553])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2554 2566]))                  
+                :type "void")
+                nil [2524 2567])
+            ("cr_realloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3108 3118])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3119 3131]))                  
+                :type "void")
+                nil [3091 3132])
+            ("cr_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3306 3316]))                  
+                :type "void")
+                nil [3293 3317])
+            ("type_traits" include (:system-flag t) nil [3352 3375])
+            ("criterion" type
+               (:members 
+                  ( ("cr_malloc" variable (:type "int") (reparse-symbol namespacesubparts) [3441 3451])
+                    ("cr_free" variable (:type "int") (reparse-symbol namespacesubparts) [3493 3501])
+                    ("cr_calloc" variable (:type "int") (reparse-symbol namespacesubparts) [3544 3554])
+                    ("cr_realloc" variable (:type "int") (reparse-symbol namespacesubparts) [3597 3608])
+                    ("new_obj" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("" variable (:type ("Params" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4140 4147])
+                            ("" variable (:type ("params" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4150 4157]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4129 4260])
+                    ("new_arr" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::enable_if::type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4849 4860]))                          
+                        :typemodifiers ("typename")
+                        :pointer 1)
+                        (reparse-symbol namespacesubparts) [4756 5063])
+                    ("new_arr" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5589 5600]))                          
+                        :pointer 1)
+                        (reparse-symbol namespacesubparts) [5556 5867])
+                    ("delete_obj" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6136 6143]))                          )
+                        (reparse-symbol namespacesubparts) [6098 6180])
+                    ("delete_arr" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :typemodifiers ("typename")
+                                :type ("std::enable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6453 6519]))                          )
+                        (reparse-symbol namespacesubparts) [6415 6541])
+                    ("delete_arr" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6814 6821]))                          )
+                        (reparse-symbol namespacesubparts) [6776 7031])
+                    ("allocator" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7316 7337])
+                            ("pointer" type
+                               (:typedef ("value_type" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7342 7370])
+                            ("const_pointer" type
+                               (:typedef ("value_type" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7375 7415])
+                            ("reference" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7428 7450])
+                            ("const_reference" variable
+                               (:constant-flag t
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7463 7497])
+                            ("size_type" type
+                               (:typedef ("std::size_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7502 7532])
+                            ("difference_type" type
+                               (:typedef ("std::ptrdiff_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7537 7576])
+                            ("rebind" type
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("other" type
+                                       (:typedef ("allocator" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7632 7659]))                                  )
+                                (reparse-symbol classsubparts) [7582 7666])
+                            ("allocator" function
+                               (:constructor-flag t
+                                :type ("allocator" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [7688 7702])
+                            ("allocator" function
+                               (:destructor-flag t
+                                :typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7707 7729])
+                            ("allocator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("allocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7760 7778]))                                  
+                                :type ("allocator" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [7750 7781])
+                            ("allocator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("allocator" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7838 7859]))                                  
+                                :type ("allocator" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [7828 7862])
+                            ("address" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("r" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7891 7903]))                                  
+                                :type ("pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7868 7918])
+                            ("address" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("r" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7952 7970]))                                  
+                                :type ("const_pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7923 7985])
+                            ("allocate" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("cnt" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8015 8029])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("std::allocator::const_pointer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8030 8078]))                                  
+                                :type ("pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7991 8162])
+                            ("deallocate" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8191 8201])
+                                    ("" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8202 8212]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8168 8228])
+                            ("max_size" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8234 8322])
+                            ("construct" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8350 8360])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8361 8372]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8328 8389])
+                            ("construct" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8416 8426])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8427 8431])
+                                    ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8431 8433]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8394 8462])
+                            ("destroy" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8487 8497]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8467 8510])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("allocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8539 8557]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8516 8574])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("allocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8602 8621]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8579 8648]))                          )
+                        (reparse-symbol namespacesubparts) [7271 8651]))                  
+                :type "namespace")
+                nil [3377 8653]))          
+      :file "alloc.h"
+      :pointmax 8695
+      :fsize 8695
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((punctuation 8430 . 8431) (EXPLICIT 7819 . 7827) (INLINE 7812 . 7818) (punctuation 7806 . 7807) (symbol 7805 . 7806) (TYPENAME 7796 . 7804) (punctuation 7795 . 7796) (TEMPLATE 7786 . 7794) (EXPLICIT 7741 . 7749) (INLINE 7734 . 7740) (EXPLICIT 7679 . 7687) (INLINE 7672 . 7678) (TYPEDEF 7455 . 7462) (TYPEDEF 7420 . 7427) (punctuation 4148 . 4149) (punctuation 4147 . 4148) (punctuation 4146 . 4147) (punctuation 4127 . 4128) (symbol 4121 . 4127) (punctuation 4119 . 4120) (punctuation 4118 . 4119) (punctuation 4117 . 4118) (TYPENAME 4109 . 4117) (punctuation 4107 . 4108) (symbol 4106 . 4107) (TYPENAME 4097 . 4105) (punctuation 4096 . 4097) (TEMPLATE 4087 . 4095) (punctuation 3595 . 3596) (semantic-list 3577 . 3593) (semantic-list 3561 . 3577) (punctuation 3560 . 3561) (VOID 3555 . 3559) (punctuation 3542 . 3543) (semantic-list 3523 . 3539) (semantic-list 3508 . 3523) (punctuation 3507 . 3508) (VOID 3502 . 3506) (punctuation 3491 . 3492) (semantic-list 3469 . 3477) (semantic-list 3456 . 3469) (VOID 3452 . 3456) (punctuation 3439 . 3440) (semantic-list 3420 . 3428) (semantic-list 3405 . 3420) (punctuation 3404 . 3405) (VOID 3399 . 3403) (symbol 3319 . 3331) (symbol 3286 . 3292) (symbol 3084 . 3090) (symbol 2517 . 2523) (symbol 1975 . 1981) (symbol 1508 . 1522))
+      :lexical-table 
+        '(("CRITERION_ALLOC_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_STATS_H_" variable (:constant-flag t) nil [1329 1347])
+            ("types.h" include nil nil [1349 1367])
+            ("internal/deprecation.h" include nil nil [1368 1401])
+            ("criterion_test_status" type
+               (:members 
+                  ( ("CR_STATUS_PASSED" variable
+                       (:constant-flag t
+                        :default-value (1455 1456)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1436 1456])
+                    ("CR_STATUS_FAILED" variable
+                       (:constant-flag t
+                        :default-value (1481 1482)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1462 1482])
+                    ("CR_STATUS_SKIPPED" variable
+                       (:constant-flag t
+                        :default-value (1508 1509)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1488 1509]))                  
+                :type "enum")
+                nil [1403 1513])
+            ("criterion_assert_stats" type
+               (:members 
+                  ( ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1551 1571])
+                    ("passed" variable (:type "bool") (reparse-symbol classsubparts) [1576 1588])
+                    ("line" variable (:type "unsigned int") (reparse-symbol classsubparts) [1593 1607])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1612 1629])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("criterion_assert_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1635 1671]))                  
+                :type "struct")
+                nil [1515 1674])
+            ("criterion_test_stats" type
+               (:members 
+                  ( ("test" variable
+                       (:pointer 1
+                        :type ("criterion_test" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1710 1738])
+                    ("asserts" variable
+                       (:pointer 1
+                        :type ("criterion_assert_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1743 1782])
+                    ("CR_DEPRECATED_MEMBER" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1813 1820]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1787 1821])
+                    ("test_status" variable (:type ("criterion_test_status" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [1826 1865])
+                    ("passed_asserts" variable (:type "int") (reparse-symbol classsubparts) [1870 1889])
+                    ("failed_asserts" variable (:type "int") (reparse-symbol classsubparts) [1894 1913])
+                    ("signal" variable (:type "int") (reparse-symbol classsubparts) [1918 1929])
+                    ("exit_code" variable (:type "int") (reparse-symbol classsubparts) [1934 1948])
+                    ("elapsed_time" variable (:type "float") (reparse-symbol classsubparts) [1953 1972])
+                    ("timed_out" variable (:type "bool") (reparse-symbol classsubparts) [1977 1992])
+                    ("crashed" variable (:type "bool") (reparse-symbol classsubparts) [1997 2010])
+                    ("progress" variable (:type "unsigned int") (reparse-symbol classsubparts) [2015 2033])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2038 2055])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2060 2080])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("criterion_test_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2086 2120]))                  
+                :type "struct")
+                nil [1676 2123])
+            ("criterion_theory_stats" type
+               (:members 
+                  ( ("formatted_args" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2161 2188])
+                    ("stats" variable
+                       (:pointer 1
+                        :type ("criterion_test_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2193 2228]))                  
+                :type "struct")
+                nil [2125 2231])
+            ("criterion_suite_stats" type
+               (:members 
+                  ( ("suite" variable
+                       (:pointer 1
+                        :type ("criterion_suite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2268 2298])
+                    ("tests" variable
+                       (:pointer 1
+                        :type ("criterion_test_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2303 2338])
+                    ("nb_tests" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2343 2359])
+                    ("nb_asserts" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2364 2382])
+                    ("tests_skipped" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2387 2408])
+                    ("tests_failed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2413 2433])
+                    ("tests_crashed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2438 2459])
+                    ("tests_passed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2464 2484])
+                    ("asserts_failed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2489 2511])
+                    ("asserts_passed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2516 2538])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("criterion_suite_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2544 2579]))                  
+                :type "struct")
+                nil [2233 2582])
+            ("criterion_global_stats" type
+               (:members 
+                  ( ("suites" variable
+                       (:pointer 1
+                        :type ("criterion_suite_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2620 2657])
+                    ("nb_suites" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2662 2679])
+                    ("nb_tests" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2684 2700])
+                    ("nb_asserts" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2705 2723])
+                    ("tests_skipped" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2728 2749])
+                    ("tests_failed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2754 2774])
+                    ("tests_crashed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2779 2800])
+                    ("tests_passed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2805 2825])
+                    ("asserts_failed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2830 2852])
+                    ("asserts_passed" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2857 2879]))                  
+                :type "struct")
+                nil [2584 2882]))          
+      :file "stats.h"
+      :pointmax 2917
+      :fsize 2917
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRITERION_STATS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_HOOKS_H_" variable (:constant-flag t) nil [1331 1349])
+            ("internal/hooks.h" include nil nil [1351 1378])
+            ("e_report_status" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("PRE_ALL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1467 1475])
+                          ("PRE_SUITE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1480 1490])
+                          ("PRE_INIT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1495 1504])
+                          ("PRE_TEST" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1509 1518])
+                          ("ASSERT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1523 1530])
+                          ("THEORY_FAIL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1535 1547])
+                          ("TEST_CRASH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1552 1563])
+                          ("POST_TEST" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1568 1578])
+                          ("POST_FINI" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1583 1593])
+                          ("POST_SUITE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1598 1609])
+                          ("POST_ALL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1614 1623]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1448 1642])
+            ("f_report_hook" function
+               (:prototype-flag t
+                :function-pointer t
+                :type "void")
+                nil [1652 1676])
+            ("ReportHook" variable (:constant-flag t) nil [2353 2363]))          
+      :file "hooks.h"
+      :pointmax 2433
+      :fsize 2433
+      :lastmodtime '(23483 6639 128482 814000)
+      :unmatched-syntax '((TYPEDEF 1644 . 1651))
+      :lexical-table 
+        '(("CRITERION_HOOKS_H_")
+          ("ReportHook" (spp-arg-list ("Kind") 2363 . 2369) . ((symbol "CR_REPORT_HOOK_IMPL" 2373 . 2392) (semantic-list "(Kind)" 2392 . 2398)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_EVENT_H_" variable (:constant-flag t) nil [1215 1233])
+            ("cstddef" include (:system-flag t) nil [1254 1273])
+            ("internal/common.h" include nil nil [1308 1336])
+            ("stats.h" include nil nil [1337 1355])
+            ("criterion_send_assert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("stats" variable
+                       (:pointer 1
+                        :type ("criterion_assert_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1407 1444]))                  
+                :type "void")
+                nil [1380 1445]))          
+      :file "event.h"
+      :pointmax 1494
+      :fsize 1494
+      :lastmodtime '(23483 6639 128482 814000)
+      :unmatched-syntax '((symbol 1447 . 1459) (symbol 1373 . 1379) (symbol 1357 . 1371))
+      :lexical-table 
+        '(("CRITERION_EVENT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_ABORT_H_" variable (:constant-flag t) nil [1356 1374])
+            ("internal/common.h" include nil nil [1376 1404])
+            ("criterion_abort_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1564 1569]))                  
+                :type "void")
+                nil [1538 1570])
+            ("criterion_skip_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1714 1733])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1734 1738]))                  
+                :type "void")
+                nil [1689 1739])
+            ("criterion_continue_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1871 1876]))                  
+                :type "void")
+                nil [1842 1877])
+            ("criterion_test_die" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2073 2089])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2090 2094]))                  
+                :type "void")
+                nil [2049 2095]))          
+      :file "abort.h"
+      :pointmax 2144
+      :fsize 2144
+      :lastmodtime '(23483 6639 128482 814000)
+      :unmatched-syntax '((symbol 2097 . 2109) (symbol 2042 . 2048) (symbol 1835 . 1841) (symbol 1677 . 1688) (symbol 1670 . 1676) (symbol 1526 . 1537) (symbol 1519 . 1525) (symbol 1406 . 1420))
+      :lexical-table 
+        '(("CRITERION_ABORT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_OPTIONS_H_" variable (:constant-flag t) nil [1338 1358])
+            ("stdbool.h" include (:system-flag t) nil [1360 1380])
+            ("logging.h" include nil nil [1381 1401])
+            ("internal/common.h" include nil nil [1402 1430])
+            ("criterion_debugger" type
+               (:members 
+                  ( ("CR_DBG_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1531 1543])
+                    ("CR_DBG_IDLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1688 1700])
+                    ("CR_DBG_NATIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1823 1837])
+                    ("CR_DBG_GDB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1895 1906])
+                    ("CR_DBG_LLDB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1966 1978])
+                    ("CR_DBG_WINDBG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2048 2062]))                  
+                :type "enum")
+                nil [1432 2065])
+            ("criterion_options" type
+               (:members 
+                  ( ("logging_threshold" variable (:type ("criterion_logging_level" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2179 2226])
+                    ("logger" variable
+                       (:pointer 1
+                        :type ("criterion_logger" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2359 2391])
+                    ("no_early_exit" variable (:type "bool") (reparse-symbol classsubparts) [2471 2490])
+                    ("always_succeed" variable (:type "bool") (reparse-symbol classsubparts) [2604 2624])
+                    ("use_ascii" variable (:type "bool") (reparse-symbol classsubparts) [2743 2758])
+                    ("fail_fast" variable (:type "bool") (reparse-symbol classsubparts) [2865 2880])
+                    ("pattern" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3029 3049])
+                    ("short_filename" variable (:type "bool") (reparse-symbol classsubparts) [3214 3234])
+                    ("jobs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3437 3449])
+                    ("measure_time" variable (:type "bool") (reparse-symbol classsubparts) [3534 3552])
+                    ("wait_for_clients" variable (:type "bool") (reparse-symbol classsubparts) [3682 3704])
+                    ("crash" variable (:type "bool") (reparse-symbol classsubparts) [3862 3873])
+                    ("debug" variable (:type ("criterion_debugger" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [4138 4168])
+                    ("debug_port" variable (:type "unsigned int") (reparse-symbol classsubparts) [4265 4285])
+                    ("timeout" variable (:type "double") (reparse-symbol classsubparts) [4479 4494])
+                    ("full_stats" variable (:type "bool") (reparse-symbol classsubparts) [4783 4799]))                  
+                :type "struct")
+                nil [2067 4802])
+            ("criterion_options" variable
+               (:typemodifiers ("extern")
+                :type ("criterion_options" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4880 4930]))          
+      :file "options.h"
+      :pointmax 4980
+      :fsize 4980
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((symbol 4932 . 4944) (symbol 4873 . 4879) (symbol 4804 . 4818))
+      :lexical-table 
+        '(("CRITERION_OPTIONS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRITERION_LOGGING_H_" variable (:constant-flag t) nil [1338 1358])
+            ("internal/common.h" include nil nil [1360 1388])
+            ("internal/ordered-set.h" include nil nil [1389 1422])
+            ("internal/deprecation.h" include nil nil [1423 1456])
+            ("stats.h" include nil nil [1457 1475])
+            ("criterion_logging_level" type
+               (:members 
+                  ( ("CRITERION_INFO" variable
+                       (:constant-flag t
+                        :default-value (1545 1546)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1528 1546])
+                    ("CRITERION_IMPORTANT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1552 1572])
+                    ("CRITERION_LOG_LEVEL_QUIET" variable
+                       (:constant-flag t
+                        :default-value (1606 1607)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1578 1607]))                  
+                :type "enum")
+                nil [1493 1617])
+            ("criterion_severity" type
+               (:members 
+                  ( ("CR_LOG_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1649 1661])
+                    ("CR_LOG_WARNING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1666 1681])
+                    ("CR_LOG_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1686 1699]))                  
+                :type "enum")
+                nil [1619 1702])
+            ("cr_log" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("severity" variable (:type ("criterion_severity" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2098 2131])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2132 2148])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2149 2153]))                  
+                :type "void")
+                nil [2086 2154])
+            ("cr_log_info" variable (:constant-flag t) nil [2493 2504])
+            ("cr_log_warn" variable (:constant-flag t) nil [2890 2901])
+            ("cr_log_error" variable (:constant-flag t) nil [3287 3299])
+            ("criterion_logger" type
+               (:members 
+                  ( ("log_pre_all" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("set" variable
+                               (:pointer 1
+                                :type ("criterion_test_set" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3399 3430]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3373 3431])
+                    ("log_pre_suite" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("set" variable
+                               (:pointer 1
+                                :type ("criterion_suite_set" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3462 3494]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3436 3495])
+                    ("log_pre_init" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("suite" variable
+                               (:pointer 1
+                                :type ("criterion_suite" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3526 3556])
+                            ("test" variable
+                               (:pointer 1
+                                :type ("criterion_test" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3557 3585]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3500 3586])
+                    ("log_pre_test" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("suite" variable
+                               (:pointer 1
+                                :type ("criterion_suite" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3617 3647])
+                            ("test" variable
+                               (:pointer 1
+                                :type ("criterion_test" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3648 3676]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3591 3677])
+                    ("log_assert" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_assert_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3708 3745]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3682 3746])
+                    ("log_theory_fail" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_theory_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3777 3814]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3751 3815])
+                    ("log_test_timeout" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_test_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3846 3881]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3820 3882])
+                    ("log_test_crash" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_test_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3913 3948]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3887 3949])
+                    ("log_test_abort" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_test_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3980 4015])
+                            ("msg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4016 4032]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3954 4033])
+                    ("log_other_crash" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_test_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4064 4099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4038 4100])
+                    ("log_abnormal_exit" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_test_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4131 4166]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4105 4167])
+                    ("log_post_test" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_test_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4198 4233]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4172 4234])
+                    ("log_post_fini" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_test_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4265 4300]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4239 4301])
+                    ("log_post_suite" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_suite_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4332 4368]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4306 4369])
+                    ("log_post_all" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("stats" variable
+                               (:pointer 1
+                                :type ("criterion_global_stats" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4400 4437]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4374 4438])
+                    ("log_message" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("criterion_severity" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [4469 4493])
+                            ("msg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4494 4510]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4443 4511]))                  
+                :type "struct")
+                nil [3343 4514])
+            ("normal_logging" variable
+               (:typemodifiers ("extern")
+                :type ("criterion_logger" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4516 4562])
+            ("CR_NORMAL_LOGGING" variable (:constant-flag t) nil [4586 4603])
+            ("sstream" include (:system-flag t) nil [4645 4664])
+            ("criterion" type
+               (:members 
+                  ( ("logging" type
+                       (:members 
+                          ( ("cr_log" variable (:type "int") (reparse-symbol namespacesubparts) [4782 4789])
+                            ("streambuf" type
+                               (:superclasses 
+                                  ( ("std::stringbuf" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4837 4844])
+                                    ("streambuf" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("severity__" variable (:type ("criterion_severity" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [4861 4896]))                                          
+                                        :type ("streambuf" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4851 4958])
+                                    ("private" label nil (reparse-symbol classsubparts) [5130 5138])
+                                    ("severity__" variable (:type ("criterion_severity" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [5145 5180]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4793 5185])
+                            ("stream" type
+                               (:superclasses 
+                                  ( ("std::ostream" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5228 5235])
+                                    ("stream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("severity__" variable (:type ("criterion_severity" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [5249 5284]))                                          
+                                        :type ("stream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5242 5341])
+                                    ("private" label nil (reparse-symbol classsubparts) [5344 5352])
+                                    ("buf" variable (:type ("streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5359 5373]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [5189 5378])
+                            ("info" variable
+                               (:typemodifiers ("static")
+                                :type ("stream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5382 5417])
+                            ("warn" variable
+                               (:typemodifiers ("static")
+                                :type ("stream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5420 5458])
+                            ("error" variable
+                               (:typemodifiers ("static")
+                                :type ("stream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5461 5498]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [4688 5502]))                  
+                :type "namespace")
+                nil [4666 5504])
+            ("criterion_log" variable (:constant-flag t) nil [5613 5626])
+            ("criterion_info" variable (:constant-flag t) nil [5752 5766])
+            ("criterion_pinfo" variable (:constant-flag t) nil [5897 5912])
+            ("criterion_important" variable (:constant-flag t) nil [6043 6062])
+            ("criterion_pimportant" variable (:constant-flag t) nil [6193 6213])
+            ("criterion_perror" variable (:constant-flag t) nil [6344 6360]))          
+      :file "logging.h"
+      :pointmax 6555
+      :fsize 6555
+      :lastmodtime '(23483 6639 128482 814000)
+      :unmatched-syntax '((semantic-list 5000 . 5127) (symbol 4985 . 4993) (semantic-list 4982 . 4984) (symbol 4978 . 4982) (INT 4974 . 4977) (VIRTUAL 4966 . 4973) (punctuation 4780 . 4781) (semantic-list 4735 . 4779) (semantic-list 4723 . 4735) (VOID 4719 . 4723) (STATIC 4712 . 4718) (symbol 4564 . 4576) (symbol 2079 . 2085) (semantic-list 2064 . 2078) (symbol 2055 . 2064) (number 2076 . 2077) (number 2073 . 2074) (number 1611 . 1613) (punctuation 1609 . 1610) (punctuation 1608 . 1609) (symbol 1477 . 1491))
+      :lexical-table 
+        '(("CR_NORMAL_LOGGING" . ((semantic-list "(&normal_logging)" 4607 . 4624)))
+          ("criterion_pinfo" (spp-arg-list ("_" "...") 5912 . 5920) . 
+              ((symbol "CR_DEPRECATED" 5929 . 5942) (semantic-list "(\"criterion_pinfo is deprecated, please use cr_log_info instead.\")" 5942 . 6008) (symbol "cr_log_info" 6009 . 6020) (semantic-list "(__VA_ARGS__)" 6020 . 6033)))
+          ("cr_log_warn" (spp-arg-list ("...") 2901 . 2906) . ((symbol "cr_log" 2910 . 2916) (semantic-list "(CR_LOG_WARNING, __VA_ARGS__)" 2916 . 2945)))
+          ("cr_log_info" (spp-arg-list ("...") 2504 . 2509) . ((symbol "cr_log" 2513 . 2519) (semantic-list "(CR_LOG_INFO, __VA_ARGS__)" 2519 . 2545)))
+          ("criterion_perror" (spp-arg-list ("...") 6360 . 6365) . 
+              ((symbol "CR_DEPRECATED" 6376 . 6389) (semantic-list "(\"criterion_perror is deprecated, please use cr_log_error instead.\")" 6389 . 6457) (symbol "cr_log_error" 6458 . 6470) (semantic-list "(__VA_ARGS__)" 6470 . 6483)))
+          ("CRITERION_LOGGING_H_")
+          ("cr_log_error" (spp-arg-list ("...") 3299 . 3304) . ((symbol "cr_log" 3308 . 3314) (semantic-list "(CR_LOG_ERROR, __VA_ARGS__)" 3314 . 3341)))
+          ("criterion_important" (spp-arg-list ("...") 6062 . 6067) . 
+              ((symbol "CR_DEPRECATED" 6075 . 6088) (semantic-list "(\"criterion_important is deprecated, please use cr_log_info instead.\")" 6088 . 6158) (symbol "cr_log_info" 6159 . 6170) (semantic-list "(__VA_ARGS__)" 6170 . 6183)))
+          ("criterion_log" (spp-arg-list ("_" "...") 5626 . 5634) . 
+              ((symbol "CR_DEPRECATED" 5645 . 5658) (semantic-list "(\"criterion_log is deprecated, please use cr_log instead.\")" 5658 . 5717) (symbol "cr_log_info" 5718 . 5729) (semantic-list "(__VA_ARGS__)" 5729 . 5742)))
+          ("criterion_info" (spp-arg-list ("...") 5766 . 5771) . 
+              ((symbol "CR_DEPRECATED" 5784 . 5797) (semantic-list "(\"criterion_info is deprecated, please use cr_log_info instead.\")" 5797 . 5862) (symbol "cr_log_info" 5863 . 5874) (semantic-list "(__VA_ARGS__)" 5874 . 5887)))
+          ("criterion_pimportant" (spp-arg-list ("_" "...") 6213 . 6221) . 
+              ((symbol "CR_DEPRECATED" 6225 . 6238) (semantic-list "(\"criterion_pimportant is deprecated, please use cr_log_info instead.\")" 6238 . 6309) (symbol "cr_log_info" 6310 . 6321) (semantic-list "(__VA_ARGS__)" 6321 . 6334)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_REDIRECT_H_" variable (:constant-flag t) nil [1357 1378])
+            ("internal/common.h" include nil nil [1380 1408])
+            ("cstdio" include (:system-flag t) nil [1429 1447])
+            ("cr_redirect_stdout" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1570 1575]))                  
+                :type "void")
+                nil [1546 1576])
+            ("cr_redirect_stderr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1650 1655]))                  
+                :type "void")
+                nil [1626 1656])
+            ("cr_redirect_stdin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1777 1782]))                  
+                :type "void")
+                nil [1754 1783])
+            ("cr_get_redirected_stdout" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1946 1951]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1915 1952])
+            ("cr_get_redirected_stderr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2115 2120]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [2084 2121])
+            ("cr_get_redirected_stdin" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2283 2288]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [2253 2289])
+            ("cr_file_match_str" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("FILE" variable (:type ("CR_STDN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2577 2591])
+                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2591 2593])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2594 2610]))                  
+                :type "int")
+                nil [2555 2611])
+            ("cr_file_match_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("FILE" variable (:type ("CR_STDN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2919 2933])
+                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2933 2935])
+                    ("FILE" variable (:type ("CR_STDN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2936 2950])
+                    ("" variable (:type ("ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2950 2954]))                  
+                :type "int")
+                nil [2896 2955])
+            ("cr_mock_file_size" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("max_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3151 3167]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [3127 3168])
+            ("cr_assert_file_contents_eq_str" variable (:constant-flag t) nil [3915 3945])
+            ("cr_expect_file_contents_eq_str" variable (:constant-flag t) nil [4653 4683])
+            ("cr_assert_file_contents_neq_str" variable (:constant-flag t) nil [5426 5457])
+            ("cr_expect_file_contents_neq_str" variable (:constant-flag t) nil [6186 6217])
+            ("cr_assert_file_contents_eq" variable (:constant-flag t) nil [6944 6970])
+            ("cr_expect_file_contents_eq" variable (:constant-flag t) nil [7670 7696])
+            ("cr_assert_file_contents_neq" variable (:constant-flag t) nil [8426 8453])
+            ("cr_expect_file_contents_neq" variable (:constant-flag t) nil [9167 9194])
+            ("cr_assert_stdout_eq_str" variable (:constant-flag t) nil [9951 9974])
+            ("cr_expect_stdout_eq_str" variable (:constant-flag t) nil [10640 10663])
+            ("cr_assert_stdout_neq_str" variable (:constant-flag t) nil [11361 11385])
+            ("cr_expect_stdout_neq_str" variable (:constant-flag t) nil [12069 12093])
+            ("cr_assert_stderr_eq_str" variable (:constant-flag t) nil [12777 12800])
+            ("cr_expect_stderr_eq_str" variable (:constant-flag t) nil [13466 13489])
+            ("cr_assert_stderr_neq_str" variable (:constant-flag t) nil [14187 14211])
+            ("cr_expect_stderr_neq_str" variable (:constant-flag t) nil [14895 14919])
+            ("cr_assert_stdout_eq" variable (:constant-flag t) nil [15569 15588])
+            ("cr_expect_stdout_eq" variable (:constant-flag t) nil [16211 16230])
+            ("cr_assert_stdout_neq" variable (:constant-flag t) nil [16883 16903])
+            ("cr_expect_stdout_neq" variable (:constant-flag t) nil [17540 17560])
+            ("cr_assert_stderr_eq" variable (:constant-flag t) nil [18199 18218])
+            ("cr_expect_stderr_eq" variable (:constant-flag t) nil [18841 18860])
+            ("cr_assert_stderr_neq" variable (:constant-flag t) nil [19513 19533])
+            ("cr_expect_stderr_neq" variable (:constant-flag t) nil [20170 20190])
+            ("internal/stream.hxx" include nil nil [20260 20291])
+            ("criterion" type
+               (:members 
+                  ( ("ofstream" type
+                       (:typedef ("internal::basic_ofstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [20315 20363])
+                    ("ifstream" type
+                       (:typedef ("internal::basic_ifstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [20364 20412])
+                    ("fstream" type
+                       (:typedef ("internal::basic_fstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [20413 20459])
+                    ("get_redirected_cin" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20504 20509]))                          
+                        :type ("ofstream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20461 20595])
+                    ("get_redirected_cout" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20641 20646]))                          
+                        :type ("ifstream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20597 20732])
+                    ("get_redirected_cerr" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20778 20783]))                          
+                        :type ("ifstream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20734 20869])
+                    ("mock_file" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("max_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20922 20938]))                          
+                        :type ("fstream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20890 20991])
+                    ("mock_file" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21025 21030]))                          
+                        :type ("fstream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20993 21062]))                  
+                :type "namespace")
+                nil [20293 21072])
+            ("internal/redirect.h" include nil nil [21081 21111]))          
+      :file "redirect.h"
+      :pointmax 21149
+      :fsize 21149
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((symbol 3170 . 3182) (symbol 3119 . 3126) (symbol 3112 . 3118) (punctuation 2949 . 2950) (punctuation 2932 . 2933) (symbol 2889 . 2895) (punctuation 2590 . 2591) (symbol 2548 . 2554) (symbol 2245 . 2252) (symbol 2238 . 2244) (symbol 2076 . 2083) (symbol 2069 . 2075) (symbol 1907 . 1914) (symbol 1900 . 1906) (symbol 1747 . 1753) (symbol 1619 . 1625) (symbol 1539 . 1545) (symbol 1482 . 1496))
+      :lexical-table 
+        '(("cr_assert_file_contents_neq_str" (spp-arg-list ("File" "UnexpectedContents" "FormatString" "...") 5457 . 5502) . ((symbol "internal" 5506 . 5514)))
+          ("cr_assert_stdout_eq_str" (spp-arg-list ("ExpectedContents" "FormatString" "...") 9974 . 10011) . ((symbol "internal" 10015 . 10023)))
+          ("cr_expect_stdout_neq" (spp-arg-list ("RefFile" "FormatString" "...") 17560 . 17588) . ((symbol "internal" 17592 . 17600)))
+          ("cr_expect_stdout_eq_str" (spp-arg-list ("ExpectedContents" "FormatString" "...") 10663 . 10700) . ((symbol "internal" 10704 . 10712)))
+          ("cr_expect_stderr_eq" (spp-arg-list ("RefFile" "FormatString" "...") 18860 . 18888) . ((symbol "internal" 18892 . 18900)))
+          ("cr_expect_file_contents_neq_str" (spp-arg-list ("File" "UnexpectedContents" "FormatString" "...") 6217 . 6262) . ((symbol "internal" 6266 . 6274)))
+          ("cr_expect_file_contents_eq" (spp-arg-list ("File" "RefFile" "FormatString" "...") 7696 . 7730) . ((symbol "internal" 7734 . 7742)))
+          ("cr_assert_stdout_eq" (spp-arg-list ("RefFile" "FormatString" "...") 15588 . 15616) . ((symbol "internal" 15620 . 15628)))
+          ("cr_assert_stderr_neq" (spp-arg-list ("RefFile" "FormatString" "...") 19533 . 19561) . ((symbol "internal" 19565 . 19573)))
+          ("cr_assert_stdout_neq_str" (spp-arg-list ("UnexpectedContents" "FormatString" "...") 11385 . 11424) . ((symbol "internal" 11428 . 11436)))
+          ("cr_assert_file_contents_eq_str" (spp-arg-list ("File" "ExpectedContents" "FormatString" "...") 3945 . 3988) . ((symbol "internal" 3992 . 4000)))
+          ("cr_expect_stdout_neq_str" (spp-arg-list ("UnexpectedContents" "FormatString" "...") 12093 . 12132) . ((symbol "internal" 12136 . 12144)))
+          ("cr_assert_stderr_neq_str" (spp-arg-list ("UnexpectedContents" "FormatString" "...") 14211 . 14250) . ((symbol "internal" 14254 . 14262)))
+          ("cr_assert_stderr_eq" (spp-arg-list ("RefFile" "FormatString" "...") 18218 . 18246) . ((symbol "internal" 18250 . 18258)))
+          ("cr_expect_file_contents_eq_str" (spp-arg-list ("File" "ExpectedContents" "FormatString" "...") 4683 . 4726) . ((symbol "internal" 4730 . 4738)))
+          ("cr_assert_file_contents_eq" (spp-arg-list ("File" "RefFile" "FormatString" "...") 6970 . 7004) . ((symbol "internal" 7008 . 7016)))
+          ("cr_expect_stderr_neq_str" (spp-arg-list ("UnexpectedContents" "FormatString" "...") 14919 . 14958) . ((symbol "internal" 14962 . 14970)))
+          ("cr_assert_stdout_neq" (spp-arg-list ("RefFile" "FormatString" "...") 16903 . 16931) . ((symbol "internal" 16935 . 16943)))
+          ("cr_assert_file_contents_neq" (spp-arg-list ("File" "RefFile" "FormatString" "...") 8453 . 8487) . ((symbol "internal" 8491 . 8499)))
+          ("cr_assert_stderr_eq_str" (spp-arg-list ("ExpectedContents" "FormatString" "...") 12800 . 12837) . ((symbol "internal" 12841 . 12849)))
+          ("cr_expect_stderr_neq" (spp-arg-list ("RefFile" "FormatString" "...") 20190 . 20218) . ((symbol "internal" 20222 . 20230)))
+          ("cr_expect_file_contents_neq" (spp-arg-list ("File" "RefFile" "FormatString" "...") 9194 . 9228) . ((symbol "internal" 9232 . 9240)))
+          ("cr_expect_stderr_eq_str" (spp-arg-list ("ExpectedContents" "FormatString" "...") 13489 . 13526) . ((symbol "internal" 13530 . 13538)))
+          ("CRITERION_REDIRECT_H_")
+          ("cr_expect_stdout_eq" (spp-arg-list ("RefFile" "FormatString" "...") 16230 . 16258) . ((symbol "internal" 16262 . 16270)))
+          )
+))
+  :file "!usr!local!include!criterion!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

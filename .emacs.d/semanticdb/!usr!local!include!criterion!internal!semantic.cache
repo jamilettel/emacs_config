@@ -1,0 +1,2094 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_INTERNAL_TEST_H_" variable (:constant-flag t) nil [1223 1249])
+            ("designated-initializer-compat.h" include nil nil [1251 1293])
+            ("common.h" include nil nil [1294 1313])
+            ("exception" include (:system-flag t) nil [1393 1414])
+            ("CR_IDENTIFIER_" variable (:constant-flag t) nil [1431 1445])
+            ("CR_LANG" variable (:constant-flag t) nil [1603 1610])
+            ("CR_TEST_PROTOTYPE_" variable (:constant-flag t) nil [1773 1791])
+            ("CR_SUITE_IDENTIFIER_" variable (:constant-flag t) nil [1993 2013])
+            ("criterion_internal_test_setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2123 2128]))                  
+                :type "void")
+                nil [2088 2129])
+            ("criterion_internal_test_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fn" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2182 2187]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [2137 2189])
+            ("criterion_internal_test_teardown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2235 2240]))                  
+                :type "void")
+                nil [2197 2241])
+            ("cri_asserts_passed_incr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2278 2283]))                  
+                :type "void")
+                nil [2249 2284])
+            ("cr_msg_test_init_std_exception" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Caught an unexpected exception during the test initialization: %s.\""
+                :type "char")
+                nil [2300 2427])
+            ("cr_msg_test_init_other_exception" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Caught some unexpected exception during the test initialization.\""
+                :type "char")
+                nil [2428 2555])
+            ("cr_msg_test_main_std_exception" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Caught an unexpected exception during the test execution: %s.\""
+                :type "char")
+                nil [2556 2678])
+            ("cr_msg_test_main_other_exception" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Caught some unexpected exception during the test execution.\""
+                :type "char")
+                nil [2679 2801])
+            ("cr_msg_test_fini_std_exception" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Caught an unexpected exception during the test finalization: %s.\""
+                :type "char")
+                nil [2802 2927])
+            ("cr_msg_test_fini_other_exception" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Caught some unexpected exception during the test finalization.\""
+                :type "char")
+                nil [2928 3053])
+            ("CR_TEST_TRAMPOLINE_" variable (:constant-flag t) nil [3083 3102])
+            ("CR_COMPILER_" variable (:constant-flag t) nil [8603 8615])
+            ("CR_TEST_BASE" variable (:constant-flag t) nil [8694 8706])
+            ("CR_SUITE_BASE" variable (:constant-flag t) nil [10551 10564])
+            ("Test" variable (:constant-flag t) nil [11602 11606])
+            ("TestSuite" variable (:constant-flag t) nil [11698 11707]))          
+      :file "test.h"
+      :pointmax 11812
+      :fsize 11812
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((symbol 2286 . 2298) (symbol 2242 . 2248) (symbol 2190 . 2196) (symbol 2130 . 2136) (symbol 2081 . 2087) (symbol 2065 . 2079))
+      :lexical-table 
+        '(("TestSuite" (spp-arg-list ("...") 11707 . 11712) . ((symbol "CR_EXPAND" 11716 . 11725) (semantic-list "(CR_SUITE_BASE(__VA_ARGS__, .sentinel_ = 0))" 11725 . 11769)))
+          ("CRITERION_INTERNAL_TEST_H_")
+          ("CR_IDENTIFIER_" (spp-arg-list ("Category" "Name" "Suffix") 1445 . 1469) . ((spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "Category" 1476 . 1484) (symbol "_" 1488 . 1489)) 1476 . 1489) (symbol "Name" 1493 . 1497)) 1476 . 1497) (symbol "_" 1501 . 1502)) 1476 . 1502) (symbol "Suffix" 1506 . 1512)) 1476 . 1512)))
+          ("CR_LANG" . ((symbol "CR_LANG_CXX" 1614 . 1625)))
+          ("CR_TEST_TRAMPOLINE_" (spp-arg-list ("Category" "Name") 3102 . 3118) . 
+              ((STATIC "static" 3176 . 3182) (INLINE "inline" 3183 . 3189) (VOID "void" 3190 . 3194) (symbol "CR_IDENTIFIER_" 3195 . 3209) (semantic-list "(Category, Name, jmp)" 3209 . 3230) (semantic-list "(void)" 3230 . 3236) (semantic-list "{                              \\
+        try {                                                                                   \\
+            criterion_internal_test_setup();                                                    \\
+        } catch (const std::exception &e) {                                                     \\
+            criterion_test_die(cr_msg_test_init_std_exception, e.what());                       \\
+        } catch (...) {                                                                         \\
+            criterion_test_die(cr_msg_test_init_other_exception);                               \\
+        }                                                                                       \\
+        try {                                                                                   \\
+            criterion_internal_test_main((void (*)(void))CR_IDENTIFIER_(Category, Name, impl)); \\
+        } catch (const std::exception &e) {                                                     \\
+            criterion_test_die(cr_msg_test_main_std_exception, e.what());                       \\
+        } catch (...) {                                                                         \\
+            criterion_test_die(cr_msg_test_main_other_exception);                               \\
+        }                                                                                       \\
+        try {                                                                                   \\
+            criterion_internal_test_teardown();                                                 \\
+        } catch (const std::exception &e) {                                                     \\
+            criterion_test_die(cr_msg_test_fini_std_exception, e.what());                       \\
+        } catch (...) {                                                                         \\
+            criterion_test_die(cr_msg_test_fini_other_exception);                               \\
+        }                                                                                       \\
+    }" 3237 . 5333)))
+          ("CR_COMPILER_" . ((symbol "CR_COMP_GCC" 8619 . 8630)))
+          ("CR_SUITE_IDENTIFIER_" (spp-arg-list ("Name" "Suffix") 2013 . 2027) . ((spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "suite_" 2034 . 2040) (symbol "Name" 2044 . 2048)) 2034 . 2048) (symbol "_" 2052 . 2053)) 2034 . 2053) (symbol "Suffix" 2057 . 2063)) 2034 . 2063)))
+          ("CR_SUITE_BASE" (spp-arg-list ("Name" "...") 10564 . 10575) . 
+              ((STRUCT "struct" 10622 . 10628) (symbol "criterion_test_extra_data" 10629 . 10654) (symbol "CR_SUITE_IDENTIFIER_" 10655 . 10675) (semantic-list "(Name, extra)" 10675 . 10688) (punctuation "=" 10689 . 10690) (symbol "CR_EXPAND" 10705 . 10714) (semantic-list "(CRITERION_MAKE_STRUCT(criterion_test_extra_data,   \\
+                    .file_    = __FILE__,                                \\
+                    .line_    = 0,                                       \\
+                    __VA_ARGS__                                          \\
+                    ))" 10714 . 11015) (punctuation ";" 11015 . 11016) (STRUCT "struct" 11072 . 11078) (symbol "criterion_suite" 11079 . 11094) (symbol "CR_SUITE_IDENTIFIER_" 11095 . 11115) (semantic-list "(Name, meta)" 11115 . 11127) (punctuation "=" 11128 . 11129) (semantic-list "{          \\
+        #Name,                                                           \\
+        &CR_SUITE_IDENTIFIER_(Name, extra),                              \\
+    }" 11130 . 11298) (punctuation ";" 11298 . 11299) (symbol "CR_SECTION_" 11372 . 11383) (semantic-list "(\"cr_sts\")" 11383 . 11393) (STRUCT "struct" 11447 . 11453) (symbol "criterion_suite" 11454 . 11469) (punctuation "*" 11470 . 11471) (symbol "CR_SUITE_IDENTIFIER_" 11471 . 11491) (semantic-list "(Name, ptr)" 11491 . 11502) (punctuation "=" 11526 . 11527) (punctuation "&" 11528 . 11529) (symbol "CR_SUITE_IDENTIFIER_" 11529 . 11549) (semantic-list "(Name, meta)" 11549 . 11561) (symbol "CR_SECTION_SUFFIX_" 11562 . 11580)))
+          ("CR_TEST_BASE" (spp-arg-list ("Category" "Name" "...") 8706 . 8727) . 
+              ((symbol "CR_TEST_PROTOTYPE_" 8769 . 8787) (semantic-list "(Category, Name)" 8787 . 8803) (punctuation ";" 8803 . 8804) (symbol "CR_TEST_TRAMPOLINE_" 8848 . 8867) (semantic-list "(Category, Name)" 8867 . 8883) (STRUCT "struct" 8927 . 8933) (symbol "criterion_test_extra_data" 8934 . 8959) (symbol "CR_IDENTIFIER_" 8960 . 8974) (semantic-list "(Category, Name, extra)" 8974 . 8997) (punctuation "=" 8998 . 8999) (symbol "CR_EXPAND" 9014 . 9023) (semantic-list "(CRITERION_MAKE_STRUCT(criterion_test_extra_data,       \\
+                    .compiler_ = CR_COMPILER_,                               \\
+                    .lang_ = CR_LANG,                                        \\
+                    .kind_ = CR_TEST_NORMAL,                                 \\
+                    .param_ = (struct criterion_test_params (*)(void))NULL,  \\
+                    .identifier_ = #Category \"/\" #Name,                      \\
+                    .file_    = __FILE__,                                    \\
+                    .line_    = __LINE__,                                    \\
+                    __VA_ARGS__                                              \\
+                    ))" 9023 . 9735) (punctuation ";" 9735 . 9736) (STRUCT "struct" 9796 . 9802) (symbol "criterion_test" 9803 . 9817) (symbol "CR_IDENTIFIER_" 9818 . 9832) (semantic-list "(Category, Name, meta)" 9832 . 9854) (punctuation "=" 9855 . 9856) (semantic-list "{           \\
+        #Name,                                                               \\
+        #Category,                                                           \\
+        CR_IDENTIFIER_(Category,  Name,  jmp),                               \\
+        &CR_IDENTIFIER_(Category, Name,  extra)                              \\
+    }" 9857 . 10192) (punctuation ";" 10192 . 10193) (symbol "CR_SECTION_" 10270 . 10281) (semantic-list "(\"cr_tst\")" 10281 . 10291) (STRUCT "struct" 10349 . 10355) (symbol "criterion_test" 10356 . 10370) (punctuation "*" 10371 . 10372) (symbol "CR_IDENTIFIER_" 10372 . 10386) (semantic-list "(Category, Name, ptr)" 10386 . 10407) (punctuation "=" 10432 . 10433) (punctuation "&" 10434 . 10435) (symbol "CR_IDENTIFIER_" 10435 . 10449) (semantic-list "(Category, Name, meta)" 10449 . 10471) (symbol "CR_SECTION_SUFFIX_" 10472 . 10490) (punctuation ";" 10490 . 10491) (symbol "CR_TEST_PROTOTYPE_" 10507 . 10525) (semantic-list "(Category, Name)" 10525 . 10541)))
+          ("CR_TEST_PROTOTYPE_" (spp-arg-list ("Category" "Name") 1791 . 1807) . 
+              ((EXTERN "extern" 1814 . 1820) (string "\"C\"" 1821 . 1824) (VOID "void" 1825 . 1829) (symbol "CR_IDENTIFIER_" 1830 . 1844) (semantic-list "(Category, Name, impl)" 1844 . 1866) (semantic-list "(void)" 1866 . 1872)))
+          ("Test" (spp-arg-list ("...") 11606 . 11611) . ((symbol "CR_EXPAND" 11620 . 11629) (semantic-list "(CR_TEST_BASE(__VA_ARGS__, .sentinel_ = 0))" 11629 . 11672)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_COMMON_H_" variable (:constant-flag t) nil [1216 1235])
+            ("CR_IS_MSVC" variable (:constant-flag t) nil [1615 1625])
+            ("CR_ATTRIBUTE" variable (:constant-flag t) nil [1693 1705])
+            ("CR_BEGIN_C_API" variable (:constant-flag t) nil [1803 1817])
+            ("CR_END_C_API" variable (:constant-flag t) nil [1843 1855])
+            ("CR_SECTION_START_SUFFIX" variable (:constant-flag t) nil [2558 2581])
+            ("CR_SECTION_END_SUFFIX" variable (:constant-flag t) nil [2597 2618])
+            ("CR_SECTION_" variable (:constant-flag t) nil [2634 2645])
+            ("CR_SECTION_SUFFIX_" variable (:constant-flag t) nil [2692 2710])
+            ("CR_MAKE_IDENTIFIER_" variable (:constant-flag t) nil [2727 2746])
+            ("CR_MAKE_IDENTIFIER__" variable (:constant-flag t) nil [2804 2824])
+            ("CR_UNUSED" variable (:constant-flag t) nil [2884 2893])
+            ("CR_NORETURN" variable (:constant-flag t) nil [2929 2940])
+            ("CR_INLINE" variable (:constant-flag t) nil [2976 2985])
+            ("CR_UNUSED" variable (:constant-flag t) nil [3199 3208])
+            ("CR_NORETURN" variable (:constant-flag t) nil [3218 3229])
+            ("CR_INLINE" variable (:constant-flag t) nil [3239 3248])
+            ("CR_SIZE_T_FORMAT" variable (:constant-flag t) nil [3331 3347])
+            ("CR_FORMAT" variable (:constant-flag t) nil [3390 3399])
+            ("CR_API" variable (:constant-flag t) nil [3912 3918])
+            ("CR_LOCAL" variable (:constant-flag t) nil [3970 3978])
+            ("CR_STDN" variable (:constant-flag t) nil [4104 4111]))          
+      :file "common.h"
+      :pointmax 4186
+      :fsize 4186
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CR_STDN" . 
+              ((symbol "std" 4115 . 4118) (punctuation ":" 4118 . 4119) (punctuation ":" 4119 . 4120)))
+          ("CR_IS_MSVC" . ((number "0" 1629 . 1630)))
+          ("CR_END_C_API" . ((close-paren "}" 1861 . 1862)))
+          ("CR_SECTION_END_SUFFIX" (spp-arg-list ("Name") 2618 . 2624))
+          ("CR_SECTION_" (spp-arg-list ("Name") 2645 . 2651) . ((symbol "CR_ATTRIBUTE" 2655 . 2667) (semantic-list "(section(Name))" 2667 . 2682)))
+          ("CR_FORMAT" (spp-arg-list ("Archetype" "Index" "Ftc") 3399 . 3422) . ((symbol "CR_ATTRIBUTE" 3426 . 3438) (semantic-list "(format(Archetype, Index, Ftc))" 3438 . 3469)))
+          ("CR_LOCAL" . ((symbol "CR_ATTRIBUTE" 3982 . 3994) (semantic-list "(visibility(\"hidden\"))" 3994 . 4016)))
+          ("CR_MAKE_IDENTIFIER__" (spp-arg-list ("Prefix" "Id") 2824 . 2836) . ((spp-symbol-merge ((spp-symbol-merge ((symbol "Prefix" 2840 . 2846) (symbol "_" 2850 . 2851)) 2840 . 2851) (symbol "Id" 2855 . 2857)) 2840 . 2857)))
+          ("CR_SIZE_T_FORMAT" . ((string "\"%zu\"" 3351 . 3356)))
+          ("CR_NORETURN")
+          ("CR_SECTION_SUFFIX_")
+          ("CR_UNUSED")
+          ("CRITERION_COMMON_H_")
+          ("CR_ATTRIBUTE" (spp-arg-list ("Arg") 1705 . 1710) . ((symbol "__attribute__" 1714 . 1727) (semantic-list "((Arg))" 1727 . 1734)))
+          ("CR_BEGIN_C_API" . 
+              ((EXTERN "extern" 1821 . 1827) (string "\"C\"" 1828 . 1831) (open-paren "{" 1832 . 1833)))
+          ("CR_API" . ((symbol "CR_ATTRIBUTE" 3924 . 3936) (semantic-list "(visibility(\"default\"))" 3936 . 3959)))
+          ("CR_SECTION_START_SUFFIX" (spp-arg-list ("Name") 2581 . 2587))
+          ("CR_MAKE_IDENTIFIER_" (spp-arg-list ("Prefix" "Id") 2746 . 2758) . ((symbol "CR_MAKE_IDENTIFIER__" 2763 . 2783) (semantic-list "(Prefix, Id)" 2783 . 2795)))
+          ("CR_INLINE" . ((INLINE "inline" 3252 . 3258)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_INTERNAL_ASSERT_H_" variable (:constant-flag t) nil [1225 1253])
+            ("common.h" include nil nil [1255 1274])
+            ("preprocess.h" include nil nil [1275 1298])
+            ("asprintf-compat.h" include nil nil [1299 1327])
+            ("designated-initializer-compat.h" include nil nil [1328 1370])
+            ("cstring" include (:system-flag t) nil [1391 1410])
+            ("cstdlib" include (:system-flag t) nil [1411 1430])
+            ("cwchar" include (:system-flag t) nil [1431 1449])
+            ("../types.h" include nil nil [1547 1568])
+            ("../stats.h" include nil nil [1569 1590])
+            ("../hooks.h" include nil nil [1591 1612])
+            ("../event.h" include nil nil [1613 1634])
+            ("../abort.h" include nil nil [1635 1656])
+            ("../options.h" include nil nil [1657 1680])
+            ("criterion_assert_args" type
+               (:members 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1717 1733])
+                    ("sentinel_" variable (:type "int") (reparse-symbol classsubparts) [1738 1752])
+                    ("criterion_assert_args" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1809 1825]))                          
+                        :type ("constexpr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1777 1853])
+                    ("criterion_assert_args" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1890 1906])
+                            ("sentinel_" variable (:type "int") (reparse-symbol arg-sub-list) [1907 1921]))                          
+                        :type ("constexpr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1858 1957]))                  
+                :type "struct")
+                nil [1682 1967])
+            ("criterion_assert_messages" type
+               (:members 
+                  ( ("CRITERION_ASSERT_MSG_FAIL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2060 2086])
+                    ("CRITERION_ASSERT_MSG_EXPR_FALSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2091 2123])
+                    ("CRITERION_ASSERT_MSG_EXPR_AS_STRINGS_FALSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2128 2171])
+                    ("CRITERION_ASSERT_MSG_IS_NULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2176 2205])
+                    ("CRITERION_ASSERT_MSG_IS_NOT_NULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2210 2243])
+                    ("CRITERION_ASSERT_MSG_IS_EMPTY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2248 2278])
+                    ("CRITERION_ASSERT_MSG_IS_NOT_EMPTY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2283 2317])
+                    ("CRITERION_ASSERT_MSG_FILE_STR_MATCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2322 2358])
+                    ("CRITERION_ASSERT_MSG_FILE_MATCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2363 2395])
+                    ("CRITERION_ASSERT_MSG_THROW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2400 2427])
+                    ("CRITERION_ASSERT_MSG_NO_THROW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2432 2462])
+                    ("CRITERION_ASSERT_MSG_ANY_THROW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2467 2498])
+                    ("CRITERION_ASSERT_MSG_NONE_THROW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2503 2535]))                  
+                :type "enum")
+                nil [2023 2538])
+            ("cr_translate_assert_msg" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("msg_index" variable (:type "int") (reparse-symbol arg-sub-list) [2593 2607])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2608 2612]))                  
+                :type "char")
+                nil [2563 2613])
+            ("cri_asserts_passed_incr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2650 2655]))                  
+                :type "void")
+                nil [2621 2656])
+            ("CR_GET_CONDITION" variable (:constant-flag t) nil [2680 2696])
+            ("CR_GET_CONDITION_STR" variable (:constant-flag t) nil [2738 2758])
+            ("CR_VA_SKIP" variable (:constant-flag t) nil [2797 2807])
+            ("CR_TRANSLATE_DEF_MSG__" variable (:constant-flag t) nil [2858 2880])
+            ("CR_TRANSLATE_DEF_MSG_" variable (:constant-flag t) nil [2917 2938])
+            ("CR_INIT_STATS_" variable (:constant-flag t) nil [3261 3275])
+            ("CR_FAIL_ABORT_" variable (:constant-flag t) nil [4385 4399])
+            ("CR_FAIL_CONTINUES_" variable (:constant-flag t) nil [4436 4454])
+            ("cr_assert_impl" variable (:constant-flag t) nil [4491 4505])
+            ("cr_fail" variable (:constant-flag t) nil [5894 5901])
+            ("cr_skip" variable (:constant-flag t) nil [6274 6281])
+            ("cr_assert_" variable (:constant-flag t) nil [6338 6348])
+            ("cr_expect_" variable (:constant-flag t) nil [6782 6792])
+            ("cr_assert_not_" variable (:constant-flag t) nil [7226 7240])
+            ("cr_expect_not_" variable (:constant-flag t) nil [7694 7708])
+            ("cr_assert_op_" variable (:constant-flag t) nil [8176 8189])
+            ("cr_assert_op_va_" variable (:constant-flag t) nil [8652 8668])
+            ("cr_assert_null_op_" variable (:constant-flag t) nil [9070 9088])
+            ("cr_assert_null_op_va_" variable (:constant-flag t) nil [9538 9559])
+            ("cr_assert_float_eq_op_" variable (:constant-flag t) nil [9944 9966])
+            ("cr_assert_float_neq_op_" variable (:constant-flag t) nil [10082 10105])
+            ("cr_assert_float_op_" variable (:constant-flag t) nil [10219 10238])
+            ("cr_assert_float_op_va_" variable (:constant-flag t) nil [10815 10837])
+            ("cr_assert_str_op_empty_" variable (:constant-flag t) nil [11385 11408])
+            ("cr_assert_str_op_empty_va_" variable (:constant-flag t) nil [12359 12385])
+            ("cr_assert_str_op_" variable (:constant-flag t) nil [12778 12795])
+            ("cr_assert_str_op_va_" variable (:constant-flag t) nil [13991 14011])
+            ("cr_assert_wcs_op_empty_" variable (:constant-flag t) nil [14415 14438])
+            ("cr_assert_wcs_op_empty_va_" variable (:constant-flag t) nil [15389 15415])
+            ("cr_assert_wcs_op_" variable (:constant-flag t) nil [15808 15825])
+            ("cr_assert_wcs_op_va_" variable (:constant-flag t) nil [16943 16963])
+            ("cr_assert_mem_op_" variable (:constant-flag t) nil [17361 17378])
+            ("cr_assert_mem_op_va_" variable (:constant-flag t) nil [17941 17961])
+            ("CR_ARR_COMPARE_" variable (:constant-flag t) nil [18542 18557])
+            ("cr_assert_arr_op_cmp_" variable (:constant-flag t) nil [19090 19111])
+            ("cr_assert_arr_op_cmp_va_" variable (:constant-flag t) nil [19943 19967])
+            ("cr_assert_throw_abort_" variable (:constant-flag t) nil [20692 20714])
+            ("cr_assert_throw_" variable (:constant-flag t) nil [21176 21192])
+            ("cr_assert_throw_va_" variable (:constant-flag t) nil [21803 21822])
+            ("cr_assert_no_throw_" variable (:constant-flag t) nil [22292 22311])
+            ("cr_assert_no_throw_va_" variable (:constant-flag t) nil [22866 22888])
+            ("cr_assert_any_throw_" variable (:constant-flag t) nil [23355 23375])
+            ("cr_assert_any_throw_va_" variable (:constant-flag t) nil [23809 23832])
+            ("cr_assert_none_throw_" variable (:constant-flag t) nil [24159 24180])
+            ("cr_assert_none_throw_va_" variable (:constant-flag t) nil [24661 24685])
+            ("CRITERION_GNUC_WARN__" variable (:constant-flag t) nil [25027 25048])
+            ("CRITERION_GNUC_WARN_" variable (:constant-flag t) nil [25083 25103])
+            ("cr_skip_test" variable (:constant-flag t) nil [25431 25443])
+            ("cr_assert_fail" variable (:constant-flag t) nil [25525 25539])
+            ("cr_expect_fail" variable (:constant-flag t) nil [25635 25649])
+            ("cr_assert" variable (:constant-flag t) nil [25744 25753])
+            ("cr_expect" variable (:constant-flag t) nil [25836 25845])
+            ("cr_assert_not" variable (:constant-flag t) nil [25932 25945])
+            ("cr_expect_not" variable (:constant-flag t) nil [26032 26045])
+            ("cr_assert_eq" variable (:constant-flag t) nil [26131 26143])
+            ("cr_expect_eq" variable (:constant-flag t) nil [26252 26264])
+            ("cr_assert_neq" variable (:constant-flag t) nil [26378 26391])
+            ("cr_expect_neq" variable (:constant-flag t) nil [26500 26513])
+            ("cr_assert_lt" variable (:constant-flag t) nil [26625 26637])
+            ("cr_expect_lt" variable (:constant-flag t) nil [26745 26757])
+            ("cr_assert_leq" variable (:constant-flag t) nil [26870 26883])
+            ("cr_expect_leq" variable (:constant-flag t) nil [26992 27005])
+            ("cr_assert_gt" variable (:constant-flag t) nil [27117 27129])
+            ("cr_expect_gt" variable (:constant-flag t) nil [27237 27249])
+            ("cr_assert_geq" variable (:constant-flag t) nil [27362 27375])
+            ("cr_expect_geq" variable (:constant-flag t) nil [27484 27497])
+            ("cr_assert_null" variable (:constant-flag t) nil [27611 27625])
+            ("cr_expect_null" variable (:constant-flag t) nil [27773 27787])
+            ("cr_assert_not_null" variable (:constant-flag t) nil [27943 27961])
+            ("cr_expect_not_null" variable (:constant-flag t) nil [28105 28123])
+            ("cr_assert_float_eq" variable (:constant-flag t) nil [28271 28289])
+            ("cr_expect_float_eq" variable (:constant-flag t) nil [28424 28442])
+            ("cr_assert_float_neq" variable (:constant-flag t) nil [28582 28601])
+            ("cr_expect_float_neq" variable (:constant-flag t) nil [28737 28756])
+            ("cr_assert_str_empty" variable (:constant-flag t) nil [28896 28915])
+            ("cr_expect_str_empty" variable (:constant-flag t) nil [29069 29088])
+            ("cr_assert_str_not_empty" variable (:constant-flag t) nil [29250 29273])
+            ("cr_expect_str_not_empty" variable (:constant-flag t) nil [29423 29446])
+            ("cr_assert_str_eq" variable (:constant-flag t) nil [29593 29609])
+            ("cr_expect_str_eq" variable (:constant-flag t) nil [29722 29738])
+            ("cr_assert_str_neq" variable (:constant-flag t) nil [29856 29873])
+            ("cr_expect_str_neq" variable (:constant-flag t) nil [29986 30003])
+            ("cr_assert_str_lt" variable (:constant-flag t) nil [30119 30135])
+            ("cr_expect_str_lt" variable (:constant-flag t) nil [30247 30263])
+            ("cr_assert_str_leq" variable (:constant-flag t) nil [30380 30397])
+            ("cr_expect_str_leq" variable (:constant-flag t) nil [30510 30527])
+            ("cr_assert_str_gt" variable (:constant-flag t) nil [30643 30659])
+            ("cr_expect_str_gt" variable (:constant-flag t) nil [30771 30787])
+            ("cr_assert_str_geq" variable (:constant-flag t) nil [30904 30921])
+            ("cr_expect_str_geq" variable (:constant-flag t) nil [31034 31051])
+            ("cr_assert_wcs_empty" variable (:constant-flag t) nil [31170 31189])
+            ("cr_expect_wcs_empty" variable (:constant-flag t) nil [31343 31362])
+            ("cr_assert_wcs_not_empty" variable (:constant-flag t) nil [31524 31547])
+            ("cr_expect_wcs_not_empty" variable (:constant-flag t) nil [31697 31720])
+            ("cr_assert_wcs_eq" variable (:constant-flag t) nil [31867 31883])
+            ("cr_expect_wcs_eq" variable (:constant-flag t) nil [31996 32012])
+            ("cr_assert_wcs_neq" variable (:constant-flag t) nil [32130 32147])
+            ("cr_expect_wcs_neq" variable (:constant-flag t) nil [32260 32277])
+            ("cr_assert_wcs_lt" variable (:constant-flag t) nil [32393 32409])
+            ("cr_expect_wcs_lt" variable (:constant-flag t) nil [32521 32537])
+            ("cr_assert_wcs_leq" variable (:constant-flag t) nil [32654 32671])
+            ("cr_expect_wcs_leq" variable (:constant-flag t) nil [32784 32801])
+            ("cr_assert_wcs_gt" variable (:constant-flag t) nil [32917 32933])
+            ("cr_expect_wcs_gt" variable (:constant-flag t) nil [33045 33061])
+            ("cr_assert_wcs_geq" variable (:constant-flag t) nil [33178 33195])
+            ("cr_expect_wcs_geq" variable (:constant-flag t) nil [33308 33325])
+            ("cr_assert_arr_eq" variable (:constant-flag t) nil [33441 33457])
+            ("cr_expect_arr_eq" variable (:constant-flag t) nil [33570 33586])
+            ("cr_assert_arr_neq" variable (:constant-flag t) nil [33704 33721])
+            ("cr_expect_arr_neq" variable (:constant-flag t) nil [33834 33851])
+            ("cr_assert_arr_eq_cmp" variable (:constant-flag t) nil [34046 34066])
+            ("cr_expect_arr_eq_cmp" variable (:constant-flag t) nil [34183 34203])
+            ("cr_assert_arr_neq_cmp" variable (:constant-flag t) nil [34325 34346])
+            ("cr_expect_arr_neq_cmp" variable (:constant-flag t) nil [34463 34484])
+            ("cr_assert_arr_lt_cmp" variable (:constant-flag t) nil [34604 34624])
+            ("cr_expect_arr_lt_cmp" variable (:constant-flag t) nil [34740 34760])
+            ("cr_assert_arr_leq_cmp" variable (:constant-flag t) nil [34881 34902])
+            ("cr_expect_arr_leq_cmp" variable (:constant-flag t) nil [35019 35040])
+            ("cr_assert_arr_gt_cmp" variable (:constant-flag t) nil [35160 35180])
+            ("cr_expect_arr_gt_cmp" variable (:constant-flag t) nil [35296 35316])
+            ("cr_assert_arr_geq_cmp" variable (:constant-flag t) nil [35437 35458])
+            ("cr_expect_arr_geq_cmp" variable (:constant-flag t) nil [35575 35596])
+            ("cr_assert_throw" variable (:constant-flag t) nil [37166 37181])
+            ("cr_expect_throw" variable (:constant-flag t) nil [37286 37301])
+            ("cr_assert_no_throw" variable (:constant-flag t) nil [37413 37431])
+            ("cr_expect_no_throw" variable (:constant-flag t) nil [37539 37557])
+            ("cr_assert_any_throw" variable (:constant-flag t) nil [37670 37689])
+            ("cr_expect_any_throw" variable (:constant-flag t) nil [37798 37817])
+            ("cr_assert_none_throw" variable (:constant-flag t) nil [37931 37951])
+            ("cr_expect_none_throw" variable (:constant-flag t) nil [38061 38081]))          
+      :file "assert.h"
+      :pointmax 38203
+      :fsize 38203
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((symbol 2658 . 2670) (symbol 2614 . 2620) (symbol 2556 . 2562) (symbol 2540 . 2554))
+      :lexical-table 
+        '(("CR_TRANSLATE_DEF_MSG__" (spp-arg-list ("Arg") 2880 . 2885) . ((symbol "CR_IDENTITY" 2892 . 2903) (symbol "Arg" 2904 . 2907)))
+          ("cr_fail" (spp-arg-list ("Fail" "...") 5901 . 5912) . ((symbol "CR_EXPAND" 5935 . 5944) (semantic-list "(cr_assert_impl(              \\
+                Fail,                      \\
+                0,                         \\
+                dummy,                     \\
+                CRITERION_ASSERT_MSG_FAIL, \\
+                (),                        \\
+                __VA_ARGS__                \\
+                ))" 5944 . 6264)))
+          ("cr_expect_not_" (spp-arg-list ("...") 7708 . 7713) . ((symbol "CR_EXPAND" 7746 . 7755) (semantic-list "(cr_assert_impl(                         \\
+                CR_FAIL_CONTINUES_,                   \\
+                !(CR_VA_HEAD(__VA_ARGS__)),           \\
+                dummy,                                \\
+                CRITERION_ASSERT_MSG_EXPR_FALSE,      \\
+                (CR_STR(!(CR_VA_HEAD(__VA_ARGS__)))), \\
+                CR_VA_TAIL(__VA_ARGS__)               \\
+                ))" 7755 . 8152)))
+          ("cr_assert_str_op_" (spp-arg-list ("Fail" "Op" "Actual" "Expected" "...") 12795 . 12828) . 
+              ((DO "do" 12866 . 12868) (semantic-list "{                                                                                  \\
+        const char *cr_str_actual__ = (Actual);                                           \\
+        const char *cr_str_expected__ = (Expected);                                       \\
+        CR_EXPAND(cr_assert_impl(                                                         \\
+                    Fail,                                                                 \\
+                    ((cr_str_actual__) != NULL) && ((cr_str_expected__) != NULL)          \\
+                    && CR_STDN strcmp((cr_str_actual__), (cr_str_expected__)) Op 0,       \\
+                    dummy,                                                                \\
+                    CRITERION_ASSERT_MSG_EXPR_AS_STRINGS_FALSE,                           \\
+                    (CR_STR((Actual) Op (Expected)), cr_str_actual__, cr_str_expected__), \\
+                    __VA_ARGS__                                                           \\
+                    ));                                                                   \\
+    }" 12869 . 13971) (WHILE "while" 13972 . 13977) (semantic-list "(0)" 13978 . 13981)))
+          ("cr_assert_mem_op_" (spp-arg-list ("Fail" "Op" "Actual" "Expected" "Size" "...") 17378 . 17417) . ((symbol "CR_EXPAND" 17427 . 17436) (semantic-list "(cr_assert_impl(                                       \\
+                Fail,                                               \\
+                CR_STDN memcmp((Actual), (Expected), (Size)) Op 0,  \\
+                dummy,                                              \\
+                CRITERION_ASSERT_MSG_EXPR_FALSE,                    \\
+                (CR_STR((Actual)[0..Size] Op (Expected)[0..Size])), \\
+                __VA_ARGS__                                         \\
+                ))" 17436 . 17931)))
+          ("cr_assert_neq" (spp-arg-list ("...") 26391 . 26396) . ((symbol "CR_EXPAND" 26410 . 26419) (semantic-list "(cr_assert_op_va_(CR_FAIL_ABORT_, !=, __VA_ARGS__))" 26419 . 26470)))
+          ("cr_expect_wcs_neq" (spp-arg-list ("...") 32277 . 32282) . ((symbol "CR_EXPAND" 32292 . 32301) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_CONTINUES_, !=, __VA_ARGS__))" 32301 . 32360)))
+          ("cr_expect_arr_neq_cmp" (spp-arg-list ("...") 34484 . 34489) . ((symbol "CR_EXPAND" 34493 . 34502) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_CONTINUES_, !=, __VA_ARGS__))" 34502 . 34565)))
+          ("CR_INIT_STATS_" (spp-arg-list ("MsgVar" "Shifted" "...") 3275 . 3297) . ((symbol "CR_EXPAND" 3336 . 3345) (semantic-list "(                                                               \\
+        do {                                                                 \\
+        char *cr_def_msg__ = CR_EXPAND(CR_TRANSLATE_DEF_MSG_(__VA_ARGS__));  \\
+        char *cr_fmt_msg__ = NULL;                                           \\
+        cr_asprintf(&cr_fmt_msg__, \"x\" CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))); \\
+        if (cr_fmt_msg__ && cr_fmt_msg__[1]) {                               \\
+            MsgVar = cr_fmt_msg__ + 1;                                       \\
+            Shifted = 1;                                                     \\
+            cr_asprintf_free(cr_def_msg__);                                  \\
+        } else {                                                             \\
+            MsgVar = cr_def_msg__;                                           \\
+            cr_asprintf_free(cr_fmt_msg__);                                  \\
+        }                                                                    \\
+    } while (0))" 3345 . 4375)))
+          ("cr_assert_null_op_va_" (spp-arg-list ("Fail" "Op" "Msg" "...") 9559 . 9579) . ((symbol "CR_EXPAND" 9586 . 9595) (semantic-list "(cr_assert_null_op_(                 \\
+                Fail,                             \\
+                Op,                               \\
+                Msg,                              \\
+                CR_VA_HEAD(__VA_ARGS__),          \\
+                CR_VA_TAIL(__VA_ARGS__)           \\
+                ))" 9595 . 9912)))
+          ("cr_assert_fail" (spp-arg-list ("...") 25539 . 25544) . ((symbol "CR_EXPAND" 25557 . 25566) (semantic-list "(cr_fail(CR_FAIL_ABORT_, __VA_ARGS__))" 25566 . 25604)))
+          ("cr_expect" (spp-arg-list ("...") 25845 . 25850) . ((symbol "CR_EXPAND" 25868 . 25877) (semantic-list "(cr_expect_(__VA_ARGS__))" 25877 . 25902)))
+          ("cr_assert_float_neq" (spp-arg-list ("...") 28601 . 28606) . ((symbol "CR_EXPAND" 28614 . 28623) (semantic-list "(cr_assert_float_op_va_(CR_FAIL_ABORT_, cr_assert_float_neq_op_, __VA_ARGS__))" 28623 . 28701)))
+          ("cr_assert_wcs_not_empty" (spp-arg-list ("...") 31547 . 31552) . ((symbol "CR_EXPAND" 31556 . 31565) (semantic-list "(cr_assert_wcs_op_empty_va_(CR_FAIL_ABORT_, !=, CRITERION_ASSERT_MSG_IS_EMPTY, __VA_ARGS__))" 31565 . 31657)))
+          ("cr_assert_wcs_geq" (spp-arg-list ("...") 33195 . 33200) . ((symbol "CR_EXPAND" 33210 . 33219) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_ABORT_, >=, __VA_ARGS__))" 33219 . 33274)))
+          ("cr_assert_throw" (spp-arg-list ("...") 37181 . 37186) . ((symbol "CR_EXPAND" 37195 . 37204) (semantic-list "(cr_assert_throw_va_(CR_FAIL_ABORT_, __VA_ARGS__))" 37204 . 37254)))
+          ("cr_assert_float_eq_op_" (spp-arg-list ("Actual" "Expected" "Epsilon") 9966 . 9993) . 
+              ((semantic-list "(Expected)" 10000 . 10010) (punctuation "-" 10011 . 10012) (semantic-list "(Actual)" 10013 . 10021) (punctuation "<" 10022 . 10023) (punctuation "=" 10023 . 10024) (semantic-list "(Epsilon)" 10025 . 10034) (punctuation "&" 10035 . 10036) (punctuation "&" 10036 . 10037) (semantic-list "(Actual)" 10038 . 10046) (punctuation "-" 10047 . 10048) (semantic-list "(Expected)" 10049 . 10059) (punctuation "<" 10060 . 10061) (punctuation "=" 10061 . 10062) (semantic-list "(Epsilon)" 10063 . 10072)))
+          ("cr_assert_str_op_empty_va_" (spp-arg-list ("Fail" "Op" "Msg" "...") 12385 . 12405) . ((symbol "CR_EXPAND" 12412 . 12421) (semantic-list "(cr_assert_str_op_empty_(                 \\
+                Fail,                                  \\
+                Op,                                    \\
+                Msg,                                   \\
+                CR_VA_HEAD(__VA_ARGS__),               \\
+                CR_VA_TAIL(__VA_ARGS__)                \\
+                ))" 12421 . 12768)))
+          ("cr_assert_any_throw_" (spp-arg-list ("Fail" "Statement" "...") 23375 . 23397) . 
+              ((TRY "try" 23405 . 23408) (semantic-list "{                                           \\
+        Statement;                                  \\
+        CR_EXPAND(cr_assert_throw_abort_(           \\
+                    Fail,                           \\
+                    CRITERION_ASSERT_MSG_ANY_THROW, \\
+                    (CR_STR(Statement)),            \\
+                    __VA_ARGS__));                  \\
+    }" 23409 . 23784) (CATCH "catch" 23785 . 23790) (semantic-list "(...)" 23791 . 23796) (semantic-list "{}" 23797 . 23799)))
+          ("cr_expect_fail" (spp-arg-list ("...") 25649 . 25654) . ((symbol "CR_EXPAND" 25667 . 25676) (semantic-list "(cr_fail(CR_FAIL_CONTINUES_, __VA_ARGS__))" 25676 . 25718)))
+          ("cr_assert_geq" (spp-arg-list ("...") 27375 . 27380) . ((symbol "CR_EXPAND" 27394 . 27403) (semantic-list "(cr_assert_op_va_(CR_FAIL_ABORT_, >=, __VA_ARGS__))" 27403 . 27454)))
+          ("cr_assert_str_neq" (spp-arg-list ("...") 29873 . 29878) . ((symbol "CR_EXPAND" 29888 . 29897) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_ABORT_, !=, __VA_ARGS__))" 29897 . 29952)))
+          ("cr_expect_wcs_not_empty" (spp-arg-list ("...") 31720 . 31725) . ((symbol "CR_EXPAND" 31729 . 31738) (semantic-list "(cr_assert_wcs_op_empty_va_(CR_FAIL_CONTINUES_, !=, CRITERION_ASSERT_MSG_IS_EMPTY, __VA_ARGS__))" 31738 . 31834)))
+          ("cr_expect_wcs_gt" (spp-arg-list ("...") 33061 . 33066) . ((symbol "CR_EXPAND" 33077 . 33086) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_CONTINUES_, >, __VA_ARGS__))" 33086 . 33144)))
+          ("cr_expect_wcs_geq" (spp-arg-list ("...") 33325 . 33330) . ((symbol "CR_EXPAND" 33340 . 33349) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_CONTINUES_, >=, __VA_ARGS__))" 33349 . 33408)))
+          ("cr_assert_impl" (spp-arg-list ("Fail" "Condition" "...") 4505 . 4527) . 
+              ((DO "do" 4550 . 4552) (semantic-list "{                                                     \\
+        bool cr_passed__ = !!(Condition);                    \\
+        char *cr_msg__ = NULL;                               \\
+        int cr_shifted__ = 0;                                \\
+                                                             \\
+        if (!cr_passed__ || criterion_options.full_stats) {  \\
+            CR_EXPAND(CR_INIT_STATS_(cr_msg__, cr_shifted__, \\
+                    CR_VA_TAIL(__VA_ARGS__)));               \\
+            struct criterion_assert_stats cr_stat__;         \\
+            cr_stat__.passed = cr_passed__;                  \\
+            cr_stat__.file = __FILE__;                       \\
+            cr_stat__.line = __LINE__;                       \\
+            cr_stat__.message = cr_msg__;                    \\
+            criterion_send_assert(&cr_stat__);               \\
+                                                             \\
+            cr_asprintf_free(cr_msg__ - cr_shifted__);       \\
+        }                                                    \\
+        if (!cr_passed__)                                    \\
+            Fail();                                          \\
+        else                                                 \\
+            cri_asserts_passed_incr();                       \\
+    }" 4553 . 5874) (WHILE "while" 5875 . 5880) (semantic-list "(0)" 5881 . 5884)))
+          ("cr_skip" (spp-arg-list ("...") 6281 . 6286) . ((symbol "criterion_skip_test" 6293 . 6312) (semantic-list "(\"\" __VA_ARGS__)" 6312 . 6328)))
+          ("cr_assert_float_op_va_" (spp-arg-list ("Fail" "Op" "...") 10837 . 10852) . ((symbol "CR_EXPAND" 10878 . 10887) (semantic-list "(cr_assert_float_op_(                               \\
+                Fail,                                            \\
+                Op,                                              \\
+                CR_VA_HEAD(__VA_ARGS__),                         \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)),             \\
+                CR_VA_HEAD(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))), \\
+                CR_VA_TAIL(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__)))  \\
+                ))" 10887 . 11361)))
+          ("cr_expect_not" (spp-arg-list ("...") 26045 . 26050) . ((symbol "CR_EXPAND" 26064 . 26073) (semantic-list "(cr_expect_not_(__VA_ARGS__))" 26073 . 26102)))
+          ("cr_assert_null" (spp-arg-list ("...") 27625 . 27630) . ((symbol "CR_EXPAND" 27643 . 27652) (semantic-list "(cr_assert_null_op_va_(CR_FAIL_ABORT_, ==, CRITERION_ASSERT_MSG_IS_NOT_NULL, __VA_ARGS__))" 27652 . 27742)))
+          ("cr_assert_float_eq" (spp-arg-list ("...") 28289 . 28294) . ((symbol "CR_EXPAND" 28303 . 28312) (semantic-list "(cr_assert_float_op_va_(CR_FAIL_ABORT_, cr_assert_float_eq_op_, __VA_ARGS__))" 28312 . 28389)))
+          ("cr_expect_str_neq" (spp-arg-list ("...") 30003 . 30008) . ((symbol "CR_EXPAND" 30018 . 30027) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_CONTINUES_, !=, __VA_ARGS__))" 30027 . 30086)))
+          ("cr_expect_str_gt" (spp-arg-list ("...") 30787 . 30792) . ((symbol "CR_EXPAND" 30803 . 30812) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_CONTINUES_, >, __VA_ARGS__))" 30812 . 30870)))
+          ("cr_assert_arr_eq_cmp" (spp-arg-list ("...") 34066 . 34071) . ((symbol "CR_EXPAND" 34076 . 34085) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_ABORT_, ==, __VA_ARGS__))" 34085 . 34144)))
+          ("cr_expect_arr_lt_cmp" (spp-arg-list ("...") 34760 . 34765) . ((symbol "CR_EXPAND" 34770 . 34779) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_CONTINUES_, <, __VA_ARGS__))" 34779 . 34841)))
+          ("cr_assert_arr_leq_cmp" (spp-arg-list ("...") 34902 . 34907) . ((symbol "CR_EXPAND" 34911 . 34920) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_ABORT_, <=, __VA_ARGS__))" 34920 . 34979)))
+          ("CRITERION_INTERNAL_ASSERT_H_")
+          ("cr_assert_op_va_" (spp-arg-list ("Fail" "Op" "...") 8668 . 8683) . ((symbol "CR_EXPAND" 8703 . 8712) (semantic-list "(cr_assert_op_(                         \\
+                Fail,                                \\
+                Op,                                  \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 8712 . 9047)))
+          ("cr_skip_test" (spp-arg-list ("...") 25443 . 25448) . ((symbol "CR_EXPAND" 25463 . 25472) (semantic-list "(cr_skip(__VA_ARGS__))" 25472 . 25494)))
+          ("cr_expect_leq" (spp-arg-list ("...") 27005 . 27010) . ((symbol "CR_EXPAND" 27024 . 27033) (semantic-list "(cr_assert_op_va_(CR_FAIL_CONTINUES_, <=, __VA_ARGS__))" 27033 . 27088)))
+          ("cr_assert_gt" (spp-arg-list ("...") 27129 . 27134) . ((symbol "CR_EXPAND" 27149 . 27158) (semantic-list "(cr_assert_op_va_(CR_FAIL_ABORT_, >, __VA_ARGS__))" 27158 . 27208)))
+          ("cr_expect_null" (spp-arg-list ("...") 27787 . 27792) . ((symbol "CR_EXPAND" 27805 . 27814) (semantic-list "(cr_assert_null_op_va_(CR_FAIL_CONTINUES_, ==, CRITERION_ASSERT_MSG_IS_NOT_NULL, __VA_ARGS__))" 27814 . 27908)))
+          ("cr_assert_not_null" (spp-arg-list ("...") 27961 . 27966) . ((symbol "CR_EXPAND" 27975 . 27984) (semantic-list "(cr_assert_null_op_va_(CR_FAIL_ABORT_, !=, CRITERION_ASSERT_MSG_IS_NULL, __VA_ARGS__))" 27984 . 28070)))
+          ("cr_assert_str_not_empty" (spp-arg-list ("...") 29273 . 29278) . ((symbol "CR_EXPAND" 29282 . 29291) (semantic-list "(cr_assert_str_op_empty_va_(CR_FAIL_ABORT_, !=, CRITERION_ASSERT_MSG_IS_EMPTY, __VA_ARGS__))" 29291 . 29383)))
+          ("cr_assert_str_geq" (spp-arg-list ("...") 30921 . 30926) . ((symbol "CR_EXPAND" 30936 . 30945) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_ABORT_, >=, __VA_ARGS__))" 30945 . 31000)))
+          ("cr_expect_wcs_lt" (spp-arg-list ("...") 32537 . 32542) . ((symbol "CR_EXPAND" 32553 . 32562) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_CONTINUES_, <, __VA_ARGS__))" 32562 . 32620)))
+          ("cr_assert_arr_gt_cmp" (spp-arg-list ("...") 35180 . 35185) . ((symbol "CR_EXPAND" 35190 . 35199) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_ABORT_, >, __VA_ARGS__))" 35199 . 35257)))
+          ("cr_expect_throw" (spp-arg-list ("...") 37301 . 37306) . ((symbol "CR_EXPAND" 37315 . 37324) (semantic-list "(cr_assert_throw_va_(CR_FAIL_CONTINUES_, __VA_ARGS__))" 37324 . 37378)))
+          ("cr_assert_none_throw" (spp-arg-list ("...") 37951 . 37956) . ((symbol "CR_EXPAND" 37960 . 37969) (semantic-list "(cr_assert_none_throw_va_(CR_FAIL_ABORT_, __VA_ARGS__))" 37969 . 38024)))
+          ("CR_FAIL_CONTINUES_" . ((symbol "criterion_continue_test" 4458 . 4481)))
+          ("cr_assert_no_throw_" (spp-arg-list ("Fail" "Statement" "Exception" "...") 22311 . 22344) . 
+              ((TRY "try" 22351 . 22354) (semantic-list "{                                                    \\
+        Statement;                                           \\
+    }" 22355 . 22478) (CATCH "catch" 22479 . 22484) (semantic-list "(Exception const &)" 22485 . 22504) (semantic-list "{                            \\
+        CR_EXPAND(cr_assert_throw_abort_(                    \\
+                    Fail,                                    \\
+                    CRITERION_ASSERT_MSG_THROW,              \\
+                    (CR_STR(Statement), CR_STR(Exception)),  \\
+                    __VA_ARGS__));                           \\
+    }" 22505 . 22856)))
+          ("cr_expect_str_not_empty" (spp-arg-list ("...") 29446 . 29451) . ((symbol "CR_EXPAND" 29455 . 29464) (semantic-list "(cr_assert_str_op_empty_va_(CR_FAIL_CONTINUES_, !=, CRITERION_ASSERT_MSG_IS_EMPTY, __VA_ARGS__))" 29464 . 29560)))
+          ("cr_expect_str_lt" (spp-arg-list ("...") 30263 . 30268) . ((symbol "CR_EXPAND" 30279 . 30288) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_CONTINUES_, <, __VA_ARGS__))" 30288 . 30346)))
+          ("cr_expect_str_geq" (spp-arg-list ("...") 31051 . 31056) . ((symbol "CR_EXPAND" 31066 . 31075) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_CONTINUES_, >=, __VA_ARGS__))" 31075 . 31134)))
+          ("cr_assert_arr_neq" (spp-arg-list ("...") 33721 . 33726) . ((symbol "CR_EXPAND" 33736 . 33745) (semantic-list "(cr_assert_mem_op_va_(CR_FAIL_ABORT_, !=, __VA_ARGS__))" 33745 . 33800)))
+          ("cr_assert_arr_neq_cmp" (spp-arg-list ("...") 34346 . 34351) . ((symbol "CR_EXPAND" 34355 . 34364) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_ABORT_, !=, __VA_ARGS__))" 34364 . 34423)))
+          ("cr_expect_any_throw" (spp-arg-list ("...") 37817 . 37822) . ((symbol "CR_EXPAND" 37827 . 37836) (semantic-list "(cr_assert_any_throw_va_(CR_FAIL_CONTINUES_, __VA_ARGS__))" 37836 . 37894)))
+          ("cr_assert_float_neq_op_" (spp-arg-list ("Actual" "Expected" "Epsilon") 10105 . 10132) . 
+              ((semantic-list "(Expected)" 10139 . 10149) (punctuation "-" 10150 . 10151) (semantic-list "(Actual)" 10152 . 10160) (punctuation ">" 10161 . 10162) (semantic-list "(Epsilon)" 10163 . 10172) (punctuation "|" 10173 . 10174) (punctuation "|" 10174 . 10175) (semantic-list "(Actual)" 10176 . 10184) (punctuation "-" 10185 . 10186) (semantic-list "(Expected)" 10187 . 10197) (punctuation ">" 10198 . 10199) (semantic-list "(Epsilon)" 10200 . 10209)))
+          ("cr_assert_lt" (spp-arg-list ("...") 26637 . 26642) . ((symbol "CR_EXPAND" 26657 . 26666) (semantic-list "(cr_assert_op_va_(CR_FAIL_ABORT_, <, __VA_ARGS__))" 26666 . 26716)))
+          ("cr_expect_float_eq" (spp-arg-list ("...") 28442 . 28447) . ((symbol "CR_EXPAND" 28456 . 28465) (semantic-list "(cr_assert_float_op_va_(CR_FAIL_CONTINUES_, cr_assert_float_eq_op_, __VA_ARGS__))" 28465 . 28546)))
+          ("cr_expect_wcs_empty" (spp-arg-list ("...") 31362 . 31367) . ((symbol "CR_EXPAND" 31375 . 31384) (semantic-list "(cr_assert_wcs_op_empty_va_(CR_FAIL_CONTINUES_, ==, CRITERION_ASSERT_MSG_IS_NOT_EMPTY, __VA_ARGS__))" 31384 . 31484)))
+          ("cr_expect_wcs_eq" (spp-arg-list ("...") 32012 . 32017) . ((symbol "CR_EXPAND" 32028 . 32037) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_CONTINUES_, ==, __VA_ARGS__))" 32037 . 32096)))
+          ("cr_assert_wcs_gt" (spp-arg-list ("...") 32933 . 32938) . ((symbol "CR_EXPAND" 32949 . 32958) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_ABORT_, >, __VA_ARGS__))" 32958 . 33012)))
+          ("cr_expect_arr_neq" (spp-arg-list ("...") 33851 . 33856) . ((symbol "CR_EXPAND" 33866 . 33875) (semantic-list "(cr_assert_mem_op_va_(CR_FAIL_CONTINUES_, !=, __VA_ARGS__))" 33875 . 33934)))
+          ("cr_expect_arr_geq_cmp" (spp-arg-list ("...") 35596 . 35601) . ((symbol "CR_EXPAND" 35605 . 35614) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_CONTINUES_, >=, __VA_ARGS__))" 35614 . 35677)))
+          ("CR_TRANSLATE_DEF_MSG_" (spp-arg-list ("...") 2938 . 2943) . ((symbol "CR_EXPAND" 2994 . 3003) (semantic-list "(cr_translate_assert_msg(                                         \\
+                CR_VA_HEAD(__VA_ARGS__),                                       \\
+                \"\" CR_TRANSLATE_DEF_MSG__(CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__))) \\
+                ))" 3003 . 3251)))
+          ("cr_expect_" (spp-arg-list ("...") 6792 . 6797) . ((symbol "CR_EXPAND" 6831 . 6840) (semantic-list "(cr_assert_impl(                      \\
+                CR_FAIL_CONTINUES_,                \\
+                CR_VA_HEAD(__VA_ARGS__),           \\
+                dummy,                             \\
+                CRITERION_ASSERT_MSG_EXPR_FALSE,   \\
+                (CR_STR(CR_VA_HEAD(__VA_ARGS__))), \\
+                CR_VA_TAIL(__VA_ARGS__)            \\
+                ))" 6840 . 7216)))
+          ("cr_assert_wcs_op_empty_" (spp-arg-list ("Fail" "Op" "Msg" "Value" "...") 14438 . 14465) . 
+              ((DO "do" 14498 . 14500) (semantic-list "{                                                                             \\
+        const wchar_t *cr_wcs_value__ = (Value);                                     \\
+        CR_EXPAND(cr_assert_impl(                                                    \\
+                    Fail,                                                            \\
+                    ((cr_wcs_value__) != NULL) && (cr_wcs_value__)[0] Op L'\\0',      \\
+                    dummy,                                                           \\
+                    ((cr_wcs_value__) != NULL) ? Msg : CRITERION_ASSERT_MSG_IS_NULL, \\
+                    (CR_STR(Value), cr_wcs_value__),                                 \\
+                    __VA_ARGS__                                                      \\
+                    ));                                                              \\
+    }" 14501 . 15369) (WHILE "while" 15370 . 15375) (semantic-list "(0)" 15376 . 15379)))
+          ("cr_assert_wcs_op_va_" (spp-arg-list ("Fail" "Op" "...") 16963 . 16978) . ((symbol "CR_EXPAND" 16994 . 17003) (semantic-list "(cr_assert_wcs_op_(                     \\
+                Fail,                                \\
+                Op,                                  \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 17003 . 17338)))
+          ("cr_assert_arr_op_cmp_" (spp-arg-list ("Fail" "Op" "Actual" "Expected" "Size" "Cmp" "...") 19111 . 19155) . 
+              ((DO "do" 19162 . 19164) (semantic-list "{                                                                  \\
+        CR_ARR_COMPARE_(Actual, Expected, Size, Cmp, order);              \\
+        CR_EXPAND(cr_assert_impl(                                         \\
+                    Fail,                                                 \\
+                    order Op 0,                                           \\
+                    dummy,                                                \\
+                    CRITERION_ASSERT_MSG_EXPR_FALSE,                      \\
+                    (CR_STR((Actual)[0..Size] Op (Expected)[0..Size])),   \\
+                    __VA_ARGS__                                           \\
+                    ));                                                   \\
+    }" 19165 . 19923) (WHILE "while" 19924 . 19929) (semantic-list "(0)" 19930 . 19933)))
+          ("cr_assert_arr_op_cmp_va_" (spp-arg-list ("Fail" "Op" "...") 19967 . 19982) . ((symbol "CR_EXPAND" 20018 . 20027) (semantic-list "(cr_assert_arr_op_cmp_(                                         \\
+                Fail,                                                        \\
+                Op,                                                          \\
+                CR_VA_HEAD(__VA_ARGS__),                                     \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)),                         \\
+                CR_VA_HEAD(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))),             \\
+                CR_VA_HEAD(CR_VA_TAIL(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__)))), \\
+                CR_VA_TAIL(CR_VA_TAIL(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))))  \\
+                ))" 20027 . 20664)))
+          ("cr_assert_throw_abort_" (spp-arg-list ("Fail" "Msg" "MsgArgs" "...") 20714 . 20739) . ((symbol "CR_EXPAND" 20746 . 20755) (semantic-list "(cr_assert_impl(                           \\
+                Fail,                                   \\
+                0,                                      \\
+                dummy,                                  \\
+                Msg,                                    \\
+                MsgArgs,                                \\
+                CR_VA_TAIL(__VA_ARGS__)                 \\
+                ))" 20755 . 21166)))
+          ("cr_assert_not" (spp-arg-list ("...") 25945 . 25950) . ((symbol "CR_EXPAND" 25964 . 25973) (semantic-list "(cr_assert_not_(__VA_ARGS__))" 25973 . 26002)))
+          ("cr_expect_gt" (spp-arg-list ("...") 27249 . 27254) . ((symbol "CR_EXPAND" 27269 . 27278) (semantic-list "(cr_assert_op_va_(CR_FAIL_CONTINUES_, >, __VA_ARGS__))" 27278 . 27332)))
+          ("cr_expect_not_null" (spp-arg-list ("...") 28123 . 28128) . ((symbol "CR_EXPAND" 28137 . 28146) (semantic-list "(cr_assert_null_op_va_(CR_FAIL_CONTINUES_, !=, CRITERION_ASSERT_MSG_IS_NULL, __VA_ARGS__))" 28146 . 28236)))
+          ("cr_expect_str_empty" (spp-arg-list ("...") 29088 . 29093) . ((symbol "CR_EXPAND" 29101 . 29110) (semantic-list "(cr_assert_str_op_empty_va_(CR_FAIL_CONTINUES_, ==, CRITERION_ASSERT_MSG_IS_NOT_EMPTY, __VA_ARGS__))" 29110 . 29210)))
+          ("cr_expect_str_eq" (spp-arg-list ("...") 29738 . 29743) . ((symbol "CR_EXPAND" 29754 . 29763) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_CONTINUES_, ==, __VA_ARGS__))" 29763 . 29822)))
+          ("cr_assert_str_gt" (spp-arg-list ("...") 30659 . 30664) . ((symbol "CR_EXPAND" 30675 . 30684) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_ABORT_, >, __VA_ARGS__))" 30684 . 30738)))
+          ("cr_assert_wcs_leq" (spp-arg-list ("...") 32671 . 32676) . ((symbol "CR_EXPAND" 32686 . 32695) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_ABORT_, <=, __VA_ARGS__))" 32695 . 32750)))
+          ("cr_assert_throw_" (spp-arg-list ("Fail" "Statement" "Exception" "...") 21192 . 21225) . 
+              ((TRY "try" 21234 . 21237) (semantic-list "{                                                   \\
+        Statement;                                          \\
+    }" 21238 . 21359) (CATCH "catch" 21360 . 21365) (semantic-list "(Exception const &)" 21366 . 21385) (semantic-list "{                           \\
+    }" 21386 . 21421) (CATCH "catch" 21422 . 21427) (semantic-list "(...)" 21428 . 21433) (semantic-list "{                                         \\
+        CR_EXPAND(cr_assert_throw_abort_(                   \\
+                    Fail,                                   \\
+                    CRITERION_ASSERT_MSG_NO_THROW,          \\
+                    (CR_STR(Statement), CR_STR(Exception)), \\
+                    __VA_ARGS__));                          \\
+    }" 21434 . 21793)))
+          ("cr_assert_eq" (spp-arg-list ("...") 26143 . 26148) . ((symbol "CR_EXPAND" 26163 . 26172) (semantic-list "(cr_assert_op_va_(CR_FAIL_ABORT_, ==, __VA_ARGS__))" 26172 . 26223)))
+          ("cr_assert_leq" (spp-arg-list ("...") 26883 . 26888) . ((symbol "CR_EXPAND" 26902 . 26911) (semantic-list "(cr_assert_op_va_(CR_FAIL_ABORT_, <=, __VA_ARGS__))" 26911 . 26962)))
+          ("cr_assert_wcs_lt" (spp-arg-list ("...") 32409 . 32414) . ((symbol "CR_EXPAND" 32425 . 32434) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_ABORT_, <, __VA_ARGS__))" 32434 . 32488)))
+          ("cr_expect_wcs_leq" (spp-arg-list ("...") 32801 . 32806) . ((symbol "CR_EXPAND" 32816 . 32825) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_CONTINUES_, <=, __VA_ARGS__))" 32825 . 32884)))
+          ("cr_expect_arr_eq" (spp-arg-list ("...") 33586 . 33591) . ((symbol "CR_EXPAND" 33602 . 33611) (semantic-list "(cr_assert_mem_op_va_(CR_FAIL_CONTINUES_, ==, __VA_ARGS__))" 33611 . 33670)))
+          ("cr_assert_no_throw" (spp-arg-list ("...") 37431 . 37436) . ((symbol "CR_EXPAND" 37442 . 37451) (semantic-list "(cr_assert_no_throw_va_(CR_FAIL_ABORT_, __VA_ARGS__))" 37451 . 37504)))
+          ("CR_VA_SKIP" (spp-arg-list ("_" "...") 2807 . 2815) . ((symbol "__VA_ARGS__" 2837 . 2848)))
+          ("cr_assert_throw_va_" (spp-arg-list ("...") 21822 . 21827) . ((symbol "CR_EXPAND" 21866 . 21875) (semantic-list "(cr_assert_throw_(                                  \\
+                CR_VA_HEAD(__VA_ARGS__),                         \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)),             \\
+                CR_VA_HEAD(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))), \\
+                dummy,                                           \\
+                CR_VA_TAIL(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__)))  \\
+                ))" 21875 . 22282)))
+          ("cr_assert_no_throw_va_" (spp-arg-list ("...") 22888 . 22893) . ((symbol "CR_EXPAND" 22929 . 22938) (semantic-list "(cr_assert_no_throw_(                               \\
+                CR_VA_HEAD(__VA_ARGS__),                         \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)),             \\
+                CR_VA_HEAD(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))), \\
+                dummy,                                           \\
+                CR_VA_TAIL(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__)))  \\
+                ))" 22938 . 23345)))
+          ("cr_assert_any_throw_va_" (spp-arg-list ("...") 23832 . 23837) . ((symbol "CR_EXPAND" 23860 . 23869) (semantic-list "(cr_assert_any_throw_(                  \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                dummy,                               \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 23869 . 24149)))
+          ("cr_assert_none_throw_" (spp-arg-list ("Fail" "Statement" "...") 24180 . 24202) . 
+              ((TRY "try" 24210 . 24213) (semantic-list "{                                            \\
+        Statement;                                   \\
+    }" 24214 . 24321) (CATCH "catch" 24322 . 24327) (semantic-list "(...)" 24328 . 24333) (semantic-list "{                                  \\
+        CR_EXPAND(cr_assert_throw_abort_(            \\
+                    Fail,                            \\
+                    CRITERION_ASSERT_MSG_NONE_THROW, \\
+                    (CR_STR(Statement)),             \\
+                    __VA_ARGS__));                   \\
+    }" 24334 . 24651)))
+          ("cr_assert_none_throw_va_" (spp-arg-list ("...") 24685 . 24690) . ((symbol "CR_EXPAND" 24712 . 24721) (semantic-list "(cr_assert_none_throw_(                 \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                dummy,                               \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 24721 . 25001)))
+          ("CRITERION_GNUC_WARN_" (spp-arg-list ("Name") 25103 . 25109) . ((symbol "CRITERION_GNUC_WARN__" 25151 . 25172) (semantic-list "(                                            \\
+        message                                                       \\
+        \"The `\" #Name \"` macro is only available on GNU C compilers.\" \\
+        )" 25172 . 25372)))
+          ("cr_expect_neq" (spp-arg-list ("...") 26513 . 26518) . ((symbol "CR_EXPAND" 26532 . 26541) (semantic-list "(cr_assert_op_va_(CR_FAIL_CONTINUES_, !=, __VA_ARGS__))" 26541 . 26596)))
+          ("cr_expect_lt" (spp-arg-list ("...") 26757 . 26762) . ((symbol "CR_EXPAND" 26777 . 26786) (semantic-list "(cr_assert_op_va_(CR_FAIL_CONTINUES_, <, __VA_ARGS__))" 26786 . 26840)))
+          ("cr_assert_str_lt" (spp-arg-list ("...") 30135 . 30140) . ((symbol "CR_EXPAND" 30151 . 30160) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_ABORT_, <, __VA_ARGS__))" 30160 . 30214)))
+          ("cr_expect_arr_eq_cmp" (spp-arg-list ("...") 34203 . 34208) . ((symbol "CR_EXPAND" 34213 . 34222) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_CONTINUES_, ==, __VA_ARGS__))" 34222 . 34285)))
+          ("cr_assert_any_throw" (spp-arg-list ("...") 37689 . 37694) . ((symbol "CR_EXPAND" 37699 . 37708) (semantic-list "(cr_assert_any_throw_va_(CR_FAIL_ABORT_, __VA_ARGS__))" 37708 . 37762)))
+          ("cr_assert_str_op_empty_" (spp-arg-list ("Fail" "Op" "Msg" "Value" "...") 11408 . 11435) . 
+              ((DO "do" 11468 . 11470) (semantic-list "{                                                                             \\
+        const char *cr_str_value__ = (Value);                                        \\
+        CR_EXPAND(cr_assert_impl(                                                    \\
+                    Fail,                                                            \\
+                    ((cr_str_value__) != NULL) && (cr_str_value__)[0] Op '\\0',       \\
+                    dummy,                                                           \\
+                    ((cr_str_value__) != NULL) ? Msg : CRITERION_ASSERT_MSG_IS_NULL, \\
+                    (CR_STR(Value), cr_str_value__),                                 \\
+                    __VA_ARGS__                                                      \\
+                    ));                                                              \\
+    }" 11471 . 12339) (WHILE "while" 12340 . 12345) (semantic-list "(0)" 12346 . 12349)))
+          ("cr_assert_str_op_va_" (spp-arg-list ("Fail" "Op" "...") 14011 . 14026) . ((symbol "CR_EXPAND" 14042 . 14051) (semantic-list "(cr_assert_str_op_(                     \\
+                Fail,                                \\
+                Op,                                  \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 14051 . 14386)))
+          ("cr_assert_wcs_op_" (spp-arg-list ("Fail" "Op" "Actual" "Expected" "...") 15825 . 15858) . 
+              ((DO "do" 15890 . 15892) (semantic-list "{                                                                            \\
+        const wchar_t *cr_wcs_actual__ = (Actual);                                  \\
+        const wchar_t *cr_wcs_expected__ = (Expected);                              \\
+        CR_EXPAND(cr_assert_impl(                                                   \\
+                    Fail,                                                           \\
+                    ((cr_wcs_actual__) != NULL) && ((cr_wcs_expected__) != NULL)    \\
+                    && CR_STDN wcscmp((cr_wcs_actual__), (cr_wcs_expected__)) Op 0, \\
+                    dummy,                                                          \\
+                    CRITERION_ASSERT_MSG_EXPR_FALSE,                                \\
+                    (CR_STR((Actual) Op (Expected))),                               \\
+                    __VA_ARGS__                                                     \\
+                    ));                                                             \\
+    }" 15893 . 16923) (WHILE "while" 16924 . 16929) (semantic-list "(0)" 16930 . 16933)))
+          ("cr_assert_mem_op_va_" (spp-arg-list ("Fail" "Op" "...") 17961 . 17976) . ((symbol "CR_EXPAND" 18004 . 18013) (semantic-list "(cr_assert_mem_op_(                                 \\
+                Fail,                                            \\
+                Op,                                              \\
+                CR_VA_HEAD(__VA_ARGS__),                         \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)),             \\
+                CR_VA_HEAD(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))), \\
+                CR_VA_TAIL(CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__)))  \\
+                ))" 18013 . 18487)))
+          ("cr_expect_float_neq" (spp-arg-list ("...") 28756 . 28761) . ((symbol "CR_EXPAND" 28769 . 28778) (semantic-list "(cr_assert_float_op_va_(CR_FAIL_CONTINUES_, cr_assert_float_neq_op_, __VA_ARGS__))" 28778 . 28860)))
+          ("cr_assert_str_leq" (spp-arg-list ("...") 30397 . 30402) . ((symbol "CR_EXPAND" 30412 . 30421) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_ABORT_, <=, __VA_ARGS__))" 30421 . 30476)))
+          ("cr_assert_wcs_empty" (spp-arg-list ("...") 31189 . 31194) . ((symbol "CR_EXPAND" 31202 . 31211) (semantic-list "(cr_assert_wcs_op_empty_va_(CR_FAIL_ABORT_, ==, CRITERION_ASSERT_MSG_IS_NOT_EMPTY, __VA_ARGS__))" 31211 . 31307)))
+          ("cr_assert_wcs_eq" (spp-arg-list ("...") 31883 . 31888) . ((symbol "CR_EXPAND" 31899 . 31908) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_ABORT_, ==, __VA_ARGS__))" 31908 . 31963)))
+          ("cr_assert_arr_lt_cmp" (spp-arg-list ("...") 34624 . 34629) . ((symbol "CR_EXPAND" 34634 . 34643) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_ABORT_, <, __VA_ARGS__))" 34643 . 34701)))
+          ("cr_expect_arr_gt_cmp" (spp-arg-list ("...") 35316 . 35321) . ((symbol "CR_EXPAND" 35326 . 35335) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_CONTINUES_, >, __VA_ARGS__))" 35335 . 35397)))
+          ("cr_expect_none_throw" (spp-arg-list ("...") 38081 . 38086) . ((symbol "CR_EXPAND" 38090 . 38099) (semantic-list "(cr_assert_none_throw_va_(CR_FAIL_CONTINUES_, __VA_ARGS__))" 38099 . 38158)))
+          ("CR_GET_CONDITION_STR" (spp-arg-list ("Condition" "...") 2758 . 2774) . ((punctuation "#" 2778 . 2779) (symbol "Condition" 2779 . 2788)))
+          ("CR_FAIL_ABORT_" . ((symbol "criterion_abort_test" 4407 . 4427)))
+          ("cr_assert_" (spp-arg-list ("...") 6348 . 6353) . ((symbol "CR_EXPAND" 6387 . 6396) (semantic-list "(cr_assert_impl(                      \\
+                CR_FAIL_ABORT_,                    \\
+                CR_VA_HEAD(__VA_ARGS__),           \\
+                dummy,                             \\
+                CRITERION_ASSERT_MSG_EXPR_FALSE,   \\
+                (CR_STR(CR_VA_HEAD(__VA_ARGS__))), \\
+                CR_VA_TAIL(__VA_ARGS__)            \\
+                ))" 6396 . 6772)))
+          ("cr_assert_op_" (spp-arg-list ("Fail" "Op" "Actual" "Expected" "...") 8189 . 8222) . ((symbol "CR_EXPAND" 8229 . 8238) (semantic-list "(cr_assert_impl(                          \\
+                Fail,                                  \\
+                (Actual) Op (Expected),                \\
+                dummy,                                 \\
+                CRITERION_ASSERT_MSG_EXPR_FALSE,       \\
+                (CR_STR((Actual) Op (Expected))),      \\
+                __VA_ARGS__                            \\
+                ))" 8238 . 8642)))
+          ("cr_assert_null_op_" (spp-arg-list ("Fail" "Op" "Msg" "Value" "...") 9088 . 9115) . ((symbol "CR_EXPAND" 9122 . 9131) (semantic-list "(cr_assert_impl(                         \\
+                Fail,                                 \\
+                (Value) Op NULL,                      \\
+                dummy,                                \\
+                Msg,                                  \\
+                (CR_STR(Value)),                      \\
+                __VA_ARGS__                           \\
+                ))" 9131 . 9528)))
+          ("CRITERION_GNUC_WARN__" (spp-arg-list ("Msg") 25048 . 25053) . ((symbol "_Pragma" 25060 . 25067) (semantic-list "(#Msg)" 25067 . 25073)))
+          ("cr_assert" (spp-arg-list ("...") 25753 . 25758) . ((symbol "CR_EXPAND" 25776 . 25785) (semantic-list "(cr_assert_(__VA_ARGS__))" 25785 . 25810)))
+          ("cr_expect_eq" (spp-arg-list ("...") 26264 . 26269) . ((symbol "CR_EXPAND" 26284 . 26293) (semantic-list "(cr_assert_op_va_(CR_FAIL_CONTINUES_, ==, __VA_ARGS__))" 26293 . 26348)))
+          ("cr_expect_geq" (spp-arg-list ("...") 27497 . 27502) . ((symbol "CR_EXPAND" 27516 . 27525) (semantic-list "(cr_assert_op_va_(CR_FAIL_CONTINUES_, >=, __VA_ARGS__))" 27525 . 27580)))
+          ("cr_assert_str_empty" (spp-arg-list ("...") 28915 . 28920) . ((symbol "CR_EXPAND" 28928 . 28937) (semantic-list "(cr_assert_str_op_empty_va_(CR_FAIL_ABORT_, ==, CRITERION_ASSERT_MSG_IS_NOT_EMPTY, __VA_ARGS__))" 28937 . 29033)))
+          ("cr_assert_str_eq" (spp-arg-list ("...") 29609 . 29614) . ((symbol "CR_EXPAND" 29625 . 29634) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_ABORT_, ==, __VA_ARGS__))" 29634 . 29689)))
+          ("cr_expect_str_leq" (spp-arg-list ("...") 30527 . 30532) . ((symbol "CR_EXPAND" 30542 . 30551) (semantic-list "(cr_assert_str_op_va_(CR_FAIL_CONTINUES_, <=, __VA_ARGS__))" 30551 . 30610)))
+          ("cr_expect_arr_leq_cmp" (spp-arg-list ("...") 35040 . 35045) . ((symbol "CR_EXPAND" 35049 . 35058) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_CONTINUES_, <=, __VA_ARGS__))" 35058 . 35121)))
+          ("cr_assert_arr_geq_cmp" (spp-arg-list ("...") 35458 . 35463) . ((symbol "CR_EXPAND" 35467 . 35476) (semantic-list "(cr_assert_arr_op_cmp_va_(CR_FAIL_ABORT_, >=, __VA_ARGS__))" 35476 . 35535)))
+          ("cr_expect_no_throw" (spp-arg-list ("...") 37557 . 37562) . ((symbol "CR_EXPAND" 37568 . 37577) (semantic-list "(cr_assert_no_throw_va_(CR_FAIL_CONTINUES_, __VA_ARGS__))" 37577 . 37634)))
+          ("CR_GET_CONDITION" (spp-arg-list ("Condition" "...") 2696 . 2712) . ((symbol "Condition" 2720 . 2729)))
+          ("cr_assert_not_" (spp-arg-list ("...") 7240 . 7245) . ((symbol "CR_EXPAND" 7278 . 7287) (semantic-list "(cr_assert_impl(                         \\
+                CR_FAIL_ABORT_,                       \\
+                !(CR_VA_HEAD(__VA_ARGS__)),           \\
+                dummy,                                \\
+                CRITERION_ASSERT_MSG_EXPR_FALSE,      \\
+                (CR_STR(!(CR_VA_HEAD(__VA_ARGS__)))), \\
+                CR_VA_TAIL(__VA_ARGS__)               \\
+                ))" 7287 . 7684)))
+          ("cr_assert_float_op_" (spp-arg-list ("Fail" "Op" "Actual" "Expected" "Epsilon" "...") 10238 . 10280) . ((symbol "CR_EXPAND" 10287 . 10296) (semantic-list "(cr_assert_impl(                                         \\
+                Fail,                                                 \\
+                Op (Actual, Expected, Epsilon),                       \\
+                dummy,                                                \\
+                CRITERION_ASSERT_MSG_EXPR_FALSE,                      \\
+                (CR_STR(Op (Actual, Expected, Epsilon))),             \\
+                __VA_ARGS__                                           \\
+                ))" 10296 . 10805)))
+          ("cr_assert_wcs_op_empty_va_" (spp-arg-list ("Fail" "Op" "Msg" "...") 15415 . 15435) . ((symbol "CR_EXPAND" 15442 . 15451) (semantic-list "(cr_assert_wcs_op_empty_(                 \\
+                Fail,                                  \\
+                Op,                                    \\
+                Msg,                                   \\
+                CR_VA_HEAD(__VA_ARGS__),               \\
+                CR_VA_TAIL(__VA_ARGS__)                \\
+                ))" 15451 . 15798)))
+          ("CR_ARR_COMPARE_" (spp-arg-list ("A" "B" "Size" "Cmp" "Result") 18557 . 18582) . 
+              ((INT "int" 18589 . 18592) (symbol "Result" 18593 . 18599) (punctuation "=" 18600 . 18601) (symbol "std" 18602 . 18605) (punctuation ":" 18605 . 18606) (punctuation ":" 18606 . 18607) (symbol "lexicographical_compare" 18607 . 18630) (semantic-list "((A), (A) + Size, (B), (B) + Size, Cmp)" 18630 . 18669)))
+          ("cr_assert_wcs_neq" (spp-arg-list ("...") 32147 . 32152) . ((symbol "CR_EXPAND" 32162 . 32171) (semantic-list "(cr_assert_wcs_op_va_(CR_FAIL_ABORT_, !=, __VA_ARGS__))" 32171 . 32226)))
+          ("cr_assert_arr_eq" (spp-arg-list ("...") 33457 . 33462) . ((symbol "CR_EXPAND" 33473 . 33482) (semantic-list "(cr_assert_mem_op_va_(CR_FAIL_ABORT_, ==, __VA_ARGS__))" 33482 . 33537)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_DESIGNATED_INITIALIZER_COMPAT_HH_" variable (:constant-flag t) nil [1240 1283])
+            ("common.h" include nil nil [1285 1304])
+            ("CRITERION_ARG_LENGTH" variable (:constant-flag t) nil [1314 1334])
+            ("CRITERION_ARG_LENGTH_" variable (:constant-flag t) nil [1795 1816])
+            ("CRITERION_APPLY_1" variable (:constant-flag t) nil [2213 2230])
+            ("CRITERION_APPLY_2" variable (:constant-flag t) nil [2251 2268])
+            ("CRITERION_APPLY_3" variable (:constant-flag t) nil [2384 2401])
+            ("CRITERION_APPLY_4" variable (:constant-flag t) nil [2517 2534])
+            ("CRITERION_APPLY_5" variable (:constant-flag t) nil [2650 2667])
+            ("CRITERION_APPLY_6" variable (:constant-flag t) nil [2783 2800])
+            ("CRITERION_APPLY_7" variable (:constant-flag t) nil [2916 2933])
+            ("CRITERION_APPLY_8" variable (:constant-flag t) nil [3049 3066])
+            ("CRITERION_APPLY_9" variable (:constant-flag t) nil [3182 3199])
+            ("CRITERION_APPLY_10" variable (:constant-flag t) nil [3315 3333])
+            ("CRITERION_APPLY_11" variable (:constant-flag t) nil [3448 3466])
+            ("CRITERION_APPLY_12" variable (:constant-flag t) nil [3582 3600])
+            ("CRITERION_APPLY_13" variable (:constant-flag t) nil [3716 3734])
+            ("CRITERION_APPLY_14" variable (:constant-flag t) nil [3850 3868])
+            ("CRITERION_APPLY_15" variable (:constant-flag t) nil [3984 4002])
+            ("CRITERION_APPLY_16" variable (:constant-flag t) nil [4118 4136])
+            ("CRITERION_APPLY_17" variable (:constant-flag t) nil [4252 4270])
+            ("CRITERION_APPLY_18" variable (:constant-flag t) nil [4386 4404])
+            ("CRITERION_APPLY_19" variable (:constant-flag t) nil [4520 4538])
+            ("CRITERION_APPLY_20" variable (:constant-flag t) nil [4654 4672])
+            ("CRITERION_APPLY_21" variable (:constant-flag t) nil [4788 4806])
+            ("CRITERION_APPLY_22" variable (:constant-flag t) nil [4922 4940])
+            ("CRITERION_APPLY_23" variable (:constant-flag t) nil [5056 5074])
+            ("CRITERION_APPLY_24" variable (:constant-flag t) nil [5190 5208])
+            ("CRITERION_APPLY_25" variable (:constant-flag t) nil [5324 5342])
+            ("CRITERION_APPLY_26" variable (:constant-flag t) nil [5458 5476])
+            ("CRITERION_APPLY_27" variable (:constant-flag t) nil [5592 5610])
+            ("CRITERION_APPLY_28" variable (:constant-flag t) nil [5726 5744])
+            ("CRITERION_APPLY_29" variable (:constant-flag t) nil [5860 5878])
+            ("CRITERION_APPLY_30" variable (:constant-flag t) nil [5994 6012])
+            ("CRITERION_APPLY_31" variable (:constant-flag t) nil [6128 6146])
+            ("CRITERION_APPLY_32" variable (:constant-flag t) nil [6262 6280])
+            ("CRITERION_APPLY_33" variable (:constant-flag t) nil [6396 6414])
+            ("CRITERION_APPLY_34" variable (:constant-flag t) nil [6530 6548])
+            ("CRITERION_APPLY_35" variable (:constant-flag t) nil [6664 6682])
+            ("CRITERION_APPLY_36" variable (:constant-flag t) nil [6798 6816])
+            ("CRITERION_APPLY_37" variable (:constant-flag t) nil [6932 6950])
+            ("CRITERION_APPLY_38" variable (:constant-flag t) nil [7066 7084])
+            ("CRITERION_APPLY_39" variable (:constant-flag t) nil [7200 7218])
+            ("CRITERION_APPLY_40" variable (:constant-flag t) nil [7334 7352])
+            ("CRITERION_APPLY_41" variable (:constant-flag t) nil [7468 7486])
+            ("CRITERION_APPLY_42" variable (:constant-flag t) nil [7602 7620])
+            ("CRITERION_APPLY_43" variable (:constant-flag t) nil [7736 7754])
+            ("CRITERION_APPLY_44" variable (:constant-flag t) nil [7870 7888])
+            ("CRITERION_APPLY_45" variable (:constant-flag t) nil [8004 8022])
+            ("CRITERION_APPLY_46" variable (:constant-flag t) nil [8138 8156])
+            ("CRITERION_APPLY_47" variable (:constant-flag t) nil [8272 8290])
+            ("CRITERION_APPLY_48" variable (:constant-flag t) nil [8406 8424])
+            ("CRITERION_APPLY_49" variable (:constant-flag t) nil [8540 8558])
+            ("CRITERION_APPLY_50" variable (:constant-flag t) nil [8674 8692])
+            ("CRITERION_APPLY_51" variable (:constant-flag t) nil [8808 8826])
+            ("CRITERION_APPLY_52" variable (:constant-flag t) nil [8942 8960])
+            ("CRITERION_APPLY_53" variable (:constant-flag t) nil [9076 9094])
+            ("CRITERION_APPLY_54" variable (:constant-flag t) nil [9210 9228])
+            ("CRITERION_APPLY_55" variable (:constant-flag t) nil [9344 9362])
+            ("CRITERION_APPLY_56" variable (:constant-flag t) nil [9478 9496])
+            ("CRITERION_APPLY_57" variable (:constant-flag t) nil [9612 9630])
+            ("CRITERION_APPLY_58" variable (:constant-flag t) nil [9746 9764])
+            ("CRITERION_APPLY_59" variable (:constant-flag t) nil [9880 9898])
+            ("CRITERION_APPLY_60" variable (:constant-flag t) nil [10014 10032])
+            ("CRITERION_APPLY_61" variable (:constant-flag t) nil [10148 10166])
+            ("CRITERION_APPLY_62" variable (:constant-flag t) nil [10282 10300])
+            ("CRITERION_APPLY_63" variable (:constant-flag t) nil [10416 10434])
+            ("CRITERION_APPLY_64" variable (:constant-flag t) nil [10550 10568])
+            ("CRITERION_APPLY_65" variable (:constant-flag t) nil [10684 10702])
+            ("CRITERION_APPLY__" variable (:constant-flag t) nil [10819 10836])
+            ("CRITERION_APPLY_" variable (:constant-flag t) nil [10938 10954])
+            ("CRITERION_APPLY" variable (:constant-flag t) nil [11054 11069])
+            ("CRITERION_ADD_PREFIX_ONCE" variable (:constant-flag t) nil [11194 11219])
+            ("CRITERION_ADD_PREFIX" variable (:constant-flag t) nil [11264 11284])
+            ("CRITERION_MAKE_STRUCT" variable (:constant-flag t) nil [11392 11413]))          
+      :file "designated-initializer-compat.h"
+      :pointmax 11873
+      :fsize 11873
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRITERION_APPLY_7" (spp-arg-list ("Macro" "Prefix" "Head" "...") 2933 . 2959) . 
+              ((symbol "Macro" 2964 . 2969) (semantic-list "(Prefix, Head)" 2969 . 2983) (symbol "CR_EXPAND" 2984 . 2993) (semantic-list "(CRITERION_APPLY_6(Macro, Prefix, __VA_ARGS__))" 2993 . 3040)))
+          ("CRITERION_APPLY_18" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4404 . 4430) . 
+              ((symbol "Macro" 4434 . 4439) (semantic-list "(Prefix, Head)" 4439 . 4453) (symbol "CR_EXPAND" 4454 . 4463) (semantic-list "(CRITERION_APPLY_17(Macro, Prefix, __VA_ARGS__))" 4463 . 4511)))
+          ("CRITERION_APPLY_25" (spp-arg-list ("Macro" "Prefix" "Head" "...") 5342 . 5368) . 
+              ((symbol "Macro" 5372 . 5377) (semantic-list "(Prefix, Head)" 5377 . 5391) (symbol "CR_EXPAND" 5392 . 5401) (semantic-list "(CRITERION_APPLY_24(Macro, Prefix, __VA_ARGS__))" 5401 . 5449)))
+          ("CRITERION_APPLY_32" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6280 . 6306) . 
+              ((symbol "Macro" 6310 . 6315) (semantic-list "(Prefix, Head)" 6315 . 6329) (symbol "CR_EXPAND" 6330 . 6339) (semantic-list "(CRITERION_APPLY_31(Macro, Prefix, __VA_ARGS__))" 6339 . 6387)))
+          ("CRITERION_APPLY_59" (spp-arg-list ("Macro" "Prefix" "Head" "...") 9898 . 9924) . 
+              ((symbol "Macro" 9928 . 9933) (semantic-list "(Prefix, Head)" 9933 . 9947) (symbol "CR_EXPAND" 9948 . 9957) (semantic-list "(CRITERION_APPLY_58(Macro, Prefix, __VA_ARGS__))" 9957 . 10005)))
+          ("CRITERION_APPLY_" (spp-arg-list ("Macro" "n" "Prefix" "...") 10954 . 10977) . ((symbol "CR_EXPAND" 10986 . 10995) (semantic-list "(CRITERION_APPLY__(Macro, Prefix, n, __VA_ARGS__))" 10995 . 11045)))
+          ("CRITERION_APPLY_8" (spp-arg-list ("Macro" "Prefix" "Head" "...") 3066 . 3092) . 
+              ((symbol "Macro" 3097 . 3102) (semantic-list "(Prefix, Head)" 3102 . 3116) (symbol "CR_EXPAND" 3117 . 3126) (semantic-list "(CRITERION_APPLY_7(Macro, Prefix, __VA_ARGS__))" 3126 . 3173)))
+          ("CRITERION_APPLY_19" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4538 . 4564) . 
+              ((symbol "Macro" 4568 . 4573) (semantic-list "(Prefix, Head)" 4573 . 4587) (symbol "CR_EXPAND" 4588 . 4597) (semantic-list "(CRITERION_APPLY_18(Macro, Prefix, __VA_ARGS__))" 4597 . 4645)))
+          ("CRITERION_APPLY_26" (spp-arg-list ("Macro" "Prefix" "Head" "...") 5476 . 5502) . 
+              ((symbol "Macro" 5506 . 5511) (semantic-list "(Prefix, Head)" 5511 . 5525) (symbol "CR_EXPAND" 5526 . 5535) (semantic-list "(CRITERION_APPLY_25(Macro, Prefix, __VA_ARGS__))" 5535 . 5583)))
+          ("CRITERION_APPLY_33" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6414 . 6440) . 
+              ((symbol "Macro" 6444 . 6449) (semantic-list "(Prefix, Head)" 6449 . 6463) (symbol "CR_EXPAND" 6464 . 6473) (semantic-list "(CRITERION_APPLY_32(Macro, Prefix, __VA_ARGS__))" 6473 . 6521)))
+          ("CRITERION_APPLY_40" (spp-arg-list ("Macro" "Prefix" "Head" "...") 7352 . 7378) . 
+              ((symbol "Macro" 7382 . 7387) (semantic-list "(Prefix, Head)" 7387 . 7401) (symbol "CR_EXPAND" 7402 . 7411) (semantic-list "(CRITERION_APPLY_39(Macro, Prefix, __VA_ARGS__))" 7411 . 7459)))
+          ("CRITERION_APPLY__" (spp-arg-list ("Macro" "Prefix" "n" "...") 10836 . 10859) . ((symbol "CR_EXPAND" 10867 . 10876) (semantic-list "(CRITERION_APPLY_ ## n(Macro, Prefix, __VA_ARGS__, ))" 10876 . 10929)))
+          ("CRITERION_APPLY_9" (spp-arg-list ("Macro" "Prefix" "Head" "...") 3199 . 3225) . 
+              ((symbol "Macro" 3230 . 3235) (semantic-list "(Prefix, Head)" 3235 . 3249) (symbol "CR_EXPAND" 3250 . 3259) (semantic-list "(CRITERION_APPLY_8(Macro, Prefix, __VA_ARGS__))" 3259 . 3306)))
+          ("CRITERION_APPLY_27" (spp-arg-list ("Macro" "Prefix" "Head" "...") 5610 . 5636) . 
+              ((symbol "Macro" 5640 . 5645) (semantic-list "(Prefix, Head)" 5645 . 5659) (symbol "CR_EXPAND" 5660 . 5669) (semantic-list "(CRITERION_APPLY_26(Macro, Prefix, __VA_ARGS__))" 5669 . 5717)))
+          ("CRITERION_APPLY_34" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6548 . 6574) . 
+              ((symbol "Macro" 6578 . 6583) (semantic-list "(Prefix, Head)" 6583 . 6597) (symbol "CR_EXPAND" 6598 . 6607) (semantic-list "(CRITERION_APPLY_33(Macro, Prefix, __VA_ARGS__))" 6607 . 6655)))
+          ("CRITERION_APPLY_41" (spp-arg-list ("Macro" "Prefix" "Head" "...") 7486 . 7512) . 
+              ((symbol "Macro" 7516 . 7521) (semantic-list "(Prefix, Head)" 7521 . 7535) (symbol "CR_EXPAND" 7536 . 7545) (semantic-list "(CRITERION_APPLY_40(Macro, Prefix, __VA_ARGS__))" 7545 . 7593)))
+          ("CRITERION_ADD_PREFIX_ONCE" (spp-arg-list ("Prefix" "Field") 11219 . 11234) . 
+              ((symbol "Prefix" 11242 . 11248) (symbol "Field" 11249 . 11254) (punctuation ";" 11254 . 11255)))
+          ("CRITERION_APPLY_28" (spp-arg-list ("Macro" "Prefix" "Head" "...") 5744 . 5770) . 
+              ((symbol "Macro" 5774 . 5779) (semantic-list "(Prefix, Head)" 5779 . 5793) (symbol "CR_EXPAND" 5794 . 5803) (semantic-list "(CRITERION_APPLY_27(Macro, Prefix, __VA_ARGS__))" 5803 . 5851)))
+          ("CRITERION_APPLY_35" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6682 . 6708) . 
+              ((symbol "Macro" 6712 . 6717) (semantic-list "(Prefix, Head)" 6717 . 6731) (symbol "CR_EXPAND" 6732 . 6741) (semantic-list "(CRITERION_APPLY_34(Macro, Prefix, __VA_ARGS__))" 6741 . 6789)))
+          ("CRITERION_APPLY_42" (spp-arg-list ("Macro" "Prefix" "Head" "...") 7620 . 7646) . 
+              ((symbol "Macro" 7650 . 7655) (semantic-list "(Prefix, Head)" 7655 . 7669) (symbol "CR_EXPAND" 7670 . 7679) (semantic-list "(CRITERION_APPLY_41(Macro, Prefix, __VA_ARGS__))" 7679 . 7727)))
+          ("CRITERION_DESIGNATED_INITIALIZER_COMPAT_HH_")
+          ("CRITERION_APPLY_29" (spp-arg-list ("Macro" "Prefix" "Head" "...") 5878 . 5904) . 
+              ((symbol "Macro" 5908 . 5913) (semantic-list "(Prefix, Head)" 5913 . 5927) (symbol "CR_EXPAND" 5928 . 5937) (semantic-list "(CRITERION_APPLY_28(Macro, Prefix, __VA_ARGS__))" 5937 . 5985)))
+          ("CRITERION_APPLY_36" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6816 . 6842) . 
+              ((symbol "Macro" 6846 . 6851) (semantic-list "(Prefix, Head)" 6851 . 6865) (symbol "CR_EXPAND" 6866 . 6875) (semantic-list "(CRITERION_APPLY_35(Macro, Prefix, __VA_ARGS__))" 6875 . 6923)))
+          ("CRITERION_APPLY_43" (spp-arg-list ("Macro" "Prefix" "Head" "...") 7754 . 7780) . 
+              ((symbol "Macro" 7784 . 7789) (semantic-list "(Prefix, Head)" 7789 . 7803) (symbol "CR_EXPAND" 7804 . 7813) (semantic-list "(CRITERION_APPLY_42(Macro, Prefix, __VA_ARGS__))" 7813 . 7861)))
+          ("CRITERION_APPLY_50" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8692 . 8718) . 
+              ((symbol "Macro" 8722 . 8727) (semantic-list "(Prefix, Head)" 8727 . 8741) (symbol "CR_EXPAND" 8742 . 8751) (semantic-list "(CRITERION_APPLY_49(Macro, Prefix, __VA_ARGS__))" 8751 . 8799)))
+          ("CRITERION_ADD_PREFIX" (spp-arg-list ("...") 11284 . 11289) . ((symbol "CR_EXPAND" 11296 . 11305) (semantic-list "(CRITERION_APPLY(CRITERION_ADD_PREFIX_ONCE, __VA_ARGS__))" 11305 . 11362)))
+          ("CRITERION_APPLY_10" (spp-arg-list ("Macro" "Prefix" "Head" "...") 3333 . 3359) . 
+              ((symbol "Macro" 3363 . 3368) (semantic-list "(Prefix, Head)" 3368 . 3382) (symbol "CR_EXPAND" 3383 . 3392) (semantic-list "(CRITERION_APPLY_9(Macro, Prefix, __VA_ARGS__))" 3392 . 3439)))
+          ("CRITERION_APPLY_37" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6950 . 6976) . 
+              ((symbol "Macro" 6980 . 6985) (semantic-list "(Prefix, Head)" 6985 . 6999) (symbol "CR_EXPAND" 7000 . 7009) (semantic-list "(CRITERION_APPLY_36(Macro, Prefix, __VA_ARGS__))" 7009 . 7057)))
+          ("CRITERION_APPLY_44" (spp-arg-list ("Macro" "Prefix" "Head" "...") 7888 . 7914) . 
+              ((symbol "Macro" 7918 . 7923) (semantic-list "(Prefix, Head)" 7923 . 7937) (symbol "CR_EXPAND" 7938 . 7947) (semantic-list "(CRITERION_APPLY_43(Macro, Prefix, __VA_ARGS__))" 7947 . 7995)))
+          ("CRITERION_APPLY_51" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8826 . 8852) . 
+              ((symbol "Macro" 8856 . 8861) (semantic-list "(Prefix, Head)" 8861 . 8875) (symbol "CR_EXPAND" 8876 . 8885) (semantic-list "(CRITERION_APPLY_50(Macro, Prefix, __VA_ARGS__))" 8885 . 8933)))
+          ("CRITERION_APPLY_11" (spp-arg-list ("Macro" "Prefix" "Head" "...") 3466 . 3492) . 
+              ((symbol "Macro" 3496 . 3501) (semantic-list "(Prefix, Head)" 3501 . 3515) (symbol "CR_EXPAND" 3516 . 3525) (semantic-list "(CRITERION_APPLY_10(Macro, Prefix, __VA_ARGS__))" 3525 . 3573)))
+          ("CRITERION_APPLY_38" (spp-arg-list ("Macro" "Prefix" "Head" "...") 7084 . 7110) . 
+              ((symbol "Macro" 7114 . 7119) (semantic-list "(Prefix, Head)" 7119 . 7133) (symbol "CR_EXPAND" 7134 . 7143) (semantic-list "(CRITERION_APPLY_37(Macro, Prefix, __VA_ARGS__))" 7143 . 7191)))
+          ("CRITERION_APPLY_45" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8022 . 8048) . 
+              ((symbol "Macro" 8052 . 8057) (semantic-list "(Prefix, Head)" 8057 . 8071) (symbol "CR_EXPAND" 8072 . 8081) (semantic-list "(CRITERION_APPLY_44(Macro, Prefix, __VA_ARGS__))" 8081 . 8129)))
+          ("CRITERION_APPLY_52" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8960 . 8986) . 
+              ((symbol "Macro" 8990 . 8995) (semantic-list "(Prefix, Head)" 8995 . 9009) (symbol "CR_EXPAND" 9010 . 9019) (semantic-list "(CRITERION_APPLY_51(Macro, Prefix, __VA_ARGS__))" 9019 . 9067)))
+          ("CRITERION_APPLY_1" (spp-arg-list ("Macro" "...") 2230 . 2242))
+          ("CRITERION_APPLY_12" (spp-arg-list ("Macro" "Prefix" "Head" "...") 3600 . 3626) . 
+              ((symbol "Macro" 3630 . 3635) (semantic-list "(Prefix, Head)" 3635 . 3649) (symbol "CR_EXPAND" 3650 . 3659) (semantic-list "(CRITERION_APPLY_11(Macro, Prefix, __VA_ARGS__))" 3659 . 3707)))
+          ("CRITERION_APPLY_39" (spp-arg-list ("Macro" "Prefix" "Head" "...") 7218 . 7244) . 
+              ((symbol "Macro" 7248 . 7253) (semantic-list "(Prefix, Head)" 7253 . 7267) (symbol "CR_EXPAND" 7268 . 7277) (semantic-list "(CRITERION_APPLY_38(Macro, Prefix, __VA_ARGS__))" 7277 . 7325)))
+          ("CRITERION_APPLY_46" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8156 . 8182) . 
+              ((symbol "Macro" 8186 . 8191) (semantic-list "(Prefix, Head)" 8191 . 8205) (symbol "CR_EXPAND" 8206 . 8215) (semantic-list "(CRITERION_APPLY_45(Macro, Prefix, __VA_ARGS__))" 8215 . 8263)))
+          ("CRITERION_APPLY_53" (spp-arg-list ("Macro" "Prefix" "Head" "...") 9094 . 9120) . 
+              ((symbol "Macro" 9124 . 9129) (semantic-list "(Prefix, Head)" 9129 . 9143) (symbol "CR_EXPAND" 9144 . 9153) (semantic-list "(CRITERION_APPLY_52(Macro, Prefix, __VA_ARGS__))" 9153 . 9201)))
+          ("CRITERION_APPLY_60" (spp-arg-list ("Macro" "Prefix" "Head" "...") 10032 . 10058) . 
+              ((symbol "Macro" 10062 . 10067) (semantic-list "(Prefix, Head)" 10067 . 10081) (symbol "CR_EXPAND" 10082 . 10091) (semantic-list "(CRITERION_APPLY_59(Macro, Prefix, __VA_ARGS__))" 10091 . 10139)))
+          ("CRITERION_ARG_LENGTH" (spp-arg-list ("...") 1334 . 1339) . ((symbol "CR_EXPAND" 1400 . 1409) (semantic-list "(CRITERION_ARG_LENGTH_(__VA_ARGS__,                                        \\
+            63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, \\
+            44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, \\
+            25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, \\
+            5, 4, 3, 2, 1, 0))" 1409 . 1786)))
+          ("CRITERION_ARG_LENGTH_" (spp-arg-list ("_63" "_62" "_61" "_60" "_59" "_58" "_57" "_56" "_55" "_54" "_53" "\\
+" "_52" "_51" "_50" "_49" "_48" "_47" "_46" "_45" "_44" "_43" "_42" "_41" "_40" "_39" "_38" "\\
+" "_37" "_36" "_35" "_34" "_33" "_32" "_31" "_30" "_29" "_28" "_27" "_26" "_25" "_24" "_23" "\\
+" "_22" "_21" "_20" "_19" "_18" "_17" "_16" "_15" "_14" "_13" "_12" "_11" "_10" "_9" "_8" "\\
+" "_7" "_6" "_5" "_4" "_3" "_2" "_1" "count" "...") 1816 . 2194) . ((symbol "count" 2198 . 2203)))
+          ("CRITERION_APPLY_2" (spp-arg-list ("Macro" "Prefix" "Head" "...") 2268 . 2294) . 
+              ((symbol "Macro" 2299 . 2304) (semantic-list "(Prefix, Head)" 2304 . 2318) (symbol "CR_EXPAND" 2319 . 2328) (semantic-list "(CRITERION_APPLY_1(Macro, Prefix, __VA_ARGS__))" 2328 . 2375)))
+          ("CRITERION_APPLY_13" (spp-arg-list ("Macro" "Prefix" "Head" "...") 3734 . 3760) . 
+              ((symbol "Macro" 3764 . 3769) (semantic-list "(Prefix, Head)" 3769 . 3783) (symbol "CR_EXPAND" 3784 . 3793) (semantic-list "(CRITERION_APPLY_12(Macro, Prefix, __VA_ARGS__))" 3793 . 3841)))
+          ("CRITERION_APPLY_20" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4672 . 4698) . 
+              ((symbol "Macro" 4702 . 4707) (semantic-list "(Prefix, Head)" 4707 . 4721) (symbol "CR_EXPAND" 4722 . 4731) (semantic-list "(CRITERION_APPLY_19(Macro, Prefix, __VA_ARGS__))" 4731 . 4779)))
+          ("CRITERION_APPLY_47" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8290 . 8316) . 
+              ((symbol "Macro" 8320 . 8325) (semantic-list "(Prefix, Head)" 8325 . 8339) (symbol "CR_EXPAND" 8340 . 8349) (semantic-list "(CRITERION_APPLY_46(Macro, Prefix, __VA_ARGS__))" 8349 . 8397)))
+          ("CRITERION_APPLY_54" (spp-arg-list ("Macro" "Prefix" "Head" "...") 9228 . 9254) . 
+              ((symbol "Macro" 9258 . 9263) (semantic-list "(Prefix, Head)" 9263 . 9277) (symbol "CR_EXPAND" 9278 . 9287) (semantic-list "(CRITERION_APPLY_53(Macro, Prefix, __VA_ARGS__))" 9287 . 9335)))
+          ("CRITERION_APPLY_61" (spp-arg-list ("Macro" "Prefix" "Head" "...") 10166 . 10192) . 
+              ((symbol "Macro" 10196 . 10201) (semantic-list "(Prefix, Head)" 10201 . 10215) (symbol "CR_EXPAND" 10216 . 10225) (semantic-list "(CRITERION_APPLY_60(Macro, Prefix, __VA_ARGS__))" 10225 . 10273)))
+          ("CRITERION_APPLY_3" (spp-arg-list ("Macro" "Prefix" "Head" "...") 2401 . 2427) . 
+              ((symbol "Macro" 2432 . 2437) (semantic-list "(Prefix, Head)" 2437 . 2451) (symbol "CR_EXPAND" 2452 . 2461) (semantic-list "(CRITERION_APPLY_2(Macro, Prefix, __VA_ARGS__))" 2461 . 2508)))
+          ("CRITERION_APPLY_14" (spp-arg-list ("Macro" "Prefix" "Head" "...") 3868 . 3894) . 
+              ((symbol "Macro" 3898 . 3903) (semantic-list "(Prefix, Head)" 3903 . 3917) (symbol "CR_EXPAND" 3918 . 3927) (semantic-list "(CRITERION_APPLY_13(Macro, Prefix, __VA_ARGS__))" 3927 . 3975)))
+          ("CRITERION_APPLY_21" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4806 . 4832) . 
+              ((symbol "Macro" 4836 . 4841) (semantic-list "(Prefix, Head)" 4841 . 4855) (symbol "CR_EXPAND" 4856 . 4865) (semantic-list "(CRITERION_APPLY_20(Macro, Prefix, __VA_ARGS__))" 4865 . 4913)))
+          ("CRITERION_APPLY_48" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8424 . 8450) . 
+              ((symbol "Macro" 8454 . 8459) (semantic-list "(Prefix, Head)" 8459 . 8473) (symbol "CR_EXPAND" 8474 . 8483) (semantic-list "(CRITERION_APPLY_47(Macro, Prefix, __VA_ARGS__))" 8483 . 8531)))
+          ("CRITERION_APPLY_55" (spp-arg-list ("Macro" "Prefix" "Head" "...") 9362 . 9388) . 
+              ((symbol "Macro" 9392 . 9397) (semantic-list "(Prefix, Head)" 9397 . 9411) (symbol "CR_EXPAND" 9412 . 9421) (semantic-list "(CRITERION_APPLY_54(Macro, Prefix, __VA_ARGS__))" 9421 . 9469)))
+          ("CRITERION_APPLY_62" (spp-arg-list ("Macro" "Prefix" "Head" "...") 10300 . 10326) . 
+              ((symbol "Macro" 10330 . 10335) (semantic-list "(Prefix, Head)" 10335 . 10349) (symbol "CR_EXPAND" 10350 . 10359) (semantic-list "(CRITERION_APPLY_61(Macro, Prefix, __VA_ARGS__))" 10359 . 10407)))
+          ("CRITERION_APPLY_4" (spp-arg-list ("Macro" "Prefix" "Head" "...") 2534 . 2560) . 
+              ((symbol "Macro" 2565 . 2570) (semantic-list "(Prefix, Head)" 2570 . 2584) (symbol "CR_EXPAND" 2585 . 2594) (semantic-list "(CRITERION_APPLY_3(Macro, Prefix, __VA_ARGS__))" 2594 . 2641)))
+          ("CRITERION_APPLY_15" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4002 . 4028) . 
+              ((symbol "Macro" 4032 . 4037) (semantic-list "(Prefix, Head)" 4037 . 4051) (symbol "CR_EXPAND" 4052 . 4061) (semantic-list "(CRITERION_APPLY_14(Macro, Prefix, __VA_ARGS__))" 4061 . 4109)))
+          ("CRITERION_APPLY_22" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4940 . 4966) . 
+              ((symbol "Macro" 4970 . 4975) (semantic-list "(Prefix, Head)" 4975 . 4989) (symbol "CR_EXPAND" 4990 . 4999) (semantic-list "(CRITERION_APPLY_21(Macro, Prefix, __VA_ARGS__))" 4999 . 5047)))
+          ("CRITERION_APPLY_49" (spp-arg-list ("Macro" "Prefix" "Head" "...") 8558 . 8584) . 
+              ((symbol "Macro" 8588 . 8593) (semantic-list "(Prefix, Head)" 8593 . 8607) (symbol "CR_EXPAND" 8608 . 8617) (semantic-list "(CRITERION_APPLY_48(Macro, Prefix, __VA_ARGS__))" 8617 . 8665)))
+          ("CRITERION_APPLY_56" (spp-arg-list ("Macro" "Prefix" "Head" "...") 9496 . 9522) . 
+              ((symbol "Macro" 9526 . 9531) (semantic-list "(Prefix, Head)" 9531 . 9545) (symbol "CR_EXPAND" 9546 . 9555) (semantic-list "(CRITERION_APPLY_55(Macro, Prefix, __VA_ARGS__))" 9555 . 9603)))
+          ("CRITERION_APPLY_63" (spp-arg-list ("Macro" "Prefix" "Head" "...") 10434 . 10460) . 
+              ((symbol "Macro" 10464 . 10469) (semantic-list "(Prefix, Head)" 10469 . 10483) (symbol "CR_EXPAND" 10484 . 10493) (semantic-list "(CRITERION_APPLY_62(Macro, Prefix, __VA_ARGS__))" 10493 . 10541)))
+          ("CRITERION_APPLY" (spp-arg-list ("Macro" "...") 11069 . 11081) . ((symbol "CR_EXPAND" 11102 . 11111) (semantic-list "(CRITERION_APPLY_(Macro, CRITERION_ARG_LENGTH(__VA_ARGS__), __VA_ARGS__))" 11111 . 11184)))
+          ("CRITERION_APPLY_5" (spp-arg-list ("Macro" "Prefix" "Head" "...") 2667 . 2693) . 
+              ((symbol "Macro" 2698 . 2703) (semantic-list "(Prefix, Head)" 2703 . 2717) (symbol "CR_EXPAND" 2718 . 2727) (semantic-list "(CRITERION_APPLY_4(Macro, Prefix, __VA_ARGS__))" 2727 . 2774)))
+          ("CRITERION_APPLY_16" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4136 . 4162) . 
+              ((symbol "Macro" 4166 . 4171) (semantic-list "(Prefix, Head)" 4171 . 4185) (symbol "CR_EXPAND" 4186 . 4195) (semantic-list "(CRITERION_APPLY_15(Macro, Prefix, __VA_ARGS__))" 4195 . 4243)))
+          ("CRITERION_APPLY_23" (spp-arg-list ("Macro" "Prefix" "Head" "...") 5074 . 5100) . 
+              ((symbol "Macro" 5104 . 5109) (semantic-list "(Prefix, Head)" 5109 . 5123) (symbol "CR_EXPAND" 5124 . 5133) (semantic-list "(CRITERION_APPLY_22(Macro, Prefix, __VA_ARGS__))" 5133 . 5181)))
+          ("CRITERION_APPLY_30" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6012 . 6038) . 
+              ((symbol "Macro" 6042 . 6047) (semantic-list "(Prefix, Head)" 6047 . 6061) (symbol "CR_EXPAND" 6062 . 6071) (semantic-list "(CRITERION_APPLY_29(Macro, Prefix, __VA_ARGS__))" 6071 . 6119)))
+          ("CRITERION_APPLY_57" (spp-arg-list ("Macro" "Prefix" "Head" "...") 9630 . 9656) . 
+              ((symbol "Macro" 9660 . 9665) (semantic-list "(Prefix, Head)" 9665 . 9679) (symbol "CR_EXPAND" 9680 . 9689) (semantic-list "(CRITERION_APPLY_56(Macro, Prefix, __VA_ARGS__))" 9689 . 9737)))
+          ("CRITERION_APPLY_64" (spp-arg-list ("Macro" "Prefix" "Head" "...") 10568 . 10594) . 
+              ((symbol "Macro" 10598 . 10603) (semantic-list "(Prefix, Head)" 10603 . 10617) (symbol "CR_EXPAND" 10618 . 10627) (semantic-list "(CRITERION_APPLY_63(Macro, Prefix, __VA_ARGS__))" 10627 . 10675)))
+          ("CRITERION_APPLY_6" (spp-arg-list ("Macro" "Prefix" "Head" "...") 2800 . 2826) . 
+              ((symbol "Macro" 2831 . 2836) (semantic-list "(Prefix, Head)" 2836 . 2850) (symbol "CR_EXPAND" 2851 . 2860) (semantic-list "(CRITERION_APPLY_5(Macro, Prefix, __VA_ARGS__))" 2860 . 2907)))
+          ("CRITERION_APPLY_17" (spp-arg-list ("Macro" "Prefix" "Head" "...") 4270 . 4296) . 
+              ((symbol "Macro" 4300 . 4305) (semantic-list "(Prefix, Head)" 4305 . 4319) (symbol "CR_EXPAND" 4320 . 4329) (semantic-list "(CRITERION_APPLY_16(Macro, Prefix, __VA_ARGS__))" 4329 . 4377)))
+          ("CRITERION_APPLY_24" (spp-arg-list ("Macro" "Prefix" "Head" "...") 5208 . 5234) . 
+              ((symbol "Macro" 5238 . 5243) (semantic-list "(Prefix, Head)" 5243 . 5257) (symbol "CR_EXPAND" 5258 . 5267) (semantic-list "(CRITERION_APPLY_23(Macro, Prefix, __VA_ARGS__))" 5267 . 5315)))
+          ("CRITERION_APPLY_31" (spp-arg-list ("Macro" "Prefix" "Head" "...") 6146 . 6172) . 
+              ((symbol "Macro" 6176 . 6181) (semantic-list "(Prefix, Head)" 6181 . 6195) (symbol "CR_EXPAND" 6196 . 6205) (semantic-list "(CRITERION_APPLY_30(Macro, Prefix, __VA_ARGS__))" 6205 . 6253)))
+          ("CRITERION_APPLY_58" (spp-arg-list ("Macro" "Prefix" "Head" "...") 9764 . 9790) . 
+              ((symbol "Macro" 9794 . 9799) (semantic-list "(Prefix, Head)" 9799 . 9813) (symbol "CR_EXPAND" 9814 . 9823) (semantic-list "(CRITERION_APPLY_57(Macro, Prefix, __VA_ARGS__))" 9823 . 9871)))
+          ("CRITERION_APPLY_65" (spp-arg-list ("Macro" "Prefix" "Head" "...") 10702 . 10728) . 
+              ((symbol "Macro" 10732 . 10737) (semantic-list "(Prefix, Head)" 10737 . 10751) (symbol "CR_EXPAND" 10752 . 10761) (semantic-list "(CRITERION_APPLY_64(Macro, Prefix, __VA_ARGS__))" 10761 . 10809)))
+          ("CRITERION_MAKE_STRUCT" (spp-arg-list ("Type" "...") 11413 . 11424) . 
+              ((semantic-list "[]" 11445 . 11447) (semantic-list "()" 11447 . 11449) (punctuation "-" 11450 . 11451) (punctuation ">" 11451 . 11452) (symbol "Type" 11453 . 11457) (semantic-list "{                                      \\
+        Type t;                                         \\
+        std::memset(&t, 0, sizeof (t));                 \\
+        CR_EXPAND(CRITERION_ADD_PREFIX(t, __VA_ARGS__)) \\
+        return t;                                       \\
+    }" 11458 . 11736) (semantic-list "()" 11737 . 11739)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_PREPROCESS_H_" variable (:constant-flag t) nil [1220 1243])
+            ("CR_NOOP" variable (:constant-flag t) nil [1253 1260])
+            ("CR_NOTHROW" variable (:constant-flag t) nil [1309 1319])
+            ("CR_EXPAND" variable (:constant-flag t) nil [1374 1383])
+            ("CR_IDENTITY" variable (:constant-flag t) nil [1418 1429])
+            ("CR_STR" variable (:constant-flag t) nil [1473 1479])
+            ("CR_STR_" variable (:constant-flag t) nil [1537 1544])
+            ("CR_VA_TAIL" variable (:constant-flag t) nil [1583 1593])
+            ("CR_VA_TAIL_HELPER" variable (:constant-flag t) nil [1700 1717])
+            ("CR_VA_TAIL_HELPER_" variable (:constant-flag t) nil [1788 1806])
+            ("CR_VA_TAIL_HELPER_1" variable (:constant-flag t) nil [1878 1897])
+            ("CR_VA_TAIL_HELPER_2" variable (:constant-flag t) nil [1912 1931])
+            ("CR_VA_HEAD" variable (:constant-flag t) nil [1967 1977])
+            ("CR_VA_HEAD_HELPER" variable (:constant-flag t) nil [2084 2101])
+            ("CR_VA_HEAD_HELPER_" variable (:constant-flag t) nil [2172 2190])
+            ("CR_VA_HEAD_HELPER_1" variable (:constant-flag t) nil [2262 2281])
+            ("CR_VA_HEAD_HELPER_2" variable (:constant-flag t) nil [2309 2328])
+            ("CR_VA_TAIL_SELECT" variable (:constant-flag t) nil [2357 2374])
+            ("CR_VA_TAIL_SELECT64" variable (:constant-flag t) nil [2775 2794]))          
+      :file "preprocess.h"
+      :pointmax 3262
+      :fsize 3262
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CR_EXPAND" (spp-arg-list ("x") 1383 . 1386) . ((symbol "x" 1408 . 1409)))
+          ("CR_VA_TAIL_HELPER" (spp-arg-list ("N" "...") 1717 . 1725) . ((symbol "CR_EXPAND" 1734 . 1743) (semantic-list "(CR_VA_TAIL_HELPER_(N, __VA_ARGS__))" 1743 . 1779)))
+          ("CR_VA_TAIL_HELPER_1" (spp-arg-list ("Head") 1897 . 1903))
+          ("CR_VA_TAIL_SELECT64" (spp-arg-list ("\\
+" "_01" "_02" "_03" "_04" "_05" "_06" "_07" "_08" "_09" "_10" "\\
+" "_11" "_12" "_13" "_14" "_15" "_16" "_17" "_18" "_19" "_20" "\\
+" "_21" "_22" "_23" "_24" "_25" "_26" "_27" "_28" "_29" "_30" "\\
+" "_31" "_32" "_33" "_34" "_35" "_36" "_37" "_38" "_39" "_40" "\\
+" "_41" "_42" "_43" "_44" "_45" "_46" "_47" "_48" "_49" "_50" "\\
+" "_51" "_52" "_53" "_54" "_55" "_56" "_57" "_58" "_59" "_60" "\\
+" "_61" "_62" "_63" "X" "...") 2794 . 3217) . ((symbol "X" 3221 . 3222)))
+          ("CR_NOTHROW" . ((THROW "throw" 1323 . 1328) (semantic-list "()" 1329 . 1331)))
+          ("CR_VA_TAIL_HELPER_2" (spp-arg-list ("Head" "...") 1931 . 1942) . ((symbol "__VA_ARGS__" 1946 . 1957)))
+          ("CR_VA_HEAD_HELPER" (spp-arg-list ("N" "...") 2101 . 2109) . ((symbol "CR_EXPAND" 2118 . 2127) (semantic-list "(CR_VA_HEAD_HELPER_(N, __VA_ARGS__))" 2127 . 2163)))
+          ("CR_VA_TAIL_HELPER_" (spp-arg-list ("N" "...") 1806 . 1814) . ((symbol "CR_EXPAND" 1822 . 1831) (semantic-list "(CR_VA_TAIL_HELPER_ ## N(__VA_ARGS__))" 1831 . 1869)))
+          ("CR_VA_HEAD_HELPER_1" (spp-arg-list ("Head") 2281 . 2287) . ((symbol "Head" 2296 . 2300)))
+          ("CR_VA_TAIL" (spp-arg-list ("...") 1593 . 1598) . ((symbol "CR_EXPAND" 1617 . 1626) (semantic-list "(CR_VA_TAIL_HELPER(CR_VA_TAIL_SELECT(__VA_ARGS__), __VA_ARGS__))" 1626 . 1690)))
+          ("CR_VA_HEAD_HELPER_2" (spp-arg-list ("Head" "...") 2328 . 2339) . ((symbol "Head" 2343 . 2347)))
+          ("CR_IDENTITY" (spp-arg-list ("...") 1429 . 1434) . ((symbol "__VA_ARGS__" 1452 . 1463)))
+          ("CR_STR_" (spp-arg-list ("x") 1544 . 1547) . ((punctuation "#" 1571 . 1572) (symbol "x" 1572 . 1573)))
+          ("CR_STR" (spp-arg-list ("x") 1479 . 1482) . ((symbol "CR_EXPAND" 1507 . 1516) (semantic-list "(CR_STR_(x))" 1516 . 1528)))
+          ("CR_VA_HEAD_HELPER_" (spp-arg-list ("N" "...") 2190 . 2198) . ((symbol "CR_EXPAND" 2206 . 2215) (semantic-list "(CR_VA_HEAD_HELPER_ ## N(__VA_ARGS__))" 2215 . 2253)))
+          ("CR_VA_TAIL_SELECT" (spp-arg-list ("...") 2374 . 2379) . ((symbol "CR_EXPAND" 2402 . 2411) (semantic-list "(CR_VA_TAIL_SELECT64(__VA_ARGS__, \\
+            2, 2, 2, 2, 2, 2, 2, 2, 2, 2,      \\
+            2, 2, 2, 2, 2, 2, 2, 2, 2, 2,      \\
+            2, 2, 2, 2, 2, 2, 2, 2, 2, 2,      \\
+            2, 2, 2, 2, 2, 2, 2, 2, 2, 2,      \\
+            2, 2, 2, 2, 2, 2, 2, 2, 2, 2,      \\
+            2, 2, 2, 2, 2, 2, 2, 2, 2, 2,      \\
+            2, 2, 1, _))" 2411 . 2765)))
+          ("CRITERION_PREPROCESS_H_")
+          ("CR_NOOP" . 
+              ((DO "do" 1264 . 1266) (semantic-list "{}" 1267 . 1269) (WHILE "while" 1270 . 1275) (semantic-list "(0)" 1276 . 1279)))
+          ("CR_VA_HEAD" (spp-arg-list ("...") 1977 . 1982) . ((symbol "CR_EXPAND" 2001 . 2010) (semantic-list "(CR_VA_HEAD_HELPER(CR_VA_TAIL_SELECT(__VA_ARGS__), __VA_ARGS__))" 2010 . 2074)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_ASPRINTF_COMPAT_H_" variable (:constant-flag t) nil [1225 1253])
+            ("cstdarg" include (:system-flag t) nil [1274 1293])
+            ("common.h" include nil nil [1329 1348])
+            ("cr_asprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("strp" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1413 1425])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1426 1442])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1443 1447]))                  
+                :type "int")
+                nil [1397 1448])
+            ("cr_vasprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("strp" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1473 1485])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1486 1502])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1503 1514]))                  
+                :type "int")
+                nil [1456 1515])
+            ("cr_asprintf_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1545 1555]))                  
+                :type "void")
+                nil [1523 1556]))          
+      :file "asprintf-compat.h"
+      :pointmax 1615
+      :fsize 1615
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((symbol 1558 . 1570) (symbol 1516 . 1522) (symbol 1449 . 1455) (symbol 1390 . 1396) (semantic-list 1375 . 1389) (symbol 1366 . 1375) (number 1387 . 1388) (number 1384 . 1385) (symbol 1350 . 1364) (number 1387 . 1388) (number 1384 . 1385))
+      :lexical-table 
+        '(("CRITERION_ASPRINTF_COMPAT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_INTERNAL_DEPRECATION_H_" variable (:constant-flag t) nil [1230 1263])
+            ("CR_DEPRECATED" variable (:constant-flag t) nil [1273 1286])
+            ("CR_DEPRECATED_" variable (:constant-flag t) nil [1402 1416])
+            ("CR_DEPRECATED_MEMBER" variable (:constant-flag t) nil [1472 1492]))          
+      :file "deprecation.h"
+      :pointmax 1649
+      :fsize 1649
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CR_DEPRECATED_MEMBER" (spp-arg-list ("Member") 1492 . 1500) . 
+              ((symbol "Member" 1504 . 1510) (symbol "__attribute__" 1511 . 1524) (semantic-list "((deprecated))" 1524 . 1538)))
+          ("CR_DEPRECATED" (spp-arg-list ("Msg") 1286 . 1291) . ((symbol "CR_DEPRECATED_" 1295 . 1309) (semantic-list "(message(Msg))" 1309 . 1323)))
+          ("CRITERION_INTERNAL_DEPRECATION_H_")
+          ("CR_DEPRECATED_" (spp-arg-list ("Msg") 1416 . 1421) . ((symbol "_Pragma" 1425 . 1432) (semantic-list "(#Msg)" 1432 . 1438)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_INTERNAL_HOOKS_H_" variable (:constant-flag t) nil [1224 1251])
+            ("common.h" include nil nil [1253 1272])
+            ("../types.h" include nil nil [1273 1294])
+            ("CR_HOOK_IDENTIFIER_" variable (:constant-flag t) nil [1304 1323])
+            ("CR_HOOK_IDENTIFIER__" variable (:constant-flag t) nil [1390 1410])
+            ("CR_HOOK_IDENTIFIER___" variable (:constant-flag t) nil [1473 1494])
+            ("CR_HOOK_PROTOTYPE_" variable (:constant-flag t) nil [1571 1589])
+            ("CR_HOOK_SECTION_PRE_ALL" variable (:constant-flag t) nil [1753 1776])
+            ("CR_HOOK_SECTION_PRE_SUITE" variable (:constant-flag t) nil [1799 1824])
+            ("CR_HOOK_SECTION_PRE_INIT" variable (:constant-flag t) nil [1845 1869])
+            ("CR_HOOK_SECTION_PRE_TEST" variable (:constant-flag t) nil [1891 1915])
+            ("CR_HOOK_SECTION_ASSERT" variable (:constant-flag t) nil [1937 1959])
+            ("CR_HOOK_SECTION_THEORY_FAIL" variable (:constant-flag t) nil [1983 2010])
+            ("CR_HOOK_SECTION_TEST_CRASH" variable (:constant-flag t) nil [2029 2055])
+            ("CR_HOOK_SECTION_POST_TEST" variable (:constant-flag t) nil [2075 2100])
+            ("CR_HOOK_SECTION_POST_FINI" variable (:constant-flag t) nil [2121 2146])
+            ("CR_HOOK_SECTION_POST_SUITE" variable (:constant-flag t) nil [2167 2193])
+            ("CR_HOOK_SECTION_POST_ALL" variable (:constant-flag t) nil [2213 2237])
+            ("CR_HOOK_SECTION" variable (:constant-flag t) nil [2260 2275])
+            ("CR_HOOK_SECTION_STRINGIFY__" variable (:constant-flag t) nil [2330 2357])
+            ("CR_HOOK_SECTION_STRINGIFY_" variable (:constant-flag t) nil [2379 2405])
+            ("CR_HOOK_SECTION_STRINGIFY" variable (:constant-flag t) nil [2456 2481])
+            ("CR_HOOK_PARAM_TYPE_PRE_ALL" variable (:constant-flag t) nil [2551 2577])
+            ("CR_HOOK_PARAM_TYPE_PRE_SUITE" variable (:constant-flag t) nil [2621 2649])
+            ("CR_HOOK_PARAM_TYPE_PRE_INIT" variable (:constant-flag t) nil [2692 2719])
+            ("CR_HOOK_PARAM_TYPE_PRE_TEST" variable (:constant-flag t) nil [2758 2785])
+            ("CR_HOOK_PARAM_TYPE_ASSERT" variable (:constant-flag t) nil [2824 2849])
+            ("CR_HOOK_PARAM_TYPE_THEORY_FAIL" variable (:constant-flag t) nil [2898 2928])
+            ("CR_HOOK_PARAM_TYPE_TEST_CRASH" variable (:constant-flag t) nil [2972 3001])
+            ("CR_HOOK_PARAM_TYPE_POST_TEST" variable (:constant-flag t) nil [3044 3072])
+            ("CR_HOOK_PARAM_TYPE_POST_FINI" variable (:constant-flag t) nil [3116 3144])
+            ("CR_HOOK_PARAM_TYPE_POST_SUITE" variable (:constant-flag t) nil [3188 3217])
+            ("CR_HOOK_PARAM_TYPE_POST_ALL" variable (:constant-flag t) nil [3261 3288])
+            ("CR_HOOK_PARAM_TYPE" variable (:constant-flag t) nil [3336 3354])
+            ("CR_REPORT_HOOK_IMPL" variable (:constant-flag t) nil [3401 3420]))          
+      :file "hooks.h"
+      :pointmax 3795
+      :fsize 3795
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CR_HOOK_SECTION_POST_TEST" . ((symbol "cr_pot" 2106 . 2112)))
+          ("CR_HOOK_SECTION_POST_SUITE" . ((symbol "cr_pos" 2198 . 2204)))
+          ("CR_HOOK_PARAM_TYPE_PRE_ALL" . 
+              ((STRUCT "struct" 2585 . 2591) (symbol "criterion_test_set" 2592 . 2610) (punctuation "*" 2611 . 2612)))
+          ("CR_HOOK_PARAM_TYPE_THEORY_FAIL" . 
+              ((STRUCT "struct" 2932 . 2938) (symbol "criterion_theory_stats" 2939 . 2961) (punctuation "*" 2962 . 2963)))
+          ("CR_HOOK_PARAM_TYPE_TEST_CRASH" . 
+              ((STRUCT "struct" 3006 . 3012) (symbol "criterion_test_stats" 3013 . 3033) (punctuation "*" 3034 . 3035)))
+          ("CR_HOOK_SECTION_ASSERT" . ((symbol "cr_ast" 1968 . 1974)))
+          ("CR_HOOK_PARAM_TYPE_POST_FINI" . 
+              ((STRUCT "struct" 3150 . 3156) (symbol "criterion_test_stats" 3157 . 3177) (punctuation "*" 3178 . 3179)))
+          ("CR_HOOK_PARAM_TYPE_POST_SUITE" . 
+              ((STRUCT "struct" 3222 . 3228) (symbol "criterion_suite_stats" 3229 . 3250) (punctuation "*" 3251 . 3252)))
+          ("CR_HOOK_IDENTIFIER__" (spp-arg-list ("Line" "Suffix") 1410 . 1424) . ((symbol "CR_HOOK_IDENTIFIER___" 1429 . 1450) (semantic-list "(Line, Suffix)" 1450 . 1464)))
+          ("CR_HOOK_IDENTIFIER___" (spp-arg-list ("Line" "Suffix") 1494 . 1508) . ((spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "hook_l" 1512 . 1518) (symbol "Line" 1522 . 1526)) 1512 . 1526) (symbol "_" 1530 . 1531)) 1512 . 1531) (symbol "Suffix" 1535 . 1541)) 1512 . 1541)))
+          ("CR_HOOK_SECTION_THEORY_FAIL" . ((symbol "cr_thf" 2014 . 2020)))
+          ("CR_HOOK_PARAM_TYPE_ASSERT" . 
+              ((STRUCT "struct" 2858 . 2864) (symbol "criterion_assert_stats" 2865 . 2887) (punctuation "*" 2888 . 2889)))
+          ("CR_REPORT_HOOK_IMPL" (spp-arg-list ("Kind") 3420 . 3426) . 
+              ((symbol "CR_HOOK_PROTOTYPE_" 3453 . 3471) (semantic-list "(CR_HOOK_PARAM_TYPE(Kind))" 3471 . 3497) (punctuation ";" 3497 . 3498) (symbol "CR_SECTION_" 3509 . 3520) (semantic-list "(CR_HOOK_SECTION_STRINGIFY(Kind))" 3520 . 3553) (symbol "f_report_hook" 3565 . 3578) (symbol "CR_HOOK_IDENTIFIER_" 3579 . 3598) (semantic-list "(func)" 3598 . 3604) (punctuation "=" 3605 . 3606) (semantic-list "(f_report_hook)" 3629 . 3644) (symbol "CR_HOOK_IDENTIFIER_" 3645 . 3664) (semantic-list "(impl)" 3664 . 3670) (symbol "CR_SECTION_SUFFIX_" 3685 . 3703) (punctuation ";" 3703 . 3704) (symbol "CR_HOOK_PROTOTYPE_" 3733 . 3751)))
+          ("CRITERION_INTERNAL_HOOKS_H_")
+          ("CR_HOOK_SECTION_STRINGIFY_" (spp-arg-list ("Sec") 2405 . 2410) . ((symbol "CR_HOOK_SECTION_STRINGIFY__" 2415 . 2442) (semantic-list "(Sec)" 2442 . 2447)))
+          ("CR_HOOK_PROTOTYPE_" . 
+              ((EXTERN "extern" 1596 . 1602) (string "\"C\"" 1603 . 1606) (VOID "void" 1607 . 1611) (symbol "CR_HOOK_IDENTIFIER_" 1612 . 1631) (semantic-list "(impl)" 1631 . 1637)))
+          ("CR_HOOK_PARAM_TYPE" (spp-arg-list ("Kind") 3354 . 3360) . ((spp-symbol-merge ((symbol "CR_HOOK_PARAM_TYPE_" 3364 . 3383) (symbol "Kind" 3387 . 3391)) 3364 . 3391)))
+          ("CR_HOOK_SECTION_PRE_SUITE" . ((symbol "cr_prs" 1830 . 1836)))
+          ("CR_HOOK_PARAM_TYPE_POST_TEST" . 
+              ((STRUCT "struct" 3078 . 3084) (symbol "criterion_test_stats" 3085 . 3105) (punctuation "*" 3106 . 3107)))
+          ("CR_HOOK_SECTION_POST_ALL" . ((symbol "cr_poa" 2244 . 2250)))
+          ("CR_HOOK_SECTION" (spp-arg-list ("Kind") 2275 . 2281) . ((spp-symbol-merge ((symbol "CR_HOOK_SECTION_" 2296 . 2312) (symbol "Kind" 2316 . 2320)) 2296 . 2320)))
+          ("CR_HOOK_SECTION_PRE_ALL" . ((symbol "cr_pra" 1784 . 1790)))
+          ("CR_HOOK_PARAM_TYPE_POST_ALL" . 
+              ((STRUCT "struct" 3295 . 3301) (symbol "criterion_global_stats" 3302 . 3324) (punctuation "*" 3325 . 3326)))
+          ("CR_HOOK_IDENTIFIER_" (spp-arg-list ("Suffix") 1323 . 1331) . ((symbol "CR_HOOK_IDENTIFIER__" 1343 . 1363) (semantic-list "(__LINE__, Suffix)" 1363 . 1381)))
+          ("CR_HOOK_SECTION_PRE_TEST" . ((symbol "cr_prt" 1922 . 1928)))
+          ("CR_HOOK_SECTION_POST_FINI" . ((symbol "cr_pof" 2152 . 2158)))
+          ("CR_HOOK_SECTION_PRE_INIT" . ((symbol "cr_pri" 1876 . 1882)))
+          ("CR_HOOK_SECTION_STRINGIFY__" (spp-arg-list ("Sec") 2357 . 2362) . ((punctuation "#" 2366 . 2367) (symbol "Sec" 2367 . 2370)))
+          ("CR_HOOK_SECTION_STRINGIFY" (spp-arg-list ("Kind") 2481 . 2487) . ((symbol "CR_HOOK_SECTION_STRINGIFY_" 2492 . 2518) (semantic-list "(CR_HOOK_SECTION(Kind))" 2518 . 2541)))
+          ("CR_HOOK_PARAM_TYPE_PRE_SUITE" . 
+              ((STRUCT "struct" 2655 . 2661) (symbol "criterion_suite_set" 2662 . 2681) (punctuation "*" 2682 . 2683)))
+          ("CR_HOOK_PARAM_TYPE_PRE_TEST" . 
+              ((STRUCT "struct" 2792 . 2798) (symbol "criterion_test" 2799 . 2813) (punctuation "*" 2814 . 2815)))
+          ("CR_HOOK_PARAM_TYPE_PRE_INIT" . 
+              ((STRUCT "struct" 2726 . 2732) (symbol "criterion_test" 2733 . 2747) (punctuation "*" 2748 . 2749)))
+          ("CR_HOOK_SECTION_TEST_CRASH" . ((symbol "cr_tsc" 2060 . 2066)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_ORDERED_SET_H_" variable (:constant-flag t) nil [1221 1245])
+            ("../types.h" include nil nil [1247 1268])
+            ("f_criterion_cmp" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1301 1308])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1309 1316]))                  
+                :type "int")
+                nil [1278 1317])
+            ("criterion_ordered_set" type
+               (:members 
+                  ( ("first" variable
+                       (:pointer 1
+                        :type ("criterion_ordered_set_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1354 1395])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1400 1412])
+                    ("cmp" variable (:type ("f_criterion_cmp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1417 1437]))                  
+                :type "struct")
+                nil [1319 1479])
+            ("criterion_ordered_set_node" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("criterion_ordered_set_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1521 1561]))                  
+                :type "struct")
+                nil [1481 1564])
+            ("new_ordered_set" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cmp" variable (:type ("f_criterion_cmp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1635 1655])
+                    ("dtor" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1677 1684])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1685 1692]))                          
+                        :type "void")
+                        nil nil))                  
+                :type ("criterion_ordered_set" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1589 1694])
+            ("insert_ordered_set" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("criterion_ordered_set" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1728 1760])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1769 1779])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1788 1800]))                  
+                :type "void")
+                nil [1703 1801])
+            ("FOREACH_SET" variable (:constant-flag t) nil [1825 1836]))          
+      :file "ordered-set.h"
+      :pointmax 2156
+      :fsize 2156
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((symbol 1803 . 1815) (symbol 1696 . 1702) (symbol 1582 . 1588) (symbol 1566 . 1580) (punctuation 1475 . 1476) (semantic-list 1459 . 1475) (semantic-list 1446 . 1459) (VOID 1442 . 1446) (TYPEDEF 1270 . 1277))
+      :lexical-table 
+        '(("FOREACH_SET" (spp-arg-list ("Elt" "Set") 1836 . 1846) . 
+              ((FOR "for" 1899 . 1902) (semantic-list "(struct criterion_ordered_set_node *n = Set->first; n; n = n->next)" 1903 . 1970) (FOR "for" 1981 . 1984) (semantic-list "(int cond = 1; cond;)" 1985 . 2006) (FOR "for" 2063 . 2066) (semantic-list "(Elt = (void *) (n + 1); cond && (cond = 0, 1);)" 2067 . 2115)))
+          ("CRITERION_ORDERED_SET_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRITERION_INTERNAL_STREAM_HXX_" variable (:constant-flag t) nil [1227 1257])
+            ("fstream" include (:system-flag t) nil [1259 1277])
+            ("cstdio" include (:system-flag t) nil [1278 1295])
+            ("memory" include (:system-flag t) nil [1296 1313])
+            ("stdio_filebuf.hxx" include nil nil [1315 1343])
+            ("criterion" type
+               (:members 
+                  ( ("internal" type
+                       (:members 
+                          ( ("stream_mixin" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Super" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1504 1511])
+                                    ("stream_mixin" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:pointer 1
+                                                :type ("FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1529 1537]))                                          
+                                        :type ("stream_mixin" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1516 1665])
+                                    ("stream_mixin" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("stream_mixin" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1837 1852])
+                                            ("" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1852 1858]))                                          
+                                        :type ("stream_mixin" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1824 1940])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("stream_mixin" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1970 1985])
+                                            ("" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1985 1991]))                                          
+                                        :type ("stream_mixin" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1946 2079])
+                                    ("close" function
+                                       (:arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2096 2101]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2085 2188])
+                                    ("private" label nil (reparse-symbol classsubparts) [2190 2198])
+                                    ("fbuf" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("stdio_sync_filebuf" type (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                ) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2203 2252])
+                                    ("file" variable
+                                       (:pointer 1
+                                        :type ("std::FILE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2257 2273]))                                  
+                                :superclasses 
+                                  ( ("Super" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1426 2276])
+                            ("basic_ofstream" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("super" type
+                                       (:typedef ("stream_mixin" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("std::basic_ofstream" type (:template-specifier 
+                                                    ( ("CharT" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2385 2448])
+                                    ("public" label nil (reparse-symbol classsubparts) [2449 2456])
+                                    ("basic_ofstream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:pointer 1
+                                                :type ("FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2476 2484]))                                          
+                                        :type ("basic_ofstream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2461 2510])
+                                    ("basic_ofstream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("basic_ofstream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2531 2548])
+                                            ("" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2548 2554]))                                          
+                                        :type ("basic_ofstream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2516 2595]))                                  
+                                :superclasses 
+                                  ( ("stream_mixin" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2278 2598])
+                            ("basic_ifstream" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("super" type
+                                       (:typedef ("stream_mixin" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("std::basic_ifstream" type (:template-specifier 
+                                                    ( ("CharT" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2707 2770])
+                                    ("public" label nil (reparse-symbol classsubparts) [2771 2778])
+                                    ("basic_ifstream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:pointer 1
+                                                :type ("FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2798 2806]))                                          
+                                        :type ("basic_ifstream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2783 2832])
+                                    ("basic_ifstream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("basic_ifstream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2853 2870])
+                                            ("" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2870 2876]))                                          
+                                        :type ("basic_ifstream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2838 2917]))                                  
+                                :superclasses 
+                                  ( ("stream_mixin" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2600 2920])
+                            ("basic_fstream" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("super" type
+                                       (:typedef ("stream_mixin" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("std::basic_fstream" type (:template-specifier 
+                                                    ( ("CharT" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3027 3089])
+                                    ("public" label nil (reparse-symbol classsubparts) [3090 3097])
+                                    ("basic_fstream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:pointer 1
+                                                :type ("FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3116 3124]))                                          
+                                        :type ("basic_fstream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3102 3150])
+                                    ("basic_fstream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("basic_fstream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3170 3186])
+                                            ("" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3186 3192]))                                          
+                                        :type ("basic_fstream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3156 3233]))                                  
+                                :superclasses 
+                                  ( ("stream_mixin" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2922 3236])
+                            ("get_redirected_out_stream_" type
+                               (:members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static" "inline")
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:pointer 1
+                                                :type ("std::FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3319 3332]))                                          
+                                        :type ("basic_ofstream" type
+                                             (:template-specifier 
+                                                ( ("char" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3278 3507]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3238 3510])
+                            ("get_redirected_in_stream_" type
+                               (:members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static" "inline")
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:pointer 1
+                                                :type ("std::FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3592 3605]))                                          
+                                        :type ("basic_ifstream" type
+                                             (:template-specifier 
+                                                ( ("char" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3551 3780]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3512 3783]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1386 3805]))                  
+                :type "namespace")
+                nil [1364 3806]))          
+      :file "stream.hxx"
+      :pointmax 3871
+      :fsize 3871
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((punctuation 3185 . 3186) (punctuation 2869 . 2870) (punctuation 2547 . 2548) (punctuation 1984 . 1985) (punctuation 1851 . 1852))
+      :lexical-table 
+        '(("CRITERION_INTERNAL_STREAM_HXX_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRITERION_INTERNAL_REDIRECT_H_" variable (:constant-flag t) nil [1227 1257])
+            ("common.h" include nil nil [1259 1278])
+            ("assert.h" include nil nil [1279 1298])
+            ("cr_stdout_match_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("FILE" variable (:type ("CR_STDN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1348 1362])
+                    ("" variable (:type ("ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1362 1366]))                  
+                :type "int")
+                nil [1323 1367])
+            ("cr_stdout_match_str" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ref" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1399 1415]))                  
+                :type "int")
+                nil [1375 1416])
+            ("cr_stderr_match_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("FILE" variable (:type ("CR_STDN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1449 1463])
+                    ("" variable (:type ("ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1463 1467]))                  
+                :type "int")
+                nil [1424 1468])
+            ("cr_stderr_match_str" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ref" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1500 1516]))                  
+                :type "int")
+                nil [1476 1517])
+            ("cr_assert_redir_op_" variable (:constant-flag t) nil [1541 1560])
+            ("cr_assert_redir_op_va_" variable (:constant-flag t) nil [2049 2071])
+            ("cr_assert_redir_f_op_" variable (:constant-flag t) nil [2509 2530])
+            ("cr_assert_redir_f_op_va_" variable (:constant-flag t) nil [3033 3057])
+            ("cr_assert_file_contents_eq_str" variable (:constant-flag t) nil [3531 3561])
+            ("cr_expect_file_contents_eq_str" variable (:constant-flag t) nil [3703 3733])
+            ("cr_assert_file_contents_neq_str" variable (:constant-flag t) nil [3880 3911])
+            ("cr_expect_file_contents_neq_str" variable (:constant-flag t) nil [4053 4084])
+            ("cr_assert_file_contents_eq" variable (:constant-flag t) nil [4225 4251])
+            ("cr_expect_file_contents_eq" variable (:constant-flag t) nil [4396 4422])
+            ("cr_assert_file_contents_neq" variable (:constant-flag t) nil [4572 4599])
+            ("cr_expect_file_contents_neq" variable (:constant-flag t) nil [4744 4771])
+            ("cr_assert_stdout_eq_str" variable (:constant-flag t) nil [4917 4940])
+            ("cr_expect_stdout_eq_str" variable (:constant-flag t) nil [5087 5110])
+            ("cr_assert_stdout_neq_str" variable (:constant-flag t) nil [5262 5286])
+            ("cr_expect_stdout_neq_str" variable (:constant-flag t) nil [5433 5457])
+            ("cr_assert_stderr_eq_str" variable (:constant-flag t) nil [5607 5630])
+            ("cr_expect_stderr_eq_str" variable (:constant-flag t) nil [5777 5800])
+            ("cr_assert_stderr_neq_str" variable (:constant-flag t) nil [5952 5976])
+            ("cr_expect_stderr_neq_str" variable (:constant-flag t) nil [6123 6147])
+            ("cr_assert_stdout_eq" variable (:constant-flag t) nil [6293 6312])
+            ("cr_expect_stdout_eq" variable (:constant-flag t) nil [6462 6481])
+            ("cr_assert_stdout_neq" variable (:constant-flag t) nil [6636 6656])
+            ("cr_expect_stdout_neq" variable (:constant-flag t) nil [6806 6826])
+            ("cr_assert_stderr_eq" variable (:constant-flag t) nil [6979 6998])
+            ("cr_expect_stderr_eq" variable (:constant-flag t) nil [7148 7167])
+            ("cr_assert_stderr_neq" variable (:constant-flag t) nil [7322 7342])
+            ("cr_expect_stderr_neq" variable (:constant-flag t) nil [7492 7512])
+            ("cr_assert_redir_unop_" variable (:constant-flag t) nil [7639 7660])
+            ("cr_assert_redir_unop_va_" variable (:constant-flag t) nil [8163 8187])
+            ("cr_assert_redir_f_unop_" variable (:constant-flag t) nil [8623 8646])
+            ("cr_assert_redir_f_unop_va_" variable (:constant-flag t) nil [9163 9189]))          
+      :file "redirect.h"
+      :pointmax 9676
+      :fsize 9676
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((symbol 1519 . 1531) (symbol 1469 . 1475) (punctuation 1462 . 1463) (symbol 1417 . 1423) (symbol 1368 . 1374) (punctuation 1361 . 1362) (symbol 1316 . 1322) (symbol 1300 . 1314))
+      :lexical-table 
+        '(("cr_assert_file_contents_neq_str" (spp-arg-list ("...") 3911 . 3916) . ((symbol "CR_EXPAND" 3920 . 3929) (semantic-list "(cr_assert_redir_op_va_(CR_FAIL_ABORT_, cr_file_match_str, !=, __VA_ARGS__))" 3929 . 4005)))
+          ("cr_assert_stdout_eq_str" (spp-arg-list ("...") 4940 . 4945) . ((symbol "CR_EXPAND" 4950 . 4959) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_ABORT_, cr_stdout_match_str, ==, stdout, __VA_ARGS__))" 4959 . 5047)))
+          ("cr_expect_stdout_neq" (spp-arg-list ("...") 6826 . 6831) . ((symbol "CR_EXPAND" 6839 . 6848) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_CONTINUES_, cr_stdout_match_file, !=, stdout, __VA_ARGS__))" 6848 . 6943)))
+          ("cr_assert_redir_op_va_" (spp-arg-list ("Fail" "Fun" "Op" "...") 2071 . 2091) . ((symbol "CR_EXPAND" 2100 . 2109) (semantic-list "(cr_assert_redir_op_(                   \\
+                Fail,                                \\
+                Fun,                                 \\
+                Op,                                  \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 2109 . 2499)))
+          ("cr_expect_stdout_eq_str" (spp-arg-list ("...") 5110 . 5115) . ((symbol "CR_EXPAND" 5120 . 5129) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_CONTINUES_, cr_stdout_match_str, ==, stdout, __VA_ARGS__))" 5129 . 5221)))
+          ("cr_expect_stderr_eq" (spp-arg-list ("...") 7167 . 7172) . ((symbol "CR_EXPAND" 7181 . 7190) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_CONTINUES_, cr_stderr_match_file, ==, stderr, __VA_ARGS__))" 7190 . 7285)))
+          ("cr_assert_redir_f_op_" (spp-arg-list ("Fail" "Fun" "Op" "File" "Ref" "...") 2530 . 2561) . ((symbol "CR_EXPAND" 2568 . 2577) (semantic-list "(cr_assert_impl(                                \\
+                Fail,                                        \\
+                !(Fun((File), (Ref)) Op 0),                  \\
+                dummy,                                       \\
+                CRITERION_ASSERT_MSG_FILE_MATCH,             \\
+                (CR_STR(File), CR_STR(Ref)),                 \\
+                __VA_ARGS__                                  \\
+                ))" 2577 . 3023)))
+          ("cr_assert_redir_f_op_va_" (spp-arg-list ("Fail" "Fun" "Op" "...") 3057 . 3077) . ((symbol "CR_EXPAND" 3084 . 3093) (semantic-list "(cr_assert_redir_f_op_(                 \\
+                Fail,                                \\
+                Fun,                                 \\
+                Op,                                  \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 3093 . 3483)))
+          ("cr_expect_file_contents_neq_str" (spp-arg-list ("...") 4084 . 4089) . ((symbol "CR_EXPAND" 4093 . 4102) (semantic-list "(cr_assert_redir_op_va_(CR_FAIL_CONTINUES_, cr_file_match_str, !=, __VA_ARGS__))" 4102 . 4182)))
+          ("cr_expect_file_contents_eq" (spp-arg-list ("...") 4422 . 4427) . ((symbol "CR_EXPAND" 4436 . 4445) (semantic-list "(cr_assert_redir_f_op_va_(CR_FAIL_CONTINUES_, cr_file_match_file, ==, __VA_ARGS__))" 4445 . 4528)))
+          ("cr_assert_stdout_eq" (spp-arg-list ("...") 6312 . 6317) . ((symbol "CR_EXPAND" 6326 . 6335) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_ABORT_, cr_stdout_match_file, ==, stdout, __VA_ARGS__))" 6335 . 6426)))
+          ("cr_assert_stderr_neq" (spp-arg-list ("...") 7342 . 7347) . ((symbol "CR_EXPAND" 7355 . 7364) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_ABORT_, cr_stderr_match_file, !=, stderr, __VA_ARGS__))" 7364 . 7455)))
+          ("cr_assert_stdout_neq_str" (spp-arg-list ("...") 5286 . 5291) . ((symbol "CR_EXPAND" 5295 . 5304) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_ABORT_, cr_stdout_match_str, !=, stdout, __VA_ARGS__))" 5304 . 5392)))
+          ("cr_assert_file_contents_eq_str" (spp-arg-list ("...") 3561 . 3566) . ((symbol "CR_EXPAND" 3571 . 3580) (semantic-list "(cr_assert_redir_op_va_(CR_FAIL_ABORT_, cr_file_match_str, ==, __VA_ARGS__))" 3580 . 3656)))
+          ("cr_expect_stdout_neq_str" (spp-arg-list ("...") 5457 . 5462) . ((symbol "CR_EXPAND" 5466 . 5475) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_CONTINUES_, cr_stdout_match_str, !=, stdout, __VA_ARGS__))" 5475 . 5567)))
+          ("cr_assert_stderr_neq_str" (spp-arg-list ("...") 5976 . 5981) . ((symbol "CR_EXPAND" 5985 . 5994) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_ABORT_, cr_stderr_match_str, !=, stderr, __VA_ARGS__))" 5994 . 6082)))
+          ("cr_assert_stderr_eq" (spp-arg-list ("...") 6998 . 7003) . ((symbol "CR_EXPAND" 7012 . 7021) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_ABORT_, cr_stderr_match_file, ==, stderr, __VA_ARGS__))" 7021 . 7112)))
+          ("cr_expect_file_contents_eq_str" (spp-arg-list ("...") 3733 . 3738) . ((symbol "CR_EXPAND" 3743 . 3752) (semantic-list "(cr_assert_redir_op_va_(CR_FAIL_CONTINUES_, cr_file_match_str, ==, __VA_ARGS__))" 3752 . 3832)))
+          ("cr_assert_file_contents_eq" (spp-arg-list ("...") 4251 . 4256) . ((symbol "CR_EXPAND" 4265 . 4274) (semantic-list "(cr_assert_redir_f_op_va_(CR_FAIL_ABORT_, cr_file_match_file, ==, __VA_ARGS__))" 4274 . 4353)))
+          ("cr_expect_stderr_neq_str" (spp-arg-list ("...") 6147 . 6152) . ((symbol "CR_EXPAND" 6156 . 6165) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_CONTINUES_, cr_stderr_match_str, !=, stderr, __VA_ARGS__))" 6165 . 6257)))
+          ("cr_assert_redir_f_unop_" (spp-arg-list ("Fail" "Fun" "Op" "File" "Ref" "...") 8646 . 8677) . ((symbol "CR_EXPAND" 8684 . 8693) (semantic-list "(cr_assert_impl(                                  \\
+                Fail,                                          \\
+                !(Fun((Ref)) Op 0),                            \\
+                dummy,                                         \\
+                CRITERION_ASSERT_MSG_FILE_MATCH,               \\
+                (CR_STR(File), CR_STR(Ref)),                   \\
+                __VA_ARGS__                                    \\
+                ))" 8693 . 9153)))
+          ("cr_assert_stdout_neq" (spp-arg-list ("...") 6656 . 6661) . ((symbol "CR_EXPAND" 6669 . 6678) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_ABORT_, cr_stdout_match_file, !=, stdout, __VA_ARGS__))" 6678 . 6769)))
+          ("cr_assert_file_contents_neq" (spp-arg-list ("...") 4599 . 4604) . ((symbol "CR_EXPAND" 4612 . 4621) (semantic-list "(cr_assert_redir_f_op_va_(CR_FAIL_ABORT_, cr_file_match_file, !=, __VA_ARGS__))" 4621 . 4700)))
+          ("cr_assert_stderr_eq_str" (spp-arg-list ("...") 5630 . 5635) . ((symbol "CR_EXPAND" 5640 . 5649) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_ABORT_, cr_stderr_match_str, ==, stderr, __VA_ARGS__))" 5649 . 5737)))
+          ("cr_expect_stderr_neq" (spp-arg-list ("...") 7512 . 7517) . ((symbol "CR_EXPAND" 7525 . 7534) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_CONTINUES_, cr_stderr_match_file, !=, stderr, __VA_ARGS__))" 7534 . 7629)))
+          ("cr_assert_redir_op_" (spp-arg-list ("Fail" "Fun" "Op" "File" "Str" "...") 1560 . 1591) . ((symbol "CR_EXPAND" 1598 . 1607) (semantic-list "(cr_assert_impl(                              \\
+                Fail,                                      \\
+                !(Fun((File), (Str)) Op 0),                \\
+                dummy,                                     \\
+                CRITERION_ASSERT_MSG_FILE_STR_MATCH,       \\
+                (CR_STR(File), Str),                       \\
+                __VA_ARGS__                                \\
+                ))" 1607 . 2039)))
+          ("cr_expect_file_contents_neq" (spp-arg-list ("...") 4771 . 4776) . ((symbol "CR_EXPAND" 4784 . 4793) (semantic-list "(cr_assert_redir_f_op_va_(CR_FAIL_CONTINUES_, cr_file_match_file, !=, __VA_ARGS__))" 4793 . 4876)))
+          ("cr_expect_stderr_eq_str" (spp-arg-list ("...") 5800 . 5805) . ((symbol "CR_EXPAND" 5810 . 5819) (semantic-list "(cr_assert_redir_unop_va_(CR_FAIL_CONTINUES_, cr_stderr_match_str, ==, stderr, __VA_ARGS__))" 5819 . 5911)))
+          ("cr_assert_redir_unop_" (spp-arg-list ("Fail" "Fun" "Op" "File" "Str" "...") 7660 . 7691) . ((symbol "CR_EXPAND" 7698 . 7707) (semantic-list "(cr_assert_impl(                                \\
+                Fail,                                        \\
+                !(Fun((Str)) Op 0),                          \\
+                dummy,                                       \\
+                CRITERION_ASSERT_MSG_FILE_STR_MATCH,         \\
+                (CR_STR(File), Str),                         \\
+                __VA_ARGS__                                  \\
+                ))" 7707 . 8153)))
+          ("cr_assert_redir_unop_va_" (spp-arg-list ("Fail" "Fun" "Op" "...") 8187 . 8207) . ((symbol "CR_EXPAND" 8214 . 8223) (semantic-list "(cr_assert_redir_unop_(                 \\
+                Fail,                                \\
+                Fun,                                 \\
+                Op,                                  \\
+                CR_VA_HEAD(__VA_ARGS__),             \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)), \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))  \\
+                ))" 8223 . 8613)))
+          ("CRITERION_INTERNAL_REDIRECT_H_")
+          ("cr_expect_stdout_eq" (spp-arg-list ("...") 6481 . 6486) . ((symbol "CR_EXPAND" 6495 . 6504) (semantic-list "(cr_assert_redir_f_unop_va_(CR_FAIL_CONTINUES_, cr_stdout_match_file, ==, stdout, __VA_ARGS__))" 6504 . 6599)))
+          ("cr_assert_redir_f_unop_va_" (spp-arg-list ("Fail" "Fun" "Op" "...") 9189 . 9209) . ((symbol "CR_EXPAND" 9216 . 9225) (semantic-list "(cr_assert_redir_f_unop_(                 \\
+                Fail,                                  \\
+                Fun,                                   \\
+                Op,                                    \\
+                CR_VA_HEAD(__VA_ARGS__),               \\
+                CR_VA_HEAD(CR_VA_TAIL(__VA_ARGS__)),   \\
+                CR_VA_TAIL(CR_VA_TAIL(__VA_ARGS__))    \\
+                ))" 9225 . 9629)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRITERION_INTERNAL_STDIO_FILEBUF_HXX_" variable (:constant-flag t) nil [1234 1271])
+            ("fstream" include (:system-flag t) nil [1273 1291])
+            ("criterion" type
+               (:members 
+                  ( ("internal" type
+                       (:members 
+                          ( ("stdio_sync_filebuf" type
+                               (:superclasses 
+                                  ( ("std::basic_streambuf" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1516 1523])
+                                    ("traits" type
+                                       (:typedef ("Traits" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1528 1550])
+                                    ("super" type
+                                       (:typedef ("std::basic_filebuf" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1555 1603])
+                                    ("int_type" type
+                                       (:typedef ("Traits::int_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1608 1651])
+                                    ("pos_type" type
+                                       (:typedef ("Traits::pos_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1656 1699])
+                                    ("off_type" type
+                                       (:typedef ("Traits::off_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1704 1747])
+                                    ("stdio_sync_filebuf" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("file" variable
+                                               (:pointer 1
+                                                :type ("std::FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1772 1788]))                                          
+                                        :type ("stdio_sync_filebuf" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1753 1849])
+                                    ("swap" function
+                                       (:arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :type ("stdio_sync_filebuf" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2001 2027]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1991 2149])
+                                    ("protected" label nil (reparse-symbol classsubparts) [2151 2161])
+                                    ("syncgetc" function
+                                       (:prototype-flag t
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2166 2186])
+                                    ("syncungetc" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2211 2220]))                                          
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2191 2221])
+                                    ("syncputc" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2244 2253]))                                          
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2226 2254])
+                                    ("seekoff" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("off" variable (:type ("std::streamoff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2291 2310])
+                                            ("dir" variable (:type ("std::ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2350])
+                                            ("" variable (:type ("std::ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2363 2392])
+                                            ("" variable (:type ("ios_base::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2394 2408])
+                                            ("" variable (:type ("std::ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2409 2428]))                                          
+                                        :type ("std::streampos" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2260 2778])
+                                    ("seekpos" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pos" variable (:type ("std::streampos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2834])
+                                            ("mode" variable
+                                               (:default-value "std"
+                                                :type ("std::ios_base::openmode" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2847 2881])
+                                            ("" variable (:type ("ios_base::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2883 2897])
+                                            ("" variable (:type ("std::ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2917]))                                          
+                                        :type ("std::streampos" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2784 3000])
+                                    ("xsgetn" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :type ("CharT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3037 3046])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3047 3065]))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3006 3066])
+                                    ("xsputn" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("CharT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3102 3117])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3118 3136]))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3071 3137])
+                                    ("sync" function
+                                       (:typemodifiers ("virtual")
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3143 3207])
+                                    ("underflow" function
+                                       (:typemodifiers ("virtual")
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3213 3317])
+                                    ("uflow" function
+                                       (:typemodifiers ("virtual")
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3323 3397])
+                                    ("is_eof" function
+                                       (:typemodifiers ("static" "inline")
+                                        :arguments 
+                                          ( ("c" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3429 3440]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3403 3548])
+                                    ("overflow" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("c" variable
+                                               (:default-value "Traits::eof()"
+                                                :type ("int_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3580 3606]))                                          
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3554 3876])
+                                    ("pbackfail" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("c" variable
+                                               (:default-value "Traits::eof()"
+                                                :type ("int_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3909 3935]))                                          
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3882 4085])
+                                    ("private" label nil (reparse-symbol classsubparts) [4087 4095])
+                                    ("file" variable
+                                       (:pointer 1
+                                        :type ("std::FILE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4100 4116])
+                                    ("file_open" variable (:type "bool") (reparse-symbol classsubparts) [4121 4136])
+                                    ("lastchar" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4141 4159]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1444 4162])
+                            ("syncgetc" function
+                               (:parent "stdio_sync_filebuf"
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4209 4286])
+                            ("syncungetc" function
+                               (:parent "stdio_sync_filebuf"
+                                :arguments 
+                                  ( ("" variable (:type ("stdio_sync_filebuf" type
+                                         (:template-specifier 
+                                            ( ("char" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [4379 4404])
+                                    ("c" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4405 4416]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4333 4453])
+                            ("syncputc" function
+                               (:parent "stdio_sync_filebuf"
+                                :arguments 
+                                  ( ("" variable (:type ("stdio_sync_filebuf" type
+                                         (:template-specifier 
+                                            ( ("char" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [4544 4569])
+                                    ("c" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4570 4581]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4500 4616])
+                            ("xsgetn" function
+                               (:type ("std::streamsize" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4686 4694])
+                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4695 4713]))                                  
+                                :typemodifiers ("inline")
+                                :parent "stdio_sync_filebuf")
+                                (reparse-symbol namespacesubparts) [4618 4860])
+                            ("xsputn" function
+                               (:type ("std::streamsize" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4930 4944])
+                                    ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4945 4963]))                                  
+                                :typemodifiers ("inline")
+                                :parent "stdio_sync_filebuf")
+                                (reparse-symbol namespacesubparts) [4862 5006]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1334 5028]))                  
+                :type "namespace")
+                nil [1312 5029]))          
+      :file "stdio_filebuf.hxx"
+      :pointmax 5101
+      :fsize 5101
+      :lastmodtime '(23483 6639 129482 811000)
+      :unmatched-syntax '((punctuation 4569 . 4570) (punctuation 4568 . 4569) (punctuation 4499 . 4500) (punctuation 4498 . 4499) (punctuation 4497 . 4498) (CHAR 4493 . 4497) (punctuation 4492 . 4493) (symbol 4474 . 4492) (INLINE 4467 . 4473) (punctuation 4465 . 4466) (punctuation 4464 . 4465) (TEMPLATE 4455 . 4463) (punctuation 4404 . 4405) (punctuation 4403 . 4404) (punctuation 4332 . 4333) (punctuation 4331 . 4332) (punctuation 4330 . 4331) (CHAR 4326 . 4330) (punctuation 4325 . 4326) (symbol 4307 . 4325) (INLINE 4300 . 4306) (punctuation 4298 . 4299) (punctuation 4297 . 4298) (TEMPLATE 4288 . 4296) (punctuation 4208 . 4209) (punctuation 4207 . 4208) (punctuation 4206 . 4207) (CHAR 4202 . 4206) (punctuation 4201 . 4202) (symbol 4183 . 4201) (INLINE 4176 . 4182) (punctuation 4174 . 4175) (punctuation 4173 . 4174) (TEMPLATE 4164 . 4172) (punctuation 2896 . 2897) (punctuation 2882 . 2883) (punctuation 2881 . 2882) (punctuation 2407 . 2408) (punctuation 2393 . 2394) (punctuation 2392 . 2393) (punctuation 1984 . 1985) (DEFAULT 1977 . 1984) (punctuation 1975 . 1976) (semantic-list 1946 . 1974) (punctuation 1945 . 1946) (OPERATOR 1937 . 1945) (punctuation 1967 . 1968) (punctuation 1936 . 1937) (symbol 1917 . 1935) (punctuation 1967 . 1968) (punctuation 1911 . 1912) (DEFAULT 1904 . 1911) (punctuation 1902 . 1903) (semantic-list 1873 . 1901) (symbol 1855 . 1873) (punctuation 1894 . 1895) (punctuation 1442 . 1443) (punctuation 1440 . 1441) (symbol 1435 . 1440) (punctuation 1434 . 1435) (symbol 1423 . 1434) (punctuation 1422 . 1423) (punctuation 1421 . 1422) (symbol 1418 . 1421) (punctuation 1416 . 1417) (symbol 1409 . 1415) (TYPENAME 1400 . 1408) (punctuation 1398 . 1399) (symbol 1393 . 1398) (TYPENAME 1384 . 1392) (punctuation 1383 . 1384) (TEMPLATE 1374 . 1382))
+      :lexical-table 
+        '(("CRITERION_INTERNAL_STDIO_FILEBUF_HXX_")
+          )
+))
+  :file "!usr!local!include!criterion!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

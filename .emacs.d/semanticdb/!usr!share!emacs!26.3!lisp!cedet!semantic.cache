@@ -1,0 +1,217 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1799 1812])
+            ("find-func" include nil nil [1815 1835])
+            ("mode-local-map-file-buffers" function (:arguments ("function" "predicate" "buffers")) nil [2187 2861])
+            ("get-mode-local-parent" function (:arguments ("mode")) nil [2863 3062])
+            ("mode-local-equivalent-mode-p" function (:arguments ("mode")) nil [3198 3442])
+            ("mode-local-map-mode-buffers" function (:arguments ("function" "modes")) nil [3444 3914])
+            ("mode-local-init-hook" variable nil nil [3939 4074])
+            ("mode-local-changed-mode-buffers" variable nil nil [4076 4181])
+            ("mode-local--init-mode" variable nil nil [4183 4217])
+            ("mode-local-initialized-p" function nil nil [4219 4479])
+            ("mode-local-post-major-mode-change" function nil nil [4481 5087])
+            ("mode-local-on-major-mode-change" function nil nil [5089 5319])
+            ("set-mode-local-parent" function (:arguments ("mode" "parent")) nil [5342 5837])
+            ("define-child-mode" function (:arguments ("mode" "parent" "docstring")) nil [5839 6123])
+            ("mode-local-use-bindings-p" function (:arguments ("this-mode" "desired-mode")) nil [6125 6417])
+            ("mode-local-symbol-table" variable nil nil [6446 6653])
+            ("make-variable-buffer-local" code nil nil [6654 6707])
+            ("mode-local-active-mode" variable nil nil [6709 6789])
+            ("new-mode-local-bindings" function nil nil [6791 6900])
+            ("mode-local-bind" function (:arguments ("bindings" "plist" "mode")) nil [6902 10015])
+            ("mode-local-symbol" function (:arguments ("symbol" "mode")) nil [10017 10901])
+            ("mode-local-symbol-value" function (:arguments ("symbol" "mode" "property")) nil [10903 11477])
+            ("activate-mode-local-bindings" function (:arguments ("mode")) nil [11508 13252])
+            ("deactivate-mode-local-bindings" function (:arguments ("mode")) nil [13254 13930])
+            ("with-mode-local-symbol" function (:arguments ("mode" "body")) nil [13932 15328])
+            ("put" code nil nil [15329 15382])
+            ("with-mode-local" function (:arguments ("mode" "body")) nil [15384 15767])
+            ("put" code nil nil [15768 15814])
+            ("mode-local-value" function (:arguments ("mode" "sym")) nil [15817 16013])
+            ("setq-mode-local" function (:arguments ("mode" "args")) nil [16015 17180])
+            ("defvar-mode-local" function (:arguments ("mode" "sym" "val" "docstring")) nil [17182 17469])
+            ("put" code nil nil [17470 17523])
+            ("defconst-mode-local" function (:arguments ("mode" "sym" "val" "docstring")) nil [17525 17912])
+            ("put" code nil nil [17913 17968])
+            ("make-obsolete-overload" function (:arguments ("old" "new" "when")) nil [17999 18322])
+            ("overload-obsoleted-by" function (:arguments ("overload")) nil [18324 18502])
+            ("overload-that-obsolete" function (:arguments ("overload")) nil [18504 18704])
+            ("fetch-overload" function (:arguments ("overload")) nil [18706 19195])
+            ("mode-local--override" function (:arguments ("name" "args" "body")) nil [19197 19875])
+            ("mode-local--expand-overrides" function (:arguments ("name" "args" "body")) nil [19877 20776])
+            ("mode-local--overload-body" function (:arguments ("name" "args" "body")) nil [20778 21171])
+            ("put" code nil nil [21188 21241])
+            ("define-overloadable-function" function (:arguments ("name" "args" "docstring" "body")) nil [21243 22553])
+            ("put" code nil nil [22554 22603])
+            ("defalias" code nil nil [22605 22662])
+            ("function-overload-p" function (:arguments ("symbol")) nil [22664 22837])
+            ("define-mode-local-override" function (:arguments ("name" "mode" "args" "docstring" "body")) nil [22839 23897])
+            ("mode-local-read-function" function (:arguments ("prompt" "initial" "hist" "default")) nil [23923 24209])
+            ("overload-docstring-extension" function (:arguments ("overload")) nil [24232 24880])
+            ("mode-local-augment-function-help" function (:arguments ("symbol")) nil [24882 25453])
+            ("describe-function-orig-buffer" variable nil nil [25534 25572])
+            ("describe-mode-local-overload" function (:arguments ("symbol")) nil [25574 26698])
+            ("add-hook" code nil nil [26700 26778])
+            ("declare-function" code nil nil [26780 26833])
+            ("xref-mode-local--override-present" function (:arguments ("sym" "xrefs")) nil [26835 27105])
+            ("xref-mode-local-overload" function (:arguments ("symbol")) nil [27107 29343])
+            ("add-hook" code nil nil [29345 29412])
+            ("xref-mode-local-find-overloadable-regexp" variable
+               (:constant-flag t
+                :default-value "(\\(\\(define-overloadable-function\\)\\|\\(define-overload\\)\\) +%s")
+                nil [29414 29650])
+            ("xref-mode-local-find-override" function (:arguments ("meta-name")) nil [29652 30124])
+            ("add-to-list" code nil nil [30126 30242])
+            ("add-to-list" code nil nil [30243 30351])
+            ("mode-local-print-binding" function (:arguments ("symbol")) nil [30386 30797])
+            ("mode-local-print-bindings" function (:arguments ("table")) nil [30799 32028])
+            ("mode-local-describe-bindings-2" function (:arguments ("buffer-or-mode")) nil [32030 32966])
+            ("mode-local-describe-bindings-1" function (:arguments ("buffer-or-mode" "interactive-p")) nil [32968 33885])
+            ("describe-mode-local-bindings" function
+               (:user-visible-flag t
+                :arguments ("buffer"))
+                nil [33887 34119])
+            ("describe-mode-local-bindings-in-mode" function
+               (:user-visible-flag t
+                :arguments ("mode"))
+                nil [34121 34508])
+            ("mode-local-setup-edebug-specs" function nil nil [34533 35140])
+            ("add-hook" code nil nil [35142 35202])
+            ("add-hook" code nil nil [35204 35265])
+            ("add-hook" code nil nil [35266 35333])
+            ("mode-local" package nil nil [35335 35356]))          
+      :file "mode-local.el.gz"
+      :pointmax 35386
+      :fsize 9630
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax '((close-paren 1812 . 1813) (symbol 1781 . 1798) (open-paren 1780 . 1781)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("font-lock" include nil nil [1559 1579])
+            ("ring" include nil nil [1580 1595])
+            ("if" code nil nil [1629 2254])
+            ("data-debug-insert-property-list" function (:arguments ("proplist" "prefix" "parent")) nil [2277 2692])
+            ("data-debug-insert-overlay-props" function (:arguments ("overlay" "prefix")) nil [2710 3055])
+            ("data-debug-insert-overlay-from-point" function (:arguments ("point")) nil [3057 3478])
+            ("data-debug-insert-overlay-button" function (:arguments ("overlay" "prefix" "prebuttontext")) nil [3480 4264])
+            ("data-debug-insert-overlay-list" function (:arguments ("overlaylist" "prefix")) nil [4286 4595])
+            ("data-debug-insert-overlay-list-from-point" function (:arguments ("point")) nil [4597 5033])
+            ("data-debug-insert-overlay-list-button" function (:arguments ("overlaylist" "prefix" "prebuttontext")) nil [5035 5906])
+            ("data-debug-insert-buffer-props" function (:arguments ("buffer" "prefix")) nil [5923 6492])
+            ("data-debug-insert-buffer-from-point" function (:arguments ("point")) nil [6494 6909])
+            ("data-debug-insert-buffer-button" function (:arguments ("buffer" "prefix" "prebuttontext")) nil [6911 7688])
+            ("data-debug-insert-buffer-list" function (:arguments ("bufferlist" "prefix")) nil [7709 8010])
+            ("data-debug-insert-buffer-list-from-point" function (:arguments ("point")) nil [8012 8442])
+            ("data-debug-insert-buffer-list-button" function (:arguments ("bufferlist" "prefix" "prebuttontext")) nil [8444 9307])
+            ("data-debug-insert-process-props" function (:arguments ("process" "prefix")) nil [9326 9864])
+            ("data-debug-insert-process-from-point" function (:arguments ("point")) nil [9866 10287])
+            ("data-debug-insert-process-button" function (:arguments ("process" "prefix" "prebuttontext")) nil [10289 11103])
+            ("data-debug-insert-ring-contents" function (:arguments ("ring" "prefix")) nil [11159 11470])
+            ("data-debug-insert-ring-items-from-point" function (:arguments ("point")) nil [11472 11884])
+            ("data-debug-insert-ring-button" function (:arguments ("ring" "prefix" "prebuttontext")) nil [11886 12906])
+            ("data-debug-insert-hash-table" function (:arguments ("hash-table" "prefix")) nil [12929 13325])
+            ("data-debug-insert-hash-table-from-point" function (:arguments ("point")) nil [13327 13743])
+            ("data-debug-insert-hash-table-button" function (:arguments ("hash-table" "prefix" "prebuttontext")) nil [13745 14546])
+            ("data-debug-insert-widget-properties" function (:arguments ("widget" "prefix")) nil [14604 15024])
+            ("data-debug-insert-widget-from-point" function (:arguments ("point")) nil [15026 15424])
+            ("data-debug-insert-widget" function (:arguments ("widget" "prefix" "prebuttontext")) nil [15426 16163])
+            ("data-debug-insert-stuff-list" function (:arguments ("stufflist" "prefix")) nil [16224 16631])
+            ("data-debug-insert-stuff-list-from-point" function (:arguments ("point")) nil [16633 17053])
+            ("data-debug-insert-stuff-list-button" function (:arguments ("stufflist" "prefix" "prebuttontext")) nil [17055 18082])
+            ("data-debug-insert-stuff-vector" function (:arguments ("stuffvector" "prefix")) nil [18147 18527])
+            ("data-debug-insert-stuff-vector-from-point" function (:arguments ("point")) nil [18529 18959])
+            ("data-debug-insert-stuff-vector-button" function (:arguments ("stuffvector" "prefix" "prebuttontext")) nil [18961 19842])
+            ("data-debug-insert-symbol-from-point" function (:arguments ("point")) nil [19859 20536])
+            ("data-debug-insert-symbol-button" function (:arguments ("symbol" "prefix" "prebuttontext")) nil [20538 21332])
+            ("data-debug-insert-string" function (:arguments ("thing" "prefix" "prebuttontext")) nil [21345 21942])
+            ("data-debug-insert-number" function (:arguments ("thing" "prefix" "prebuttontext")) nil [21955 22332])
+            ("data-debug-insert-lambda-expression" function (:arguments ("thing" "prefix" "prebuttontext")) nil [22356 22778])
+            ("data-debug-insert-nil" function (:arguments ("thing" "prefix" "prebuttontext")) nil [22794 23241])
+            ("data-debug-insert-simple-thing" function (:arguments ("thing" "prefix" "prebuttontext" "face")) nil [23260 23694])
+            ("data-debug-insert-custom" function (:arguments ("thingstring" "prefix" "prebuttontext" "face")) nil [23713 24193])
+            ("data-debug-thing-alist" variable (:default-value (quote ((null . data-debug-insert-nil) (data-debug-overlay-p . data-debug-insert-overlay-button) ((lambda (thing) (and (consp thing) (data-debug-overlay-p (car thing)))) . data-debug-insert-overlay-list-button) (bufferp . data-debug-insert-buffer-button) ((lambda (thing) (and (consp thing) (bufferp (car thing)))) . data-debug-insert-buffer-list-button) (processp . data-debug-insert-process-button) (stringp . data-debug-insert-string) (numberp . data-debug-insert-number) (symbolp . data-debug-insert-symbol-button) (ring-p . data-debug-insert-ring-button) ((lambda (thing) (and (consp thing) (eq (car thing) (quote lambda)))) . data-debug-insert-lambda-expression) (hash-table-p . data-debug-insert-hash-table-button) (widgetp . data-debug-insert-widget) (listp . data-debug-insert-stuff-list-button) (vectorp . data-debug-insert-stuff-vector-button)))) nil [24196 25483])
+            ("data-debug-add-specialized-thing" function (:arguments ("predicate" "fcn")) nil [25534 26159])
+            ("data-debug-insert-thing" function (:arguments ("thing" "prefix" "prebuttontext" "parent")) nil [26183 27205])
+            ("data-debug" customgroup (:user-visible-flag t) nil [27326 27394])
+            ("data-debug-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table (standard-syntax-table)))) (modify-syntax-entry 59 ". 12" table) (modify-syntax-entry 10 ">" table) (modify-syntax-entry 34 "\"" table) (modify-syntax-entry 45 "_" table) (modify-syntax-entry 92 "\\" table) (modify-syntax-entry 96 "'" table) (modify-syntax-entry 39 "'" table) (modify-syntax-entry 44 "'" table) table)) nil [27396 28043])
+            ("define-obsolete-variable-alias" code nil nil [28045 28121])
+            ("data-debug-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (suppress-keymap km) (define-key km [mouse-2] (quote data-debug-expand-or-contract-mouse)) (define-key km " " (quote data-debug-expand-or-contract)) (define-key km "" (quote data-debug-expand-or-contract)) (define-key km "n" (quote data-debug-next)) (define-key km "p" (quote data-debug-prev)) (define-key km "N" (quote data-debug-next-expando)) (define-key km "P" (quote data-debug-prev-expando)) km)) nil [28122 28609])
+            ("data-debug-mode-hook" variable nil nil [28611 28719])
+            ("define-derived-mode" code nil nil [28721 29114])
+            ("data-debug-new-buffer" function (:arguments ("name")) nil [29131 29392])
+            ("data-debug-next" function (:user-visible-flag t) nil [29422 29599])
+            ("data-debug-prev" function (:user-visible-flag t) nil [29601 29783])
+            ("data-debug-next-expando" function (:user-visible-flag t) nil [29785 30044])
+            ("data-debug-prev-expando" function (:user-visible-flag t) nil [30046 30309])
+            ("data-debug-current-line-expanded-p" function nil nil [30311 30587])
+            ("data-debug-line-expandable-p" function nil nil [30589 30801])
+            ("data-debug-expand-current-line" function nil nil [30803 31234])
+            ("data-debug-contract-current-line" function nil nil [31236 32077])
+            ("data-debug-expand-or-contract" function (:user-visible-flag t) nil [32079 32400])
+            ("data-debug-expand-or-contract-mouse" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [32402 32723])
+            ("data-debug-show-stuff" function (:arguments ("stuff" "name")) nil [32755 33050])
+            ("data-debug-edebug-expr" function
+               (:user-visible-flag t
+                :arguments ("expr"))
+                nil [33135 33540])
+            ("data-debug-eval-expression" function
+               (:user-visible-flag t
+                :arguments ("expr"))
+                nil [33542 34760])
+            ("data-debug" package nil nil [34762 34783]))          
+      :file "data-debug.el.gz"
+      :pointmax 34813
+      :fsize 7139
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("inversion-version" variable (:default-value "1.3") nil [2258 2324])
+            ("inversion-incompatible-version" variable (:default-value "0.1alpha1") nil [2326 2441])
+            ("inversion-decoders" variable
+               (:constant-flag t
+                :default-value (quote ((alpha "^\\([0-9]+\\)\\.\\([0-9]+\\)\\.?\\([0-9]*\\)?\\s-*\\.?alpha\\([0-9]+\\)?$" 4) (beta "^\\([0-9]+\\)\\.\\([0-9]+\\)\\.?\\([0-9]*\\)?\\s-*\\.?beta\\([0-9]+\\)?$" 4) (beta "^\\([0-9]+\\)\\.\\([0-9]+\\)\\.?\\([0-9]*\\)?\\s-*\\.?(beta\\([0-9]+\\)?)$" 4) (beta "^[^/]+/\\w+--\\w+--\\([0-9]+\\)\\.\\([0-9]+\\)\\.\\([0-9]+\\)--patch-\\([0-9]+\\)" 4) (beta "^\\w+: v\\([0-9]+\\)\\.\\([0-9]+\\)\\.\\([0-9]+\\)-\\([0-9]+\\)-\\(.*\\)" 5) (prerelease "^\\([0-9]+\\)\\.\\([0-9]+\\)\\s-*\\.?pre\\([0-9]+\\)?$" 3) (full "^\\([0-9]+\\)\\.\\([0-9]+\\)\\.?\\([0-9]+\\)?$" 3) (fullsingle "^\\([0-9]+\\)$" 1) (patch "^\\([0-9]+\\)\\.\\([0-9]+\\)\\.?\\([0-9]+\\)?\\s-*(patch \\([0-9]+\\))" 4) (point "^\\([0-9]+\\)\\.\\([0-9]+\\)\\.\\([0-9]+\\)$" 3) (point "^\\w+: v\\([0-9]+\\)\\.\\([0-9]+\\)\\.\\([0-9]+\\)-\\(0\\)-\\(.*\\)" 5) (build "^\\([0-9]+\\)\\.\\([0-9]+\\)\\.\\([0-9]+\\).\\([0-9]+\\)$" 4) (full "^[^/]+/\\w+--\\w+--\\([0-9]+\\)\\.\\([0-9]+\\)\\.\\([0-9]+\\)--version-\\([0-9]+\\)" 4) (full "^\\w+: v\\([0-9]+\\)\\.\\([0-9]+\\)\\.\\([0-9]+\\)" 5))))
+                nil [2443 3979])
+            ("inversion-decode-version" function (:arguments ("version-string")) nil [4005 4793])
+            ("inversion-package-version" function (:arguments ("package")) nil [4795 5257])
+            ("inversion-package-incompatibility-version" function (:arguments ("package")) nil [5259 5758])
+            ("inversion-recode" function (:arguments ("code")) nil [5760 6101])
+            ("inversion-release-to-number" function (:arguments ("release-symbol")) nil [6103 6343])
+            ("inversion-=" function (:arguments ("ver1" "ver2")) nil [6345 6441])
+            ("inversion-<" function (:arguments ("ver1" "ver2")) nil [6443 7277])
+            ("inversion-check-version" function (:arguments ("version" "incompatible-version" "minimum" "reserved")) nil [7279 8721])
+            ("inversion-test" function (:arguments ("package" "minimum" "reserved")) nil [8723 9940])
+            ("inversion-reverse-test" function (:arguments ("package" "oldversion" "reserved")) nil [9942 11353])
+            ("inversion-require" function (:arguments ("package" "version" "file" "directory" "reserved")) nil [11355 12116])
+            ("inversion-require-emacs" function (:arguments ("emacs-ver" "xemacs-ver" "sxemacs-ver")) nil [12133 12562])
+            ("inversion-find-data" variable
+               (:constant-flag t
+                :default-value (quote ("(def\\(var\\|const\\)\\s-+%s-%s\\s-+\"\\([^\"]+\\)" 2)))
+                nil [12564 12716])
+            ("inversion-find-version" function (:arguments ("package")) nil [12718 13995])
+            ("inversion-add-to-load-path" function (:arguments ("package" "minimum" "installdir" "subdirs")) nil [13997 15957])
+            ("inversion-locate-package-files" function (:arguments ("package" "directory" "version")) nil [15991 16704])
+            ("inversion-package-common-tails" variable (:default-value (quote (".tar.gz" ".tar" ".zip" ".gz"))) nil [16706 16864])
+            ("inversion-locate-package-files-and-split" function (:arguments ("package" "directory" "version")) nil [16866 17925])
+            ("inversion-download-package-ask" function (:arguments ("err" "package" "directory" "version")) nil [17927 18775])
+            ("inversion" package nil nil [19665 19685]))          
+      :file "inversion.el.gz"
+      :pointmax 19714
+      :fsize 6101
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!26.3!lisp!cedet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

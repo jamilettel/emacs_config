@@ -1,0 +1,123 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("generic_list.h" include nil nil [91 116])
+            ("list_delete_node" function
+               (:arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140 153])
+                    ("del" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [166 177]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "bool")
+                nil [118 269]))          
+      :file "list_delete_node.c"
+      :pointmax 269
+      :fsize 276
+      :lastmodtime '(24234 63839 69898 174000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("generic_list.h" include nil nil [91 116])
+            ("list_add_elem_at_back" function
+               (:arguments 
+                  ( ("front_ptr" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145 163])
+                    ("elem" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [164 175]))                  
+                :type "bool")
+                nil [118 470]))          
+      :file "list_add_elem_at_back.c"
+      :pointmax 470
+      :fsize 469
+      :lastmodtime '(24232 17415 419319 440000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("generic_list.h" include nil nil [91 116])
+            ("list_get_first_node_with_value" function
+               (:pointer 1
+                :arguments 
+                  ( ("list" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157 169])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [170 182])
+                    ("val_comp" variable (:type ("value_comparator_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [183 211]))                  
+                :type ("node_t" type (:type "class") nil nil))
+                nil [118 414]))          
+      :file "list_get_first_node_with_value.c"
+      :pointmax 414
+      :fsize 413
+      :lastmodtime '(24232 17415 420319 437000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("generic_list.h" include nil nil [91 116])
+            ("list_create_node" function
+               (:pointer 1
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [143 154]))                  
+                :type ("node_t" type (:type "class") nil nil))
+                nil [118 302]))          
+      :file "list_create_node.c"
+      :pointmax 302
+      :fsize 301
+      :lastmodtime '(24232 17415 419319 440000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("generic_list.h" include nil nil [91 116])
+            ("list_del_elem_at_value" function
+               (:arguments 
+                  ( ("front_ptr" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146 164])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [165 177])
+                    ("del" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [190 201]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "bool")
+                nil [118 805]))          
+      :file "list_del_elem_at_value.c"
+      :pointmax 805
+      :fsize 804
+      :lastmodtime '(24235 58497 998417 610000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!lib!src!my_list!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

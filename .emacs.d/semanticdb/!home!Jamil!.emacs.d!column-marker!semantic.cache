@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("column-marker-1" variable
+               (:default-value (quote ((t (:background "gray"))))
+                :type "face")
+                nil [4948 5081])
+            ("column-marker-1-face" variable (:default-value (quote column-marker-1)) nil [5083 5244])
+            ("column-marker-2" variable
+               (:default-value (quote ((t (:background "cyan3"))))
+                :type "face")
+                nil [5246 5380])
+            ("column-marker-2-face" variable (:default-value (quote column-marker-2)) nil [5382 5544])
+            ("column-marker-3" variable
+               (:default-value (quote ((t (:background "orchid3"))))
+                :type "face")
+                nil [5546 5682])
+            ("column-marker-3-face" variable (:default-value (quote column-marker-3)) nil [5684 5846])
+            ("column-marker-vars" variable nil nil [5848 5927])
+            ("make-variable-buffer-local" code nil nil [5928 5976])
+            ("column-marker-create" function (:arguments ("var" "face")) nil [6009 7877])
+            ("column-marker-find" function (:arguments ("col")) nil [7879 9313])
+            ("column-marker-internal" function (:arguments ("sym" "col" "face")) nil [9315 10106])
+            ("column-marker-create" code nil nil [10332 10391])
+            ("column-marker-create" code nil nil [10392 10451])
+            ("column-marker-create" code nil nil [10452 10511])
+            ("column-marker-1" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [10528 10595])
+            ("column-marker" package nil nil [10617 10641]))          
+      :file "column-marker.el"
+      :pointmax 10745
+      :fsize 10745
+      :lastmodtime '(23779 62975 431829 260000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!column-marker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

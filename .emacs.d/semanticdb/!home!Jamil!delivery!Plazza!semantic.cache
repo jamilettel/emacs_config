@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("BINARY_NAME" variable (:default-value ("plazza")) nil [265 292])
+            ("PWD_PATH" variable (:default-value ("$(shell pwd)")) nil [426 458])
+            ("BINARY_PATH" variable (:default-value ("$(PWD_PATH)/$(BINARY_NAME)")) nil [459 505])
+            ("SOURCES_PATH" variable (:default-value ("$(PWD_PATH)/sources")) nil [506 545])
+            ("HEADERS_PATH" variable (:default-value ("$(PWD_PATH)/include")) nil [546 585])
+            ("CLASS_PATH" variable (:default-value ("$(PWD_PATH)/class")) nil [586 623])
+            ("PLAZZA_HEADER_CLASS_FILES" variable (:default-value ("-I$(CLASS_PATH)/")) nil [757 808])
+            ("PLAZZA_SRC_CLASS_FILES" variable (:default-value ("$(CLASS_PATH)/SelectHandler/SelectHandler.cpp" "$(CLASS_PATH)/Error/Error.cpp" "$(CLASS_PATH)/Error/ErrHandling/ErrHandling.cpp" "$(CLASS_PATH)/IPC/Pipe.cpp" "$(CLASS_PATH)/Order.cpp" "$(CLASS_PATH)/Pizza.cpp" "$(CLASS_PATH)/StringManipulation/StringManipulation.cpp" "$(CLASS_PATH)/Kitchen/KitchenController.cpp" "$(CLASS_PATH)/Kitchen/KitchenManager.cpp" "$(CLASS_PATH)/Kitchen/CookManager.cpp" "$(CLASS_PATH)/Kitchen/Chrono.cpp" "$(CLASS_PATH)/Kitchen/thread/PlazzaThread.cpp" "$(CLASS_PATH)/Kitchen/thread/AThreadAction.cpp" "$(CLASS_PATH)/Kitchen/thread/CookAction.cpp" "$(CLASS_PATH)/Kitchen/thread/StockAction.cpp" "$(CLASS_PATH)/Kitchen/thread/DeliverAction.cpp" "$(CLASS_PATH)/Kitchen/thread/InterThread.cpp" "$(CLASS_PATH)/SmartBuffer.cpp" "$(CLASS_PATH)/Arguments.cpp" "$(CLASS_PATH)/Reception/Parser/Parser.cpp" "$(CLASS_PATH)/Reception/Reception.cpp" "$(CLASS_PATH)/Logger.cpp")) nil [808 1928])
+            ("PLAZZA_HEADER_FILES" variable (:default-value ("-I$(HEADERS_PATH)/")) nil [1928 1974])
+            ("PLAZZA_SRC_FILES" variable nil nil [1975 1997])
+            ("PLAZZA_MAIN_FILES" variable (:default-value ("$(SOURCES_PATH)/main.cpp")) nil [1998 2048])
+            ("PLAZZA_HEADERS" variable (:default-value ("$(PLAZZA_HEADER_FILES)" "$(PLAZZA_HEADER_CLASS_FILES)")) nil [2049 2141])
+            ("OBJECT_PLAZZA_SRC_CLASS" variable (:default-value ("$(PLAZZA_SRC_CLASS_FILES:%.cpp=%.o)")) nil [2277 2342])
+            ("OBJECT_PLAZZA_SRC" variable (:default-value ("$(PLAZZA_SRC_FILES:%.cpp=%.o)")) nil [2343 2397])
+            ("OBJECT_PLAZZA_MAIN" variable (:default-value ("$(PLAZZA_MAIN_FILES:%.cpp=%.o)")) nil [2398 2454])
+            ("OBJECT_PLAZZA" variable (:default-value ("$(OBJECT_PLAZZA_MAIN)" "$(OBJECT_PLAZZA_SRC)" "$(OBJECT_PLAZZA_SRC_CLASS)")) nil [2455 2570])
+            ("RM" variable (:default-value ("rm" "-f")) nil [2707 2728])
+            ("CXX" variable (:default-value ("g++")) nil [2729 2748])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-Wextra" "-W" "$(PLAZZA_HEADERS)")) nil [2749 2818])
+            ("LDFLAGS" variable (:default-value ("-pthread")) nil [2818 2845])
+            ("all" function (:arguments ("$(OBJECT_PLAZZA)")) nil [2982 3044])
+            ("clean" function nil nil [3045 3076])
+            ("fclean" function (:arguments ("clean")) nil [3077 3113])
+            ("re" function (:arguments ("fclean" "all")) nil [3114 3129])
+            ("debug" function (:arguments ("CXXFLAGS" "+=" "-g")) nil [3130 3152])
+            ("debug" function (:arguments ("all")) nil [3152 3163]))          
+      :file "Makefile"
+      :pointmax 3192
+      :fsize 3191
+      :lastmodtime '(24239 4934 132908 813000)
+      :unmatched-syntax '((symbol 3189 . 3191) (symbol 3182 . 3188) (symbol 3176 . 3181) (symbol 3172 . 3175) (punctuation 3170 . 3171) (symbol 3164 . 3170) (bol 3164 . 3164)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("anonymous" code nil nil [1 611]))          
+      :file ".dir-locals.el"
+      :pointmax 612
+      :fsize 611
+      :lastmodtime '(24221 36149 674727 734000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!Plazza!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
