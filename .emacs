@@ -91,7 +91,6 @@
  '(idle-highlight-exceptions nil)
  '(idle-highlight-idle-time 0.2)
  '(inhibit-startup-screen t)
- '(irony-additional-clang-options (quote ("-std=c++17")))
  '(package-selected-packages
    (quote
     (atom-dark-theme function-args c-eldoc irony-eldoc flycheck-irony company-irony company-irony-c-headers doom-modeline helm-rtags rtags flycheck-pos-tip quick-peek flycheck-inline treemacs-magit treemacs-projectile treemacs vterm emoji-github helm-ag ctune helm-company helm-gtags ag helm telephone-line scroll-restore fast-scroll jedi company-jedi irony nand2tetris autotetris-mode diff-hl doom-themes neotree drag-stuff nyan-mode srefactor clipboard-collector eww-lnum multiple-cursors flycheck-clang-analyzer magit ## yasnippet 2048-game term+ company-c-headers company flycheck)))
@@ -225,7 +224,7 @@
 (load "idle-highlight-mode")
 (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
 
-(setq projectile-project-search-path '("~/"))
+(setq projectile-project-search-path '("~/delivery/"))
 
 (require 'srefactor)
 (require 'srefactor-lisp)
