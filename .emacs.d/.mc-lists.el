@@ -8,10 +8,12 @@
         c-electric-lt-gt
         c-electric-paren
         c-electric-semi&comma
+        c-electric-slash
         c-electric-star
         c-indent-line-or-region
         indent-for-tab-command
         overwrite-mode
+        previous-buffer
         upcase-region
         xterm-paste
         ))

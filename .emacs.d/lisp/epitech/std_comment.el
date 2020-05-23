@@ -77,10 +77,14 @@
   (interactive)
   (goto-char (point-min))
   (let ((projname "toto")(projdescription "tiuti"))
-    (setq projname (read-from-minibuffer
-                    (format "Type project name (RETURN to confirm): ")))
-    (setq projdescription (read-from-minibuffer
-                    (format "Type short file description (RETURN to confirm): ")))
+
+    ;; (setq projname (read-from-minibuffer
+    ;;                 (format "Type project name (RETURN to confirm): ")))
+    ;; (setq projdescription (read-from-minibuffer
+    ;;                 (format "Type short file description (RETURN to confirm): ")))
+
+    (setq projname (projectile-project-name))
+    (setq projdescription (file-name-base))
 
     (insert (std-get 'cs))
     (newline)
