@@ -225,7 +225,7 @@
 (load "idle-highlight-mode")
 (add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
 
-(setq projectile-project-search-path '("~/delivery/"))
+(setq projectile-project-search-path '("~/"))
 
 (require 'srefactor)
 (require 'srefactor-lisp)
