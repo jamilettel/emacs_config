@@ -1,6 +1,7 @@
 ((magit-branch nil)
  (magit-commit nil)
  (magit-diff
+  (("--" "src/Systems/JoystickCursor.cpp"))
   (("--" "CMakeLists.txt")))
  (magit-dispatch nil)
  (magit-fetch nil)

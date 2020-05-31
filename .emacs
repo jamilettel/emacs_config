@@ -25,7 +25,7 @@
 
 (display-time)
 (column-number-mode)
-(mouse-wheel-mode 0)
+(mouse-wheel-mode 1)
 (global-set-key [mouse-4] 'scroll-down-line)
 (global-set-key [mouse-5] 'scroll-up-line)
 (xterm-mouse-mode)
@@ -69,9 +69,11 @@
     ("-Iinclude" "-I../include" "-I../../include" "-I../../../include" "-I../../../../include" "-I../" "-I../../" "-I../corewar/include" "-I../../corewar/include" "-I../../../corewar/include" "-I../rsrc")))
  '(company-dabbrev-minimum-length 2)
  '(company-idle-delay 0)
- '(company-irony-ignore-case (quote smart))
+ '(company-irony-ignore-case nil)
  '(company-minimum-prefix-length 2)
+ '(company-tooltip-flip-when-above nil)
  '(company-tooltip-idle-delay 0)
+ '(company-tooltip-margin 2)
  '(custom-safe-themes
    (quote
     ("2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "f9cae16fd084c64bf0a9de797ef9caedc9ff4d463dd0288c30a3f89ecf36ca7e" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "7f791f743870983b9bb90c8285e1e0ba1bf1ea6e9c9a02c60335899ba20f3c94" "a83f05e5e2f2538376ea2bfdf9e3cd8b7f7593b16299238c1134c1529503fa88" "0ad7f1c71fd0289f7549f0454c9b12005eddf9b76b7ead32a24d9cb1d16cbcbd" "bc836bf29eab22d7e5b4c142d201bcce351806b7c1f94955ccafab8ce5b20208" "e1ecb0536abec692b5a5e845067d75273fe36f24d01210bf0aa5842f2a7e029f" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "b9e9ba5aeedcc5ba8be99f1cc9301f6679912910ff92fdf7980929c2fc83ab4d" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a339f231e63aab2a17740e5b3965469e8c0b85eccdfb1f9dbd58a30bdad8562b" default)))
@@ -84,20 +86,29 @@
  '(flycheck-highlighting-mode (quote symbols))
  '(flycheck-idle-change-delay 0.8)
  '(flycheck-pos-tip-mode t)
+ '(focus-follows-mouse t)
+ '(gdb-many-windows t)
  '(global-yascroll-bar-mode t)
  '(gmm-tool-bar-style (quote gnome))
+ '(helm-allow-mouse t)
  '(helm-completion-style (quote emacs))
  '(hscroll-step 1)
  '(idle-highlight-exceptions nil)
  '(idle-highlight-idle-time 0.2)
  '(inhibit-startup-screen t)
+ '(irony-additional-clang-options (quote ("-W" "-Wall" "-Wextra" "-Wshadow")))
+ '(mouse-autoselect-window nil)
+ '(mouse-scroll-delay 0)
  '(package-selected-packages
    (quote
-    (atom-dark-theme function-args c-eldoc irony-eldoc flycheck-irony company-irony company-irony-c-headers doom-modeline helm-rtags rtags flycheck-pos-tip quick-peek flycheck-inline treemacs-magit treemacs-projectile treemacs vterm emoji-github helm-ag ctune helm-company helm-gtags ag helm telephone-line scroll-restore fast-scroll jedi company-jedi irony nand2tetris autotetris-mode diff-hl doom-themes neotree drag-stuff nyan-mode srefactor clipboard-collector eww-lnum multiple-cursors flycheck-clang-analyzer magit ## yasnippet 2048-game term+ company-c-headers company flycheck)))
- '(pixel-scroll-mode t)
+    (cmake-ide indent-guide atom-dark-theme function-args c-eldoc irony-eldoc flycheck-irony company-irony company-irony-c-headers doom-modeline helm-rtags rtags flycheck-pos-tip quick-peek flycheck-inline treemacs-magit treemacs-projectile treemacs vterm emoji-github helm-ag ctune helm-company helm-gtags ag helm telephone-line scroll-restore fast-scroll jedi company-jedi irony nand2tetris autotetris-mode diff-hl doom-themes neotree drag-stuff nyan-mode srefactor clipboard-collector eww-lnum multiple-cursors flycheck-clang-analyzer magit ## yasnippet 2048-game term+ company-c-headers company flycheck)))
+ '(projectile-indexing-method (quote hybrid))
  '(safe-local-variable-values
    (quote
-    ((eval let
+    ((projectile-project-run-cmd . "cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build . -j8 && ./bomberman")
+     (projectile-project-compilation-cmd . "cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build . -j8")
+     (projectile-project-compilation-dir . "build/")
+     (eval let
            ((root
              (projectile-project-root)))
            (setq-local company-clang-arguments
@@ -156,9 +167,12 @@
  '(scroll-up-aggressively 0.0)
  '(spaceline-info-mode t)
  '(tab-width 4)
- '(tooltip-mode nil)
+ '(tooltip-delay 0.5)
+ '(tooltip-hide-delay 30)
+ '(tooltip-mode t)
  '(treemacs-fringe-indicator-mode t)
  '(truncate-lines t)
+ '(x-gtk-use-system-tooltips nil)
  '(yascroll:delay-to-hide 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -181,6 +195,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/column-marker")
 (load "column-marker")
+
 (require 'column-marker)
 (add-hook 'c-mode-hook (lambda () (interactive) (column-marker-2 80)))
 
@@ -194,13 +209,14 @@
 (yas-global-mode)
 
 (require 'multiple-cursors)
-(add-hook 'c++-mode-hook (lambda () (interactive) (multiple-cursors-mode)))
-(add-hook 'c-mode-hook (lambda () (interactive) (multiple-cursors-mode)))
+(add-hook 'c++-mode-hook (lambda () (interactive) (multiple-cursors-mode 1)))
+(add-hook 'c-mode-hook (lambda () (interactive) (multiple-cursors-mode 1)))
 (global-set-key (kbd "C-c m") 'mc/edit-lines)
-(global-set-key (kbd "C-x [") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-x ]") 'mc/unmark-next-like-this)
+(global-set-key (kbd "M-{") 'mc/mark-next-like-this)
+(global-set-key (kbd "M-}") 'mc/unmark-next-like-this)
 (global-set-key (kbd "C-c <mouse-1>") 'mc/add-cursor-on-click)
-(global-set-key (kbd "C-x ESC ] <") 'mc/add-cursor-on-click)
+
+;; (global-set-key (kbd "C-x ESC ] <") 'mc/add-cursor-on-click)
 
 (global-set-key (kbd "C-x y") 'company-yasnippet)
 (global-set-key (kbd "C-c ;") 'comment-line)
@@ -334,19 +350,6 @@
 
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "C-S-<iso-lefttab>") 'prev-window)
-
-;; (with-eval-after-load 'flycheck
-;;   (add-hook 'flycheck-mode-hook #'flycheck-inline-mode))
-
-;; (setq flycheck-inline-display-function
-;;       (lambda (msg pos)
-;;         (let* ((ov (quick-peek-overlay-ensure-at pos))
-;;                (contents (quick-peek-overlay-contents ov)))
-;;           (setf (quick-peek-overlay-contents ov)
-;;                 (concat contents (when contents "\n") msg))
-;;           (quick-peek-update ov)))
-;;       flycheck-inline-clear-function #'quick-peek-hide)
-
 
 (add-hook 'c++-mode-hook 'irony-mode)
 (add-hook 'c-mode-hook 'irony-mode)

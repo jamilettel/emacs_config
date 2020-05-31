@@ -1,0 +1,111 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("criterion/criterion.h" include (:system-flag t) nil [84 116])
+            ("criterion/redirect.h" include (:system-flag t) nil [117 148])
+            ("stdio.h" include (:system-flag t) nil [149 167])
+            ("generic_list.h" include nil nil [168 193])
+            ("fct" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [211 221]))                  
+                :type "void")
+                nil [195 240])
+            ("Test" function
+               (:arguments 
+                  ( ("" variable (:type ("generic_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [247 260])
+                    ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [261 266]))                  
+                :type "int")
+                nil [242 1101])
+            ("Test" function
+               (:arguments 
+                  ( ("" variable (:type ("generic_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1108 1121])
+                    ("" variable (:type ("test2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1122 1128]))                  
+                :type "int")
+                nil [1103 1993])
+            ("Test" function
+               (:arguments 
+                  ( ("" variable (:type ("generic_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2000 2013])
+                    ("" variable (:type ("test3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2014 2020]))                  
+                :type "int")
+                nil [1995 2862]))          
+      :file "test_generic_list.c"
+      :pointmax 2863
+      :fsize 2862
+      :lastmodtime '(24236 28907 534087 972000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("criterion/criterion.h" include (:system-flag t) nil [90 122])
+            ("criterion/redirect.h" include (:system-flag t) nil [123 154])
+            ("redirect_all_std" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [178 183]))                  
+                :type "void")
+                nil [156 239]))          
+      :file "redirect_all_std.c"
+      :pointmax 240
+      :fsize 239
+      :lastmodtime '(24236 28907 534087 972000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("smart_buffer.h" include nil nil [88 113])
+            ("criterion/criterion.h" include (:system-flag t) nil [114 146])
+            ("criterion/redirect.h" include (:system-flag t) nil [147 178])
+            ("redirect_all_std" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [202 207]))                  
+                :type "void")
+                nil [180 208])
+            ("Test" function
+               (:arguments 
+                  ( ("" variable (:type ("smart_buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [215 228])
+                    ("" variable (:type ("basic_test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [229 240]))                  
+                :type "int")
+                nil [210 735])
+            ("fct" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [753 774])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [775 785]))                  
+                :type "bool")
+                nil [737 840])
+            ("Test" function
+               (:arguments 
+                  ( ("" variable (:type ("smart_buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [847 860])
+                    ("" variable (:type ("get_data_if" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [861 873]))                  
+                :type "int")
+                nil [842 1389])
+            ("Test" function
+               (:arguments 
+                  ( ("" variable (:type ("smart_buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1396 1409])
+                    ("" variable (:type ("write" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1410 1416])
+                    ("" variable (:type ("init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1418 1441]))                  
+                :type "int")
+                nil [1391 1861]))          
+      :file "test_smart_buffer.c"
+      :pointmax 1862
+      :fsize 1861
+      :lastmodtime '(24237 49315 121060 740000)
+      :unmatched-syntax '((punctuation 1417 . 1418))))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!lib!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

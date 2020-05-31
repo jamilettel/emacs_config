@@ -1,0 +1,421 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_ISELECTHANDLER_HPP" variable (:constant-flag t) nil [128 153])
+            ("ISelectHandler" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [178 185])
+                    ("select" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [232 257])
+                    ("select" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("timeval" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [281 298]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [262 303])
+                    ("attachWriteFd" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("writefd" variable (:type "int") (reparse-symbol arg-sub-list) [335 347]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [308 352])
+                    ("attachReadFd" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("readfd" variable (:type "int") (reparse-symbol arg-sub-list) [383 394]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [357 399])
+                    ("clear" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [423 430]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [404 435])
+                    ("clearWrite" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [464 471]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [440 476])
+                    ("clearRead" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [504 511]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [481 516])
+                    ("setWriteFds" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [521 552])
+                    ("setReadFds" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [557 587])
+                    ("isReadSet" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [615 622]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [592 633])
+                    ("isWriteSet" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [662 669]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [638 680])
+                    ("clearAll" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [685 713]))                  
+                :type "class")
+                nil [155 717]))          
+      :file "ISelectHandler.hpp"
+      :pointmax 754
+      :fsize 753
+      :lastmodtime '(24242 33102 492581 49000)
+      :unmatched-syntax '((punctuation 225 . 226) (DEFAULT 218 . 225) (punctuation 216 . 217) (semantic-list 213 . 215) (symbol 199 . 213) (punctuation 198 . 199) (VIRTUAL 190 . 197) (punctuation 225 . 226) (DEFAULT 218 . 225) (punctuation 216 . 217) (semantic-list 213 . 215) (symbol 199 . 213) (punctuation 198 . 199) (VIRTUAL 190 . 197))
+      :lexical-table 
+        '(("PLAZZA_ISELECTHANDLER_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_SELECTHANDLER_HPP" variable (:constant-flag t) nil [126 150])
+            ("sys/select.h" include (:system-flag t) nil [152 175])
+            ("vector" include (:system-flag t) nil [176 193])
+            ("ISelectHandler.hpp" include nil nil [194 223])
+            ("SelectHandler" type
+               (:superclasses 
+                  ( ("ISelectHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [271 278])
+                    ("SelectHandler" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("SelectHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [283 299])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [321 330])
+                    ("getWritefd" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [336 379])
+                    ("getReadfd" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [384 426])
+                    ("getNfds" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [431 451])
+                    ("setNfds" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nfds" variable (:type "int") (reparse-symbol arg-sub-list) [469 478]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [456 479])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [516 525])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [560 569])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [593 602])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [631 640])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [668 677])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [695 704])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [752 761])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [799 808])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [831 840])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [868 883])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [912 927])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [948 957])
+                    ("private" label nil (reparse-symbol classsubparts) [958 966])
+                    ("clearfd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fdSet" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [984 1008])
+                            ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1009 1016]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [971 1017])
+                    ("calcNfds" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1022 1038])
+                    ("resetFdSet" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fdSet" variable
+                               (:reference 1
+                                :type ("fd_set" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1059 1073]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1043 1074])
+                    ("isSet" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("fdSet" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("fd_set" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1090 1110])
+                            ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1111 1118]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1079 1125])
+                    ("private" label nil (reparse-symbol classsubparts) [1126 1134])
+                    ("_writefd" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1139 1165])
+                    ("_readfd" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1170 1195])
+                    ("_writefds" variable (:type ("fd_set" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1200 1217])
+                    ("_readfds" variable (:type ("fd_set" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1222 1238])
+                    ("_nfds" variable (:type "int") (reparse-symbol classsubparts) [1243 1253]))                  
+                :type "class")
+                nil [225 1256]))          
+      :file "SelectHandler.hpp"
+      :pointmax 1293
+      :fsize 1292
+      :lastmodtime '(24242 33084 398605 164000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZZA_SELECTHANDLER_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Error/Error.hpp" include (:system-flag t) nil [85 111])
+            ("algorithm" include (:system-flag t) nil [112 132])
+            ("SelectHandler.hpp" include nil nil [133 161])
+            ("string.h" include (:system-flag t) nil [162 181])
+            ("SelectHandler" function
+               (:constructor-flag t
+                :parent "SelectHandler"
+                :type ("SelectHandler" type (:type "class") nil nil))
+                nil [183 227])
+            ("SelectHandler" function
+               (:destructor-flag t
+                :parent "SelectHandler"
+                :type "void")
+                nil [229 263])
+            ("getWritefd" function
+               (:methodconst-flag t
+                :parent "SelectHandler"
+                :constant-flag t
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [265 347])
+            ("getReadfd" function
+               (:methodconst-flag t
+                :parent "SelectHandler"
+                :constant-flag t
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [349 429])
+            ("getNfds" function
+               (:methodconst-flag t
+                :parent "SelectHandler"
+                :type "int")
+                nil [432 488])
+            ("setNfds" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("nfds" variable (:type "int") (reparse-symbol arg-sub-list) [518 527]))                  
+                :type "void")
+                nil [490 549])
+            ("attachWriteFd" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("writefd" variable (:type "int") (reparse-symbol arg-sub-list) [585 597]))                  
+                :type "void")
+                nil [551 634])
+            ("attachReadFd" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("readfd" variable (:type "int") (reparse-symbol arg-sub-list) [669 680]))                  
+                :type "void")
+                nil [636 715])
+            ("calcNfds" function
+               (:parent "SelectHandler"
+                :type "void")
+                nil [717 1077])
+            ("select" function
+               (:parent "SelectHandler"
+                :type "int")
+                nil [1079 1417])
+            ("select" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("timeout" variable
+                       (:reference 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1445 1469]))                  
+                :type "int")
+                nil [1419 1784])
+            ("resetFdSet" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("fdSet" variable
+                       (:reference 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1817 1831]))                  
+                :type "void")
+                nil [1786 1856])
+            ("setWriteFds" function
+               (:parent "SelectHandler"
+                :type "void")
+                nil [1858 1993])
+            ("setReadFds" function
+               (:parent "SelectHandler"
+                :type "void")
+                nil [1995 2126])
+            ("clear" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2154 2161]))                  
+                :type "void")
+                nil [2128 2204])
+            ("clearWrite" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2237 2244]))                  
+                :type "void")
+                nil [2206 2275])
+            ("clearRead" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2307 2314]))                  
+                :type "void")
+                nil [2277 2344])
+            ("isSet" function
+               (:methodconst-flag t
+                :parent "SelectHandler"
+                :arguments 
+                  ( ("fdSet" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2372 2392])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2393 2400]))                  
+                :type "bool")
+                nil [2346 2448])
+            ("isWriteSet" function
+               (:methodconst-flag t
+                :parent "SelectHandler"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2481 2488]))                  
+                :type "bool")
+                nil [2450 2531])
+            ("isReadSet" function
+               (:methodconst-flag t
+                :parent "SelectHandler"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2563 2570]))                  
+                :type "bool")
+                nil [2533 2612])
+            ("clearfd" function
+               (:parent "SelectHandler"
+                :arguments 
+                  ( ("fdSet" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2642 2666])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2667 2674]))                  
+                :type "void")
+                nil [2614 2799])
+            ("clearAll" function
+               (:parent "SelectHandler"
+                :type "void")
+                nil [2801 2878]))          
+      :file "SelectHandler.cpp"
+      :pointmax 2879
+      :fsize 2878
+      :lastmodtime '(24242 33046 784655 291000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!Plazza!class!SelectHandler!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,97 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("INDIESTUDIO_EXCEPTIONS_HPP_" variable (:constant-flag t) nil [128 155])
+            ("exception" include (:system-flag t) nil [157 177])
+            ("string" include (:system-flag t) nil [178 195]))          
+      :file "Exception.hpp"
+      :pointmax 922
+      :fsize 921
+      :lastmodtime '(24243 49928 155813 607000)
+      :unmatched-syntax '((semantic-list 222 . 878) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 860) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 860) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 980) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 987) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 987) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 713) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 712) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 707) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 701) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 668) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 639) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 633) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 632) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 592) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 222 . 583) (symbol 211 . 221) (punctuation 210 . 211) (punctuation 209 . 210) (symbol 207 . 209) (NAMESPACE 197 . 206) (semantic-list 204 . 544) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 545) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 535) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 526) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 495) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 473) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 231) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 231) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 231) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 204 . 231) (symbol 193 . 203) (punctuation 192 . 193) (punctuation 191 . 192) (symbol 189 . 191) (NAMESPACE 179 . 188) (semantic-list 185 . 212) (symbol 174 . 184) (punctuation 173 . 174) (punctuation 172 . 173) (symbol 170 . 172) (NAMESPACE 160 . 169) (punctuation 157 . 158) (semantic-list 184 . 211) (symbol 173 . 183) (punctuation 172 . 173) (punctuation 171 . 172) (symbol 169 . 171) (NAMESPACE 159 . 168) (semantic-list 182 . 208) (symbol 171 . 181) (punctuation 170 . 171) (punctuation 169 . 170) (symbol 167 . 169) (NAMESPACE 157 . 166) (semantic-list 181 . 196) (symbol 171 . 180) (punctuation 170 . 171) (punctuation 169 . 170) (symbol 167 . 169) (NAMESPACE 157 . 166) (semantic-list 182 . 197) (symbol 171 . 181) (punctuation 170 . 171) (punctuation 169 . 170) (symbol 167 . 169) (NAMESPACE 157 . 166) (semantic-list 182 . 192) (symbol 171 . 181) (punctuation 170 . 171) (punctuation 169 . 170) (symbol 167 . 169) (NAMESPACE 157 . 166))
+      :lexical-table 
+        '(("INDIESTUDIO_EXCEPTIONS_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("GAME_HPP_" variable (:constant-flag t) nil [113 122])
+            ("vector" include (:system-flag t) nil [124 141])
+            ("ECS/IScene.hpp" include nil nil [142 167])
+            ("is" type
+               (:members 
+                  ( ("Game" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [210 217])
+                            ("addScene" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("sceneType" variable (:type ("is::ecs::Scenes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [402 428])
+                                    ("scene" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("is::ecs::IScene" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [429 475]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [388 476])
+                            ("launchGame" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("startScene" variable (:type ("is::ecs::Scenes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [505 532]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [489 533])
+                            ("switchScene" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [546 565])
+                            ("isRunning" variable
+                               (:typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [579 601])
+                            ("setActualScene" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type ("is::ecs::Scenes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [641 657]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [614 658])
+                            ("protected" label nil (reparse-symbol classsubparts) [668 678])
+                            ("private" label nil (reparse-symbol classsubparts) [687 695])
+                            ("_scenes" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("is::ecs::Scenes" type nil nil nil)
+                                      ("std::shared_ptr" type (:template-specifier 
+                                        ( ("is::ecs::IScene" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [708 776])
+                            ("currentScene" variable
+                               (:typemodifiers ("static")
+                                :type ("is::ecs::Scenes" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [789 825])
+                            ("changeScene" variable (:type ("is::ecs::Scenes" type (:type "class") nil nil)) (reparse-symbol classsubparts) [838 866]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [189 873]))                  
+                :type "namespace")
+                nil [169 876]))          
+      :file "Game.hpp"
+      :pointmax 902
+      :fsize 901
+      :lastmodtime '(24247 61782 275919 899000)
+      :unmatched-syntax '((punctuation 373 . 374) (DEFAULT 366 . 373) (punctuation 364 . 365) (semantic-list 349 . 363) (punctuation 348 . 349) (OPERATOR 340 . 348) (punctuation 339 . 340) (symbol 334 . 338) (punctuation 320 . 321) (DEFAULT 313 . 320) (punctuation 311 . 312) (semantic-list 296 . 310) (symbol 292 . 296) (punctuation 277 . 278) (DEFAULT 270 . 277) (punctuation 268 . 269) (semantic-list 265 . 267) (symbol 261 . 265) (punctuation 260 . 261) (punctuation 246 . 247) (DEFAULT 239 . 246) (punctuation 237 . 238) (semantic-list 234 . 236) (symbol 230 . 234))
+      :lexical-table 
+        '(("GAME_HPP_")
+          )
+))
+  :file "!home!Jamil!delivery!IndieStudio!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

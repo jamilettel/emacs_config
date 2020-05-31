@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("thingatpt" include nil nil [1776 1796])
+            ("idle-highlight" customgroup (:user-visible-flag t) nil [1799 1896])
+            ("idle-highlight" variable
+               (:default-value (quote ((t (:inherit region))))
+                :type "face")
+                nil [1898 2038])
+            ("idle-highlight-exceptions" variable (:default-value (quote ("end"))) nil [2040 2188])
+            ("idle-highlight-idle-time" variable (:default-value 0.5) nil [2190 2323])
+            ("idle-highlight-regexp" variable nil nil [2325 2406])
+            ("idle-highlight-global-timer" variable nil nil [2408 2482])
+            ("idle-highlight-word-at-point" function nil nil [2484 3085])
+            ("idle-highlight-unhighlight" function nil nil [3087 3242])
+            ("define-minor-mode" code nil nil [3259 3730])
+            ("idle-highlight-mode" package nil nil [3732 3762]))          
+      :file "idle-highlight-mode.el"
+      :pointmax 3800
+      :fsize 3799
+      :lastmodtime '(24149 3749 858460 856000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!idle-highlight-mode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

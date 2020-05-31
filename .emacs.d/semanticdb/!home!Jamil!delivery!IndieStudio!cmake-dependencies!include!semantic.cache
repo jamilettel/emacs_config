@@ -1,0 +1,1719 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__IRRLICHT_H_INCLUDED__" variable (:constant-flag t) nil [1442 1465])
+            ("IrrCompileConfig.h" include nil nil [1467 1496])
+            ("aabbox3d.h" include nil nil [1497 1518])
+            ("CDynamicMeshBuffer.h" include nil nil [1519 1550])
+            ("CIndexBuffer.h" include nil nil [1551 1576])
+            ("CMeshBuffer.h" include nil nil [1577 1601])
+            ("coreutil.h" include nil nil [1602 1623])
+            ("CVertexBuffer.h" include nil nil [1624 1650])
+            ("dimension2d.h" include nil nil [1651 1675])
+            ("ECullingTypes.h" include nil nil [1676 1702])
+            ("EDebugSceneTypes.h" include nil nil [1703 1732])
+            ("EDriverFeatures.h" include nil nil [1733 1761])
+            ("EDriverTypes.h" include nil nil [1762 1787])
+            ("EGUIAlignment.h" include nil nil [1788 1814])
+            ("EGUIElementTypes.h" include nil nil [1815 1844])
+            ("EHardwareBufferFlags.h" include nil nil [1845 1878])
+            ("EMaterialFlags.h" include nil nil [1879 1906])
+            ("EMaterialTypes.h" include nil nil [1907 1934])
+            ("EMeshWriterEnums.h" include nil nil [1935 1964])
+            ("EMessageBoxFlags.h" include nil nil [1965 1994])
+            ("ESceneNodeAnimatorTypes.h" include nil nil [1995 2031])
+            ("ESceneNodeTypes.h" include nil nil [2032 2060])
+            ("ETerrainElements.h" include nil nil [2061 2090])
+            ("fast_atof.h" include nil nil [2091 2113])
+            ("heapsort.h" include nil nil [2114 2135])
+            ("IAnimatedMesh.h" include nil nil [2136 2162])
+            ("IAnimatedMeshMD2.h" include nil nil [2163 2192])
+            ("IAnimatedMeshMD3.h" include nil nil [2193 2222])
+            ("IAnimatedMeshSceneNode.h" include nil nil [2223 2258])
+            ("IAttributeExchangingObject.h" include nil nil [2259 2298])
+            ("IAttributes.h" include nil nil [2299 2323])
+            ("IBillboardSceneNode.h" include nil nil [2324 2356])
+            ("IBillboardTextSceneNode.h" include nil nil [2357 2393])
+            ("IBoneSceneNode.h" include nil nil [2394 2421])
+            ("ICameraSceneNode.h" include nil nil [2422 2451])
+            ("ICursorControl.h" include nil nil [2452 2479])
+            ("IDummyTransformationSceneNode.h" include nil nil [2480 2522])
+            ("IDynamicMeshBuffer.h" include nil nil [2523 2554])
+            ("IEventReceiver.h" include nil nil [2555 2582])
+            ("IFileList.h" include nil nil [2583 2605])
+            ("IFileSystem.h" include nil nil [2606 2630])
+            ("IGeometryCreator.h" include nil nil [2631 2660])
+            ("IGPUProgrammingServices.h" include nil nil [2661 2697])
+            ("IGUIButton.h" include nil nil [2698 2721])
+            ("IGUICheckBox.h" include nil nil [2722 2747])
+            ("IGUIColorSelectDialog.h" include nil nil [2748 2782])
+            ("IGUIComboBox.h" include nil nil [2783 2808])
+            ("IGUIContextMenu.h" include nil nil [2809 2837])
+            ("IGUIEditBox.h" include nil nil [2838 2862])
+            ("IGUIElement.h" include nil nil [2863 2887])
+            ("IGUIElementFactory.h" include nil nil [2888 2919])
+            ("IGUIEnvironment.h" include nil nil [2920 2948])
+            ("IGUIFileOpenDialog.h" include nil nil [2949 2980])
+            ("IGUIFont.h" include nil nil [2981 3002])
+            ("IGUIFontBitmap.h" include nil nil [3003 3030])
+            ("IGUIImage.h" include nil nil [3031 3053])
+            ("IGUIInOutFader.h" include nil nil [3054 3081])
+            ("IGUIListBox.h" include nil nil [3082 3106])
+            ("IGUIMeshViewer.h" include nil nil [3107 3134])
+            ("IGUIScrollBar.h" include nil nil [3135 3161])
+            ("IGUISkin.h" include nil nil [3162 3183])
+            ("IGUISpinBox.h" include nil nil [3184 3208])
+            ("IGUISpriteBank.h" include nil nil [3209 3236])
+            ("IGUIStaticText.h" include nil nil [3237 3264])
+            ("IGUITabControl.h" include nil nil [3265 3292])
+            ("IGUITable.h" include nil nil [3293 3315])
+            ("IGUIToolbar.h" include nil nil [3316 3340])
+            ("IGUIWindow.h" include nil nil [3341 3364])
+            ("IGUITreeView.h" include nil nil [3365 3390])
+            ("IImage.h" include nil nil [3391 3410])
+            ("IImageLoader.h" include nil nil [3411 3436])
+            ("IImageWriter.h" include nil nil [3437 3462])
+            ("IIndexBuffer.h" include nil nil [3463 3488])
+            ("ILightSceneNode.h" include nil nil [3489 3517])
+            ("ILogger.h" include nil nil [3518 3538])
+            ("IMaterialRenderer.h" include nil nil [3539 3569])
+            ("IMaterialRendererServices.h" include nil nil [3570 3608])
+            ("IMesh.h" include nil nil [3609 3627])
+            ("IMeshBuffer.h" include nil nil [3628 3652])
+            ("IMeshCache.h" include nil nil [3653 3676])
+            ("IMeshLoader.h" include nil nil [3677 3701])
+            ("IMeshManipulator.h" include nil nil [3702 3731])
+            ("IMeshSceneNode.h" include nil nil [3732 3759])
+            ("IMeshWriter.h" include nil nil [3760 3784])
+            ("IColladaMeshWriter.h" include nil nil [3785 3816])
+            ("IMetaTriangleSelector.h" include nil nil [3817 3851])
+            ("IOSOperator.h" include nil nil [3852 3876])
+            ("IParticleSystemSceneNode.h" include nil nil [3877 3914])
+            ("IQ3LevelMesh.h" include nil nil [3960 3985])
+            ("IQ3Shader.h" include nil nil [3986 4008])
+            ("IReadFile.h" include nil nil [4009 4031])
+            ("IReferenceCounted.h" include nil nil [4032 4062])
+            ("irrArray.h" include nil nil [4063 4084])
+            ("IRandomizer.h" include nil nil [4085 4109])
+            ("IrrlichtDevice.h" include nil nil [4110 4137])
+            ("irrList.h" include nil nil [4138 4158])
+            ("irrMap.h" include nil nil [4159 4178])
+            ("irrMath.h" include nil nil [4179 4199])
+            ("irrString.h" include nil nil [4200 4222])
+            ("irrTypes.h" include nil nil [4223 4244])
+            ("path.h" include nil nil [4245 4262])
+            ("irrXML.h" include nil nil [4263 4282])
+            ("ISceneCollisionManager.h" include nil nil [4283 4318])
+            ("ISceneLoader.h" include nil nil [4319 4344])
+            ("ISceneManager.h" include nil nil [4345 4371])
+            ("ISceneNode.h" include nil nil [4372 4395])
+            ("ISceneNodeAnimator.h" include nil nil [4396 4427])
+            ("ISceneNodeAnimatorCameraFPS.h" include nil nil [4428 4468])
+            ("ISceneNodeAnimatorCameraMaya.h" include nil nil [4469 4510])
+            ("ISceneNodeAnimatorCollisionResponse.h" include nil nil [4511 4559])
+            ("ISceneNodeAnimatorFactory.h" include nil nil [4560 4598])
+            ("ISceneNodeFactory.h" include nil nil [4599 4629])
+            ("ISceneUserDataSerializer.h" include nil nil [4630 4667])
+            ("IShaderConstantSetCallBack.h" include nil nil [4668 4707])
+            ("IShadowVolumeSceneNode.h" include nil nil [4708 4743])
+            ("ISkinnedMesh.h" include nil nil [4744 4769])
+            ("ITerrainSceneNode.h" include nil nil [4770 4800])
+            ("ITextSceneNode.h" include nil nil [4801 4828])
+            ("ITexture.h" include nil nil [4829 4850])
+            ("ITimer.h" include nil nil [4851 4870])
+            ("ITriangleSelector.h" include nil nil [4871 4901])
+            ("IVertexBuffer.h" include nil nil [4902 4928])
+            ("IVideoDriver.h" include nil nil [4929 4954])
+            ("IVideoModeList.h" include nil nil [4955 4982])
+            ("IVolumeLightSceneNode.h" include nil nil [4983 5017])
+            ("IWriteFile.h" include nil nil [5018 5041])
+            ("IXMLReader.h" include nil nil [5042 5065])
+            ("IXMLWriter.h" include nil nil [5066 5089])
+            ("ILightManager.h" include nil nil [5090 5116])
+            ("Keycodes.h" include nil nil [5117 5138])
+            ("line2d.h" include nil nil [5139 5158])
+            ("line3d.h" include nil nil [5159 5178])
+            ("matrix4.h" include nil nil [5179 5199])
+            ("plane3d.h" include nil nil [5200 5220])
+            ("position2d.h" include nil nil [5221 5244])
+            ("quaternion.h" include nil nil [5245 5268])
+            ("rect.h" include nil nil [5269 5286])
+            ("S3DVertex.h" include nil nil [5287 5309])
+            ("SAnimatedMesh.h" include nil nil [5310 5336])
+            ("SceneParameters.h" include nil nil [5337 5365])
+            ("SColor.h" include nil nil [5366 5385])
+            ("SExposedVideoData.h" include nil nil [5386 5416])
+            ("SIrrCreationParameters.h" include nil nil [5417 5452])
+            ("SKeyMap.h" include nil nil [5453 5473])
+            ("SLight.h" include nil nil [5474 5493])
+            ("SMaterial.h" include nil nil [5494 5516])
+            ("SMesh.h" include nil nil [5517 5535])
+            ("SMeshBuffer.h" include nil nil [5536 5560])
+            ("SMeshBufferLightMap.h" include nil nil [5561 5593])
+            ("SMeshBufferTangents.h" include nil nil [5594 5626])
+            ("SParticle.h" include nil nil [5627 5649])
+            ("SSharedMeshBuffer.h" include nil nil [5650 5680])
+            ("SSkinMeshBuffer.h" include nil nil [5681 5709])
+            ("SVertexIndex.h" include nil nil [5710 5735])
+            ("SViewFrustum.h" include nil nil [5736 5761])
+            ("triangle3d.h" include nil nil [5762 5785])
+            ("vector2d.h" include nil nil [5786 5807])
+            ("vector3d.h" include nil nil [5808 5829])
+            ("SIrrCreationParameters.h" include nil nil [9765 9800])
+            ("irr" type
+               (:members 
+                  ( ("createDevice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("deviceType" variable
+                               (:default-value "video"
+                                :type ("video::E_DRIVER_TYPE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11201 11240])
+                            ("" variable (:type ("EDT_SOFTWARE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11242 11255])
+                            ("windowSize" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "(core::dimension2d<u32>(640,480))"
+                                :type ("core::dimension2d" type
+                                     (:template-specifier 
+                                        ( ("u32" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11308 11384])
+                            ("bits" variable
+                               (:default-value "16"
+                                :type ("u32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11388 11401])
+                            ("fullscreen" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11405 11428])
+                            ("stencilbuffer" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11432 11458])
+                            ("vsync" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11462 11480])
+                            ("receiver" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("IEventReceiver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11484 11512]))                          
+                        :type ("IRRCALLCONV" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11173 11514])
+                    ("createDeviceEx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SIrrlichtCreationParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12407 12453]))                          
+                        :type ("IRRCALLCONV" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12377 12454])
+                    ("core" type (:type "namespace") (reparse-symbol namespacesubparts) [12824 12844])
+                    ("gui" type (:type "namespace") (reparse-symbol namespacesubparts) [12943 12962])
+                    ("io" type (:type "namespace") (reparse-symbol namespacesubparts) [13089 13107])
+                    ("scene" type (:type "namespace") (reparse-symbol namespacesubparts) [13235 13256])
+                    ("video" type (:type "namespace") (reparse-symbol namespacesubparts) [13371 13392]))                  
+                :type "namespace")
+                nil [9872 13394]))          
+      :file "irrlicht.h"
+      :pointmax 13504
+      :fsize 13503
+      :lastmodtime '(24240 27832 810442 42000)
+      :unmatched-syntax '((punctuation 12602 . 12603) (semantic-list 12553 . 12602) (semantic-list 12515 . 12553) (punctuation 12513 . 12514) (symbol 12499 . 12513) (TYPEDEF 12491 . 12498) (punctuation 12375 . 12376) (symbol 12361 . 12375) (symbol 12348 . 12360) (string 12344 . 12347) (EXTERN 12337 . 12343) (punctuation 11793 . 11794) (semantic-list 11611 . 11793) (semantic-list 11575 . 11611) (punctuation 11573 . 11574) (symbol 11559 . 11573) (TYPEDEF 11551 . 11558) (punctuation 11241 . 11242) (punctuation 11240 . 11241) (punctuation 11171 . 11172) (symbol 11157 . 11171) (symbol 11144 . 11156) (string 11140 . 11143) (EXTERN 11133 . 11139))
+      :lexical-table 
+        '(("__IRRLICHT_H_INCLUDED__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "IrrCompileConfig.h"
+      :fsize 32854
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "aabbox3d.h"
+      :fsize 10453
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "CDynamicMeshBuffer.h"
+      :fsize 2338
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "CIndexBuffer.h"
+      :fsize 4626
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "CMeshBuffer.h"
+      :fsize 7628
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "coreutil.h"
+      :fsize 4366
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "CVertexBuffer.h"
+      :fsize 4594
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "dimension2d.h"
+      :fsize 5577
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "ECullingTypes.h"
+      :fsize 889
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "EDebugSceneTypes.h"
+      :fsize 1042
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "EDriverFeatures.h"
+      :fsize 3094
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "EDriverTypes.h"
+      :fsize 2074
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "EGUIAlignment.h"
+      :fsize 742
+      :lastmodtime '(24240 27832 796442 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "EGUIElementTypes.h"
+      :fsize 2356
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "EHardwareBufferFlags.h"
+      :fsize 894
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "EMaterialFlags.h"
+      :fsize 2752
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "EMaterialTypes.h"
+      :fsize 9525
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "EMeshWriterEnums.h"
+      :fsize 1508
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "EMessageBoxFlags.h"
+      :fsize 716
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "ESceneNodeAnimatorTypes.h"
+      :fsize 1237
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "ESceneNodeTypes.h"
+      :fsize 2925
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "ETerrainElements.h"
+      :fsize 926
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "fast_atof.h"
+      :fsize 9396
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "heapsort.h"
+      :fsize 1419
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "IAnimatedMesh.h"
+      :fsize 3578
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "IAnimatedMeshMD2.h"
+      :fsize 2355
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "IAnimatedMeshMD3.h"
+      :fsize 6699
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "IAnimatedMeshSceneNode.h"
+      :fsize 9221
+      :lastmodtime '(24240 27832 797442 102000))
+    (semanticdb-table "semanticdb-table"
+      :file "IAttributeExchangingObject.h"
+      :fsize 1921
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IAttributes.h"
+      :fsize 25788
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IBillboardSceneNode.h"
+      :fsize 2724
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IBillboardTextSceneNode.h"
+      :fsize 2033
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IBoneSceneNode.h"
+      :fsize 2834
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "ICameraSceneNode.h"
+      :fsize 7749
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "ICursorControl.h"
+      :fsize 6817
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IDummyTransformationSceneNode.h"
+      :fsize 1325
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IDynamicMeshBuffer.h"
+      :fsize 5965
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IEventReceiver.h"
+      :fsize 15022
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IFileList.h"
+      :fsize 3994
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IFileSystem.h"
+      :fsize 19463
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGeometryCreator.h"
+      :fsize 6405
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGPUProgrammingServices.h"
+      :fsize 20798
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIButton.h"
+      :fsize 5147
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUICheckBox.h"
+      :fsize 907
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIColorSelectDialog.h"
+      :fsize 701
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIComboBox.h"
+      :fsize 2396
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIContextMenu.h"
+      :fsize 6100
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIEditBox.h"
+      :fsize 5188
+      :lastmodtime '(24240 27832 799442 92000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIElement.h"
+      :fsize 27335
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIElementFactory.h"
+      :fsize 2751
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIEnvironment.h"
+      :fsize 28241
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIFileOpenDialog.h"
+      :fsize 1252
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIFont.h"
+      :fsize 3815
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIFontBitmap.h"
+      :fsize 1513
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIImage.h"
+      :fsize 1449
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIInOutFader.h"
+      :fsize 2188
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIListBox.h"
+      :fsize 4693
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIMeshViewer.h"
+      :fsize 1138
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIScrollBar.h"
+      :fsize 1793
+      :lastmodtime '(24240 27832 800442 88000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUISkin.h"
+      :fsize 19028
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUISpinBox.h"
+      :fsize 2110
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUISpriteBank.h"
+      :fsize 2717
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIStaticText.h"
+      :fsize 5249
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUITabControl.h"
+      :fsize 4438
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUITable.h"
+      :fsize 6254
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIToolbar.h"
+      :fsize 1022
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUIWindow.h"
+      :fsize 2704
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IGUITreeView.h"
+      :fsize 10153
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IImage.h"
+      :fsize 4450
+      :lastmodtime '(24240 27832 801442 83000))
+    (semanticdb-table "semanticdb-table"
+      :file "IImageLoader.h"
+      :fsize 1529
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IImageWriter.h"
+      :fsize 1189
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IIndexBuffer.h"
+      :fsize 1561
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "ILightSceneNode.h"
+      :fsize 2888
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "ILogger.h"
+      :fsize 3876
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMaterialRenderer.h"
+      :fsize 4718
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMaterialRendererServices.h"
+      :fsize 4516
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMesh.h"
+      :fsize 2706
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMeshBuffer.h"
+      :fsize 5748
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMeshCache.h"
+      :fsize 7030
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMeshLoader.h"
+      :fsize 1528
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMeshManipulator.h"
+      :fsize 16912
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMeshSceneNode.h"
+      :fsize 2899
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMeshWriter.h"
+      :fsize 1470
+      :lastmodtime '(24240 27832 803442 74000))
+    (semanticdb-table "semanticdb-table"
+      :file "IColladaMeshWriter.h"
+      :fsize 14949
+      :lastmodtime '(24240 27832 798442 97000))
+    (semanticdb-table "semanticdb-table"
+      :file "IMetaTriangleSelector.h"
+      :fsize 1359
+      :lastmodtime '(24240 27832 803442 74000))
+    (semanticdb-table "semanticdb-table"
+      :file "IOSOperator.h"
+      :fsize 1625
+      :lastmodtime '(24240 27832 803442 74000))
+    (semanticdb-table "semanticdb-table"
+      :file "IParticleSystemSceneNode.h"
+      :fsize 26699
+      :lastmodtime '(24240 27832 803442 74000))
+    (semanticdb-table "semanticdb-table"
+      :file "IQ3LevelMesh.h"
+      :fsize 1450
+      :lastmodtime '(24240 27832 804442 70000))
+    (semanticdb-table "semanticdb-table"
+      :file "IQ3Shader.h"
+      :fsize 19385
+      :lastmodtime '(24240 27832 804442 70000))
+    (semanticdb-table "semanticdb-table"
+      :file "IReadFile.h"
+      :fsize 1940
+      :lastmodtime '(24240 27832 804442 70000))
+    (semanticdb-table "semanticdb-table"
+      :file "IReferenceCounted.h"
+      :fsize 6075
+      :lastmodtime '(24240 27832 804442 70000))
+    (semanticdb-table "semanticdb-table"
+      :file "irrArray.h"
+      :fsize 15604
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "IRandomizer.h"
+      :fsize 819
+      :lastmodtime '(24240 27832 804442 70000))
+    (semanticdb-table "semanticdb-table"
+      :file "IrrlichtDevice.h"
+      :fsize 11886
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "irrList.h"
+      :fsize 9236
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "irrMap.h"
+      :fsize 23382
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "irrMath.h"
+      :fsize 18923
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "irrString.h"
+      :fsize 28366
+      :lastmodtime '(24240 27832 809442 47000))
+    (semanticdb-table "semanticdb-table"
+      :file "irrTypes.h"
+      :fsize 7872
+      :lastmodtime '(24240 27832 810442 42000))
+    (semanticdb-table "semanticdb-table"
+      :file "path.h"
+      :fsize 1896
+      :lastmodtime '(24240 27832 810442 42000))
+    (semanticdb-table "semanticdb-table"
+      :file "irrXML.h"
+      :fsize 24090
+      :lastmodtime '(24240 27832 810442 42000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneCollisionManager.h"
+      :fsize 10333
+      :lastmodtime '(24240 27832 804442 70000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneLoader.h"
+      :fsize 2148
+      :lastmodtime '(24240 27832 804442 70000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneManager.h"
+      :fsize 87301
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneNode.h"
+      :fsize 25633
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneNodeAnimator.h"
+      :fsize 2292
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneNodeAnimatorCameraFPS.h"
+      :fsize 2289
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneNodeAnimatorCameraMaya.h"
+      :fsize 1572
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneNodeAnimatorCollisionResponse.h"
+      :fsize 7429
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneNodeAnimatorFactory.h"
+      :fsize 3236
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneNodeFactory.h"
+      :fsize 3047
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISceneUserDataSerializer.h"
+      :fsize 1886
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "IShaderConstantSetCallBack.h"
+      :fsize 3081
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "IShadowVolumeSceneNode.h"
+      :fsize 969
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ISkinnedMesh.h"
+      :fsize 6029
+      :lastmodtime '(24240 27832 805442 65000))
+    (semanticdb-table "semanticdb-table"
+      :file "ITerrainSceneNode.h"
+      :fsize 8433
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "ITextSceneNode.h"
+      :fsize 857
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "ITexture.h"
+      :fsize 8835
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "ITimer.h"
+      :fsize 3011
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "ITriangleSelector.h"
+      :fsize 5349
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "IVertexBuffer.h"
+      :fsize 1543
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "IVideoDriver.h"
+      :fsize 66605
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "IVideoModeList.h"
+      :fsize 2349
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "IVolumeLightSceneNode.h"
+      :fsize 1705
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "IWriteFile.h"
+      :fsize 1524
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "IXMLReader.h"
+      :fsize 1068
+      :lastmodtime '(24240 27832 806442 60000))
+    (semanticdb-table "semanticdb-table"
+      :file "IXMLWriter.h"
+      :fsize 2791
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "ILightManager.h"
+      :fsize 2610
+      :lastmodtime '(24240 27832 802442 79000))
+    (semanticdb-table "semanticdb-table"
+      :file "Keycodes.h"
+      :fsize 7658
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "line2d.h"
+      :fsize 9997
+      :lastmodtime '(24240 27832 810442 42000))
+    (semanticdb-table "semanticdb-table"
+      :file "line3d.h"
+      :fsize 4334
+      :lastmodtime '(24240 27832 810442 42000))
+    (semanticdb-table "semanticdb-table"
+      :file "matrix4.h"
+      :fsize 62441
+      :lastmodtime '(24240 27832 810442 42000))
+    (semanticdb-table "semanticdb-table"
+      :file "plane3d.h"
+      :fsize 7605
+      :lastmodtime '(24240 27832 810442 42000))
+    (semanticdb-table "semanticdb-table"
+      :file "position2d.h"
+      :fsize 954
+      :lastmodtime '(24240 27832 811442 38000))
+    (semanticdb-table "semanticdb-table"
+      :file "quaternion.h"
+      :fsize 17188
+      :lastmodtime '(24240 27832 811442 38000))
+    (semanticdb-table "semanticdb-table"
+      :file "rect.h"
+      :fsize 7354
+      :lastmodtime '(24240 27832 811442 38000))
+    (semanticdb-table "semanticdb-table"
+      :file "S3DVertex.h"
+      :fsize 8068
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "SAnimatedMesh.h"
+      :fsize 4827
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "SceneParameters.h"
+      :fsize 6731
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SColor.h"
+      :fsize 20955
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "SExposedVideoData.h"
+      :fsize 2296
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "SIrrCreationParameters.h"
+      :fsize 11164
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "SKeyMap.h"
+      :fsize 873
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "SLight.h"
+      :fsize 2708
+      :lastmodtime '(24240 27832 807442 56000))
+    (semanticdb-table "semanticdb-table"
+      :file "SMaterial.h"
+      :fsize 23001
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SMesh.h"
+      :fsize 3174
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SMeshBuffer.h"
+      :fsize 221
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SMeshBufferLightMap.h"
+      :fsize 221
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SMeshBufferTangents.h"
+      :fsize 221
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SParticle.h"
+      :fsize 1275
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SSharedMeshBuffer.h"
+      :fsize 6096
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SSkinMeshBuffer.h"
+      :fsize 9679
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SVertexIndex.h"
+      :fsize 1318
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "SViewFrustum.h"
+      :fsize 10552
+      :lastmodtime '(24240 27832 808442 51000))
+    (semanticdb-table "semanticdb-table"
+      :file "triangle3d.h"
+      :fsize 10172
+      :lastmodtime '(24240 27832 811442 38000))
+    (semanticdb-table "semanticdb-table"
+      :file "vector2d.h"
+      :fsize 12101
+      :lastmodtime '(24240 27832 811442 38000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__IRR_POINT_3D_H_INCLUDED__" variable (:constant-flag t) nil [216 243])
+            ("irrMath.h" include nil nil [245 265])
+            ("irr" type
+               (:members 
+                  ( ("core" type
+                       (:members 
+                          ( ("vector3d" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [731 738])
+                                    ("vector3d" function
+                                       (:constructor-flag t
+                                        :type ("vector3d" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [782 814])
+                                    ("vector3d" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("nx" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [872 877])
+                                            ("ny" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [878 883])
+                                            ("nz" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [884 889]))                                          
+                                        :type ("vector3d" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [863 914])
+                                    ("vector3d" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("n" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [990 994]))                                          
+                                        :type ("vector3d" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [981 1016])
+                                    ("vector3d" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1051 1076]))                                          
+                                        :type ("vector3d" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1042 1116])
+                                    ("-" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1136 1201])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1228 1253]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1205 1310])
+                                    ("+" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1336 1361]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1314 1430])
+                                    ("+=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1457 1482]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1433 1536])
+                                    ("+" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("val" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1561 1573]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1539 1630])
+                                    ("+=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("val" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1657 1669]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1633 1711])
+                                    ("-" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1737 1762]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1715 1831])
+                                    ("-=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1858 1883]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1834 1937])
+                                    ("-" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("val" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1962 1974]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1940 2031])
+                                    ("-=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("val" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2058 2070]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2034 2112])
+                                    ("" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :function-pointer t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2138 2163]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2116 2232])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :function-pointer t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2259 2284]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2235 2338])
+                                    ("" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :function-pointer t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2363 2373]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2341 2424])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :function-pointer t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2451 2461]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2427 2497])
+                                    ("/" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2523 2548]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2501 2617])
+                                    ("/=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2644 2669]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2620 2723])
+                                    ("/" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2748 2758]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2726 2823])
+                                    ("/=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2850 2860]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2826 2910])
+                                    ("<=" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2993 3017]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2977 3267])
+                                    (">=" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3350 3374]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3334 3624])
+                                    ("<" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3717 3741]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3702 3990])
+                                    (">" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4083 4107]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4068 4356])
+                                    ("==" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4405 4430]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4389 4475])
+                                    ("!=" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4495 4520]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4479 4566])
+                                    ("equals" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4700 4725])
+                                            ("tolerance" variable
+                                               (:constant-flag t
+                                                :default-value "(T)ROUNDING_ERROR_f32"
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4726 4767]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4688 4916])
+                                    ("set" function
+                                       (:arguments 
+                                          ( ("nx" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4937 4948])
+                                            ("ny" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4949 4960])
+                                            ("nz" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4961 4972]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [4920 5006])
+                                    ("set" function
+                                       (:arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5026 5047]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [5009 5083])
+                                    ("getLength" function
+                                       (:methodconst-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5119 5186])
+                                    ("getLengthSQ" function
+                                       (:methodconst-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5338 5387])
+                                    ("dotProduct" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5451 5476]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5438 5535])
+                                    ("getDistanceFrom" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5670 5695]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5652 5783])
+                                    ("getDistanceFromSQ" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5932 5957]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5912 6047])
+                                    ("crossProduct" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6221 6242]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [6196 6336])
+                                    ("isBetweenPoints" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("begin" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6675 6700])
+                                            ("end" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6701 6724]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6654 6858])
+                                    ("normalize" function (:type ("vector3d" type
+                                         (:template-specifier 
+                                            ( ("T" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7051 7368])
+                                    ("setLength" function
+                                       (:arguments 
+                                          ( ("newlength" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7446 7458]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [7423 7514])
+                                    ("invert" function (:type ("vector3d" type
+                                         (:template-specifier 
+                                            ( ("T" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7544 7626])
+                                    ("rotateXZBy" function
+                                       (:arguments 
+                                          ( ("degrees" variable (:type ("f64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7863 7875])
+                                            ("center" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "vector3d<T>()"
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7876 7915]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7847 8121])
+                                    ("rotateXYBy" function
+                                       (:arguments 
+                                          ( ("degrees" variable (:type ("f64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8360 8372])
+                                            ("center" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "vector3d<T>()"
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8373 8412]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8344 8618])
+                                    ("rotateYZBy" function
+                                       (:arguments 
+                                          ( ("degrees" variable (:type ("f64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8857 8869])
+                                            ("center" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "vector3d<T>()"
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8870 8909]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8841 9115])
+                                    ("getInterpolated" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9534 9559])
+                                            ("d" variable (:type ("f64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9560 9566]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [9506 9703])
+                                    ("getInterpolated_quadratic" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("v2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [10203 10225])
+                                            ("v3" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [10226 10248])
+                                            ("d" variable (:type ("f64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10249 10255]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [10165 10616])
+                                    ("interpolate" function
+                                       (:arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [11027 11048])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [11049 11070])
+                                            ("d" variable (:type ("f64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11071 11077]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [11002 11240])
+                                    ("getHorizontalAngle" function
+                                       (:methodconst-flag t
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [12291 12735])
+                                    ("getSphericalCoordinateAngles" function
+                                       (:methodconst-flag t
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [12945 13302])
+                                    ("rotationToDirection" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("forwards" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "vector3d<T>(0, 0, 1)"
+                                                :type ("vector3d" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [13930 13981]))                                          
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [13898 14866])
+                                    ("getAs4Values" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("array" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15058 15067]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [15040 15149])
+                                    ("getAs3Values" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("array" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15303 15312]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [15285 15377])
+                                    ("X" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15415 15419])
+                                    ("Y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15456 15460])
+                                    ("Z" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15497 15501]))                                  )
+                                (reparse-symbol namespacesubparts) [692 15505])
+                            ("/" function
+                               (:type ("vector3d" type
+                                     (:template-specifier 
+                                        ( ("s32" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("val" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15741 15749]))                                  
+                                :typemodifiers ("inline")
+                                :parent "vector3d"
+                                :operator-flag t
+                                :methodconst-flag t)
+                                (reparse-symbol namespacesubparts) [15681 15804])
+                            ("/=" function
+                               (:type ("vector3d" type
+                                     (:template-specifier 
+                                        ( ("s32" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("val" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15868 15876]))                                  
+                                :typemodifiers ("inline")
+                                :parent "vector3d"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [15806 15914])
+                            ("getSphericalCoordinateAngles" function
+                               (:type ("vector3d" type
+                                     (:template-specifier 
+                                        ( ("s32" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :typemodifiers ("inline")
+                                :parent "vector3d"
+                                :methodconst-flag t)
+                                (reparse-symbol namespacesubparts) [15917 16320])
+                            ("vector3df" type
+                               (:typedef ("vector3d" type
+                                     (:template-specifier 
+                                        ( ("f32" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [16357 16389])
+                            ("vector3di" type
+                               (:typedef ("vector3d" type
+                                     (:template-specifier 
+                                        ( ("s32" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [16431 16463])
+                            ("" function
+                               (:template 
+                                  ( ("S" type (:type "class") nil nil)
+                                    ("T" type (:type "class") nil nil))                                  
+                                :type ("vector3d" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("scalar" variable
+                                       (:constant-flag t
+                                        :type ("S" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16580 16595])
+                                    ("vector" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vector3d" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16596 16622]))                                  
+                                :function-pointer t
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [16530 16648]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [283 16651]))                  
+                :type "namespace")
+                nil [267 16675]))          
+      :file "vector3d.h"
+      :pointmax 16706
+      :fsize 16705
+      :lastmodtime '(24240 27832 811442 38000)
+      :unmatched-syntax '((EXPLICIT 972 . 980))
+      :lexical-table 
+        '(("__IRR_POINT_3D_H_INCLUDED__")
+          )
+))
+  :file "!home!Jamil!delivery!IndieStudio!cmake-dependencies!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

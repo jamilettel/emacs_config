@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("IPC/Array.hpp" include nil nil [103 127])
+            ("iostream" include (:system-flag t) nil [128 147])
+            ("unistd.h" include (:system-flag t) nil [148 167])
+            ("TestStruct" type
+               (:members 
+                  ( ("pizza" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [265 281])
+                    ("qtty" variable (:type "int") (reparse-symbol classsubparts) [286 295]))                  
+                :type "struct")
+                nil [241 298])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [309 314]))                  
+                :type "int")
+                nil [300 1098]))          
+      :file "IPCArray.cpp"
+      :pointmax 1099
+      :fsize 1098
+      :lastmodtime '(24220 12646 496331 823000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!Plazza!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

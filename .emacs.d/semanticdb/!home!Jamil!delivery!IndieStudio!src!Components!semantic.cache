@@ -1,0 +1,93 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Components/TransformComponent.hpp" include nil nil [88 132])
+            ("is::components" using (:type ("is::components" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [134 165])
+            ("TransformComponent" function
+               (:constructor-flag t
+                :parent "TransformComponent"
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("is::ecs::Entity" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [206 242]))                  
+                :type ("TransformComponent" type (:type "class") nil nil))
+                nil [167 263])
+            ("move" function
+               (:parent "TransformComponent"
+                :arguments 
+                  ( ("vector" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("irr::core::vector3df" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [295 330]))                  
+                :type "void")
+                nil [265 364])
+            ("rotate" function
+               (:parent "TransformComponent"
+                :arguments 
+                  ( ("vector" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("irr::core::vector3df" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [398 433]))                  
+                :type "void")
+                nil [366 467])
+            ("scaleObject" function
+               (:parent "TransformComponent"
+                :arguments 
+                  ( ("vector" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("irr::core::vector3df" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [506 541]))                  
+                :type "void")
+                nil [469 572]))          
+      :file "TransformComponent.cpp"
+      :pointmax 573
+      :fsize 572
+      :lastmodtime '(24242 44044 479003 515000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Components/ColliderComponent.hpp" include nil nil [85 128])
+            ("is::components" using (:type ("is::components" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [130 161])
+            ("ColliderComponent" function
+               (:constructor-flag t
+                :parent "ColliderComponent"
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("is::ecs::Entity" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [200 236]))                  
+                :type ("ColliderComponent" type (:type "class") nil nil))
+                nil [163 257]))          
+      :file "ColliderComponent.cpp"
+      :pointmax 258
+      :fsize 257
+      :lastmodtime '(24242 45003 974327 756000)
+      :unmatched-syntax '((punctuation 259 . 260))))
+  :file "!home!Jamil!delivery!IndieStudio!src!Components!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

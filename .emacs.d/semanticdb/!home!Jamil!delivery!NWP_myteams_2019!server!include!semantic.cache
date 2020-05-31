@@ -1,0 +1,1390 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("NWP_MYTEAMS_2019_CLIENT_H" variable (:constant-flag t) nil [141 166])
+            ("stdbool.h" include (:system-flag t) nil [168 188])
+            ("smart_buffer.h" include nil nil [189 214])
+            ("user.h" include nil nil [215 232])
+            ("client_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("fd" variable (:type "int") (reparse-symbol classsubparts) [346 353])
+                          ("close" variable (:type "bool") (reparse-symbol classsubparts) [358 369])
+                          ("write_buf" variable
+                             (:pointer 1
+                              :type ("smart_buffer_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [374 400])
+                          ("read_buf" variable
+                             (:pointer 1
+                              :type ("smart_buffer_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [405 430])
+                          ("path" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [435 446])
+                          ("user" variable
+                             (:pointer 1
+                              :type ("user_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [451 464]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [325 476])
+            ("create_client" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [502 509]))                  
+                :type ("client_t" type (:type "class") nil nil))
+                nil [478 510])
+            ("delete_client" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [530 541]))                  
+                :type "void")
+                nil [511 542])
+            ("client_is_logged_in" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [569 592]))                  
+                :type "bool")
+                nil [544 593]))          
+      :file "client.h"
+      :pointmax 630
+      :fsize 736
+      :lastmodtime '(24237 40277 696636 784000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NWP_MYTEAMS_2019_CLIENT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LOGGING_SERVER_H__" variable (:constant-flag t) nil [38 58])
+            ("stdint.h" include (:system-flag t) nil [60 79])
+            ("time.h" include (:system-flag t) nil [80 97])
+            ("server_event_team_created" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("team_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [590 610])
+                    ("team_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [611 633])
+                    ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [634 654]))                  
+                :type "int")
+                nil [560 655])
+            ("server_event_channel_created" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("team_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1200 1220])
+                    ("channel_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1221 1244])
+                    ("channel_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1245 1270]))                  
+                :type "int")
+                nil [1167 1271])
+            ("server_event_thread_created" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("channel_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1932 1955])
+                    ("thread_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1956 1978])
+                    ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1979 1999])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2000 2020]))                  
+                :type "int")
+                nil [1900 2021])
+            ("server_event_thread_new_message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thread_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2564 2586])
+                    ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2587 2607])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2608 2628]))                  
+                :type "int")
+                nil [2528 2629])
+            ("server_event_user_join_a_team" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("team_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3070 3090])
+                    ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3091 3111]))                  
+                :type "int")
+                nil [3036 3112])
+            ("server_event_user_leave_a_team" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("team_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3552 3572])
+                    ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3573 3593]))                  
+                :type "int")
+                nil [3517 3594])
+            ("server_event_user_created" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3987 4007])
+                    ("user_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4008 4030]))                  
+                :type "int")
+                nil [3957 4031])
+            ("server_event_user_loaded" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4444 4464])
+                    ("user_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4465 4487]))                  
+                :type "int")
+                nil [4415 4488])
+            ("server_event_user_logged_in" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4794 4814]))                  
+                :type "int")
+                nil [4762 4815])
+            ("server_event_user_logged_out" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5123 5143]))                  
+                :type "int")
+                nil [5090 5144])
+            ("server_event_private_message_sended" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sender_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5704 5726])
+                    ("receiver_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5727 5751])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5752 5772]))                  
+                :type "int")
+                nil [5664 5773]))          
+      :file "logging_server.h"
+      :pointmax 5811
+      :fsize 5810
+      :lastmodtime '(24236 28907 536087 964000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__LOGGING_SERVER_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SERVER_H_" variable (:constant-flag t) nil [110 119])
+            ("netinet/ip.h" include (:system-flag t) nil [121 144])
+            ("uuid/uuid.h" include (:system-flag t) nil [145 167])
+            ("generic_list.h" include nil nil [169 194])
+            ("client.h" include nil nil [195 214])
+            ("requests.h" include nil nil [215 236])
+            ("reply_code.h" include nil nil [237 260])
+            ("requests.h" include nil nil [261 282])
+            ("TEAMS_ERROR" variable (:constant-flag t) nil [292 303])
+            ("TEAMS_SUCCESS" variable (:constant-flag t) nil [315 328])
+            ("FAILURE" variable (:constant-flag t) nil [339 346])
+            ("SUCCESS" variable (:constant-flag t) nil [358 365])
+            ("server_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("fd" variable (:type "int") (reparse-symbol classsubparts) [390 397])
+                          ("port" variable (:type "int") (reparse-symbol classsubparts) [402 411])
+                          ("addr" variable (:type ("sockaddr_in" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [416 440])
+                          ("users" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [445 458])
+                          ("teams" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [463 476])
+                          ("client" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [481 495]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [369 507])
+            ("my_teams_server" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [529 536])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [537 547]))                  
+                :type "int")
+                nil [509 548])
+            ("display_help" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [578 583]))                  
+                :type "int")
+                nil [561 584])
+            ("teams_check_arg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [605 612])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [613 623]))                  
+                :type "int")
+                nil [585 624])
+            ("terminate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [654 665]))                  
+                :type "bool")
+                nil [639 666])
+            ("sig_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [684 694]))                  
+                :type "void")
+                nil [667 695])
+            ("init_server" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [732 742]))                  
+                :type ("server_t" type (:type "class") nil nil))
+                nil [710 743])
+            ("delete_server" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [763 780]))                  
+                :type "void")
+                nil [744 781])
+            ("launch_server" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [800 817]))                  
+                :type "int")
+                nil [782 818])
+            ("translate_select" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [840 857])
+                    ("readfs" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [858 873])
+                    ("writefs" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [874 890]))                  
+                :type "int")
+                nil [819 891])
+            ("new_connection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [911 928]))                  
+                :type "int")
+                nil [892 929])
+            ("read_data_client" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [951 968])
+                    ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [969 986]))                  
+                :type "int")
+                nil [930 987])
+            ("write_data_client" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1010 1027]))                  
+                :type "int")
+                nil [988 1028])
+            ("translate_data_client" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1055 1066])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1067 1078])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1079 1098])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1099 1106]))                  
+                :type "int")
+                nil [1029 1107])
+            ("concat_buffer" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1142 1153])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1154 1170]))                  
+                :type "void")
+                nil [1122 1171])
+            ("erase_buffer" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1191 1204])
+                    ("pos" variable (:type "long") (reparse-symbol arg-sub-list) [1205 1214]))                  
+                :type "char")
+                nil [1172 1215])
+            ("command_help" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1249 1260])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1261 1272])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1273 1292])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1293 1300]))                  
+                :type "int")
+                nil [1232 1301])
+            ("command_login" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1320 1331])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1332 1343])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1344 1363])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1364 1371]))                  
+                :type "int")
+                nil [1302 1372])
+            ("command_logout" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1392 1403])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1404 1415])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1416 1435])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1436 1443]))                  
+                :type "int")
+                nil [1373 1444])
+            ("command_user" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1462 1473])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1474 1485])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1486 1505])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1506 1513]))                  
+                :type "int")
+                nil [1445 1514])
+            ("command_users" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1533 1544])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1545 1556])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1557 1576])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1577 1584]))                  
+                :type "int")
+                nil [1515 1585])
+            ("command_messages" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1607 1618])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1619 1630])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1631 1650])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1651 1658]))                  
+                :type "int")
+                nil [1586 1659])
+            ("command_create" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1679 1690])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1691 1702])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1703 1722])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1723 1730]))                  
+                :type "int")
+                nil [1660 1731])
+            ("command_create_team" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1756 1767])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1768 1779])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1780 1799])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1800 1807]))                  
+                :type "int")
+                nil [1732 1808])
+            ("command_create_channel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1836 1847])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1848 1859])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1860 1879])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1880 1887]))                  
+                :type "int")
+                nil [1809 1888])
+            ("command_create_thread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1915 1926])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1927 1938])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1939 1958])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1959 1966]))                  
+                :type "int")
+                nil [1889 1967])
+            ("command_create_reply" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1993 2004])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2005 2016])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2017 2036])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2037 2044]))                  
+                :type "int")
+                nil [1968 2045])
+            ("command_use" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2062 2073])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2074 2085])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2086 2105])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2106 2113]))                  
+                :type "int")
+                nil [2046 2114])
+            ("command_send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2132 2143])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2144 2155])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2156 2175])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2176 2183]))                  
+                :type "int")
+                nil [2115 2184])
+            ("command_subscribe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2207 2218])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2219 2230])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2231 2250])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2251 2258]))                  
+                :type "int")
+                nil [2185 2259])
+            ("command_unsubscribe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2284 2295])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2296 2307])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2308 2327])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2328 2335]))                  
+                :type "int")
+                nil [2260 2336])
+            ("command_subscribed" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2360 2371])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2372 2383])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2384 2403])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2404 2411]))                  
+                :type "int")
+                nil [2337 2412])
+            ("command_info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2430 2441])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2442 2453])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2454 2473])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2474 2481]))                  
+                :type "int")
+                nil [2413 2482])
+            ("command_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2500 2511])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2512 2523])
+                    ("" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2524 2543])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2544 2551]))                  
+                :type "int")
+                nil [2483 2552])
+            ("send_header_reply" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("code" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [2588 2608])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2609 2618])
+                    ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2619 2636]))                  
+                :type "int")
+                nil [2566 2637])
+            ("send_error_arguments" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2663 2680])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2681 2701]))                  
+                :type "int")
+                nil [2638 2702])
+            ("send_reply" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2718 2735])
+                    ("error" variable (:type ("reply_code_e" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2736 2760])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2761 2781]))                  
+                :type "int")
+                nil [2703 2782])
+            ("send_unknown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2800 2817])
+                    ("error" variable (:type ("reply_code_e" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2818 2842])
+                    ("uuid" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2843 2855]))                  
+                :type "int")
+                nil [2783 2856])
+            ("send_error_already_exist" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2886 2903]))                  
+                :type "int")
+                nil [2857 2904])
+            ("get_args_name_description" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2935 2946])
+                    ("description" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2947 2965])
+                    ("req" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2968 2990])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2991 3002]))                  
+                :type "int")
+                nil [2905 3003])
+            ("get_args_title_message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("title" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3031 3043])
+                    ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3044 3058])
+                    ("req" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3061 3083])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3084 3095]))                  
+                :type "int")
+                nil [3004 3096])
+            ("get_args_comment" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("commment" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3118 3133])
+                    ("req" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3134 3156])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3157 3168]))                  
+                :type "int")
+                nil [3097 3169])
+            ("get_uuid" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("uuid" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3197 3209]))                  
+                :type "char")
+                nil [3182 3210])
+            ("user_is_in_team" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3244 3261])
+                    ("team" variable
+                       (:pointer 1
+                        :type ("team_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3262 3275]))                  
+                :type "bool")
+                nil [3223 3276]))          
+      :file "server.h"
+      :pointmax 3302
+      :fsize 3501
+      :lastmodtime '(24249 20907 402901 481000)
+      :unmatched-syntax '((punctuation 742 . 743) (semantic-list 731 . 742) (punctuation 719 . 720) (punctuation 694 . 695) (semantic-list 683 . 694) (VOID 667 . 671) (punctuation 665 . 666) (semantic-list 653 . 665) (BOOL 639 . 643) (punctuation 623 . 624) (semantic-list 604 . 623) (INT 585 . 588) (punctuation 583 . 584) (semantic-list 577 . 583) (INT 561 . 564) (punctuation 547 . 548) (semantic-list 528 . 547) (INT 509 . 512) (punctuation 506 . 507) (semantic-list 384 . 497) (STRUCT 377 . 383) (TYPEDEF 369 . 376) (number 366 . 367))
+      :lexical-table 
+        '(("SERVER_H_")
+          ("TEAMS_ERROR" . ((number "84" 304 . 306)))
+          ("FAILURE" . ((punctuation "-" 347 . 348) (number "1" 348 . 349)))
+          ("SUCCESS" . ((number "0" 366 . 367)))
+          ("TEAMS_SUCCESS" . ((number "0" 329 . 330)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("USER_H_" variable (:constant-flag t) nil [106 113])
+            ("uuid/uuid.h" include (:system-flag t) nil [115 137])
+            ("generic_list.h" include nil nil [138 163])
+            ("reply_code.h" include nil nil [164 187])
+            ("user_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("username" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [210 245])
+                          ("uuid" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [250 262])
+                          ("nb_clients" variable (:type "int") (reparse-symbol classsubparts) [267 282])
+                          ("messages" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [287 303]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [189 313])
+            ("create_user" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("username" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [335 350]))                  
+                :type ("user_t" type (:type "class") nil nil))
+                nil [315 351])
+            ("user_get_by_uuid" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("users" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [377 390])
+                    ("uuid" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [391 403]))                  
+                :type ("user_t" type (:type "class") nil nil))
+                nil [352 404]))          
+      :file "user.h"
+      :pointmax 428
+      :fsize 427
+      :lastmodtime '(24237 50836 261359 601000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("USER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("UTILS_H_" variable (:constant-flag t) nil [108 116])
+            ("reply_code.h" include nil nil [118 141])
+            ("server.h" include nil nil [142 161])
+            ("commands_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("code" variable (:type ("command_code_e" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [184 209])
+                          ("fct" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type ("server_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [225 236])
+                                  ("" variable
+                                     (:pointer 1
+                                      :type ("client_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [237 248])
+                                  ("" variable
+                                     (:pointer 1
+                                      :type ("client_request_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [249 268])
+                                  ("" variable
+                                     (:pointer 1
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [269 276]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [214 277]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [163 291]))          
+      :file "utils.h"
+      :pointmax 316
+      :fsize 315
+      :lastmodtime '(24236 28907 538087 957000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UTILS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MESSAGE_H_" variable (:constant-flag t) nil [112 122])
+            ("generic_list.h" include nil nil [124 149])
+            ("uuid/uuid.h" include (:system-flag t) nil [150 172])
+            ("reply_code.h" include nil nil [173 196])
+            ("message_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("user_uuid" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [219 236])
+                          ("time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [241 253])
+                          ("message" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [258 292]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [198 305])
+            ("message_create" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [333 349])
+                    ("from" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [350 368])
+                    ("time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [369 381]))                  
+                :type ("message_t" type (:type "class") nil nil))
+                nil [307 382]))          
+      :file "message.h"
+      :pointmax 409
+      :fsize 408
+      :lastmodtime '(24237 40286 137471 603000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MESSAGE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SAVING_H_" variable (:constant-flag t) nil [100 109])
+            ("server.h" include nil nil [111 130])
+            ("save_server" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [149 172]))                  
+                :type "bool")
+                nil [132 173]))          
+      :file "saving.h"
+      :pointmax 199
+      :fsize 198
+      :lastmodtime '(24238 64233 585827 791000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SAVING_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SERVER_SAVING_UTILS_H_" variable (:constant-flag t) nil [142 164])
+            ("saving.h" include nil nil [166 185])
+            ("file_types.h" include nil nil [186 209])
+            ("write_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [229 236])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [237 256])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [257 269]))                  
+                :type "bool")
+                nil [211 270])
+            ("prepare_saving_directory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [302 307]))                  
+                :type "bool")
+                nil [272 308])
+            ("check_and_create_directory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [341 357]))                  
+                :type "bool")
+                nil [309 358])
+            ("get_meta_fd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [376 392]))                  
+                :type "int")
+                nil [360 393])
+            ("get_data_fd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [410 426]))                  
+                :type "int")
+                nil [394 427])
+            ("save_teams" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("teams" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [445 458]))                  
+                :type "bool")
+                nil [429 459])
+            ("save_threads" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("threads" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [478 493])
+                    ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [494 510]))                  
+                :type "bool")
+                nil [460 511])
+            ("save_channels" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("channels" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [531 547])
+                    ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [548 564]))                  
+                :type "bool")
+                nil [512 565])
+            ("save_users" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("users" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [582 595]))                  
+                :type "bool")
+                nil [566 596])
+            ("save_single_item" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("item" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [625 636])
+                    ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [637 653])
+                    ("save_meta" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [676 683])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [684 688]))                          
+                        :type "bool")
+                        nil nil)
+                    ("save_data" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [712 719])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [720 724]))                          
+                        :type "bool")
+                        nil nil))                  
+                :type "bool")
+                nil [598 726]))          
+      :file "saving_utils.h"
+      :pointmax 765
+      :fsize 1128
+      :lastmodtime '(24249 20309 548856 68000)
+      :unmatched-syntax '((semantic-list 580 . 649) (symbol 564 . 580) (BOOL 559 . 563) (semantic-list 580 . 638) (symbol 564 . 580) (BOOL 559 . 563) (semantic-list 580 . 616) (symbol 564 . 580) (BOOL 559 . 563) (semantic-list 580 . 611) (symbol 564 . 580) (BOOL 559 . 563) (semantic-list 580 . 582) (symbol 564 . 580) (BOOL 559 . 563) (symbol 564 . 580) (BOOL 559 . 563))
+      :lexical-table 
+        '(("SERVER_SAVING_UTILS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("FILE_TYPE_H_" variable (:constant-flag t) nil [109 121])
+            ("file_type_e" type
+               (:members 
+                  ( ("META_TEAM" variable
+                       (:constant-flag t
+                        :default-value (158 159)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [146 159])
+                    ("META_CHANNEL" variable
+                       (:constant-flag t
+                        :default-value (180 181)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [165 181])
+                    ("META_THREAD" variable
+                       (:constant-flag t
+                        :default-value (201 202)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [187 202])
+                    ("META_USER" variable
+                       (:constant-flag t
+                        :default-value (220 221)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [208 221])
+                    ("DATA_THREAD" variable
+                       (:constant-flag t
+                        :default-value (241 242)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [227 242])
+                    ("DATA_USER" variable
+                       (:constant-flag t
+                        :default-value (260 261)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [248 261])
+                    ("DATA_TEAM" variable
+                       (:constant-flag t
+                        :default-value (279 280)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [267 280]))                  
+                :type "enum")
+                nil [123 284]))          
+      :file "file_types.h"
+      :pointmax 313
+      :fsize 312
+      :lastmodtime '(24238 64233 585827 791000)
+      :unmatched-syntax '((symbol 90 . 96) (punctuation 89 . 90))
+      :lexical-table 
+        '(("FILE_TYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TEAM_H_" variable (:constant-flag t) nil [106 113])
+            ("uuid/uuid.h" include (:system-flag t) nil [115 137])
+            ("generic_list.h" include nil nil [138 163])
+            ("reply_code.h" include nil nil [164 187])
+            ("team_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [210 241])
+                          ("description" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [246 291])
+                          ("uuid" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [296 308])
+                          ("channels" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [313 329])
+                          ("subscribers" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [334 353]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [189 363])
+            ("create_team" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [385 396])
+                    ("description" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [397 415]))                  
+                :type ("team_t" type (:type "class") nil nil))
+                nil [365 416]))          
+      :file "team.h"
+      :pointmax 440
+      :fsize 439
+      :lastmodtime '(24237 40286 137471 603000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEAM_H_")
+          )
+))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!server!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

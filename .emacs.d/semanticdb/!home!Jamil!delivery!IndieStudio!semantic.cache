@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("anonymous" code nil nil [1 827]))          
+      :file ".dir-locals.el"
+      :pointmax 828
+      :fsize 827
+      :lastmodtime '(24242 42191 872196 455000)
+      :unmatched-syntax '((semantic-list 1 . 1034) (semantic-list 1 . 1034))))
+  :file "!home!Jamil!delivery!IndieStudio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("gmm" customgroup (:user-visible-flag t) nil [1082 1214])
+            ("gmm-verbose" variable (:default-value 7) nil [1295 1609])
+            ("gmm-regexp-concat" function (:arguments ("regexp")) nil [1626 1921])
+            ("gmm-message" function (:arguments ("level" "args")) nil [1938 2480])
+            ("gmm-error" function (:arguments ("level" "args")) nil [2497 2852])
+            ("gmm-widget-p" function (:arguments ("symbol")) nil [2869 2961])
+            ("widget-create-child-value" function (:prototype-flag t) nil [2963 3011])
+            ("widget-convert" function (:prototype-flag t) nil [3012 3049])
+            ("widget-default-get" function (:prototype-flag t) nil [3050 3091])
+            ("define-widget" code nil nil [3889 4438])
+            ("define-widget" code nil nil [4440 5282])
+            ("gmm-tool-bar-style" variable (:default-value (if (and (boundp (quote tool-bar-mode)) tool-bar-mode (memq (display-visual-class) (list (quote static-gray) (quote gray-scale) (quote static-color) (quote pseudo-color)))) (quote gnome) (quote retro))) nil [5284 5630])
+            ("tool-bar-map" variable nil nil [5632 5653])
+            ("gmm-tool-bar-from-list" function (:arguments ("icon-list" "zap-list" "default-map")) nil [5670 7887])
+            ("defun-gmm" function (:arguments ("name" "function" "arg-list" "body")) nil [7889 8224])
+            ("gmm-customize-mode" function
+               (:user-visible-flag t
+                :arguments ("mode"))
+                nil [8226 8540])
+            ("define-obsolete-function-alias" code nil nil [8542 8627])
+            ("gmm-utils" package nil nil [8629 8649]))          
+      :file "gmm-utils.el.gz"
+      :pointmax 8678
+      :fsize 3555
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!26.3!lisp!gnus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

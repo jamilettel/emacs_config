@@ -1,0 +1,27 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("global-set-key" code nil nil [112 150])
+            ("setq" code nil nil [152 242])
+            ("setq" code nil nil [244 1975])
+            ("setq" code nil nil [1978 4051])
+            ("std-get" function (:arguments ("a")) nil [4053 4156])
+            ("std-file-header" function (:user-visible-flag t) nil [4158 5086])
+            ("add-hook" code nil nil [5264 5470])
+            ("add-hook" code nil nil [5489 5614])
+            ("add-hook" code nil nil [5645 5786])
+            ("add-hook" code nil nil [5788 5917])
+            ("add-hook" code nil nil [5941 6064]))          
+      :file "std_comment.el"
+      :pointmax 6066
+      :fsize 6065
+      :lastmodtime '(23905 34804 521616 994000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!lisp!epitech!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

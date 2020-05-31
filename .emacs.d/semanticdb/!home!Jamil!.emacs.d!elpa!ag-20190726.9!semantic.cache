@@ -1,0 +1,124 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1292 1309])
+            ("dired" include nil nil [1331 1347])
+            ("dash" include nil nil [1370 1385])
+            ("s" include nil nil [1386 1398])
+            ("find-dired" include nil nil [1399 1420])
+            ("ag" customgroup (:user-visible-flag t) nil [1443 1541])
+            ("ag-executable" variable (:default-value "ag") nil [1543 1642])
+            ("ag-arguments" variable (:default-value (list "--smart-case" "--stats")) nil [1644 2046])
+            ("ag-dired-arguments" variable (:default-value (list "--nocolor" "-S")) nil [2048 2189])
+            ("ag-context-lines" variable nil nil [2191 2326])
+            ("ag-group-matches" variable (:default-value t) nil [2328 2506])
+            ("ag-highlight-search" variable nil nil [2508 2720])
+            ("ag-reuse-buffers" variable nil nil [2722 2922])
+            ("ag-reuse-window" variable nil nil [2924 3073])
+            ("ag-project-root-function" variable nil nil [3075 3482])
+            ("ag-ignore-list" variable nil nil [3484 3625])
+            ("make-variable-buffer-local" code nil nil [3626 3670])
+            ("put" code nil nil [3671 3721])
+            ("compile" include nil nil [3723 3741])
+            ("ag-hit-face" variable
+               (:default-value (quote ((t :inherit compilation-info)))
+                :type "face")
+                nil [3972 4076])
+            ("ag-match-face" variable
+               (:default-value (quote ((t :inherit match)))
+                :type "face")
+                nil [4078 4173])
+            ("ag-search-finished-hook" variable nil nil [4175 4264])
+            ("ag/run-finished-hook" function (:arguments ("buffer" "how-finished")) nil [4266 4449])
+            ("ag/with-patch-function" function (:arguments ("fun-name" "fun-args" "fun-body" "body")) nil [4451 4787])
+            ("ag/next-error-function" function (:arguments ("n" "reset")) nil [4789 5253])
+            ("ag/file-column-pattern-nogroup" variable (:default-value "^\\(.+?\\):\\([1-9][0-9]*\\):\\([1-9][0-9]*\\):") nil [5480 5657])
+            ("ag/file-column-pattern-group" variable (:default-value "^\\([[:digit:]]+\\):\\([[:digit:]]+\\):") nil [5659 5821])
+            ("ag/compilation-match-grouped-filename" function nil nil [5823 6098])
+            ("define-compilation-mode" code nil nil [6100 6902])
+            ("define-key" code nil nil [6904 6967])
+            ("define-key" code nil nil [6968 7027])
+            ("define-key" code nil nil [7028 7176])
+            ("ag/buffer-name" function (:arguments ("search-string" "directory" "regexp")) nil [7178 7494])
+            ("ag/format-ignore" function (:arguments ("ignores")) nil [7496 7663])
+            ("cl-defun" code nil nil [7665 10710])
+            ("ag/dwim-at-point" function nil nil [10712 11042])
+            ("ag/buffer-extension-regex" function nil nil [11044 11375])
+            ("ag/longest-string" function (:arguments ("strings")) nil [11377 11683])
+            ("ag/replace-first" function (:arguments ("string" "before" "after")) nil [11685 11908])
+            ("vc-git-root" function (:prototype-flag t) nil [11910 11942])
+            ("vc-svn" include nil nil [11944 11961])
+            ("unless" code nil nil [12005 12114])
+            ("vc-hg-root" function (:prototype-flag t) nil [12116 12146])
+            ("vc-bzr-root" function (:prototype-flag t) nil [12148 12180])
+            ("ag/project-root" function (:arguments ("file-path")) nil [12182 12586])
+            ("ag/dired-align-size-column" function nil nil [12588 13035])
+            ("ag/dired-filter" function (:arguments ("proc" "string")) nil [13037 14415])
+            ("ag/dired-sentinel" function (:arguments ("proc" "state")) nil [14417 15441])
+            ("ag/kill-process" function (:user-visible-flag t) nil [15443 15787])
+            ("ag/escape-pcre" function (:arguments ("regexp")) nil [15789 16256])
+            ("ag" function
+               (:user-visible-flag t
+                :arguments ("string" "directory"))
+                nil [16273 16640])
+            ("ag-files" function
+               (:user-visible-flag t
+                :arguments ("string" "file-type" "directory"))
+                nil [16657 17131])
+            ("ag-regexp" function
+               (:user-visible-flag t
+                :arguments ("string" "directory"))
+                nil [17148 17456])
+            ("ag-project" function
+               (:user-visible-flag t
+                :arguments ("string"))
+                nil [17473 17782])
+            ("ag-project-files" function
+               (:user-visible-flag t
+                :arguments ("string" "file-type"))
+                nil [17799 18218])
+            ("ag/read-from-minibuffer" function (:arguments ("prompt")) nil [18220 18975])
+            ("ag-project-regexp" function
+               (:user-visible-flag t
+                :arguments ("regexp"))
+                nil [18992 19365])
+            ("symbol-at-point" function (:prototype-flag t) nil [19367 19406])
+            ("defalias" code nil nil [19423 19466])
+            ("make-obsolete" code nil nil [19467 19522])
+            ("defalias" code nil nil [19539 19596])
+            ("make-obsolete" code nil nil [19597 19666])
+            ("ag-dired" function
+               (:user-visible-flag t
+                :arguments ("dir" "string"))
+                nil [19683 20082])
+            ("ag-dired-regexp" function
+               (:user-visible-flag t
+                :arguments ("dir" "regexp"))
+                nil [20099 23037])
+            ("ag-project-dired" function
+               (:user-visible-flag t
+                :arguments ("pattern"))
+                nil [23054 23289])
+            ("ag-project-dired-regexp" function
+               (:user-visible-flag t
+                :arguments ("regexp"))
+                nil [23306 23534])
+            ("ag-kill-buffers" function (:user-visible-flag t) nil [23551 23751])
+            ("ag-kill-other-buffers" function (:user-visible-flag t) nil [23768 24119])
+            ("ag-filter" function nil nil [24146 25650])
+            ("ag/get-supported-types" function nil nil [25652 26103])
+            ("ag/read-file-type" function nil nil [26105 26797])
+            ("ag" package nil nil [26799 26812]))          
+      :file "ag.el"
+      :pointmax 26833
+      :fsize 26832
+      :lastmodtime '(24199 16722 143438 545000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!elpa!ag-20190726.9!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

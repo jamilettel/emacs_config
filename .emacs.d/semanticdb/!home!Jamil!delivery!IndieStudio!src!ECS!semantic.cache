@@ -1,0 +1,96 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ECS/Entity.hpp" include nil nil [80 105])
+            ("Entity" function
+               (:constructor-flag t
+                :parent "is::ecs::Entity"
+                :type ("Entity" type (:type "class") nil nil))
+                nil [107 207])
+            ("setDelete" function
+               (:parent "is::ecs::Entity"
+                :arguments 
+                  ( ("set" variable (:type "bool") (reparse-symbol arg-sub-list) [241 250]))                  
+                :type "void")
+                nil [209 273])
+            ("shouldBeDeleted" function
+               (:methodconst-flag t
+                :parent "is::ecs::Entity"
+                :type "bool")
+                nil [275 344])
+            ("isActive" function
+               (:methodconst-flag t
+                :parent "is::ecs::Entity"
+                :type "bool")
+                nil [346 408])
+            ("setActive" function
+               (:parent "is::ecs::Entity"
+                :arguments 
+                  ( ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [442 454]))                  
+                :type "void")
+                nil [410 480])
+            ("getComponents" function
+               (:methodconst-flag t
+                :parent "is::ecs::Entity"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::shared_ptr" type (:template-specifier 
+                            ( ("is::ecs::Component" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [482 599]))          
+      :file "Entity.cpp"
+      :pointmax 600
+      :fsize 599
+      :lastmodtime '(24242 41131 579124 346000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ECS/Component.hpp" include nil nil [83 111])
+            ("Component" function
+               (:constructor-flag t
+                :parent "is::ecs::Component"
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :type ("Entity" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [143 153]))                  
+                :type ("Component" type (:type "class") nil nil))
+                nil [113 168])
+            ("getEntity" function
+               (:parent "is::ecs::Component"
+                :type ("is::ecs::Entity" type (:type "class") nil nil))
+                nil [170 244]))          
+      :file "Component.cpp"
+      :pointmax 245
+      :fsize 275
+      :lastmodtime '(24242 38599 999750 957000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ECS/ASystem.hpp" include nil nil [90 116])
+            ("setComponentManager" function
+               (:parent "is::ecs::ASystem"
+                :arguments 
+                  ( ("componentManager" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("ComponentManager" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [161 212]))                  
+                :type "void")
+                nil [118 258]))          
+      :file "ASystem.cpp"
+      :pointmax 258
+      :fsize 257
+      :lastmodtime '(24242 38599 999750 957000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!IndieStudio!src!ECS!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,58 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "async-autoloads.el"
+      :pointmax 349
+      :fsize 5476
+      :lastmodtime '(24222 63439 851904 830000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1249 1266])
+            ("async" customgroup (:user-visible-flag t) nil [1269 1349])
+            ("async-variables-noprops-function" variable (:default-value (function async--purecopy)) nil [1351 1508])
+            ("async-debug" variable nil nil [1510 1534])
+            ("async-send-over-pipe" variable (:default-value t) nil [1535 1566])
+            ("async-in-child-emacs" variable nil nil [1567 1600])
+            ("async-callback" variable nil nil [1601 1628])
+            ("async-callback-for-process" variable nil nil [1629 1668])
+            ("async-callback-value" variable nil nil [1669 1702])
+            ("async-callback-value-set" variable nil nil [1703 1740])
+            ("async-current-process" variable nil nil [1741 1775])
+            ("async--procvar" variable nil nil [1776 1803])
+            ("async--purecopy" function (:arguments ("object")) nil [1805 3195])
+            ("async-inject-variables" function (:arguments ("include-regexp" "predicate" "exclude-regexp" "noprops")) nil [3197 5256])
+            ("defalias" code nil nil [5258 5318])
+            ("async-handle-result" function (:arguments ("func" "result" "buf")) nil [5320 5801])
+            ("async-when-done" function (:arguments ("proc" "_change")) nil [5803 7011])
+            ("async--receive-sexp" function (:arguments ("stream")) nil [7013 7485])
+            ("async--insert-sexp" function (:arguments ("sexp")) nil [7487 7921])
+            ("async--transmit-sexp" function (:arguments ("process" "sexp")) nil [7923 8163])
+            ("async-batch-invoke" function nil nil [8165 8887])
+            ("async-ready" function (:arguments ("future")) nil [8889 9262])
+            ("async-wait" function (:arguments ("future")) nil [9264 9386])
+            ("async-get" function (:arguments ("future")) nil [9388 9786])
+            ("async-message-p" function (:arguments ("value")) nil [9788 9940])
+            ("async-send" function (:arguments ("args")) nil [9942 10251])
+            ("async-receive" function nil nil [10253 10363])
+            ("async-start-process" function (:arguments ("name" "program" "finish-func" "program-args")) nil [10380 11238])
+            ("async-quiet-switch" variable (:default-value "-Q") nil [11240 11481])
+            ("async-start" function (:arguments ("start-func" "finish-func")) nil [11498 14066])
+            ("async-sandbox" function (:arguments ("func")) nil [14068 14195])
+            ("async--fold-left" function (:arguments ("fn" "forms" "bindings")) nil [14197 14462])
+            ("async-let" function (:arguments ("bindings" "forms")) nil [14464 15146])
+            ("async" package nil nil [15148 15164]))          
+      :file "async.el"
+      :pointmax 15189
+      :fsize 15188
+      :lastmodtime '(24222 63439 688905 357000)
+      :unmatched-syntax '((close-paren 1266 . 1267) (symbol 1231 . 1248) (open-paren 1230 . 1231))))
+  :file "!home!Jamil!.emacs.d!elpa!async-20200113.1745!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Window_HPP_" variable (:constant-flag t) nil [117 128])
+            ("ECS/Component.hpp" include nil nil [130 158])
+            ("ComponentWindow" type
+               (:superclasses 
+                  ( ("is::ecs::Component" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [216 223])
+                    ("ComponentWindow" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("is::ecs::Entity" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [248 284]))                          
+                        :type ("ComponentWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [232 285])
+                    ("protected" label nil (reparse-symbol classsubparts) [459 469])
+                    ("private" label nil (reparse-symbol classsubparts) [474 482]))                  
+                :type "class")
+                nil [160 485]))          
+      :file "Window.hpp"
+      :pointmax 513
+      :fsize 512
+      :lastmodtime '(24242 42911 851194 125000)
+      :unmatched-syntax '((punctuation 452 . 453) (DELETE 446 . 452) (punctuation 444 . 445) (semantic-list 418 . 443) (punctuation 417 . 418) (OPERATOR 409 . 417) (punctuation 408 . 409) (symbol 392 . 407) (punctuation 382 . 383) (DELETE 376 . 382) (punctuation 374 . 375) (semantic-list 348 . 373) (symbol 333 . 348) (punctuation 322 . 323) (DEFAULT 315 . 322) (punctuation 313 . 314) (semantic-list 310 . 312) (symbol 295 . 310) (punctuation 294 . 295))
+      :lexical-table 
+        '(("Window_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("COLLIDERCOMPONENT_HPP_" variable (:constant-flag t) nil [121 143])
+            ("Components/TransformComponent.hpp" include nil nil [145 189])
+            ("irrlicht.h" include (:system-flag t) nil [190 211])
+            ("vector" include (:system-flag t) nil [212 229]))          
+      :file "ColliderComponent.hpp"
+      :pointmax 911
+      :fsize 910
+      :lastmodtime '(24242 47085 773103 109000)
+      :unmatched-syntax '((semantic-list 256 . 872) (symbol 245 . 255) (punctuation 244 . 245) (punctuation 243 . 244) (symbol 241 . 243) (NAMESPACE 231 . 240) (semantic-list 256 . 871) (symbol 245 . 255) (punctuation 244 . 245) (punctuation 243 . 244) (symbol 241 . 243) (NAMESPACE 231 . 240) (semantic-list 256 . 804) (symbol 245 . 255) (punctuation 244 . 245) (punctuation 243 . 244) (symbol 241 . 243) (NAMESPACE 231 . 240) (semantic-list 256 . 807) (symbol 245 . 255) (punctuation 244 . 245) (punctuation 243 . 244) (symbol 241 . 243) (NAMESPACE 231 . 240) (semantic-list 238 . 748) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 710) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 696) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 671) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 699) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 688) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 635) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 684) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 635) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 635) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 677) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 865) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222) (semantic-list 238 . 887) (symbol 227 . 237) (punctuation 226 . 227) (punctuation 225 . 226) (symbol 223 . 225) (NAMESPACE 213 . 222))
+      :lexical-table 
+        '(("COLLIDERCOMPONENT_HPP_")
+          )
+))
+  :file "!home!Jamil!delivery!IndieStudio!include!Components!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,119 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cmake-mode-cmake-executable" variable
+               (:user-visible-flag t
+                :default-value "cmake")
+                nil [842 1221])
+            ("cmake-keywords-block-open" variable
+               (:constant-flag t
+                :default-value (quote ("IF" "MACRO" "FOREACH" "ELSE" "ELSEIF" "WHILE" "FUNCTION")))
+                nil [1235 1332])
+            ("cmake-keywords-block-close" variable
+               (:constant-flag t
+                :default-value (quote ("ENDIF" "ENDFOREACH" "ENDMACRO" "ELSE" "ELSEIF" "ENDWHILE" "ENDFUNCTION")))
+                nil [1333 1446])
+            ("cmake-keywords" variable
+               (:constant-flag t
+                :default-value (let ((kwds (append cmake-keywords-block-open cmake-keywords-block-close nil))) (delete-dups kwds)))
+                nil [1447 1578])
+            ("cmake-regex-blank" variable
+               (:constant-flag t
+                :default-value "^[ 	]*$")
+                nil [1641 1680])
+            ("cmake-regex-comment" variable
+               (:constant-flag t
+                :default-value "#.*")
+                nil [1681 1717])
+            ("cmake-regex-paren-left" variable
+               (:constant-flag t
+                :default-value "(")
+                nil [1718 1755])
+            ("cmake-regex-paren-right" variable
+               (:constant-flag t
+                :default-value ")")
+                nil [1756 1794])
+            ("cmake-regex-argument-quoted" variable
+               (:constant-flag t
+                :default-value (rx 34 (* (or (not (any 34 92)) (and 92 anything))) 34))
+                nil [1795 1896])
+            ("cmake-regex-argument-unquoted" variable
+               (:constant-flag t
+                :default-value (rx (or (not (any space "()#\"\\
+")) (and 92 nonl)) (* (or (not (any space "()#\\
+")) (and 92 nonl)))))
+                nil [1897 2052])
+            ("cmake-regex-token" variable
+               (:constant-flag t
+                :default-value (rx-to-string (\` (group (or (regexp (\, cmake-regex-comment)) 40 41 (regexp (\, cmake-regex-argument-unquoted)) (regexp (\, cmake-regex-argument-quoted)))))))
+                nil [2053 2312])
+            ("cmake-regex-indented" variable
+               (:constant-flag t
+                :default-value (rx-to-string (\` (and bol (* (group (or (regexp (\, cmake-regex-token)) (any space 10))))))))
+                nil [2313 2433])
+            ("cmake-regex-block-open" variable
+               (:constant-flag t
+                :default-value (rx-to-string (\` (and symbol-start (or (\,@ (append cmake-keywords-block-open (mapcar (quote downcase) cmake-keywords-block-open)))) symbol-end))))
+                nil [2434 2642])
+            ("cmake-regex-block-close" variable
+               (:constant-flag t
+                :default-value (rx-to-string (\` (and symbol-start (or (\,@ (append cmake-keywords-block-close (mapcar (quote downcase) cmake-keywords-block-close)))) symbol-end))))
+                nil [2643 2854])
+            ("cmake-regex-close" variable
+               (:constant-flag t
+                :default-value (rx-to-string (\` (and bol (* space) (regexp (\, cmake-regex-block-close)) (* space) (regexp (\, cmake-regex-paren-left))))))
+                nil [2855 3020])
+            ("cmake-line-starts-inside-string" function nil nil [3141 3428])
+            ("cmake-find-last-indented-line" function nil nil [3430 4074])
+            ("cmake-tab-width" variable (:default-value 2) nil [4189 4296])
+            ("cmake-indent" function (:user-visible-flag t) nil [4334 5950])
+            ("cmake-point-in-indendation" function nil nil [5952 6060])
+            ("cmake-indent-line-to" function (:arguments ("column")) nil [6062 6388])
+            ("cmake-unscreamify-buffer" function (:user-visible-flag t) nil [6508 6902])
+            ("cmake-font-lock-keywords" variable
+               (:constant-flag t
+                :default-value (\` (((\, (rx-to-string (\` (and symbol-start (or (\,@ cmake-keywords) (\,@ (mapcar (function downcase) cmake-keywords))) symbol-end)))) . font-lock-keyword-face) ((\, (rx symbol-start (group (+ (or word (syntax symbol)))) (* blank) 40)) 1 font-lock-function-name-face) ((\, (rx "${" (group (+ (any alnum "-_+/."))) "}")) 1 font-lock-variable-name-face t))))
+                nil [7034 7547])
+            ("cmake-mode-syntax-table" variable nil nil [7661 7730])
+            ("or" code nil nil [7731 8100])
+            ("cmake-mode-hook" variable nil nil [8134 8162])
+            ("define-derived-mode" code nil nil [8283 8658])
+            ("cmake-command-run" function
+               (:user-visible-flag t
+                :arguments ("type" "topic" "buffer"))
+                nil [8701 9446])
+            ("cmake-help-list-commands" function (:user-visible-flag t) nil [9463 9606])
+            ("cmake-commands" variable (:default-value (quote nil)) nil [9608 9682])
+            ("cmake-help-command-history" variable nil nil [9683 9746])
+            ("cmake-modules" variable (:default-value (quote nil)) nil [9747 9819])
+            ("cmake-help-module-history" variable nil nil [9820 9881])
+            ("cmake-variables" variable (:default-value (quote nil)) nil [9882 9958])
+            ("cmake-help-variable-history" variable nil nil [9959 10024])
+            ("cmake-properties" variable (:default-value (quote nil)) nil [10025 10102])
+            ("cmake-help-property-history" variable nil nil [10103 10168])
+            ("cmake-help-complete-history" variable nil nil [10169 10239])
+            ("cmake-string-to-list-symbol" variable (:default-value (quote (("command" cmake-commands cmake-help-command-history) ("module" cmake-modules cmake-help-module-history) ("variable" cmake-variables cmake-help-variable-history) ("property" cmake-properties cmake-help-property-history)))) nil [10240 10519])
+            ("cmake-get-list" function (:arguments ("listname")) nil [10521 11242])
+            ("thingatpt" include nil nil [11244 11264])
+            ("cmake-symbol-at-point" function nil nil [11265 11394])
+            ("cmake-help-type" function (:arguments ("type")) nil [11396 11935])
+            ("cmake-help-command" function (:user-visible-flag t) nil [11952 12145])
+            ("cmake-help-module" function (:user-visible-flag t) nil [12162 12351])
+            ("cmake-help-variable" function (:user-visible-flag t) nil [12368 12565])
+            ("cmake-help-property" function (:user-visible-flag t) nil [12582 12779])
+            ("cmake-help" function (:user-visible-flag t) nil [12796 14205])
+            ("progn" code nil nil [14222 14363])
+            ("cmake-mode" package nil nil [14398 14419]))          
+      :file "cmake-mode.el"
+      :pointmax 14449
+      :fsize 14448
+      :lastmodtime '(24207 5645 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!site-lisp!cmake!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,153 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("smart_buffer.h" include nil nil [82 107])
+            ("smart_buffer_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [145 150]))                  
+                :type ("smart_buffer_t" type (:type "class") nil nil))
+                nil [109 503])
+            ("smart_buffer_destroy" function
+               (:arguments 
+                  ( ("smart_buffer" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [531 560]))                  
+                :type "void")
+                nil [505 620])
+            ("smart_buffer_get_size" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [651 680]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [622 710]))          
+      :file "smart_buffer_utils.c"
+      :pointmax 711
+      :fsize 710
+      :lastmodtime '(24237 50199 553153 815000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("smart_buffer.h" include nil nil [82 107])
+            ("smart_buffer_write" function
+               (:arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136 157])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [158 165]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [109 481])
+            ("smart_buffer_read" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [509 532])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [533 540]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [483 753]))          
+      :file "smart_buffer_read_write.c"
+      :pointmax 754
+      :fsize 753
+      :lastmodtime '(24237 49381 935706 160000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("smart_buffer.h" include nil nil [82 107])
+            ("stdio.h" include (:system-flag t) nil [108 126])
+            ("smart_buffer_realloc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [161 182])
+                    ("new_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [183 199]))                  
+                :type "bool")
+                nil [128 348])
+            ("smart_buffer_add_string" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [379 402])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [403 419]))                  
+                :type "bool")
+                nil [350 485])
+            ("smart_buffer_add_data" function
+               (:arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [514 535])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [536 553])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [554 566]))                  
+                :type "bool")
+                nil [487 824])
+            ("smart_buffer_get_data_if" function
+               (:arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [861 882])
+                    ("var" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [883 893])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [894 906])
+                    ("fct" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("smart_buffer_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [838 855])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [856 863]))                          
+                        :type "bool")
+                        nil nil))                  
+                :type "bool")
+                nil [826 1230])
+            ("smart_buffer_get_data" function
+               (:arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("smart_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1259 1280])
+                    ("var" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1281 1291])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1292 1304]))                  
+                :type "bool")
+                nil [1232 1370]))          
+      :file "smart_buffer_data.c"
+      :pointmax 1371
+      :fsize 1370
+      :lastmodtime '(24237 50380 912483 151000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!lib!src!smart_buffer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

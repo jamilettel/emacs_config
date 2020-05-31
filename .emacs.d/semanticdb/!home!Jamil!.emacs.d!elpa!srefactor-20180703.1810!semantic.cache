@@ -1,0 +1,162 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic/bovine/el" include nil nil [2598 2627])
+            ("srefactor-newline-threshold" variable (:default-value 40) nil [2629 2934])
+            ("srefactor-lisp-symbol-to-skip" variable (:default-value (quote (("progn" . 0) ("cond" . 0) ("save-excursion" . 0) ("unwind-protect" . 0) ("with-temp-buffer" . 0) ("defmethod" . 1) ("cons" . 2) ("kill-region" . 2) ("equal" . 2) ("member" . 2) ("eq?" . 2) ("eq" . 2) ("get" . 2) ("assoc" . 2) ("defun" . 2) ("defclass" . 2) ("defstruct" . 2) ("defmacro" . 2) ("defsubst" . 2) ("defface" . 2) ("defalias" . 2) ("defcustom" . 2) ("declare" . 2) ("defvar" . 2) ("defparameter" . 2) ("defconst" . 2) ("string-match" . 2) ("defcustom" . 2) ("setq" . 2) ("setq-default" . 2) ("member" . 2) ("setf" . 2) (">" . 2) ("<" . 2) ("<=" . 2) (">=" . 2) ("/=" . 2) ("=" . 2) ("some" . 2) ("define-key" . 3) ("modify-syntax-entry" . 3)))) nil [2936 7556])
+            ("srefactor-clojure-symbol-to-skip" variable (:default-value (quote (("fn" . 1) ("ns" . 1) (":require" . 1) (":import" . 1) ("def" . 2) ("struct-map" . 1) ("defmacro" . 1) ("binding" . 1) ("with-bindings" . 1) ("doseq" . 1) ("catch" . 2) ("defn" . 2)))) nil [7558 8560])
+            ("token" variable nil nil [8600 8618])
+            ("token-type" variable nil nil [8619 8642])
+            ("token-str" variable nil nil [8643 8665])
+            ("ignore-num" variable nil nil [8666 8689])
+            ("tok-start" variable nil nil [8690 8712])
+            ("next-token" variable nil nil [8713 8736])
+            ("next-token-start" variable nil nil [8737 8766])
+            ("next-token-end" variable nil nil [8767 8794])
+            ("next-token-type" variable nil nil [8795 8823])
+            ("next-token-str" variable nil nil [8824 8851])
+            ("tok-end" variable nil nil [8852 8872])
+            ("cur-buf" variable nil nil [8873 8893])
+            ("first-token" variable nil nil [8894 8918])
+            ("first-token-name" variable nil nil [8919 8948])
+            ("second-token" variable nil nil [8949 8974])
+            ("lexemes" variable nil nil [8975 8995])
+            ("comment-token" variable nil nil [8996 9022])
+            ("comment-content" variable nil nil [9023 9051])
+            ("token-real-line" variable nil nil [9052 9080])
+            ("next-token-real-line" variable nil nil [9081 9114])
+            ("comment-real-line-start" variable nil nil [9115 9151])
+            ("comment-real-line-end" variable nil nil [9152 9186])
+            ("comment-token-start" variable nil nil [9187 9219])
+            ("comment-token-end" variable nil nil [9220 9250])
+            ("format-type" variable nil nil [9251 9275])
+            ("recursive-p" variable nil nil [9276 9300])
+            ("orig-format-type" variable nil nil [9301 9330])
+            ("srefactor--appropriate-major-mode" function (:arguments ("major-mode")) nil [9333 9688])
+            ("srefactor--define-skip-list-for-mode" function (:arguments ("major-mode")) nil [9690 10071])
+            ("srefactor-lisp-format-buffer" function (:user-visible-flag t) nil [10073 11822])
+            ("srefactor-lisp-format-defun" function (:user-visible-flag t) nil [11824 13633])
+            ("srefactor-lisp-format-sexp" function (:user-visible-flag t) nil [13635 15745])
+            ("srefactor-lisp-one-line" function
+               (:user-visible-flag t
+                :arguments ("recursive-p"))
+                nil [15747 17655])
+            ("srefactor--lisp-format-one-or-multi-lines" function (:arguments ("beg" "end" "orig-point" "format-type" "newline-betwen-semantic-lists" "recursive-p")) nil [17657 20644])
+            ("srefactor--lisp-number-formatter" function nil nil [20646 21240])
+            ("srefactor--lisp-punctuation-formatter" function nil nil [21242 21768])
+            ("srefactor--lisp-symbol-formatter" function nil nil [21770 22851])
+            ("srefactor--lisp-forward-first-second-token" function nil nil [22853 23036])
+            ("srefactor--lisp-forward-token" function nil nil [23038 23717])
+            ("srefactor--lisp-comment-formatter" function nil nil [23719 26177])
+            ("srefactor--lisp-oneline-formatter" function nil nil [26179 26514])
+            ("srefactor--lisp-multiline-formatter" function nil nil [26516 28058])
+            ("srefactor--lisp-token-name-in-skip-list-p" function (:arguments ("token-name")) nil [28060 28174])
+            ("srefactor--lisp-token-in-punctuation-p" function (:arguments ("token")) nil [28176 28322])
+            ("srefactor--lisp-token-paren-p" function (:arguments ("token")) nil [28324 28439])
+            ("srefactor--lisp-token-text" function (:arguments ("token")) nil [28441 28684])
+            ("srefactor--lisp-visit-semantic-list-lex" function (:arguments ("lexemes")) nil [28686 29520])
+            ("srefactor--lisp-comment-debug-messages" function nil nil [29522 30054])
+            ("srefactor--lisp-debug-messages" function nil nil [30056 30405])
+            ("srefactor-lisp" package nil nil [30407 30432]))          
+      :file "srefactor-lisp.el"
+      :pointmax 30433
+      :fsize 30432
+      :lastmodtime '(24106 56954 22795 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("with-no-warnings" code nil nil [1507 1541])
+            ("recentf" include nil nil [1542 1560])
+            ("eieio" include nil nil [1561 1577])
+            ("semantic/format" include nil nil [1578 1604])
+            ("srefactor--refactor-based-on-tag-class" function (:prototype-flag t) nil [1605 1667])
+            ("srefactor--insert-tag" function (:prototype-flag t) nil [1668 1713])
+            ("srefactor-ui--current-active-window" variable nil nil [1867 1978])
+            ("srefactor-ui--current-active-region-start" variable nil nil [1980 2100])
+            ("srefactor-ui--current-active-region-end" variable nil nil [2102 2218])
+            ("srefactor-ui--current-active-menu" variable nil nil [2220 2302])
+            ("srefactor-ui--func-type" variable nil nil [2304 2381])
+            ("srefactor-ui--current-active-tag-overlay" variable nil nil [2383 2495])
+            ("srefactor-ui-menu-show-help" variable (:default-value t) nil [2497 2608])
+            ("srefactor-ui--menu-label" function (:arguments ("e")) nil [2610 2659])
+            ("srefactor-ui--menu-value-item" function (:arguments ("e")) nil [2661 2715])
+            ("srefactor-ui--digit-shortcut-command-name" function (:arguments ("n")) nil [2717 2956])
+            ("srefactor-ui--make-menu-element" function (:arguments ("menu-item" "menu-value")) nil [2958 3267])
+            ("srefactor-ui-menu" type
+               (:members 
+                  ( ("name" variable
+                       (:documentation "Name of the menu to be displayed in the modeline."
+                        :default-value "*Srefactor Menu*"
+                        :type "string")
+                        nil nil)
+                    ("items" variable
+                       (:documentation "Item list to be displayed in a menu. Item is a list
+          '(DISPLAY REAL OPTIONS)."
+                        :default-value "nil"
+                        :type "list")
+                        nil nil)
+                    ("action" variable
+                       (:documentation "An action to run when a menu item is selected."
+                        :default-value "nil")
+                        nil nil)
+                    ("context" variable
+                       (:documentation "Current Semantic tag in scope, used as context to
+     select appropriate refactor actions."
+                        :default-value "nil")
+                        nil nil)
+                    ("shortcut-p" variable
+                       (:documentation "If t, first 9 actions can be executed by digit keys 1-9."
+                        :default-value "nil"
+                        :type "boolean")
+                        nil nil)
+                    ("persistent-action" variable
+                       (:documentation "An action to execute without exiting the menu."
+                        :default-value "nil")
+                        nil nil)
+                    ("keymap" variable
+                       (:documentation "A function that set define keys in srefactor-ui-menu-mode-map."
+                        :default-value "nil")
+                        nil nil)
+                    ("post-handler" variable
+                       (:documentation "A function to be executed after the menu is created."
+                        :default-value "nil")
+                        nil nil))                  
+                :type "class")
+                nil [3269 4724])
+            ("srefactor-ui--menu" function (:arguments ("name" "forms")) nil [4726 5228])
+            ("srefactor-ui-create-menu" function (:arguments ("menu")) nil [5230 8579])
+            ("srefactor-ui--return-option-list" function (:arguments ("type")) nil [8581 8932])
+            ("srefactor-ui--generate-items" function (:arguments ("commands" "action" "add-shortcut")) nil [8934 9442])
+            ("srefactor-ui--show-digit-shortcut" function (:arguments ("l")) nil [9444 10056])
+            ("srefactor-ui--make-default-menu-element" function (:arguments ("command")) nil [10058 10261])
+            ("srefactor-ui--create-menu-widget" function (:arguments ("menu-element" "action")) nil [10263 10656])
+            ("srefactor-ui--clean-up-menu-window" function (:arguments ("kill-buffer")) nil [10658 11282])
+            ("srefactor-ui--refactor-action" function
+               (:user-visible-flag t
+                :arguments ("widget" "_ignore"))
+                nil [11284 11662])
+            ("srefactor-ui--tag-action" function (:arguments ("widget" "_ignore")) nil [11664 12038])
+            ("srefactor-ui--menu-quit" function (:arguments ("ignored")) nil [12040 12144])
+            ("srefactor-ui--shortcuts-keymap" variable (:default-value (let ((km (make-sparse-keymap))) (dolist (k (quote (9 8 7 6 5 4 3 2 1))) (let ((cmd (srefactor-ui--digit-shortcut-command-name k))) (defalias cmd (\` (lambda nil (interactive) (unless (search-forward (number-to-string (\, k)) nil t) (search-backward (number-to-string (\, k))) nil t) (srefactor-ui--refactor-action (get-char-property (point) (quote button)))))) (define-key km (vector (+ k 48)) cmd))) km)) nil [12146 12763])
+            ("srefactor-ui--previous-page-target-window" function nil nil [12765 13030])
+            ("srefactor-ui--next-page-target-window" function nil nil [13032 13291])
+            ("srefactor-ui--cycle-option" function (:arguments ("direction" "current-option" "options")) nil [13293 13691])
+            ("srefactor-ui--get-current-menu-option" function (:arguments ("menu-string")) nil [13693 13890])
+            ("srefactor-ui--cycle" function (:arguments ("direction")) nil [13892 14620])
+            ("srefactor-ui-menu-mode-map" variable (:default-value (let ((km (copy-keymap srefactor-ui--shortcuts-keymap))) (set-keymap-parent km widget-keymap) (define-key km "q" (quote srefactor-ui--menu-quit)) (define-key km "n" (quote widget-forward)) (define-key km "p" (quote widget-backward)) (define-key km "j" (quote widget-forward)) (define-key km "k" (quote widget-backward)) (define-key km (kbd "TAB") (lambda nil (interactive) (when (persistent-action srefactor-ui--current-active-menu) (funcall (persistent-action srefactor-ui--current-active-menu))))) (define-key km "o" (lambda nil (interactive) (message "%s" (catch (quote option-not-available) (srefactor-ui--cycle (quote next)))))) (define-key km "O" (lambda nil (interactive) (message "%s" (catch (quote option-not-available) (srefactor-ui--cycle (quote prev)))))) (define-key km (kbd "M-<next>") (quote srefactor-ui--next-page-target-window)) (define-key km (kbd "M-<prior>") (quote srefactor-ui--previous-page-target-window)) (when (featurep (quote evil)) (define-key km (kbd "/") (quote evil-search-forward)) (define-key km (kbd "?") (quote evil-search-backward))) (define-key km (kbd "C-g") (quote srefactor-ui--menu-quit)) (define-key km [follow-link] "") km)) nil [14622 16172])
+            ("define-derived-mode" code nil nil [16174 16345])
+            ("srefactor-ui" package nil nil [16347 16370]))          
+      :file "srefactor-ui.el"
+      :pointmax 16546
+      :fsize 16545
+      :lastmodtime '(24106 56954 34795 946000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!elpa!srefactor-20180703.1810!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

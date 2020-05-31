@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("TEST_NAME" variable (:default-value ("unit_tests")) nil [110 133])
+            ("NAME" variable (:default-value ("libutils.a")) nil [134 152])
+            ("SRC" variable (:default-value ("src/my_list/list_dump.c" "src/my_list/list_clear.c" "src/my_list/list_add_elem_at_position.c" "src/my_list/list_del_elem_at_position.c" "src/my_list/list_add_elem_at_front.c" "src/my_list/list_del_elem_at_front.c" "src/my_list/list_del_elem_at_value.c" "src/my_list/list_delete_node.c" "src/my_list/list_get_elem_at_front.c" "src/my_list/list_get_size.c" "src/my_list/list_get_first_node_with_value.c" "src/my_list/list_add_elem_at_back.c" "src/my_list/list_is_empty.c" "src/my_list/list_del_elem_at_back.c" "src/my_list/list_get_elem_at_position.c" "src/my_list/list_create_node.c" "src/my_list/list_get_elem_at_back.c" "src/smart_buffer/smart_buffer_data.c" "src/smart_buffer/smart_buffer_read_write.c" "src/smart_buffer/smart_buffer_utils.c" "src/my_array/free_array.c" "src/my_array/get_size_array.c" "src/my_array/my_strtok.c")) nil [153 1055])
+            ("TEST_SRC" variable (:default-value ("tests/redirect_all_std.c" "tests/test_generic_list.c" "tests/test_smart_buffer.c")) nil [1056 1165])
+            ("CFLAGS" variable (:default-value ("-Iinclude" "-W" "-Wall" "-Wshadow" "-Wextra" "-Werror")) nil [1165 1219])
+            ("CC" variable (:default-value ("gcc")) nil [1220 1229])
+            ("OBJ" variable (:default-value ("$(SRC:.c=.o)")) nil [1230 1249])
+            ("RM" variable (:default-value ("rm" "-f")) nil [1250 1261])
+            ("all" function (:arguments ("$(OBJ)")) nil [1262 1296])
+            ("clean" function nil nil [1297 1325])
+            ("fclean" function (:arguments ("clean")) nil [1326 1369])
+            ("re" function (:arguments ("fclean" "all")) nil [1370 1385])
+            ("tests_run" function (:arguments ("clean")) nil [1386 1515])
+            ("debug" function (:arguments ("CFLAGS" "+=" "-g")) nil [1516 1536])
+            ("debug" function (:arguments ("all")) nil [1536 1547]))          
+      :file "Makefile"
+      :pointmax 1576
+      :fsize 1575
+      :lastmodtime '(24249 20309 548856 68000)
+      :unmatched-syntax '((symbol 1573 . 1575) (symbol 1566 . 1572) (symbol 1560 . 1565) (symbol 1556 . 1559) (punctuation 1554 . 1555) (symbol 1548 . 1554) (bol 1548 . 1548))))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

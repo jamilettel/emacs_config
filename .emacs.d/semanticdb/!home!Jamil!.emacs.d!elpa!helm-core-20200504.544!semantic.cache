@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "helm-core-autoloads.el"
+      :pointmax 357
+      :fsize 6942
+      :lastmodtime '(24242 49430 999915 499000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!elpa!helm-core-20200504.544!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

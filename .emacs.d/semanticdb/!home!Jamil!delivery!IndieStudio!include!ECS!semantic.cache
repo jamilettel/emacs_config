@@ -1,0 +1,87 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ENTITY_HPP_" variable (:constant-flag t) nil [108 119])
+            ("vector" include (:system-flag t) nil [121 138])
+            ("memory" include (:system-flag t) nil [139 156])
+            ("ECS/Component.hpp" include nil nil [157 185])
+            ("optional" include (:system-flag t) nil [186 205])
+            ("Exception.hpp" include nil nil [206 230]))          
+      :file "Entity.hpp"
+      :pointmax 1847
+      :fsize 1846
+      :lastmodtime '(24242 42650 756920 238000)
+      :unmatched-syntax '((semantic-list 250 . 1819) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 1976) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 2023) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 2018) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 2020) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 2022) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 2022) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 2014) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 1569) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (semantic-list 250 . 1563) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241) (symbol 246 . 249) (punctuation 245 . 246) (punctuation 244 . 245) (symbol 242 . 244) (NAMESPACE 232 . 241))
+      :lexical-table 
+        '(("ENTITY_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("COMPONENT_HPP_" variable (:constant-flag t) nil [114 128])
+            ("memory" include (:system-flag t) nil [130 147]))          
+      :file "Component.hpp"
+      :pointmax 576
+      :fsize 575
+      :lastmodtime '(24242 38599 995750 968000)
+      :unmatched-syntax '((semantic-list 167 . 545) (symbol 163 . 166) (punctuation 162 . 163) (punctuation 161 . 162) (symbol 159 . 161) (NAMESPACE 149 . 158))
+      :lexical-table 
+        '(("COMPONENT_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ASystem_HPP_" variable (:constant-flag t) nil [119 131])
+            ("ECS/ISystem.hpp" include nil nil [133 159]))          
+      :file "ASystem.hpp"
+      :pointmax 498
+      :fsize 497
+      :lastmodtime '(24242 38599 995750 968000)
+      :unmatched-syntax '((semantic-list 179 . 469) (symbol 175 . 178) (punctuation 174 . 175) (punctuation 173 . 174) (symbol 171 . 173) (NAMESPACE 161 . 170))
+      :lexical-table 
+        '(("ASystem_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ISYSTEM_HPP_" variable (:constant-flag t) nil [119 131])
+            ("ECS/ComponentManager.hpp" include nil nil [133 168]))          
+      :file "ISystem.hpp"
+      :pointmax 644
+      :fsize 643
+      :lastmodtime '(24242 38599 996750 965000)
+      :unmatched-syntax '((semantic-list 188 . 615) (symbol 184 . 187) (punctuation 183 . 184) (punctuation 182 . 183) (symbol 180 . 182) (NAMESPACE 170 . 179))
+      :lexical-table 
+        '(("ISYSTEM_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("COMPONENTMANAGER_HPP_" variable (:constant-flag t) nil [137 158])
+            ("map" include (:system-flag t) nil [160 174])
+            ("vector" include (:system-flag t) nil [175 192])
+            ("memory" include (:system-flag t) nil [193 210])
+            ("string" include (:system-flag t) nil [211 228])
+            ("iostream" include (:system-flag t) nil [229 248])
+            ("ECS/Component.hpp" include nil nil [250 278]))          
+      :file "ComponentManager.hpp"
+      :pointmax 874
+      :fsize 873
+      :lastmodtime '(24242 38599 995750 968000)
+      :unmatched-syntax '((semantic-list 298 . 836) (symbol 294 . 297) (punctuation 293 . 294) (punctuation 292 . 293) (symbol 290 . 292) (NAMESPACE 280 . 289))
+      :lexical-table 
+        '(("COMPONENTMANAGER_HPP_")
+          )
+))
+  :file "!home!Jamil!delivery!IndieStudio!include!ECS!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

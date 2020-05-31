@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "emojify-autoloads.el"
+      :pointmax 353
+      :fsize 2934
+      :lastmodtime '(24242 38525 728945 433000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!elpa!emojify-20200503.836!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

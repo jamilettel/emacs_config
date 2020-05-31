@@ -12,6 +12,7 @@
         c-electric-star
         c-indent-line-or-region
         indent-for-tab-command
+        nxml-electric-slash
         overwrite-mode
         previous-buffer
         upcase-region
@@ -21,5 +22,7 @@
 (setq mc/cmds-to-run-once
       '(
         c-electric-colon
+        gud-tooltip-mouse-motion
         helm-confirm-and-exit-minibuffer
+        mouse-buffer-menu
         ))

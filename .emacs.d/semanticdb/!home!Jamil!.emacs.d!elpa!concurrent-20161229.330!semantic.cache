@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1313 1330])
+            ("deferred" include nil nil [1332 1351])
+            ("cc:version" variable nil nil [1353 1393])
+            ("setq" code nil nil [1394 1417])
+            ("cc:aif" function (:arguments ("test-form" "then-form" "else-forms")) nil [1433 1596])
+            ("put" code nil nil [1597 1634])
+            ("cc:generator-replace-yield" function (:arguments ("tree")) nil [1703 2141])
+            ("cc:generator-line" function (:arguments ("chain" "line")) nil [2143 2841])
+            ("cc:generator" function (:arguments ("callback" "body")) nil [2843 3401])
+            ("cc:thread-line" function (:arguments ("wait-time" "chain" "line")) nil [3470 4334])
+            ("cc:thread" function (:arguments ("wait-time-msec" "body")) nil [4336 4710])
+            ("put" code nil nil [4711 4751])
+            ("cl-defstruct" code nil nil [4823 4888])
+            ("cc:semaphore-create" function (:arguments ("permits-num")) nil [4890 5058])
+            ("cc:semaphore-acquire" function (:arguments ("semaphore")) nil [5060 5638])
+            ("cc:semaphore-release" function (:arguments ("semaphore")) nil [5640 6408])
+            ("cc:semaphore-with" function (:arguments ("semaphore" "body-func" "error-func")) nil [6410 6721])
+            ("put" code nil nil [6722 6770])
+            ("cc:semaphore-release-all" function (:arguments ("semaphore")) nil [6772 7260])
+            ("cc:semaphore-interrupt-all" function (:arguments ("semaphore")) nil [7262 7645])
+            ("cc:signal-channel" function (:arguments ("name" "parent-channel")) nil [7724 8647])
+            ("cc:signal-name" function (:arguments ("ch")) nil [8649 8727])
+            ("cc:signal-parent-channel" function (:arguments ("ch")) nil [8729 8828])
+            ("cc:signal-observers" function (:arguments ("ch")) nil [8830 8912])
+            ("cc:signal-connect" function (:arguments ("channel" "event-sym" "callback")) nil [8914 9462])
+            ("cc:signal-send" function (:arguments ("channel" "event-sym" "args")) nil [9464 9977])
+            ("cc:signal-send-global" function (:arguments ("channel" "event-sym" "args")) nil [9979 10240])
+            ("cc:signal-disconnect" function (:arguments ("channel" "deferred")) nil [10243 10688])
+            ("cc:signal-disconnect-all" function (:arguments ("channel")) nil [10690 10815])
+            ("cl-defstruct" code nil nil [10914 10988])
+            ("cc:dataflow-undefine-p" function (:arguments ("obj")) nil [10990 11142])
+            ("cc:dataflow-parent-environment" function (:arguments ("df")) nil [11144 11249])
+            ("cc:dataflow-test" function (:arguments ("df")) nil [11251 11338])
+            ("cc:dataflow-channel" function (:arguments ("df")) nil [11340 11435])
+            ("cc:dataflow-list" function (:arguments ("df")) nil [11437 11574])
+            ("cc:dataflow-environment" function (:arguments ("parent-env" "test-func" "channel")) nil [11576 12686])
+            ("cc:dataflow-init-connect" function (:arguments ("df")) nil [12688 13281])
+            ("cc:dataflow-get-object-for-value" function (:arguments ("df" "key")) nil [13283 13919])
+            ("cc:dataflow-get-object-for-deferreds" function (:arguments ("df" "key")) nil [13921 14313])
+            ("cc:dataflow-connect" function (:arguments ("df" "event-sym" "callback")) nil [14315 14590])
+            ("cc:dataflow-signal" function (:arguments ("df" "event" "arg")) nil [14592 14748])
+            ("cc:dataflow-get" function (:arguments ("df" "key")) nil [14750 15572])
+            ("cc:dataflow-get-sync" function (:arguments ("df" "key")) nil [15574 15848])
+            ("cc:dataflow-set" function (:arguments ("df" "key" "value")) nil [15850 16601])
+            ("cc:dataflow-clear" function (:arguments ("df" "key")) nil [16603 17003])
+            ("cc:dataflow-get-avalable-pairs" function (:arguments ("df")) nil [17005 17442])
+            ("cc:dataflow-get-waiting-keys" function (:arguments ("df")) nil [17444 17840])
+            ("cc:dataflow-clear-all" function (:arguments ("df")) nil [17842 18054])
+            ("concurrent" package nil nil [18057 18078]))          
+      :file "concurrent.el"
+      :pointmax 18182
+      :fsize 18181
+      :lastmodtime '(24175 31611 870894 675000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!.emacs.d!elpa!concurrent-20161229.330!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

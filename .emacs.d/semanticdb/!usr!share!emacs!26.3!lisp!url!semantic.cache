@@ -1,0 +1,27 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("url-gw" include nil nil [873 890])
+            ("isPlainHostName" function (:arguments ("host")) nil [907 971])
+            ("dnsDomainIs" function (:arguments ("host" "dom")) nil [988 1072])
+            ("dnsResolve" function (:arguments ("host")) nil [1089 1149])
+            ("isResolvable" function (:arguments ("host")) nil [1166 1298])
+            ("isInNet" function (:arguments ("ip" "net" "mask")) nil [1315 2032])
+            ("url-ns-user-prefs" variable nil nil [2073 2129])
+            ("url-ns-prefs" function (:arguments ("file")) nil [2146 2943])
+            ("url-ns-set-user-pref" function (:arguments ("key" "val")) nil [2945 3021])
+            ("url-ns-user-pref" function (:arguments ("key" "default")) nil [3038 3128])
+            ("url-ns" package nil nil [3130 3147]))          
+      :file "url-ns.el.gz"
+      :pointmax 3173
+      :fsize 1332
+      :lastmodtime '(23603 24959 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!26.3!lisp!url!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,86 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Systems/ColliderSystem.hpp" include nil nil [88 125])
+            ("Components/ColliderComponent.hpp" include nil nil [126 169])
+            ("is::system" using (:type ("is::system" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [171 198])
+            ("is::components" using (:type ("is::components" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [199 230])
+            ("awake" function
+               (:parent "ColliderSystem"
+                :type "void")
+                nil [232 263])
+            ("start" function
+               (:parent "ColliderSystem"
+                :type "void")
+                nil [265 296])
+            ("stop" function
+               (:parent "ColliderSystem"
+                :type "void")
+                nil [298 328])
+            ("onTearDown" function
+               (:parent "ColliderSystem"
+                :type "void")
+                nil [330 366])
+            ("update" function
+               (:parent "ColliderSystem"
+                :type "void")
+                nil [368 703]))          
+      :file "ColliderSystem.cpp"
+      :pointmax 704
+      :fsize 703
+      :lastmodtime '(24242 46435 144675 978000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Systems/Window.hpp" include nil nil [95 124])
+            ("SystemWindow" function
+               (:constructor-flag t
+                :parent "SystemWindow"
+                :type ("SystemWindow" type (:type "class") nil nil))
+                nil [126 158])
+            ("SystemWindow" function
+               (:destructor-flag t
+                :parent "SystemWindow"
+                :type "void")
+                nil [160 193])
+            ("awake" function
+               (:parent "SystemWindow"
+                :type "void")
+                nil [195 264])
+            ("start" function
+               (:parent "SystemWindow"
+                :type "void")
+                nil [266 335])
+            ("update" function
+               (:parent "SystemWindow"
+                :type "void")
+                nil [337 593])
+            ("stop" function
+               (:parent "SystemWindow"
+                :type "void")
+                nil [595 662])
+            ("onTearDown" function
+               (:parent "SystemWindow"
+                :type "void")
+                nil [664 743]))          
+      :file "Window.cpp"
+      :pointmax 745
+      :fsize 744
+      :lastmodtime '(24242 42911 854194 117000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!IndieStudio!src!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

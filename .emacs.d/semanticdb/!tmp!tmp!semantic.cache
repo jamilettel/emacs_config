@@ -1,0 +1,52 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Component" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [21 28])
+                    ("protected" label nil (reparse-symbol classsubparts) [193 203])
+                    ("private" label nil (reparse-symbol classsubparts) [204 212]))                  
+                :type "class")
+                nil [3 215])
+            ("Position" type
+               (:superclasses 
+                  ( ("Component" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [253 260])
+                    ("x" variable (:type "int") (reparse-symbol classsubparts) [327 333])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [338 344])
+                    ("protected" label nil (reparse-symbol classsubparts) [346 356])
+                    ("private" label nil (reparse-symbol classsubparts) [357 365]))                  
+                :type "class")
+                nil [218 368])
+            ("iostream" include (:system-flag t) nil [370 389])
+            ("memory" include (:system-flag t) nil [390 407])
+            ("test" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [419 432]))                  
+                :type "void")
+                nil [409 484])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [495 500]))                  
+                :type "int")
+                nil [486 751]))          
+      :file "main.cpp"
+      :pointmax 752
+      :fsize 751
+      :lastmodtime '(24241 31698 749819 476000)
+      :unmatched-syntax '((punctuation 320 . 321) (DEFAULT 313 . 320) (punctuation 311 . 312) (semantic-list 308 . 310) (symbol 300 . 308) (punctuation 299 . 300) (VIRTUAL 291 . 298) (punctuation 285 . 286) (DEFAULT 278 . 285) (punctuation 276 . 277) (semantic-list 273 . 275) (symbol 265 . 273) (punctuation 190 . 191) (DEFAULT 183 . 190) (punctuation 181 . 182) (semantic-list 161 . 180) (punctuation 160 . 161) (OPERATOR 152 . 160) (punctuation 151 . 152) (symbol 141 . 150) (punctuation 135 . 136) (DEFAULT 128 . 135) (punctuation 126 . 127) (semantic-list 106 . 125) (symbol 97 . 106) (punctuation 90 . 91) (DEFAULT 83 . 90) (punctuation 81 . 82) (semantic-list 78 . 80) (symbol 69 . 78) (punctuation 68 . 69) (VIRTUAL 60 . 67) (punctuation 54 . 55) (DEFAULT 47 . 54) (punctuation 45 . 46) (semantic-list 42 . 44) (symbol 33 . 42))))
+  :file "!tmp!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

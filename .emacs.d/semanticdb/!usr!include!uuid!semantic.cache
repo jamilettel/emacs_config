@@ -1,0 +1,267 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_UUID_UUID_H" variable (:constant-flag t) nil [1636 1648])
+            ("sys/types.h" include (:system-flag t) nil [1650 1672])
+            ("sys/time.h" include (:system-flag t) nil [1688 1709])
+            ("time.h" include (:system-flag t) nil [1717 1734])
+            ("uuid_t" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [1736 1769])
+            ("UUID_VARIANT_NCS" variable (:constant-flag t) nil [1810 1826])
+            ("UUID_VARIANT_DCE" variable (:constant-flag t) nil [1837 1853])
+            ("UUID_VARIANT_MICROSOFT" variable (:constant-flag t) nil [1864 1886])
+            ("UUID_VARIANT_OTHER" variable (:constant-flag t) nil [1897 1915])
+            ("UUID_VARIANT_SHIFT" variable (:constant-flag t) nil [1927 1945])
+            ("UUID_VARIANT_MASK" variable (:constant-flag t) nil [1956 1973])
+            ("UUID_TYPE_DCE_TIME" variable (:constant-flag t) nil [2019 2037])
+            ("UUID_TYPE_DCE_SECURITY" variable (:constant-flag t) nil [2050 2072])
+            ("UUID_TYPE_DCE_MD5" variable (:constant-flag t) nil [2083 2100])
+            ("UUID_TYPE_DCE_RANDOM" variable (:constant-flag t) nil [2114 2134])
+            ("UUID_TYPE_DCE_SHA1" variable (:constant-flag t) nil [2145 2163])
+            ("UUID_TYPE_SHIFT" variable (:constant-flag t) nil [2177 2192])
+            ("UUID_TYPE_MASK" variable (:constant-flag t) nil [2208 2222])
+            ("UUID_STR_LEN" variable (:constant-flag t) nil [2240 2252])
+            ("UUID_DEFINE" variable (:constant-flag t) nil [2322 2333])
+            ("uuid_get_template" function
+               (:type ("uuid_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("alias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3835 3853]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3796 3854])
+            ("uuid_variant" function
+               (:type "int"
+                :arguments 
+                  ( ("uu" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3758 3774]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3734 3775])
+            ("uuid_type" function
+               (:type "int"
+                :arguments 
+                  ( ("uu" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3716 3732]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3695 3733])
+            ("uuid_time" function
+               (:type ("time_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("uu" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3653 3669])
+                    ("ret_tv" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3670 3693]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3629 3694])
+            ("uuid_unparse_upper" function
+               (:type "void"
+                :arguments 
+                  ( ("uu" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3581 3597])
+                    ("out" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3598 3608]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3550 3609])
+            ("uuid_unparse_lower" function
+               (:type "void"
+                :arguments 
+                  ( ("uu" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3521 3537])
+                    ("out" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3538 3548]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3490 3549])
+            ("uuid_unparse" function
+               (:type "void"
+                :arguments 
+                  ( ("uu" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3461 3477])
+                    ("out" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3478 3488]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3436 3489])
+            ("uuid_parse" function
+               (:type "int"
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3391 3406])
+                    ("uu" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3407 3417]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3369 3418])
+            ("uuid_is_null" function
+               (:type "int"
+                :arguments 
+                  ( ("uu" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3336 3352]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3312 3353])
+            ("uuid_generate_sha1" function
+               (:type "void"
+                :arguments 
+                  ( ("out" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3236 3247])
+                    ("ns" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3248 3264])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3265 3282])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3283 3294]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3205 3295])
+            ("uuid_generate_md5" function
+               (:type "void"
+                :arguments 
+                  ( ("out" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3145 3156])
+                    ("ns" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3157 3173])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3174 3191])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3192 3203]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3115 3204])
+            ("uuid_generate_time_safe" function
+               (:type "int"
+                :arguments 
+                  ( ("out" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3101 3112]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3066 3113])
+            ("uuid_generate_time" function
+               (:type "void"
+                :arguments 
+                  ( ("out" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3053 3064]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3022 3065])
+            ("uuid_generate_random" function
+               (:type "void"
+                :arguments 
+                  ( ("out" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3009 3020]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2976 3021])
+            ("uuid_generate" function
+               (:type "void"
+                :arguments 
+                  ( ("out" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2963 2974]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2937 2975])
+            ("uuid_copy" function
+               (:type "void"
+                :arguments 
+                  ( ("dst" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2888 2899])
+                    ("src" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2900 2917]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2866 2918])
+            ("uuid_compare" function
+               (:type "int"
+                :arguments 
+                  ( ("uu1" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2815 2832])
+                    ("uu2" variable
+                       (:constant-flag t
+                        :type ("uuid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2833 2850]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2791 2851])
+            ("uuid_clear" function
+               (:type "void"
+                :arguments 
+                  ( ("uu" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2762 2772]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2739 2773]))          
+      :file "uuid.h"
+      :pointmax 3911
+      :fsize 3910
+      :lastmodtime '(24055 46440 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_UUID_UUID_H")
+          ("UUID_TYPE_MASK" . ((number "0xf" 2227 . 2230)))
+          ("UUID_VARIANT_MASK" . ((number "0x7" 1978 . 1981)))
+          ("UUID_TYPE_DCE_RANDOM" . ((number "4" 2135 . 2136)))
+          ("UUID_VARIANT_OTHER" . ((number "3" 1916 . 1917)))
+          ("UUID_TYPE_DCE_MD5" . ((number "3" 2104 . 2105)))
+          ("UUID_TYPE_DCE_SHA1" . ((number "5" 2166 . 2167)))
+          ("UUID_VARIANT_MICROSOFT" . ((number "2" 1887 . 1888)))
+          ("UUID_VARIANT_SHIFT" . ((number "5" 1946 . 1947)))
+          ("UUID_TYPE_DCE_TIME" . ((number "1" 2040 . 2041)))
+          ("UUID_TYPE_DCE_SECURITY" . ((number "2" 2073 . 2074)))
+          ("UUID_STR_LEN" . ((number "37" 2253 . 2255)))
+          ("UUID_VARIANT_NCS" . ((number "0" 1827 . 1828)))
+          ("UUID_VARIANT_DCE" . ((number "1" 1854 . 1855)))
+          ("UUID_TYPE_SHIFT" . ((number "4" 2198 . 2199)))
+          ("UUID_DEFINE" (spp-arg-list ("name" "u0" "u1" "u2" "u3" "u4" "u5" "u6" "u7" "u8" "u9" "u10" "u11" "u12" "u13" "u14" "u15") 2333 . 2393) . 
+              ((STATIC "static" 2397 . 2403) (CONST "const" 2404 . 2409) (symbol "uuid_t" 2410 . 2416) (symbol "name" 2417 . 2421) (symbol "__attribute__" 2422 . 2435) (semantic-list "((unused))" 2436 . 2446) (punctuation "=" 2447 . 2448) (semantic-list "{u0,u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15}" 2449 . 2504)))
+          )
+))
+  :file "!usr!include!uuid!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

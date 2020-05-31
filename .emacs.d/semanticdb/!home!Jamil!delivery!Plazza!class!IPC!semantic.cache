@@ -1,0 +1,225 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PIPE_HPP_" variable (:constant-flag t) nil [112 121])
+            ("sstream" include (:system-flag t) nil [123 141])
+            ("unistd.h" include (:system-flag t) nil [142 161])
+            ("Error/Error.hpp" include nil nil [162 188])
+            ("SmartBuffer.hpp" include nil nil [189 215])
+            ("Plazza" type
+               (:members 
+                  ( ("IPC" type
+                       (:members 
+                          ( ("Pipe" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [287 294])
+                                    ("Pipe" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("Pipe" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [307 314])
+                                    ("Pipe" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [327 335])
+                                    ("setReadOnly" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [443 462])
+                                    ("setWriteOnly" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [475 495])
+                                    ("getReadFd" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [509 531])
+                                    ("getWriteFd" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [544 567])
+                                    (">>" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("Pipe" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("var" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [632 639]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [581 719])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("Pipe" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("var" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [784 797]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [733 877])
+                                    ("isClosed" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [891 913])
+                                    ("closePipe" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [926 943])
+                                    ("hasToWrite" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [957 981])
+                                    ("hasToRead" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [994 1017])
+                                    ("readPipe" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1031 1047])
+                                    ("writeToPipe" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1060 1079])
+                                    ("getBufferSize" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1093 1122])
+                                    ("canRead" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1136 1157])
+                                    ("canWrite" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1170 1192])
+                                    ("protected" label nil (reparse-symbol classsubparts) [1202 1212])
+                                    ("private" label nil (reparse-symbol classsubparts) [1221 1229])
+                                    ("_fd" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1243 1254])
+                                    ("_read" variable (:type "bool") (reparse-symbol classsubparts) [1267 1278])
+                                    ("_write" variable (:type "bool") (reparse-symbol classsubparts) [1291 1303])
+                                    ("_closed" variable (:type "bool") (reparse-symbol classsubparts) [1316 1329])
+                                    ("_buffer" variable (:type ("SmartBuffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1343 1363]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [266 1374]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [241 1381]))                  
+                :type "namespace")
+                nil [217 1384]))          
+      :file "Pipe.hpp"
+      :pointmax 1410
+      :fsize 1409
+      :lastmodtime '(24236 36556 453438 627000)
+      :unmatched-syntax '((punctuation 428 . 429) (DELETE 422 . 428) (punctuation 420 . 421) (semantic-list 405 . 419) (punctuation 404 . 405) (OPERATOR 396 . 404) (punctuation 395 . 396) (symbol 390 . 394) (punctuation 376 . 377) (DELETE 370 . 376) (punctuation 368 . 369) (semantic-list 353 . 367) (symbol 349 . 353))
+      :lexical-table 
+        '(("PIPE_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("IPC/Pipe.hpp" include nil nil [72 95])
+            ("iostream" include (:system-flag t) nil [96 115])
+            ("Plazza::IPC" using (:type ("Plazza::IPC" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [117 145])
+            ("Pipe" function
+               (:constructor-flag t
+                :parent "Pipe"
+                :type ("Pipe" type (:type "class") nil nil))
+                nil [147 273])
+            ("Pipe" function
+               (:destructor-flag t
+                :parent "Pipe"
+                :type "void")
+                nil [275 309])
+            ("closePipe" function
+               (:parent "Pipe"
+                :type "void")
+                nil [311 434])
+            ("setReadOnly" function
+               (:parent "Pipe"
+                :type "void")
+                nil [436 520])
+            ("setWriteOnly" function
+               (:parent "Pipe"
+                :type "void")
+                nil [522 606])
+            ("getReadFd" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type "int")
+                nil [608 660])
+            ("getWriteFd" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type "int")
+                nil [662 715])
+            ("isClosed" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type "bool")
+                nil [717 770])
+            ("hasToRead" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type "bool")
+                nil [772 862])
+            ("hasToWrite" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type "bool")
+                nil [864 977])
+            ("readPipe" function
+               (:parent "Pipe"
+                :type "void")
+                nil [979 1248])
+            ("writeToPipe" function
+               (:parent "Pipe"
+                :type "void")
+                nil [1250 1506])
+            ("getBufferSize" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1508 1578])
+            ("canRead" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type "bool")
+                nil [1580 1630])
+            ("canWrite" function
+               (:methodconst-flag t
+                :parent "Pipe"
+                :type "bool")
+                nil [1632 1684]))          
+      :file "Pipe.cpp"
+      :pointmax 1685
+      :fsize 1684
+      :lastmodtime '(24242 51081 470116 510000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!Plazza!class!IPC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

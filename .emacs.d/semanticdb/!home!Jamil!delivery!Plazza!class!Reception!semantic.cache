@@ -1,0 +1,310 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [81 98])
+            ("iostream" include (:system-flag t) nil [99 118])
+            ("Kitchen/KitchenManager.hpp" include (:system-flag t) nil [119 156])
+            ("StringManipulation/StringManipulation.hpp" include (:system-flag t) nil [157 209])
+            ("SelectHandler/SelectHandler.hpp" include (:system-flag t) nil [210 252])
+            ("Reception/Reception.hpp" include nil nil [253 287])
+            ("Error/ErrHandling/ErrHandling.hpp" include nil nil [288 332])
+            ("Plazza" using (:type ("Plazza" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [334 357])
+            ("Reception" function
+               (:constructor-flag t
+                :parent "Reception"
+                :arguments 
+                  ( ("args" variable (:type ("Args" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [380 397]))                  
+                :type ("Reception" type (:type "class") nil nil))
+                nil [359 549])
+            ("Reception" function
+               (:destructor-flag t
+                :parent "Reception"
+                :type "void")
+                nil [551 577])
+            ("waitingClientOrder" function
+               (:parent "Reception"
+                :type "void")
+                nil [579 2116])
+            ("sendOrder" function
+               (:parent "Reception"
+                :constant-flag t
+                :type ("Order" type (:type "class") nil nil))
+                nil [2118 2176])
+            ("resetReception" function
+               (:parent "Reception"
+                :type "void")
+                nil [2178 2236])
+            ("parseClientOrder" function
+               (:parent "Reception"
+                :arguments 
+                  ( ("subOrder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2291 2319]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2238 2399])
+            ("checkValidOrder" function
+               (:parent "Reception"
+                :arguments 
+                  ( ("subOrder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2433 2474]))                  
+                :type "bool")
+                nil [2401 2923])
+            ("prepareOrder" function
+               (:parent "Reception"
+                :arguments 
+                  ( ("order" variable
+                       (:reference 1
+                        :type ("Order" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2954 2967])
+                    ("subOrder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2968 3009]))                  
+                :type "void")
+                nil [2925 3368])
+            ("getPizzaSizeOrder" function
+               (:parent "Reception"
+                :arguments 
+                  ( ("size" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3420 3444]))                  
+                :type ("PizzaInfo::PizzaSize" type (:type "class") nil nil))
+                nil [3370 3806])
+            ("getPizzaTypeOrder" function
+               (:parent "Reception"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3858 3882]))                  
+                :type ("PizzaInfo::PizzaType" type (:type "class") nil nil))
+                nil [3808 4405])
+            ("getNbPizzaOrder" function
+               (:parent "Reception"
+                :arguments 
+                  ( ("number" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4441 4460]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4407 4567]))          
+      :file "Reception.cpp"
+      :pointmax 4568
+      :fsize 4567
+      :lastmodtime '(24242 33497 945053 990000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_RECEPTION_HPP" variable (:constant-flag t) nil [118 138])
+            ("Kitchen/IKitchenManager.hpp" include (:system-flag t) nil [140 178])
+            ("SelectHandler/ISelectHandler.hpp" include (:system-flag t) nil [179 222])
+            ("Order.hpp" include nil nil [223 243])
+            ("Arguments.hpp" include nil nil [244 268])
+            ("Parser/Parser.hpp" include nil nil [269 297])
+            ("IReception.hpp" include nil nil [298 323])
+            ("Plazza" type
+               (:members 
+                  ( ("Reception" type
+                       (:superclasses 
+                          ( ("Plazza::IReception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [398 405])
+                            ("Reception" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("args" variable (:type ("Args" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol arg-sub-list) [424 441]))                                  
+                                :type ("Reception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [414 442])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [464 473])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [509 518])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [549 558])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [592 601])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [684 693])
+                            ("parseClientOrder" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("subOrder" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [744 772]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [702 773])
+                            ("checkValidOrder" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("subOrder" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [803 844]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [782 845])
+                            ("getPizzaSizeOrder" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("size" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [893 917]))                                  
+                                :type ("PizzaInfo::PizzaSize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [854 918])
+                            ("getPizzaTypeOrder" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("type" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [966 990]))                                  
+                                :type ("PizzaInfo::PizzaType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [927 991])
+                            ("getNbPizzaOrder" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("number" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1023 1042]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1000 1043])
+                            ("private" label nil (reparse-symbol classsubparts) [1048 1056])
+                            ("_args" variable (:type ("Args" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [1065 1083])
+                            ("_order" variable (:type ("Order" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1092 1105])
+                            ("_manager" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Kitchen::IManager" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1114 1158])
+                            ("_selectHandler" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("ISelectHandler" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1167 1214]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [349 1221]))                  
+                :type "namespace")
+                nil [325 1224]))          
+      :file "Reception.hpp"
+      :pointmax 1256
+      :fsize 1255
+      :lastmodtime '(24226 50449 373923 378000)
+      :unmatched-syntax '((semantic-list 627 . 683) (symbol 615 . 627) (VOID 610 . 614) (semantic-list 589 . 591) (symbol 580 . 589) (punctuation 579 . 580) (symbol 573 . 578) (CONST 567 . 572) (semantic-list 546 . 548) (symbol 532 . 546) (VOID 527 . 531) (semantic-list 506 . 508) (symbol 488 . 506) (VOID 483 . 487) (semantic-list 461 . 463) (symbol 452 . 461) (punctuation 451 . 452))
+      :lexical-table 
+        '(("PLAZZA_RECEPTION_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_IRECEPTION_HPP" variable (:constant-flag t) nil [121 142])
+            ("string" include (:system-flag t) nil [144 161])
+            ("vector" include (:system-flag t) nil [162 179])
+            ("Order.hpp" include nil nil [180 200])
+            ("Plazza" type
+               (:members 
+                  ( ("IReception" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [248 255])
+                            ("waitingClientOrder" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [305 343])
+                            ("resetReception" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [352 386])
+                            ("sendOrder" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("Order" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [395 432])
+                            ("prepareOrder" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("order" variable
+                                       (:reference 1
+                                        :type ("Order" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [467 480])
+                                    ("subOrder" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [481 522]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [441 527])
+                            ("private" label nil (reparse-symbol classsubparts) [532 540]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [225 547]))                  
+                :type "namespace")
+                nil [202 549]))          
+      :file "IReception.hpp"
+      :pointmax 582
+      :fsize 581
+      :lastmodtime '(24226 49325 903813 35000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZZA_IRECEPTION_HPP")
+          )
+))
+  :file "!home!Jamil!delivery!Plazza!class!Reception!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

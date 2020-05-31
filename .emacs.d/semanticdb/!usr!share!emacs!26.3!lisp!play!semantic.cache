@@ -1,0 +1,46 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("life-patterns" variable (:default-value [("@@@" " @@" "@@@") ("@@@ @@@" "@@  @@ " "@@@ @@@") ("@@@ @@@" "@@   @@" "@@@ @@@") ("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@") ("@@@@@@@@@@") ("   @@@@@@@@@@       " "     @@@@@@@@@@     " "       @@@@@@@@@@   " "@@@@@@@@@@          " "@@@@@@@@@@          ") ("@" "@" "@" "@" "@" "@" "@" "@" "@" "@" "@" "@" "@" "@" "@") ("@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @" "@               @") ("@@               " " @@              " "  @@             " "   @@            " "    @@           " "     @@          " "      @@         " "       @@        " "        @@       " "         @@      " "          @@     " "           @@    " "            @@   " "             @@  " "              @@ " "               @@") ("@@@@@@@@@" "@   @   @" "@ @@@@@ @" "@ @   @ @" "@@@   @@@" "@ @   @ @" "@ @@@@@ @" "@   @   @" "@@@@@@@@@") ("                        @           " "                      @ @           " "            @@      @@            @@" "           @   @    @@            @@" "@@        @     @   @@              " "@@        @   @ @@    @ @           " "          @     @       @           " "           @   @                    " "            @@                      ") ("      @ " "    @ @@" "    @ @ " "    @   " "  @     " "@ @     ") ("@@@ @" "@    " "   @@" " @@ @" "@ @ @") ("@@@@@@@@ @@@@@   @@@      @@@@@@@ @@@@@")]) nil [1122 2934])
+            ("life-life-char" function nil nil [3227 3258])
+            ("life-death-char" function nil nil [3259 3310])
+            ("life-birth-char" function nil nil [3311 3342])
+            ("life-void-char" function nil nil [3343 3375])
+            ("life-life-string" function nil nil [3377 3441])
+            ("life-death-string" function nil nil [3442 3508])
+            ("life-birth-string" function nil nil [3509 3575])
+            ("life-void-string" function nil nil [3576 3640])
+            ("life-not-void-regexp" function nil nil [3641 3714])
+            ("life-increment" function (:arguments ("variable")) nil [3716 3794])
+            ("life-neighbor-deltas" variable nil nil [3901 3934])
+            ("life-window-start" variable nil nil [4068 4098])
+            ("life-current-generation" variable nil nil [4117 4153])
+            ("life-generation-string" variable nil nil [4204 4239])
+            ("life" function
+               (:user-visible-flag t
+                :arguments ("sleeptime"))
+                nil [4256 4780])
+            ("define-derived-mode" code nil nil [4782 5316])
+            ("life-setup" function nil nil [5318 6608])
+            ("life-compute-neighbor-deltas" function nil nil [6610 6819])
+            ("life-insert-random-pattern" function nil nil [6821 6949])
+            ("life-increment-generation" function nil nil [6951 7102])
+            ("life-grim-reaper" function nil nil [7104 8539])
+            ("life-expand-plane-if-needed" function nil nil [8541 10078])
+            ("life-display-generation" function (:arguments ("sleeptime")) nil [10080 10337])
+            ("life-extinct-quit" function nil nil [10339 10426])
+            ("define-error" code nil nil [10428 10486])
+            ("life" package nil nil [10509 10524]))          
+      :file "life.el.gz"
+      :pointmax 10548
+      :fsize 3297
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!26.3!lisp!play!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

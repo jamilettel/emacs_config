@@ -1,0 +1,296 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZAERROR_HPP_" variable (:constant-flag t) nil [105 120])
+            ("string" include (:system-flag t) nil [122 139])
+            ("exception" include (:system-flag t) nil [140 160])
+            ("Plazza" type
+               (:members 
+                  ( ("Error" type
+                       (:superclasses 
+                          ( ("std::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [227 234])
+                            ("Error" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("component" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [249 278])
+                                    ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [279 306]))                                  
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [243 307])
+                            ("override" variable
+                               (:constant-flag t
+                                :type ("noexcept" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [336 360])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [403 418])
+                            ("printError" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [427 451])
+                            ("protected" label nil (reparse-symbol classsubparts) [457 467])
+                            ("_component" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [476 499])
+                            ("_message" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [508 529]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [186 536])
+                    ("PipeError" type
+                       (:superclasses 
+                          ( ("Error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [578 585])
+                            ("PipeError" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [604 631]))                                  
+                                :type ("PipeError" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [594 632]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [542 639])
+                    ("ArgumentsError" type
+                       (:superclasses 
+                          ( ("Error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [686 693])
+                            ("ArgumentsError" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [717 744]))                                  
+                                :type ("ArgumentsError" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [702 745]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [645 752])
+                    ("ProcessError" type
+                       (:superclasses 
+                          ( ("Error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [797 804])
+                            ("ProcessError" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [826 853]))                                  
+                                :type ("ProcessError" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [813 854]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [758 861])
+                    ("BufferError" type
+                       (:superclasses 
+                          ( ("Error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [905 912])
+                            ("BufferError" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [933 960]))                                  
+                                :type ("BufferError" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [921 961]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [867 968])
+                    ("SelectError" type
+                       (:superclasses 
+                          ( ("Error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1012 1019])
+                            ("SelectError" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1040 1067]))                                  
+                                :type ("SelectError" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1028 1068]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [974 1075])
+                    ("FileError" type
+                       (:superclasses 
+                          ( ("Error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1117 1124])
+                            ("FileError" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1143 1170]))                                  
+                                :type ("FileError" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1133 1171]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1081 1178]))                  
+                :type "namespace")
+                nil [162 1181]))          
+      :file "Error.hpp"
+      :pointmax 1213
+      :fsize 1212
+      :lastmodtime '(24239 4067 552370 74000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZAERROR_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [73 92])
+            ("Error/Error.hpp" include nil nil [93 119])
+            ("Plazza" using (:type ("Plazza" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [121 144])
+            ("Error" function
+               (:constructor-flag t
+                :parent "Error"
+                :arguments 
+                  ( ("component" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [159 188])
+                    ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [189 216]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [146 265])
+            ("printError" function
+               (:methodconst-flag t
+                :parent "Error"
+                :type "void")
+                nil [430 528])
+            ("PipeError" function
+               (:constructor-flag t
+                :parent "PipeError"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [551 578]))                  
+                :type ("PipeError" type (:type "class") nil nil))
+                nil [530 609])
+            ("ArgumentsError" function
+               (:constructor-flag t
+                :parent "ArgumentsError"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [642 669]))                  
+                :type ("ArgumentsError" type (:type "class") nil nil))
+                nil [611 701])
+            ("ProcessError" function
+               (:constructor-flag t
+                :parent "ProcessError"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [730 757]))                  
+                :type ("ProcessError" type (:type "class") nil nil))
+                nil [703 791])
+            ("BufferError" function
+               (:constructor-flag t
+                :parent "BufferError"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [818 845]))                  
+                :type ("BufferError" type (:type "class") nil nil))
+                nil [793 878])
+            ("SelectError" function
+               (:constructor-flag t
+                :parent "SelectError"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [905 932]))                  
+                :type ("SelectError" type (:type "class") nil nil))
+                nil [880 965])
+            ("FileError" function
+               (:constructor-flag t
+                :parent "FileError"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [988 1015]))                  
+                :type ("FileError" type (:type "class") nil nil))
+                nil [967 1046]))          
+      :file "Error.cpp"
+      :pointmax 1047
+      :fsize 1046
+      :lastmodtime '(24239 4078 728325 436000)
+      :unmatched-syntax '((semantic-list 400 . 428) (symbol 391 . 399) (CONST 385 . 390) (semantic-list 382 . 384) (symbol 370 . 382) (punctuation 369 . 370) (punctuation 368 . 369) (symbol 363 . 368) (punctuation 362 . 363) (symbol 355 . 361) (punctuation 354 . 355) (punctuation 353 . 354) (symbol 350 . 353) (CONST 344 . 349) (semantic-list 308 . 342) (symbol 299 . 307) (CONST 293 . 298) (semantic-list 290 . 292) (symbol 286 . 290) (punctuation 285 . 286) (punctuation 284 . 285) (symbol 279 . 284) (punctuation 278 . 279) (CHAR 273 . 277) (CONST 267 . 272))))
+  :file "!home!Jamil!delivery!Plazza!class!Error!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,78 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("server.h" include nil nil [90 109])
+            ("user.h" include nil nil [110 127])
+            ("is_user_equal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [154 166])
+                    ("to_compare" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [167 184]))                  
+                :type "int")
+                nil [129 276])
+            ("send_not_found_response" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [313 330])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [331 347]))                  
+                :type "int")
+                nil [278 549])
+            ("send_user_info" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [577 594])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("user_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [595 608]))                  
+                :type "int")
+                nil [551 1025])
+            ("command_user" function
+               (:arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1044 1061])
+                    ("client" variable
+                       (:pointer 1
+                        :type ("client_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1062 1079])
+                    ("req" variable
+                       (:pointer 1
+                        :type ("client_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1080 1102])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1103 1114]))                  
+                :type "int")
+                nil [1027 1493]))          
+      :file "command_user.c"
+      :pointmax 1494
+      :fsize 1493
+      :lastmodtime '(24236 14135 263684 643000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!server!src!server!commands!user!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

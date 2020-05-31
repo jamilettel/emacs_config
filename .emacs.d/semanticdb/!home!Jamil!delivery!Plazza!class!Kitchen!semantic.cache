@@ -1,0 +1,1045 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("KITCHENCONTROLLER_HPP_" variable (:constant-flag t) nil [125 147])
+            ("Kitchen/IKitchenController.hpp" include nil nil [149 190])
+            ("IPC/Pipe.hpp" include nil nil [191 214])
+            ("Plazza" type
+               (:members 
+                  ( ("Kitchen" type
+                       (:members 
+                          ( ("Controller" type
+                               (:superclasses 
+                                  ( ("IController" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [316 323])
+                                    ("Controller" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [356 373]))                                          
+                                        :type ("Controller" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [345 374])
+                                    ("Controller" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [387 401])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [553 562])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [609 624])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [671 680])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [724 739])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [770 785])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [834 843])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [895 904])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [951 960])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1007 1016])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1062 1077])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1130 1145])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1195 1204])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1285 1294])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1368 1377])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1450 1459])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1544 1553])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1582 1597])
+                                    ("private" label nil (reparse-symbol classsubparts) [1606 1614])
+                                    ("setPipeFdSet" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pipe" variable
+                                               (:reference 1
+                                                :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1645 1669])
+                                            ("handler" variable
+                                               (:reference 1
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1670 1711]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1627 1712])
+                                    ("setPipeFdSetRead" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pipe" variable
+                                               (:reference 1
+                                                :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1747 1771])
+                                            ("handler" variable
+                                               (:reference 1
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1772 1813]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1725 1814])
+                                    ("setPipeFdSetWrite" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pipe" variable
+                                               (:reference 1
+                                                :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1850 1874])
+                                            ("handler" variable
+                                               (:reference 1
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1875 1916]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1827 1917])
+                                    ("manageResultForPipe" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pipe" variable
+                                               (:reference 1
+                                                :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1955 1979])
+                                            ("handler" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1980 2027]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1930 2028])
+                                    ("managePipeActions" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pipe" variable
+                                               (:reference 1
+                                                :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2065 2089]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2042 2090])
+                                    ("private" label nil (reparse-symbol classsubparts) [2100 2108])
+                                    ("_args" variable (:type ("Args" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2121 2132])
+                                    ("_pid" variable (:type "int") (reparse-symbol classsubparts) [2145 2154])
+                                    ("_toKitchen" variable (:type ("Plazza::IPC::Pipe" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2167 2196])
+                                    ("_toReception" variable (:type ("Plazza::IPC::Pipe" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2209 2240])
+                                    ("_received" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("Pizza" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2253 2282])
+                                    ("_pizzasPreparing" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2295 2319])
+                                    ("_waitingForPizza" variable (:type "bool") (reparse-symbol classsubparts) [2333 2355])
+                                    ("_display" variable (:type "bool") (reparse-symbol classsubparts) [2368 2382])
+                                    ("_displaying" variable (:type "bool") (reparse-symbol classsubparts) [2395 2412]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [269 2424]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [240 2431]))                  
+                :type "namespace")
+                nil [216 2434]))          
+      :file "KitchenController.hpp"
+      :pointmax 2473
+      :fsize 2472
+      :lastmodtime '(24242 48409 300925 891000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("KITCHENCONTROLLER_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Kitchen/KitchenManager.hpp" include nil nil [83 120])
+            ("Kitchen/KitchenController.hpp" include nil nil [121 161])
+            ("Order.hpp" include nil nil [162 182])
+            ("algorithm" include (:system-flag t) nil [183 203])
+            ("iostream" include (:system-flag t) nil [204 223])
+            ("Plazza::Kitchen" using (:type ("Plazza::Kitchen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [225 257])
+            ("Manager" function
+               (:constructor-flag t
+                :parent "Manager"
+                :arguments 
+                  ( ("args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Args" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [276 293]))                  
+                :type ("Manager" type (:type "class") nil nil))
+                nil [259 360])
+            ("addOrder" function
+               (:parent "Manager"
+                :arguments 
+                  ( ("order" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Order" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [385 404]))                  
+                :type "void")
+                nil [362 1276])
+            ("refreshControllers" function
+               (:parent "Manager"
+                :type "void")
+                nil [1278 1572])
+            ("addKitchen" function
+               (:parent "Manager"
+                :type "void")
+                nil [1574 1713])
+            ("canAcceptOrders" function
+               (:parent "Manager"
+                :arguments 
+                  ( ("orders" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1745 1759]))                  
+                :type "bool")
+                nil [1715 2017])
+            ("setFdSet" function
+               (:parent "Manager"
+                :arguments 
+                  ( ("handler" variable
+                       (:reference 1
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2042 2083]))                  
+                :type "void")
+                nil [2019 2307])
+            ("log" function
+               (:parent "Manager"
+                :arguments 
+                  ( ("pizza" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Pizza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2327 2346])
+                    ("now" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2347 2358]))                  
+                :type "void")
+                nil [2309 2646])
+            ("log" function
+               (:parent "Manager"
+                :arguments 
+                  ( ("order" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Order" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2666 2685])
+                    ("now" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2686 2697]))                  
+                :type "void")
+                nil [2648 2898])
+            ("manageFinishedPizza" function
+               (:parent "Manager"
+                :arguments 
+                  ( ("pizza" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Pizza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2934 2953]))                  
+                :type "void")
+                nil [2900 3307])
+            ("manageSelectResult" function
+               (:parent "Manager"
+                :arguments 
+                  ( ("handler" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3342 3389]))                  
+                :type "void")
+                nil [3309 4259])
+            ("displayStatus" function
+               (:parent "Manager"
+                :type "void")
+                nil [4261 4589]))          
+      :file "KitchenManager.cpp"
+      :pointmax 4590
+      :fsize 4589
+      :lastmodtime '(24242 33394 476191 879000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ICONTROLLER_HPP_" variable (:constant-flag t) nil [121 137])
+            ("cstddef" include (:system-flag t) nil [139 157])
+            ("Pizza.hpp" include nil nil [158 178])
+            ("sys/select.h" include (:system-flag t) nil [179 202])
+            ("SelectHandler/ISelectHandler.hpp" include nil nil [203 246])
+            ("memory" include (:system-flag t) nil [247 264])
+            ("Arguments.hpp" include nil nil [265 289])
+            ("PIZZA_CODE" variable (:constant-flag t) nil [299 309])
+            ("STATUS_CODE" variable (:constant-flag t) nil [321 332])
+            ("Plazza" type
+               (:members 
+                  ( ("Kitchen" type
+                       (:members 
+                          ( ("IController" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [419 426])
+                                    ("startProcess" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [486 518])
+                                    ("getAvailableQueueLength" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [532 583])
+                                    ("addPizzaToQueue" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pizza" variable (:type ("Pizza" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [625 637]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [596 642])
+                                    ("isRunning" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [656 691])
+                                    ("getPendingPizzasSize" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [705 753])
+                                    ("deliverPizza" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pizza" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Pizza" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [793 812]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [767 817])
+                                    ("getNextPizza" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("Pizza" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [845 878])
+                                    ("setFdSet" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [914 955]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [892 960])
+                                    ("setFdSetWrite" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1000 1041]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [973 1046])
+                                    ("setFdSetRead" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1085 1126]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1059 1131])
+                                    ("manageSelectResult" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1176 1223]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1144 1228])
+                                    ("getArgs" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1241 1274])
+                                    ("displayStatus" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1288 1321])
+                                    ("quietlyResetDisplayStatus" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1347 1392])
+                                    ("isDisplaying" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1418 1456])
+                                    ("checkDisplayStatus" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1483 1527])
+                                    ("resetStatusDisplay" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1551 1589])
+                                    ("protected" label nil (reparse-symbol classsubparts) [1610 1620])
+                                    ("private" label nil (reparse-symbol classsubparts) [1629 1637]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [391 1648]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [362 1655]))                  
+                :type "namespace")
+                nil [338 1658]))          
+      :file "IKitchenController.hpp"
+      :pointmax 1691
+      :fsize 1690
+      :lastmodtime '(24242 48438 271946 112000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PIZZA_CODE" . ((number "69" 310 . 312)))
+          ("ICONTROLLER_HPP_")
+          ("STATUS_CODE" . ((number "420" 333 . 336)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("KITCHENMANAGER_HPP_" variable (:constant-flag t) nil [119 138])
+            ("Kitchen/IKitchenManager.hpp" include nil nil [140 178])
+            ("vector" include (:system-flag t) nil [179 196])
+            ("memory" include (:system-flag t) nil [197 214])
+            ("Arguments.hpp" include nil nil [215 239])
+            ("Logger.hpp" include nil nil [240 261])
+            ("Plazza" type
+               (:members 
+                  ( ("Kitchen" type
+                       (:members 
+                          ( ("Manager" type
+                               (:superclasses 
+                                  ( ("IManager" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [357 364])
+                                    ("Manager" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [394 411]))                                          
+                                        :type ("Manager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [386 412])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [595 604])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [638 647])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [717 726])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [811 820])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [876 885])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [940 949])
+                                    ("protected" label nil (reparse-symbol classsubparts) [959 969])
+                                    ("refreshControllers" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [982 1008])
+                                    ("addKitchen" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1021 1039])
+                                    ("manageFinishedPizza" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pizza" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Pizza" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1077 1096]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1052 1097])
+                                    ("private" label nil (reparse-symbol classsubparts) [1107 1115])
+                                    ("canAcceptOrders" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("orders" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1149 1163]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1128 1164])
+                                    ("private" label nil (reparse-symbol classsubparts) [1174 1182])
+                                    ("_controllers" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::unique_ptr" type (:template-specifier 
+                                                ( ("IController" type nil nil nil))                                                ) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1195 1250])
+                                    ("_orders" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("Order" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1263 1290])
+                                    ("_args" variable (:type ("Args" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1303 1314])
+                                    ("_displayingStatus" variable (:type "bool") (reparse-symbol classsubparts) [1327 1350])
+                                    ("_logger" variable (:type ("Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1363 1378]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [316 1389]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [287 1396]))                  
+                :type "namespace")
+                nil [263 1399]))          
+      :file "KitchenManager.hpp"
+      :pointmax 1435
+      :fsize 1434
+      :lastmodtime '(24239 7819 914218 145000)
+      :unmatched-syntax '((semantic-list 906 . 939) (symbol 903 . 906) (VOID 898 . 902) (semantic-list 842 . 875) (symbol 839 . 842) (VOID 834 . 838) (semantic-list 762 . 810) (symbol 744 . 762) (VOID 739 . 743) (semantic-list 674 . 716) (symbol 666 . 674) (VOID 661 . 665) (semantic-list 635 . 637) (symbol 622 . 635) (VOID 617 . 621) (semantic-list 579 . 594) (symbol 571 . 579) (VOID 566 . 570) (punctuation 551 . 552) (DELETE 545 . 551) (punctuation 543 . 544) (semantic-list 525 . 542) (punctuation 524 . 525) (OPERATOR 516 . 524) (punctuation 515 . 516) (symbol 507 . 514) (punctuation 493 . 494) (DELETE 487 . 493) (punctuation 485 . 486) (semantic-list 467 . 484) (symbol 460 . 467) (punctuation 445 . 446) (DEFAULT 438 . 445) (punctuation 436 . 437) (semantic-list 433 . 435) (symbol 426 . 433) (punctuation 425 . 426) (EXPLICIT 377 . 385))
+      :lexical-table 
+        '(("KITCHENMANAGER_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("IKITCHENMANAGER_HPP_" variable (:constant-flag t) nil [120 140])
+            ("Order.hpp" include nil nil [142 162])
+            ("Kitchen/IKitchenController.hpp" include nil nil [163 204])
+            ("sys/select.h" include (:system-flag t) nil [205 228])
+            ("Plazza" type
+               (:members 
+                  ( ("Kitchen" type
+                       (:members 
+                          ( ("IManager" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [308 315])
+                                    ("addOrder" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Order" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [394 408]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [372 413])
+                                    ("displayStatus" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [426 459])
+                                    ("setFdSet" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [495 536]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [473 541])
+                                    ("manageSelectResult" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ISelectHandler" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [586 633]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [554 638])
+                                    ("log" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pizza" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Pizza" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [669 688])
+                                            ("time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [689 701]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [652 706])
+                                    ("log" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("order" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Order" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [736 755])
+                                            ("time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [756 768]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [719 773]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [283 785]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [254 792]))                  
+                :type "namespace")
+                nil [230 795]))          
+      :file "IKitchenManager.hpp"
+      :pointmax 832
+      :fsize 831
+      :lastmodtime '(24239 7796 640285 163000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IKITCHENMANAGER_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Kitchen/KitchenController.hpp" include nil nil [85 125])
+            ("sys/wait.h" include (:system-flag t) nil [126 147])
+            ("Kitchen/CookManager.hpp" include nil nil [148 182])
+            ("iostream" include (:system-flag t) nil [183 202])
+            ("Plazza::Kitchen" using (:type ("Plazza::Kitchen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [204 236])
+            ("Controller" function
+               (:constructor-flag t
+                :parent "Controller"
+                :arguments 
+                  ( ("args" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Args" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [261 278]))                  
+                :type ("Controller" type (:type "class") nil nil))
+                nil [238 371])
+            ("Controller" function
+               (:destructor-flag t
+                :parent "Controller"
+                :type "void")
+                nil [373 401])
+            ("startProcess" function
+               (:parent "Controller"
+                :type "void")
+                nil [403 781])
+            ("getAvailableQueueLength" function
+               (:methodconst-flag t
+                :parent "Controller"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [783 888])
+            ("addPizzaToQueue" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("pizza" variable (:type ("Pizza" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [923 935]))                  
+                :type "void")
+                nil [890 1040])
+            ("isRunning" function
+               (:methodconst-flag t
+                :parent "Controller"
+                :type "bool")
+                nil [1042 1282])
+            ("deliverPizza" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("pizza" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Pizza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1314 1333]))                  
+                :type "void")
+                nil [1284 1418])
+            ("getNextPizza" function
+               (:parent "Controller"
+                :type ("Plazza::Pizza" type (:type "class") nil nil))
+                nil [1420 1641])
+            ("getPendingPizzasSize" function
+               (:methodconst-flag t
+                :parent "Controller"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1643 1725])
+            ("setPipeFdSetWrite" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("pipe" variable
+                       (:reference 1
+                        :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1762 1786])
+                    ("handler" variable
+                       (:reference 1
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1787 1828]))                  
+                :type "void")
+                nil [1727 1967])
+            ("setPipeFdSetRead" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("pipe" variable
+                       (:reference 1
+                        :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2003 2027])
+                    ("handler" variable
+                       (:reference 1
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2028 2069]))                  
+                :type "void")
+                nil [1969 2203])
+            ("setPipeFdSet" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("pipe" variable
+                       (:reference 1
+                        :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2235 2259])
+                    ("handler" variable
+                       (:reference 1
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2260 2301]))                  
+                :type "void")
+                nil [2205 2380])
+            ("setFdSetRead" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("handler" variable
+                       (:reference 1
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2412 2453]))                  
+                :type "void")
+                nil [2382 2545])
+            ("setFdSetWrite" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("handler" variable
+                       (:reference 1
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2578 2619]))                  
+                :type "void")
+                nil [2547 2713])
+            ("setFdSet" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("handler" variable
+                       (:reference 1
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2741 2782]))                  
+                :type "void")
+                nil [2715 2866])
+            ("managePipeActions" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("pipe" variable
+                       (:reference 1
+                        :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2903 2927]))                  
+                :type "void")
+                nil [2868 3551])
+            ("manageSelectResult" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("handler" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3589 3636]))                  
+                :type "void")
+                nil [3553 3806])
+            ("manageResultForPipe" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("pipe" variable
+                       (:reference 1
+                        :type ("Plazza::IPC::Pipe" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3845 3869])
+                    ("handler" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ISelectHandler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3870 3917]))                  
+                :type "void")
+                nil [3808 4117])
+            ("getArgs" function
+               (:methodconst-flag t
+                :parent "Controller"
+                :type ("Plazza::Args" type (:type "class") nil nil))
+                nil [4120 4184])
+            ("displayStatus" function
+               (:parent "Controller"
+                :type "void")
+                nil [4186 4299])
+            ("quietlyResetDisplayStatus" function
+               (:parent "Controller"
+                :type "void")
+                nil [4301 4396])
+            ("checkDisplayStatus" function
+               (:methodconst-flag t
+                :parent "Controller"
+                :type "bool")
+                nil [4398 4468])
+            ("resetStatusDisplay" function
+               (:parent "Controller"
+                :type "void")
+                nil [4470 4621])
+            ("isDisplaying" function
+               (:methodconst-flag t
+                :parent "Controller"
+                :type "bool")
+                nil [4623 4690]))          
+      :file "KitchenController.cpp"
+      :pointmax 4691
+      :fsize 4690
+      :lastmodtime '(24242 48436 701945 16000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("COOK_MANAGER_HPP" variable (:constant-flag t) nil [113 129])
+            ("map" include (:system-flag t) nil [131 148])
+            ("Kitchen/KitchenController.hpp" include nil nil [149 192])
+            ("Kitchen/thread/PlazzaThread.hpp" include nil nil [193 238])
+            ("SelectHandler/SelectHandler.hpp" include nil nil [239 284])
+            ("Plazza" type
+               (:members 
+                  ( ("Kitchen" type
+                       (:members 
+                          ( ("CookManager" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [371 378])
+                                    ("CookManager" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("controller" variable
+                                               (:reference 1
+                                                :type ("Controller" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [407 430]))                                          
+                                        :type ("CookManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [395 431])
+                                    ("CookManager" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [448 463])
+                                    ("displayKitchen" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [481 503])
+                                    ("loop" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [520 532])
+                                    ("private" label nil (reparse-symbol classsubparts) [546 554])
+                                    ("_selectHandler" variable (:type ("std::unique_ptr" type
+                                         (:template-specifier 
+                                            ( ("ISelectHandler" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [571 618])
+                                    ("_inter" variable (:type ("InterThread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [635 654])
+                                    ("_thread" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("PlazzaThread" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [671 707]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [339 718]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [310 725]))                  
+                :type "namespace")
+                nil [286 728]))          
+      :file "CookManager.hpp"
+      :pointmax 737
+      :fsize 736
+      :lastmodtime '(24236 32289 43366 551000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COOK_MANAGER_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CHRONO_HPP" variable (:constant-flag t) nil [102 112])
+            ("chrono" include (:system-flag t) nil [114 131])
+            ("ctime" include (:system-flag t) nil [132 148])
+            ("Chrono" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [169 176])
+                    ("Chrono" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("stopTime" variable (:type "long int") (reparse-symbol arg-sub-list) [192 210]))                          
+                        :type ("Chrono" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [185 211])
+                    ("Chrono" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [220 230])
+                    ("restart" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [240 255])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [264 278])
+                    ("isFinish" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [296 312])
+                    (">=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("time" variable (:type "long int") (reparse-symbol arg-sub-list) [339 353]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [322 554])
+                    ("private" label nil (reparse-symbol classsubparts) [559 567])
+                    ("_timer" variable (:type ("std::chrono::time_point" type
+                         (:template-specifier 
+                            ( ("std::chrono::system_clock" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [576 634])
+                    ("_clock" variable (:type ("std::chrono::time_point" type
+                         (:template-specifier 
+                            ( ("std::chrono::system_clock" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [643 701])
+                    ("_stopTime" variable (:type "long int") (reparse-symbol classsubparts) [710 729]))                  
+                :type "class")
+                nil [150 732]))          
+      :file "Chrono.hpp"
+      :pointmax 741
+      :fsize 740
+      :lastmodtime '(24234 57211 27944 833000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CHRONO_HPP")
+          )
+))
+  :file "!home!Jamil!delivery!Plazza!class!Kitchen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("myftp.h" include nil nil [71 89])
+            ("list_get_command" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121 137]))                  
+                :type "char")
+                nil [91 442])
+            ("write_result_on_socket" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [479 486])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [487 498]))                  
+                :type "void")
+                nil [444 606])
+            ("user_list_in_child" function
+               (:arguments 
+                  ( ("user" variable
+                       (:pointer 1
+                        :type ("user_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [632 645])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [646 662]))                  
+                :type "void")
+                nil [608 1044])
+            ("user_list" function
+               (:arguments 
+                  ( ("user" variable
+                       (:pointer 1
+                        :type ("user_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1061 1074])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1075 1091]))                  
+                :type "bool")
+                nil [1046 1338]))          
+      :file "user_list.c"
+      :pointmax 1339
+      :fsize 1338
+      :lastmodtime '(24216 13779 866712 642000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!Documents!finished_projects!Tek2!NWP!NWP_myftp_2019!src!user!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

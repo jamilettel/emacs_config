@@ -1,0 +1,87 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("dirent.h" include (:system-flag t) nil [88 107])
+            ("stdio.h" include (:system-flag t) nil [108 126])
+            ("server.h" include nil nil [127 146])
+            ("saving_utils.h" include nil nil [147 172])
+            ("load_team" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("users" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [199 212])
+                    ("dp" variable
+                       (:pointer 1
+                        :type ("dirent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [213 231]))                  
+                :type ("team_t" type (:type "class") nil nil))
+                nil [174 823])
+            ("load_teams" function
+               (:arguments 
+                  ( ("server" variable
+                       (:pointer 1
+                        :type ("server_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [840 857]))                  
+                :type "int")
+                nil [825 1614]))          
+      :file "load_teams.c"
+      :pointmax 1614
+      :fsize 1613
+      :lastmodtime '(24249 20309 549856 64000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("dirent.h" include (:system-flag t) nil [99 118])
+            ("stdio.h" include (:system-flag t) nil [119 137])
+            ("fcntl.h" include (:system-flag t) nil [138 156])
+            ("file_types.h" include nil nil [157 180])
+            ("server.h" include nil nil [181 200])
+            ("load_team_subscriptions" function
+               (:arguments 
+                  ( ("users" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [231 244])
+                    ("new_team" variable
+                       (:pointer 1
+                        :type ("team_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [245 262])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [263 274]))                  
+                :type "void")
+                nil [202 717])
+            ("load_team_metadata" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [746 757]))                  
+                :type ("team_t" type (:type "class") nil nil))
+                nil [719 1311])
+            ("load_team_data" function
+               (:pointer 1
+                :arguments 
+                  ( ("users" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1336 1349])
+                    ("path_team" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1350 1366]))                  
+                :type ("team_t" type (:type "class") nil nil))
+                nil [1313 1840]))          
+      :file "load_team_data.c"
+      :pointmax 1841
+      :fsize 1840
+      :lastmodtime '(24249 22462 940391 143000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!server!src!load!teams!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

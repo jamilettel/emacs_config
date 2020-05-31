@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("user.h" include nil nil [89 106])
+            ("uuid/uuid.h" include (:system-flag t) nil [107 129])
+            ("string.h" include (:system-flag t) nil [130 149])
+            ("server.h" include nil nil [151 170])
+            ("create_user" function
+               (:pointer 1
+                :arguments 
+                  ( ("username" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [192 207]))                  
+                :type ("user_t" type (:type "class") nil nil))
+                nil [172 508]))          
+      :file "create_user.c"
+      :pointmax 508
+      :fsize 507
+      :lastmodtime '(24236 28907 547087 924000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("user.h" include nil nil [80 97])
+            ("user_get_by_uuid" function
+               (:pointer 1
+                :arguments 
+                  ( ("users" variable (:type ("list_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124 137])
+                    ("uuid" variable (:type ("uuid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [138 150]))                  
+                :type ("user_t" type (:type "class") nil nil))
+                nil [99 330]))          
+      :file "user_utils.c"
+      :pointmax 331
+      :fsize 330
+      :lastmodtime '(24237 13289 894550 658000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!NWP_myteams_2019!server!src!user!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

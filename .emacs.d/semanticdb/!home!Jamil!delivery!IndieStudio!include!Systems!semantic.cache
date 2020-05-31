@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("COLLIDERSYSTEM_HPP_" variable (:constant-flag t) nil [124 143])
+            ("ECS/ASystem.hpp" include nil nil [145 171]))          
+      :file "ColliderSystem.hpp"
+      :pointmax 697
+      :fsize 696
+      :lastmodtime '(24242 45302 991541 938000)
+      :unmatched-syntax '((semantic-list 194 . 661) (symbol 187 . 193) (punctuation 186 . 187) (punctuation 185 . 186) (symbol 183 . 185) (NAMESPACE 173 . 182) (semantic-list 194 . 668) (symbol 187 . 193) (punctuation 186 . 187) (punctuation 185 . 186) (symbol 183 . 185) (NAMESPACE 173 . 182) (semantic-list 194 . 507) (symbol 187 . 193) (punctuation 186 . 187) (punctuation 185 . 186) (symbol 183 . 185) (NAMESPACE 173 . 182) (semantic-list 194 . 498) (symbol 187 . 193) (punctuation 186 . 187) (punctuation 185 . 186) (symbol 183 . 185) (NAMESPACE 173 . 182) (semantic-list 194 . 482) (symbol 187 . 193) (punctuation 186 . 187) (punctuation 185 . 186) (symbol 183 . 185) (NAMESPACE 173 . 182) (semantic-list 194 . 376) (symbol 187 . 193) (punctuation 186 . 187) (punctuation 185 . 186) (symbol 183 . 185) (NAMESPACE 173 . 182) (semantic-list 194 . 204) (symbol 187 . 193) (punctuation 186 . 187) (punctuation 185 . 186) (symbol 183 . 185) (NAMESPACE 173 . 182) (symbol 98 . 104) (punctuation 97 . 98) (string 97 . 99) (symbol 89 . 96) (punctuation 88 . 89) (string 97 . 99) (symbol 89 . 96) (punctuation 88 . 89) (string 97 . 99) (symbol 89 . 96) (punctuation 88 . 89) (string 97 . 99) (symbol 89 . 96) (punctuation 88 . 89))
+      :lexical-table 
+        '(("COLLIDERSYSTEM_HPP_")
+          )
+))
+  :file "!home!Jamil!delivery!IndieStudio!include!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

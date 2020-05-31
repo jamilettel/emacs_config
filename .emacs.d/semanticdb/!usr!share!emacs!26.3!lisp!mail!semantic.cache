@@ -1,0 +1,654 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("mail-utils" include nil nil [1011 1032])
+            ("rfc2047" include nil nil [1033 1051])
+            ("message-make-date" function (:prototype-flag t) nil [1052 1091])
+            ("sendmail" customgroup (:user-visible-flag t) nil [1093 1186])
+            ("mail-setup-with-from" variable (:default-value t) nil [1188 1344])
+            ("sendmail-program" variable (:default-value (or (executable-find "sendmail") (cond ((file-exists-p "/usr/sbin/sendmail") "/usr/sbin/sendmail") ((file-exists-p "/usr/lib/sendmail") "/usr/lib/sendmail") ((file-exists-p "/usr/ucblib/sendmail") "/usr/ucblib/sendmail") (t "sendmail")))) nil [1346 1770])
+            ("mail-from-style" variable (:default-value (quote default)) nil [1787 2383])
+            ("mail-specify-envelope-from" variable nil nil [2400 2913])
+            ("mail-envelope-from" variable nil nil [2915 3482])
+            ("mail-self-blind" variable nil nil [3499 3739])
+            ("mail-interactive" variable (:default-value t) nil [3756 4231])
+            ("mail-yank-ignored-headers" variable (:default-value (concat "^" (regexp-opt (quote ("via" "mail-from" "origin" "status" "remailed" "received" "message-id" "summary-line" "to" "subject" "in-reply-to" "return-path" "mail-reply-to" "x-rmail-attributes" "x-rmail-keywords" "mail-followup-to")) "\\(?:") ":")) nil [4233 4958])
+            ("send-mail-function" variable (:default-value (if (and (boundp (quote smtpmail-smtp-server)) smtpmail-smtp-server) (quote smtpmail-send-it) (quote sendmail-query-once))) nil [5008 5954])
+            ("mail-header-separator" variable (:default-value (purecopy "--text follows this line--")) nil [5971 6151])
+            ("put" code nil nil [6222 6278])
+            ("mail-archive-file-name" variable nil nil [6664 6914])
+            ("mail-default-reply-to" variable nil nil [6931 7189])
+            ("mail-alias-file" variable nil nil [7191 7686])
+            ("mail-personal-alias-file" variable (:default-value (purecopy "~/.mailrc")) nil [7703 8022])
+            ("mail-setup-hook" variable nil nil [8039 8233])
+            ("mail-aliases" variable (:default-value t) nil [8250 8556])
+            ("mail-alias-modtime" variable nil nil [8558 8666])
+            ("mail-yank-prefix" variable (:default-value "> ") nil [8683 8911])
+            ("mail-indentation-spaces" variable (:default-value 3) nil [8928 9126])
+            ("mail-yank-hooks" variable nil nil [9128 9505])
+            ("make-obsolete-variable" code nil nil [9506 9575])
+            ("mail-citation-hook" variable nil nil [9592 10124])
+            ("mail-citation-header" variable nil nil [10126 10373])
+            ("mail-citation-prefix-regexp" variable (:default-value (purecopy "\\([ 	]*\\(\\w\\|[_.]\\)+>+\\|[ 	]*[]>|]\\)+")) nil [10390 10823])
+            ("mail-abbrevs-loaded" variable nil nil [10825 10857])
+            ("mail-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "\211" (quote completion-at-point)) (define-key map "?" (quote describe-mode)) (define-key map "" (quote mail-to)) (define-key map "" (quote mail-bcc)) (define-key map "" (quote mail-fcc)) (define-key map "" (quote mail-cc)) (define-key map "" (quote mail-subject)) (define-key map "" (quote mail-reply-to)) (define-key map "" (quote mail-mail-reply-to)) (define-key map "" (quote mail-mail-followup-to)) (define-key map "" (quote mail-text)) (define-key map "" (quote mail-yank-original)) (define-key map "" (quote mail-yank-region)) (define-key map [remap split-line] (quote mail-split-line)) (define-key map "" (quote mail-fill-yanked-message)) (define-key map "" (quote mail-signature)) (define-key map "" (quote mail-send-and-exit)) (define-key map "" (quote mail-send)) (define-key map "	" (quote mail-insert-file)) (define-key map [menu-bar mail] (cons "Mail" (make-sparse-keymap "Mail"))) (define-key map [menu-bar mail attachment] (quote ("Attach File" . mail-add-attachment))) (define-key map [menu-bar mail fill] (quote ("Fill Citation" . mail-fill-yanked-message))) (define-key map [menu-bar mail yank] (quote (menu-item "Cite Original" mail-yank-original :enable mail-reply-action))) (define-key map [menu-bar mail signature] (quote ("Insert Signature" . mail-signature))) (define-key map [menu-bar mail mail-sep] (quote ("--"))) (define-key map [menu-bar mail cancel] (quote ("Cancel" . mail-dont-send))) (define-key map [menu-bar mail send-stay] (quote ("Send, Keep Editing" . mail-send))) (define-key map [menu-bar mail send] (quote ("Send Message" . mail-send-and-exit))) (define-key map [menu-bar headers] (cons "Headers" (make-sparse-keymap "Move to Header"))) (define-key map [menu-bar headers text] (quote ("Text" . mail-text))) (define-key map [menu-bar headers expand-aliases] (quote ("Expand Aliases" . expand-mail-aliases))) (define-key map [menu-bar headers mail-reply-to] (quote ("Mail-Reply-To" . mail-mail-reply-to))) (define-key map [menu-bar headers mail-followup-to] (quote ("Mail-Followup-To" . mail-mail-followup-to))) (define-key map [menu-bar headers reply-to] (quote ("Reply-To" . mail-reply-to))) (define-key map [menu-bar headers bcc] (quote ("Bcc" . mail-bcc))) (define-key map [menu-bar headers fcc] (quote ("Fcc" . mail-fcc))) (define-key map [menu-bar headers cc] (quote ("Cc" . mail-cc))) (define-key map [menu-bar headers subject] (quote ("Subject" . mail-subject))) (define-key map [menu-bar headers to] (quote ("To" . mail-to))) map)) nil [10858 13754])
+            ("build-mail-aliases" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [13756 13943])
+            ("mail-signature" variable (:default-value t) nil [13960 14590])
+            ("put" code nil nil [14591 14636])
+            ("mail-signature-file" variable (:default-value (purecopy "~/.signature")) nil [14653 14804])
+            ("mail-default-directory" variable (:default-value (purecopy "~/")) nil [14821 15167])
+            ("mail-reply-action" variable nil nil [15169 15199])
+            ("mail-send-actions" variable nil nil [15200 15306])
+            ("mail-return-action" variable nil nil [15307 15338])
+            ("mail-default-headers" variable nil nil [15355 15652])
+            ("mail-bury-selects-summary" variable (:default-value t) nil [15654 15956])
+            ("mail-send-nonascii" variable (:default-value (quote mime)) nil [15958 16469])
+            ("mail-use-dsn" variable nil nil [16471 16837])
+            ("mail-mailer-swallows-blank-line" variable nil nil [16935 17251])
+            ("put" code nil nil [17253 17315])
+            ("make-obsolete-variable" code nil nil [17331 17471])
+            ("mail-mode-syntax-table" variable (:default-value (let ((st (make-syntax-table))) (modify-syntax-entry 37 ". " st) st)) nil [17473 17944])
+            ("mail-font-lock-keywords" variable (:default-value (eval-when-compile (let* ((cite-chars "[>|}]") (cite-prefix "[:alpha:]") (cite-suffix (concat cite-prefix "0-9_.@-`'\""))) (list (quote ("^\\(To\\|Newsgroups\\):" . font-lock-function-name-face)) (quote ("^\\(B?CC\\|Reply-to\\|Mail-\\(reply\\|followup\\)-to\\):" . font-lock-keyword-face)) (quote ("^\\(Subject:\\)[ 	]*\\(.+\\)?" (1 font-lock-comment-face))) (quote (eval let ((separator (if (zerop (length mail-header-separator)) " \\`\\' " (regexp-quote mail-header-separator)))) (cons (concat "^" separator "$") (quote font-lock-warning-face)))) (\` ((\, cite-chars) ((\, (concat "\\=[ 	]*" "\\(\\(\\([" cite-prefix "]+[" cite-suffix "]*\\)?" "\\(" cite-chars "[ 	]*\\)\\)+\\)" "\\(.*\\)")) (beginning-of-line) (end-of-line) (1 font-lock-comment-delimiter-face nil t) (5 font-lock-comment-face nil t)))) (quote ("^\\(X-[A-Za-z0-9-]+\\|In-reply-to\\):.*\\(
+[ 	]+.*\\)*$" . font-lock-string-face)))))) nil [17946 19199])
+            ("sendmail-query-once" function nil nil [19218 19657])
+            ("sendmail-query-user-about-smtp" function nil nil [19659 21397])
+            ("sendmail-sync-aliases" function nil nil [21400 21639])
+            ("define-mail-user-agent" code nil nil [21658 21756])
+            ("sendmail-user-agent-compose" function (:arguments ("to" "subject" "other-headers" "continue" "switch-function" "yank-action" "send-actions" "return-action" "ignored")) nil [21773 22706])
+            ("mail-setup" function (:arguments ("to" "subject" "in-reply-to" "cc" "replybuffer" "actions" "return-action")) nil [22708 25350])
+            ("mail-mode-hook" variable nil nil [25353 25599])
+            ("mail-mode-abbrev-table" variable (:default-value text-mode-abbrev-table) nil [25601 25655])
+            ("mail-encode-mml" variable nil nil [25656 25680])
+            ("define-derived-mode" code nil nil [25696 28786])
+            ("mail-header-end" function nil nil [28789 28974])
+            ("mail-text-start" function nil nil [28976 29183])
+            ("mail-sendmail-delimit-header" function nil nil [29185 29429])
+            ("mail-sendmail-undelimit-header" function nil nil [29431 29673])
+            ("mail-mode-auto-fill" function nil nil [29675 30221])
+            ("mail-mode-fill-paragraph" function (:arguments ("arg")) nil [30223 31338])
+            ("mail-send-and-exit" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [31378 31593])
+            ("mail-dont-send" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [31595 31764])
+            ("mail-bury" function (:arguments ("arg")) nil [31766 32496])
+            ("mail-send-hook" variable nil nil [32498 32637])
+            ("mail-mailing-lists" variable nil nil [32654 32911])
+            ("declare-function" code nil nil [32913 32952])
+            ("mail-send" function (:user-visible-flag t) nil [32954 36416])
+            ("mail-envelope-from" function nil nil [36418 36695])
+            ("sendmail-coding-system" variable nil nil [36829 37148])
+            ("default-sendmail-coding-system" variable (:default-value (quote iso-latin-1)) nil [37165 37641])
+            ("mail-insert-from-field" function nil nil [37643 40060])
+            ("mail-combine-fields" function (:arguments ("field")) nil [40062 42988])
+            ("mail-encode-header" function (:arguments ("beg" "end")) nil [42990 43781])
+            ("sendmail-error-reporting-interactive" variable (:default-value (quote ("-oep" "-odi"))) nil [44141 44277])
+            ("sendmail-error-reporting-non-interactive" variable (:default-value (quote ("-oem" "-odb"))) nil [44278 44415])
+            ("sendmail-send-it" function nil nil [44417 51850])
+            ("rmail-output-to-rmail-buffer" function (:prototype-flag t) nil [51852 51903])
+            ("mail-do-fcc" function (:arguments ("header-end")) nil [51905 56047])
+            ("mail-sent-via" function nil nil [56049 56903])
+            ("mail-to" function (:user-visible-flag t) nil [56906 57051])
+            ("mail-subject" function (:user-visible-flag t) nil [57053 57213])
+            ("mail-cc" function (:user-visible-flag t) nil [57215 57435])
+            ("mail-bcc" function (:user-visible-flag t) nil [57437 57661])
+            ("mail-fcc" function
+               (:user-visible-flag t
+                :arguments ("folder"))
+                nil [57663 57936])
+            ("mail-reply-to" function (:user-visible-flag t) nil [57938 58101])
+            ("mail-mail-reply-to" function (:user-visible-flag t) nil [58103 58372])
+            ("mail-mail-followup-to" function (:user-visible-flag t) nil [58374 58655])
+            ("mail-position-on-field" function (:arguments ("field" "soft")) nil [58657 59330])
+            ("mail-text" function (:user-visible-flag t) nil [59332 59461])
+            ("mail-signature" function
+               (:user-visible-flag t
+                :arguments ("atpoint"))
+                nil [59464 60636])
+            ("mail-fill-yanked-message" function
+               (:user-visible-flag t
+                :arguments ("justifyp"))
+                nil [60638 60965])
+            ("mail-indent-citation" function nil nil [60967 61682])
+            ("mail-yank-original" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [61684 64323])
+            ("mail-yank-clear-headers" function (:arguments ("start" "end")) nil [64325 64894])
+            ("mail-yank-region" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [64896 66517])
+            ("mail-split-line" function (:user-visible-flag t) nil [66519 66737])
+            ("mail-insert-file" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [66741 67369])
+            ("define-obsolete-function-alias" code nil nil [67371 67446])
+            ("declare-function" code nil nil [67448 67538])
+            ("declare-function" code nil nil [67539 67601])
+            ("mail-add-attachment" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [67603 67885])
+            ("mail" function
+               (:user-visible-flag t
+                :arguments ("noerase" "to" "subject" "in-reply-to" "cc" "replybuffer" "actions" "return-action"))
+                nil [68009 71959])
+            ("declare-function" code nil nil [71961 72006])
+            ("declare-function" code nil nil [72007 72093])
+            ("mail-recover-1" function (:user-visible-flag t) nil [72095 75272])
+            ("declare-function" code nil nil [75274 75351])
+            ("declare-function" code nil nil [75352 75438])
+            ("declare-function" code nil nil [75439 75484])
+            ("mail-recover" function (:user-visible-flag t) nil [75486 77332])
+            ("mail-other-window" function
+               (:user-visible-flag t
+                :arguments ("noerase" "to" "subject" "in-reply-to" "cc" "replybuffer" "sendactions"))
+                nil [77349 77642])
+            ("mail-other-frame" function
+               (:user-visible-flag t
+                :arguments ("noerase" "to" "subject" "in-reply-to" "cc" "replybuffer" "sendactions"))
+                nil [77659 77949])
+            ("sendmail" package nil nil [78010 78029]))          
+      :file "sendmail.el.gz"
+      :pointmax 78113
+      :fsize 22542
+      :lastmodtime '(23661 22986 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1531 1544])
+            ("ietf-drums-no-ws-ctl-token" variable (:default-value "--") nil [1547 1681])
+            ("ietf-drums-text-token" variable (:default-value "-	-") nil [1682 1786])
+            ("ietf-drums-specials-token" variable (:default-value "()<>[]:;@\\,.\"") nil [1787 1863])
+            ("ietf-drums-quote-token" variable (:default-value "\\") nil [1864 1921])
+            ("ietf-drums-wsp-token" variable (:default-value " 	") nil [1922 1974])
+            ("ietf-drums-fws-regexp" variable (:default-value (concat "[" ietf-drums-wsp-token "]*
+[" ietf-drums-wsp-token "]+")) nil [1975 2100])
+            ("ietf-drums-atext-token" variable (:default-value "-^a-zA-Z0-9!#$%&'*+/=?_`{|}~") nil [2101 2182])
+            ("ietf-drums-dot-atext-token" variable (:default-value "-^a-zA-Z0-9!#$%&'*+/=?_`{|}~.") nil [2183 2289])
+            ("ietf-drums-qtext-token" variable (:default-value (concat ietf-drums-no-ws-ctl-token "!#-[]-")) nil [2290 2484])
+            ("ietf-drums-tspecials" variable (:default-value "][()<>@,;:\\\"/?=") nil [2485 2549])
+            ("ietf-drums-syntax-table" variable (:default-value (let ((table (copy-syntax-table emacs-lisp-mode-syntax-table))) (modify-syntax-entry 92 "/" table) (modify-syntax-entry 60 "(" table) (modify-syntax-entry 62 ")" table) (modify-syntax-entry 64 "w" table) (modify-syntax-entry 47 "w" table) (modify-syntax-entry 42 "_" table) (modify-syntax-entry 59 "_" table) (modify-syntax-entry 39 "_" table) table)) nil [2551 2975])
+            ("ietf-drums-token-to-list" function (:arguments ("token")) nil [2977 3499])
+            ("ietf-drums-init" function (:arguments ("string")) nil [3501 3651])
+            ("ietf-drums-remove-comments" function (:arguments ("string")) nil [3653 4248])
+            ("ietf-drums-remove-whitespace" function (:arguments ("string")) nil [4250 4621])
+            ("ietf-drums-get-comment" function (:arguments ("string")) nil [4623 5015])
+            ("ietf-drums-strip" function (:arguments ("string")) nil [5017 5167])
+            ("ietf-drums-remove-garbage" function (:arguments ("string")) nil [5169 5417])
+            ("ietf-drums-strip-cte" function (:arguments ("string")) nil [5419 5682])
+            ("ietf-drums-parse-address" function (:arguments ("string")) nil [5684 7386])
+            ("ietf-drums-parse-addresses" function (:arguments ("string" "rawp")) nil [7388 8466])
+            ("ietf-drums-unfold-fws" function nil nil [8468 8692])
+            ("ietf-drums-parse-date" function (:arguments ("string")) nil [8694 8825])
+            ("ietf-drums-narrow-to-header" function nil nil [8827 9081])
+            ("ietf-drums-quote-string" function (:arguments ("string")) nil [9083 9302])
+            ("ietf-drums-make-address" function (:arguments ("name" "address")) nil [9304 9437])
+            ("ietf-drums" package nil nil [9439 9460]))          
+      :file "ietf-drums.el.gz"
+      :pointmax 9490
+      :fsize 3080
+      :lastmodtime '(23661 22986 0 0)
+      :unmatched-syntax '((close-paren 1544 . 1545) (symbol 1513 . 1530) (open-paren 1512 . 1513)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("mail-utils" include nil nil [1511 1532])
+            ("rfc2047" include nil nil [1533 1551])
+            ("rmail-loaddefs" include nil nil [1553 1578])
+            ("declare-function" code nil nil [1580 1643])
+            ("declare-function" code nil nil [1644 1724])
+            ("rmail-attribute-header" variable
+               (:constant-flag t
+                :default-value "X-RMAIL-ATTRIBUTES")
+                nil [1726 1833])
+            ("rmail-keyword-header" variable
+               (:constant-flag t
+                :default-value "X-RMAIL-KEYWORDS")
+                nil [1835 1936])
+            ("rmail-answered-attr-index" variable (:constant-flag t) nil [1961 2043])
+            ("rmail-deleted-attr-index" variable
+               (:constant-flag t
+                :default-value 1)
+                nil [2045 2125])
+            ("rmail-edited-attr-index" variable
+               (:constant-flag t
+                :default-value 2)
+                nil [2127 2205])
+            ("rmail-filed-attr-index" variable
+               (:constant-flag t
+                :default-value 3)
+                nil [2207 2283])
+            ("rmail-retried-attr-index" variable
+               (:constant-flag t
+                :default-value 4)
+                nil [2285 2365])
+            ("rmail-forwarded-attr-index" variable
+               (:constant-flag t
+                :default-value 5)
+                nil [2367 2451])
+            ("rmail-unseen-attr-index" variable
+               (:constant-flag t
+                :default-value 6)
+                nil [2453 2531])
+            ("rmail-resent-attr-index" variable
+               (:constant-flag t
+                :default-value 7)
+                nil [2533 2611])
+            ("rmail-attr-array" variable
+               (:constant-flag t
+                :default-value (quote [(65 "answered") (68 "deleted") (69 "edited") (70 "filed") (82 "retried") (83 "forwarded") (85 "unseen") (114 "resent")]))
+                nil [2613 2917])
+            ("deleted-head" variable nil nil [2919 2940])
+            ("font-lock-fontified" variable nil nil [2941 2969])
+            ("mail-abbrev-syntax-table" variable nil nil [2970 3003])
+            ("mail-abbrevs" variable nil nil [3004 3025])
+            ("messages-head" variable nil nil [3026 3048])
+            ("total-messages" variable nil nil [3049 3072])
+            ("tool-bar-map" variable nil nil [3073 3094])
+            ("mail-encode-mml" variable nil nil [3095 3119])
+            ("rmail-header-style" variable (:default-value (quote normal)) nil [3121 3261])
+            ("rmail-mime-decoded" variable nil nil [3263 3367])
+            ("put" code nil nil [3368 3412])
+            ("rmail-mime-message-p" function nil nil [3431 3634])
+            ("rmail" customgroup (:user-visible-flag t) nil [3636 3698])
+            ("rmail-retrieve" customgroup (:user-visible-flag t) nil [3700 3793])
+            ("rmail-files" customgroup (:user-visible-flag t) nil [3795 3873])
+            ("rmail-headers" customgroup (:user-visible-flag t) nil [3875 3964])
+            ("rmail-reply" customgroup (:user-visible-flag t) nil [3966 4052])
+            ("rmail-summary" customgroup (:user-visible-flag t) nil [4054 4171])
+            ("rmail-output" customgroup (:user-visible-flag t) nil [4173 4291])
+            ("rmail-edit" customgroup (:user-visible-flag t) nil [4293 4377])
+            ("rmail-file-name" variable (:default-value (purecopy "~/RMAIL")) nil [4394 4530])
+            ("put" code nil nil [4547 4798])
+            ("rmail-spool-directory" variable (:default-value (purecopy (cond ((file-exists-p "/var/mail") "/var/mail/") ((file-exists-p "/var/spool/mail") "/var/spool/mail/") ((memq system-type (quote (hpux usg-unix-v))) "/usr/mail/") (t "/usr/spool/mail/")))) nil [4815 5439])
+            ("rmail-movemail-program" variable nil nil [5509 5666])
+            ("define-obsolete-variable-alias" code nil nil [5668 5752])
+            ("rmail-remote-password" variable nil nil [5754 6049])
+            ("define-obsolete-variable-alias" code nil nil [6051 6153])
+            ("rmail-remote-password-required" variable nil nil [6155 6339])
+            ("rmail-movemail-flags" variable nil nil [6341 6595])
+            ("rmail-remote-password-error" variable (:default-value "invalid usercode or password\\|
+unknown user name or bad password\\|Authentication failed\\|MU_ERR_AUTH_FAILURE") nil [6597 6953])
+            ("rmail-encoded-remote-password" variable nil nil [6955 6997])
+            ("rmail-preserve-inbox" variable nil nil [6999 7153])
+            ("rmail-movemail-search-path" variable nil nil [7155 7329])
+            ("declare-function" code nil nil [7331 7396])
+            ("declare-function" code nil nil [7397 7462])
+            ("declare-function" code nil nil [7463 7519])
+            ("declare-function" code nil nil [7520 7585])
+            ("rmail-probe" function (:arguments ("prog")) nil [7587 8140])
+            ("rmail-autodetect" function nil nil [8142 9288])
+            ("rmail-movemail-variant-in-use" variable nil nil [9290 9617])
+            ("rmail-movemail-variant-p" function (:arguments ("variants")) nil [9634 9988])
+            ("rmail-movemail-variant-p" code nil nil [10236 10262])
+            ("rmail-user-mail-address-regexp" variable nil nil [10279 10995])
+            ("define-obsolete-variable-alias" code nil nil [11012 11106])
+            ("rmail-default-dont-reply-to-names" variable nil nil [11174 11378])
+            ("make-obsolete-variable" code nil nil [11394 11510])
+            ("rmail-ignored-headers" variable (:default-value (purecopy (concat "^via:\\|^mail-from:\\|^origin:\\|^references:\\|^sender:" "\\|^status:\\|^received:\\|^x400-originator:\\|^x400-recipients:" "\\|^x400-received:\\|^x400-mts-identifier:\\|^x400-content-type:" "\\|^\\(resent-\\|\\)message-id:\\|^summary-line:\\|^resent-date:" "\\|^nntp-posting-host:\\|^path:\\|^x-char.*:\\|^x-face:\\|^face:" "\\|^x-mailer:\\|^delivered-to:\\|^lines:" "\\|^content-transfer-encoding:\\|^x-coding-system:" "\\|^return-path:\\|^errors-to:\\|^return-receipt-to:" "\\|^precedence:\\|^mime-version:" "\\|^list-owner:\\|^list-help:\\|^list-post:\\|^list-subscribe:" "\\|^list-id:\\|^list-unsubscribe:\\|^list-archive:" "\\|^content-length:\\|^nntp-posting-date:\\|^user-agent" "\\|^importance:\\|^envelope-to:\\|^delivery-date\\|^openpgp:" "\\|^mbox-line:\\|^cancel-lock:" "\\|^DomainKey-Signature:\\|^dkim-signature:" "\\|^ARC-.*:" "\\|^Received-SPF:" "\\|^Authentication-Results:" "\\|^resent-face:\\|^resent-x.*:\\|^resent-organization:\\|^resent-openpgp:" "\\|^x-.*:"))) nil [11527 13110])
+            ("rmail-nonignored-headers" variable (:default-value "^x-spam-status:") nil [13112 13801])
+            ("rmail-displayed-headers" variable nil nil [13818 14073])
+            ("rmail-retry-ignored-headers" variable (:default-value (purecopy "^x-authentication-warning:\\|^x-detected-operating-system:\\|^x-spam[-a-z]*:\\|content-type:\\|content-transfer-encoding:\\|mime-version:\\|message-id:")) nil [14090 14453])
+            ("rmail-highlighted-headers" variable (:default-value (purecopy "^From:\\|^Subject:")) nil [14517 14803])
+            ("rmail-highlight" variable
+               (:default-value (quote ((t (:inherit highlight))))
+                :type "face")
+                nil [14805 15035])
+            ("rmail-highlight-face" variable (:default-value (quote rmail-highlight)) nil [15132 15473])
+            ("make-obsolete-variable" code nil nil [15474 15581])
+            ("rmail-header-name" variable
+               (:default-value (quote ((t (:inherit font-lock-function-name-face))))
+                :type "face")
+                nil [15583 15833])
+            ("rmail-delete-after-output" variable nil nil [15835 15990])
+            ("rmail-primary-inbox-list" variable nil nil [16007 16752])
+            ("rmail-mail-new-frame" variable nil nil [16754 17019])
+            ("rmail-secondary-file-directory" variable (:default-value (purecopy "~/")) nil [17036 17187])
+            ("rmail-secondary-file-regexp" variable (:default-value (purecopy "\\.xmail$")) nil [17203 17357])
+            ("rmail-confirm-expunge" variable (:default-value (quote y-or-n-p)) nil [17359 17791])
+            ("put" code nil nil [17792 17844])
+            ("rmail-mode-hook" variable nil nil [17861 17942])
+            ("rmail-get-new-mail-hook" variable nil nil [17944 18045])
+            ("rmail-show-message-hook" variable nil nil [18062 18219])
+            ("rmail-quit-hook" variable nil nil [18221 18307])
+            ("rmail-delete-message-hook" variable nil nil [18309 18524])
+            ("rmail-mmdf-delim1" variable (:default-value "^
+") nil [18684 18781])
+            ("rmail-mmdf-delim2" variable (:default-value "^
+") nil [18782 18877])
+            ("rmail-message-filter" variable nil nil [19301 19564])
+            ("make-obsolete-variable" code nil nil [19566 19675])
+            ("rmail-automatic-folder-directives" variable nil nil [19677 21047])
+            ("rmail-reply-prefix" variable (:default-value "Re: ") nil [21049 21149])
+            ("rmail-reply-regexp" variable (:default-value "\\`\\(Re\\(([0-9]+)\\|\\[[0-9]+\\]\\|\\^[0-9]+\\)?: *\\)*") nil [21367 21532])
+            ("rmail-display-summary" variable nil nil [21534 21670])
+            ("rmail-inbox-list" variable nil nil [21673 21702])
+            ("put" code nil nil [21703 21745])
+            ("rmail-buffer" variable nil nil [21747 21950])
+            ("put" code nil nil [21951 21989])
+            ("rmail-was-converted" variable nil nil [21991 22097])
+            ("put" code nil nil [22098 22143])
+            ("rmail-seriously-modified" variable nil nil [22145 22252])
+            ("put" code nil nil [22253 22303])
+            ("rmail-current-message" variable nil nil [22355 22573])
+            ("put" code nil nil [22574 22621])
+            ("rmail-total-messages" variable nil nil [22623 22751])
+            ("put" code nil nil [22752 22798])
+            ("rmail-message-vector" variable nil nil [22800 22959])
+            ("put" code nil nil [22960 23006])
+            ("rmail-deleted-vector" variable nil nil [23008 23187])
+            ("put" code nil nil [23188 23234])
+            ("rmail-msgref-vector" variable nil nil [23236 23457])
+            ("put" code nil nil [23458 23503])
+            ("rmail-overlay-list" variable nil nil [23505 23536])
+            ("put" code nil nil [23537 23581])
+            ("rmail-summary-buffer" variable nil nil [23631 23664])
+            ("put" code nil nil [23665 23711])
+            ("rmail-summary-vector" variable nil nil [23712 23863])
+            ("put" code nil nil [23864 23910])
+            ("rmail-buffer-swapped" variable nil nil [23949 24050])
+            ("make-variable-buffer-local" code nil nil [24051 24101])
+            ("put" code nil nil [24102 24148])
+            ("rmail-view-buffer" variable nil nil [24150 24238])
+            ("make-variable-buffer-local" code nil nil [24239 24286])
+            ("put" code nil nil [24287 24330])
+            ("rmail-last-label" variable nil nil [24411 24440])
+            ("rmail-last-multi-labels" variable nil nil [24507 24543])
+            ("rmail-last-regexp" variable nil nil [24545 24575])
+            ("put" code nil nil [24576 24619])
+            ("rmail-default-file" variable (:default-value "~/xmail") nil [24677 24797])
+            ("rmail-default-body-file" variable (:default-value "~/mailout") nil [24798 24956])
+            ("rmail-file-coding-system" variable nil nil [25010 25117])
+            ("rmail-get-coding-function" variable nil nil [25119 25360])
+            ("rmail-enable-mime" variable (:default-value t) nil [25362 25595])
+            ("rmail-enable-mime-composing" variable (:default-value t) nil [25597 25781])
+            ("rmail-show-mime-function" variable nil nil [25783 26000])
+            ("rmail-insert-mime-forwarded-message-function" variable nil nil [26017 26389])
+            ("rmail-insert-mime-resent-message-function" variable nil nil [26391 26740])
+            ("rmail-search-mime-message-function" variable nil nil [26828 27175])
+            ("rmail-search-mime-header-function" variable nil nil [27177 27598])
+            ("rmail-mime-feature" variable (:default-value (quote rmailmm)) nil [27600 28099])
+            ("rmail-mime-charset-pattern" variable (:default-value (concat "^content-type:[ 	]*text/plain;" "\\(?:[ 	
+]*\\(?:format\\|delsp\\)=\"?[-a-z0-9]+\"?;\\)*" "[ 	
+]*charset=\"?\\([^ 	
+\";]+\\)\"?")) nil [28101 28432])
+            ("rmail-unix-mail-delimiter" variable (:default-value (let ((time-zone-regexp (concat "\\([A-Z]?[A-Z]?[A-Z][A-Z]\\( DST\\)?" "\\|[-+]?[0-9][0-9][0-9][0-9]" "\\|" "\\) *"))) (concat "From " "\\([^ -
+-].*\\)? " "\\([^ - ]+\\) +" "\\([^ - ]+\\) +" "\\([0-3]?[0-9]\\) +" "\\([0-2][0-9]:[0-5][0-9]\\(:[0-6][0-9]\\)?\\) *" time-zone-regexp " \\([0-9][0-9]+\\) *" time-zone-regexp "\\(remote from .*\\)?" "
+"))) nil [28436 30511])
+            ("rmail-font-lock-keywords" variable (:default-value (eval-when-compile (let* ((cite-chars "[>|}]") (cite-prefix "[:alpha:]") (cite-suffix (concat cite-prefix "0-9_.@-`'\""))) (list (quote ("^\\(From\\|Sender\\|Resent-From\\):" quote rmail-header-name)) (quote ("^\\(Mail-\\)?Reply-To:.*$" quote rmail-header-name)) (quote ("^Subject:" quote rmail-header-name)) (quote ("^X-Spam-Status:" quote rmail-header-name)) (quote ("^\\(To\\|Apparently-To\\|Cc\\|Newsgroups\\):" quote rmail-header-name)) (\` ((\, cite-chars) ((\, (concat "\\=[ 	]*" "\\(\\(\\([" cite-prefix "]+[" cite-suffix "]*\\)?" "\\(" cite-chars "[ 	]*\\)\\)+\\)" "\\(.*\\)")) (beginning-of-line) (end-of-line) (1 font-lock-comment-delimiter-face nil t) (5 font-lock-comment-face nil t)))) (quote ("^\\(X-[a-z0-9-]+\\|In-reply-to\\|Date\\):.*\\(
+[ 	]+.*\\)*$" quote rmail-header-name)))))) nil [30668 31776])
+            ("rmail-pop-to-buffer" function (:arguments ("args")) nil [31837 32012])
+            ("rmail-select-summary" function (:arguments ("body")) nil [32124 32787])
+            ("rmail-require-mime-maybe" function nil nil [32815 33430])
+            ("rmail" function
+               (:user-visible-flag t
+                :arguments ("file-name-arg"))
+                nil [33448 36436])
+            ("rmail-convert-file-maybe" function nil nil [36438 37218])
+            ("rmail-error-bad-format" function (:arguments ("msgnum")) nil [37220 37535])
+            ("rmail-convert-babyl-to-mbox" function nil nil [37537 38606])
+            ("rmail-get-coding-system" function nil nil [38608 39037])
+            ("rmail-mode-map" variable (:default-value (let ((map (make-keymap))) (suppress-keymap map) (define-key map "a" (quote rmail-add-label)) (define-key map "b" (quote rmail-bury)) (define-key map "c" (quote rmail-continue)) (define-key map "d" (quote rmail-delete-forward)) (define-key map "" (quote rmail-delete-backward)) (define-key map "e" (quote rmail-edit-current-message)) (define-key map "f" (quote rmail-forward)) (define-key map "g" (quote rmail-get-new-mail)) (define-key map "h" (quote rmail-summary)) (define-key map "i" (quote rmail-input)) (define-key map "j" (quote rmail-show-message)) (define-key map "k" (quote rmail-kill-label)) (define-key map "l" (quote rmail-summary-by-labels)) (define-key map "" (quote rmail-summary)) (define-key map "" (quote rmail-summary-by-labels)) (define-key map "" (quote rmail-summary-by-recipients)) (define-key map "" (quote rmail-summary-by-regexp)) (define-key map "" (quote rmail-summary-by-senders)) (define-key map "" (quote rmail-summary-by-topic)) (define-key map "m" (quote rmail-mail)) (define-key map "m" (quote rmail-retry-failure)) (define-key map "n" (quote rmail-next-undeleted-message)) (define-key map "n" (quote rmail-next-message)) (define-key map "" (quote rmail-next-labeled-message)) (define-key map "o" (quote rmail-output)) (define-key map "" (quote rmail-output-as-seen)) (define-key map "p" (quote rmail-previous-undeleted-message)) (define-key map "p" (quote rmail-previous-message)) (define-key map "" (quote rmail-previous-labeled-message)) (define-key map "q" (quote rmail-quit)) (define-key map "r" (quote rmail-reply)) (define-key map "s" (quote rmail-expunge-and-save)) (define-key map "s" (quote rmail-search)) (define-key map "t" (quote rmail-toggle-header)) (define-key map "u" (quote rmail-undelete-previous-message)) (define-key map "v" (quote rmail-mime)) (define-key map "w" (quote rmail-output-body-to-file)) (define-key map "" (quote rmail-widen)) (define-key map "x" (quote rmail-expunge)) (define-key map "." (quote rmail-beginning-of-message)) (define-key map "/" (quote rmail-end-of-message)) (define-key map "<" (quote rmail-first-message)) (define-key map ">" (quote rmail-last-message)) (define-key map " " (quote scroll-up-command)) (define-key map [33554464] (quote scroll-down-command)) (define-key map "" (quote scroll-down-command)) (define-key map "?" (quote describe-mode)) (define-key map "" (quote rmail-sort-by-date)) (define-key map "" (quote rmail-sort-by-subject)) (define-key map "" (quote rmail-sort-by-author)) (define-key map "" (quote rmail-sort-by-recipient)) (define-key map "" (quote rmail-sort-by-correspondent)) (define-key map "" (quote rmail-sort-by-lines)) (define-key map "" (quote rmail-sort-by-labels)) (define-key map "" (quote rmail-next-same-subject)) (define-key map "" (quote rmail-previous-same-subject)) (define-key map [menu-bar] (make-sparse-keymap)) (define-key map [menu-bar classify] (cons "Classify" (make-sparse-keymap "Classify"))) (define-key map [menu-bar classify input-menu] nil) (define-key map [menu-bar classify output-menu] nil) (define-key map [menu-bar classify output-body] (quote ("Output body to file..." . rmail-output-body-to-file))) (define-key map [menu-bar classify output-inbox] (quote ("Output..." . rmail-output))) (define-key map [menu-bar classify output] (quote ("Output as seen..." . rmail-output-as-seen))) (define-key map [menu-bar classify kill-label] (quote ("Kill Label..." . rmail-kill-label))) (define-key map [menu-bar classify add-label] (quote ("Add Label..." . rmail-add-label))) (define-key map [menu-bar summary] (cons "Summary" (make-sparse-keymap "Summary"))) (define-key map [menu-bar summary senders] (quote ("By Senders..." . rmail-summary-by-senders))) (define-key map [menu-bar summary labels] (quote ("By Labels..." . rmail-summary-by-labels))) (define-key map [menu-bar summary recipients] (quote ("By Recipients..." . rmail-summary-by-recipients))) (define-key map [menu-bar summary topic] (quote ("By Topic..." . rmail-summary-by-topic))) (define-key map [menu-bar summary regexp] (quote ("By Regexp..." . rmail-summary-by-regexp))) (define-key map [menu-bar summary all] (quote ("All" . rmail-summary))) (define-key map [menu-bar mail] (cons "Mail" (make-sparse-keymap "Mail"))) (define-key map [menu-bar mail rmail-get-new-mail] (quote ("Get New Mail" . rmail-get-new-mail))) (define-key map [menu-bar mail lambda] (quote ("----"))) (define-key map [menu-bar mail continue] (quote ("Continue" . rmail-continue))) (define-key map [menu-bar mail resend] (quote (menu-item "Resend..." rmail-resend :keys "C-u f"))) (define-key map [menu-bar mail forward] (quote ("Forward" . rmail-forward))) (define-key map [menu-bar mail retry] (quote ("Retry" . rmail-retry-failure))) (define-key map [menu-bar mail reply] (quote ("Reply" . rmail-reply))) (define-key map [menu-bar mail mail] (quote ("Mail" . rmail-mail))) (define-key map [menu-bar delete] (cons "Delete" (make-sparse-keymap "Delete"))) (define-key map [menu-bar delete expunge/save] (quote ("Expunge/Save" . rmail-expunge-and-save))) (define-key map [menu-bar delete expunge] (quote ("Expunge" . rmail-expunge))) (define-key map [menu-bar delete undelete] (quote ("Undelete" . rmail-undelete-previous-message))) (define-key map [menu-bar delete delete] (quote ("Delete" . rmail-delete-forward))) (define-key map [menu-bar move] (cons "Move" (make-sparse-keymap "Move"))) (define-key map [menu-bar move search-back] (quote ("Search Back..." . rmail-search-backwards))) (define-key map [menu-bar move search] (quote ("Search..." . rmail-search))) (define-key map [menu-bar move previous] (quote ("Previous Nondeleted" . rmail-previous-undeleted-message))) (define-key map [menu-bar move next] (quote ("Next Nondeleted" . rmail-next-undeleted-message))) (define-key map [menu-bar move last] (quote ("Last" . rmail-last-message))) (define-key map [menu-bar move first] (quote ("First" . rmail-first-message))) (define-key map [menu-bar move previous] (quote ("Previous" . rmail-previous-message))) (define-key map [menu-bar move next] (quote ("Next" . rmail-next-message))) map)) nil [39071 45799])
+            ("rmail-tool-bar-map" variable (:default-value (let ((map (make-sparse-keymap))) (tool-bar-local-item-from-menu (quote rmail-get-new-mail) "mail/inbox" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-next-undeleted-message) "right-arrow" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-previous-undeleted-message) "left-arrow" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-search) "search" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-input) "open" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-mail) "mail/compose" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-reply) "mail/reply-all" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-forward) "mail/forward" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-delete-forward) "close" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-output) "mail/move" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-output-body-to-file) "mail/save" map rmail-mode-map) (tool-bar-local-item-from-menu (quote rmail-expunge) "delete" map rmail-mode-map) map)) nil [45818 47007])
+            ("put" code nil nil [47073 47111])
+            ("rmail-mode-kill-summary" function nil nil [47113 47210])
+            ("rmail-enable-multibyte" variable nil nil [47212 47243])
+            ("rmail-mode" function (:user-visible-flag t) nil [47288 51215])
+            ("rmail-mode-2" function nil nil [51217 51331])
+            ("rmail-mode-1" function nil nil [51333 52162])
+            ("rmail-generate-viewer-buffer" function nil nil [52164 52891])
+            ("rmail-swap-buffers" function nil nil [52893 53655])
+            ("rmail-buffers-swapped-p" function nil nil [53657 53847])
+            ("rmail-change-major-mode-hook" function nil nil [53849 54048])
+            ("rmail-swap-buffers-maybe" function nil nil [54050 54330])
+            ("rmail-modify-format" function nil nil [54332 54757])
+            ("rmail-dont-modify-format" function nil nil [54759 54977])
+            ("rmail-mode-kill-buffer-hook" function nil nil [54979 55242])
+            ("rmail-view-buffer-kill-buffer-hook" function nil nil [55244 55378])
+            ("rmail-perm-variables" function nil nil [55442 57187])
+            ("rmail-variables" function nil nil [57252 58659])
+            ("rmail-revert" function (:arguments ("arg" "noconfirm")) nil [58720 59812])
+            ("rmail-expunge-and-save" function (:user-visible-flag t) nil [59814 60153])
+            ("rmail-quit" function (:user-visible-flag t) nil [60155 60761])
+            ("rmail-bury" function (:user-visible-flag t) nil [60763 61189])
+            ("rmail-duplicate-message" function nil nil [61192 62201])
+            ("rmail-input" function
+               (:user-visible-flag t
+                :arguments ("filename"))
+                nil [62219 62345])
+            ("rmail-find-all-files" function (:arguments ("start")) nil [62566 62968])
+            ("rmail-list-to-menu" function (:arguments ("menu-name" "l" "action" "full-name")) nil [62970 63676])
+            ("put" code nil nil [63742 63786])
+            ("rmail-construct-io-menu" function nil nil [63788 64495])
+            ("declare-function" code nil nil [64525 64609])
+            ("declare-function" code nil nil [64610 64672])
+            ("declare-function" code nil nil [64673 64749])
+            ("declare-function" code nil nil [64750 64808])
+            ("declare-function" code nil nil [64809 64876])
+            ("rmail-get-new-mail" function
+               (:user-visible-flag t
+                :arguments ("file-name"))
+                nil [65089 69057])
+            ("rmail-use-spam-filter" variable nil nil [69059 69089])
+            ("declare-function" code nil nil [69090 69166])
+            ("rmail-get-new-mail-1" function (:arguments ("file-name" "files" "delete-files")) nil [69168 72129])
+            ("rmail-remote-proto-p" function (:arguments ("proto")) nil [72131 72287])
+            ("rmail-parse-url" function (:arguments ("file")) nil [72289 74346])
+            ("rmail-unrmail-new-mail" function (:arguments ("from-file")) nil [74348 74849])
+            ("rmail-unrmail-new-mail-maybe" function (:arguments ("file" "size")) nil [74851 75903])
+            ("rmail-insert-inbox-text" function (:arguments ("files" "renamep")) nil [75905 80625])
+            ("rmail-decode-region" function (:arguments ("from" "to" "coding" "destination")) nil [80756 81574])
+            ("rmail-ensure-blank-line" function nil nil [81576 81797])
+            ("rmail-add-mbox-headers" function nil nil [81799 83175])
+            ("rmail-get-header-1" function (:arguments ("name")) nil [83178 83471])
+            ("rmail-get-header" function (:arguments ("name" "msgnum")) nil [83473 83740])
+            ("rmail-set-header-1" function (:arguments ("name" "value")) nil [83742 84887])
+            ("rmail-set-header" function (:arguments ("name" "msgnum" "value")) nil [84889 85491])
+            ("rmail-get-attr-names" function (:arguments ("msg")) nil [85538 86312])
+            ("rmail-get-keywords" function (:arguments ("msg")) nil [86314 86558])
+            ("rmail-get-labels" function (:arguments ("msg")) nil [86560 87353])
+            ("rmail-display-labels" function nil nil [87355 87600])
+            ("rmail-get-attr-value" function (:arguments ("attr" "state")) nil [87602 87905])
+            ("rmail-set-attribute-1" function (:arguments ("attr" "state")) nil [87907 89336])
+            ("rmail-set-attribute" function (:arguments ("attr" "state" "msgnum")) nil [89338 91038])
+            ("rmail-message-attr-p" function (:arguments ("msg" "attrs")) nil [91040 91266])
+            ("rmail-message-unseen-p" function (:arguments ("msgnum")) nil [91268 91419])
+            ("rmail-message-labels-p" function (:arguments ("msg" "labels")) nil [91659 91825])
+            ("rmail-msgend" function (:arguments ("n")) nil [91878 92007])
+            ("rmail-msgbeg" function (:arguments ("n")) nil [92009 92135])
+            ("rmail-apply-in-message" function (:arguments ("msgnum" "function" "args")) nil [92137 92960])
+            ("rmail-widen-to-current-msgbeg" function (:arguments ("function")) nil [93019 93859])
+            ("rmail-forget-messages" function nil nil [93907 94240])
+            ("rmail-maybe-set-message-counters" function nil nil [94242 94430])
+            ("rmail-count-new-messages" function (:arguments ("nomsg")) nil [94432 95943])
+            ("rmail-set-message-counters" function nil nil [95945 97480])
+            ("rmail-collect-deleted" function (:arguments ("message-end")) nil [97483 98120])
+            ("rmail-set-message-counters-counter" function (:arguments ("spot-to-find")) nil [98122 99316])
+            ("rmail-msg-is-pruned" function nil nil [99439 99679])
+            ("rmail-toggle-header" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [99681 100083])
+            ("rmail-beginning-of-message" function (:user-visible-flag t) nil [100085 100468])
+            ("rmail-end-of-message" function (:user-visible-flag t) nil [100470 100879])
+            ("rmail-unknown-mail-followup-to" function nil nil [100881 101934])
+            ("rmail-widen" function (:user-visible-flag t) nil [101936 102050])
+            ("rmail-no-mail-p" function nil nil [102053 102392])
+            ("rmail-show-message" function
+               (:user-visible-flag t
+                :arguments ("n" "no-summary"))
+                nil [102394 103574])
+            ("rmail-is-text-p" function nil nil [103576 104082])
+            ("rmail-show-message-verbose-min" variable (:default-value 200000) nil [104084 104255])
+            ("rmail-mbox-format" variable (:default-value (quote mboxrd)) nil [104337 105100])
+            ("rmail-show-message-1" function (:arguments ("msg")) nil [105102 110507])
+            ("rmail-copy-headers" function (:arguments ("beg" "_end" "ignored-headers")) nil [110509 112937])
+            ("rmail-redecode-body" function
+               (:user-visible-flag t
+                :arguments ("coding"))
+                nil [112939 115026])
+            ("rmail-highlight-headers" function nil nil [115028 116464])
+            ("rmail-auto-file" function nil nil [116466 118251])
+            ("rmail-next-message" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [118290 118582])
+            ("rmail-previous-message" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [118584 118792])
+            ("rmail-next-undeleted-message" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [118794 119754])
+            ("rmail-previous-undeleted-message" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [119756 119990])
+            ("rmail-first-message" function (:user-visible-flag t) nil [119992 120132])
+            ("rmail-last-message" function (:user-visible-flag t) nil [120134 120291])
+            ("rmail-next-error-move" function (:arguments ("msg-pos" "_bad-marker")) nil [120293 122889])
+            ("rmail-what-message" function (:arguments ("pos")) nil [122891 123433])
+            ("rmail-search-message" function (:arguments ("msg" "regexp")) nil [123465 123880])
+            ("rmail-search-last-regexp" variable nil nil [123882 123919])
+            ("rmail-search" function
+               (:user-visible-flag t
+                :arguments ("regexp" "n"))
+                nil [123920 126417])
+            ("rmail-search-backwards" function
+               (:user-visible-flag t
+                :arguments ("regexp" "n"))
+                nil [126419 127356])
+            ("rmail-first-unseen-message" function nil nil [127406 127797])
+            ("rmail-simplified-subject" function (:arguments ("msgnum")) nil [127799 128726])
+            ("rmail-simplified-subject-regexp" function nil nil [128728 129201])
+            ("rmail-next-same-subject" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [129203 130007])
+            ("rmail-previous-same-subject" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [130009 130250])
+            ("rmail-message-deleted-p" function (:arguments ("n")) nil [130299 130452])
+            ("rmail-set-message-deleted-p" function (:arguments ("n" "state")) nil [130454 130661])
+            ("rmail-delete-message" function (:user-visible-flag t) nil [130663 130979])
+            ("rmail-undelete-previous-message" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [130981 131691])
+            ("rmail-delete-forward" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [131693 132602])
+            ("rmail-delete-backward" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [132604 133095])
+            ("rmail-msg-number-after-expunge" function (:arguments ("deletedvec" "oldnum")) nil [133338 133618])
+            ("rmail-expunge-confirmed" function nil nil [133620 134000])
+            ("rmail-only-expunge" function
+               (:user-visible-flag t
+                :arguments ("dont-show"))
+                nil [134002 136920])
+            ("rmail-expunge" function
+               (:user-visible-flag t
+                :arguments ("dont-show"))
+                nil [136993 138805])
+            ("rmail-yank-current-message" function (:arguments ("buffer")) nil [138845 139726])
+            ("rmail-start-mail" function (:arguments ("noerase" "to" "subject" "in-reply-to" "cc" "replybuffer" "sendactions" "same-window" "other-headers")) nil [139728 141182])
+            ("rmail-mail-return" function (:arguments ("newbuf")) nil [141184 142950])
+            ("rmail-mail" function (:user-visible-flag t) nil [142952 143170])
+            ("rmail-continue" function (:user-visible-flag t) nil [143230 143361])
+            ("rmail-reply" function
+               (:user-visible-flag t
+                :arguments ("just-sender"))
+                nil [143363 147336])
+            ("rmail-mark-message" function (:arguments ("buffer" "msgnum-list" "attribute")) nil [147339 147720])
+            ("rmail-make-in-reply-to-field" function (:arguments ("from" "date" "message-id")) nil [147722 150404])
+            ("rmail-forward" function
+               (:user-visible-flag t
+                :arguments ("resend"))
+                nil [150407 152933])
+            ("rmail-resend" function
+               (:user-visible-flag t
+                :arguments ("address" "from" "comment" "mail-alias-file"))
+                nil [152936 156494])
+            ("mail-unsent-separator" variable (:default-value (concat "^ *---+ +Unsent message follows +---+ *$\\|" "^ *---+ +Returned message +---+ *$\\|" "^ *---+ *Returned mail follows *---+ *$\\|" "^Start of returned message$\\|" "^---+ Below this line is a copy of the message.$\\|" "^ *---+ +Original message +---+ *$\\|" "^ *--+ +begin message +--+ *$\\|" "^ *---+ +Original message follows +---+ *$\\|" "^ *---+ +Your message follows +---+ *$\\|" "^|? *---+ +Message text follows: +---+ *|?$\\|" "^ *---+ +This is a copy of \\w+ message, including all the headers.*---+ *$")) nil [156497 157157])
+            ("mail-mime-unsent-header" variable (:default-value "^Content-Type: message/rfc822 *$") nil [157159 157305])
+            ("rmail-delete-headers" function (:arguments ("regexp")) nil [157441 157999])
+            ("mail-position-on-field" function (:prototype-flag t) nil [158001 158046])
+            ("declare-function" code nil nil [158048 158116])
+            ("rmail-mime-mbox-buffer" variable nil nil [158118 158149])
+            ("rmail-mime-view-buffer" variable nil nil [158150 158181])
+            ("rmail-retry-failure" function (:user-visible-flag t) nil [158183 163316])
+            ("rmail-summary-exists" function nil nil [163319 163583])
+            ("rmail-summary-displayed" function nil nil [163585 163761])
+            ("rmail-redisplay-summary" variable nil nil [163763 163960])
+            ("rmail-summary-window-size" variable nil nil [163962 164147])
+            ("rmail-maybe-display-summary" function nil nil [164215 164969])
+            ("rmail-fontify-buffer-function" function nil nil [165012 165380])
+            ("rmail-unfontify-buffer-function" function nil nil [165382 165759])
+            ("rmail-fontify-message" function nil nil [165761 166131])
+            ("rmail-speedbar-match-folder-regexp" variable (:default-value "^[A-Z0-9]+\\(\\.[A-Z0-9]+\\)?$") nil [166172 166468])
+            ("rmail-speedbar-last-user" variable nil nil [166470 166558])
+            ("rmail-speedbar-key-map" variable nil nil [166560 166639])
+            ("declare-function" code nil nil [166641 166706])
+            ("rmail-install-speedbar-variables" function nil nil [166708 167209])
+            ("rmail-speedbar-menu-items" variable (:default-value (quote (["Read Folder" speedbar-edit-line t] ["Move message to folder" rmail-speedbar-move-message-to-folder-on-line (save-excursion (beginning-of-line) (looking-at "<M> "))]))) nil [167223 167497])
+            ("declare-function" code nil nil [167499 167607])
+            ("if" code nil nil [167664 167795])
+            ("rmail-speedbar-buttons" function (:arguments ("buffer")) nil [167797 169196])
+            ("dframe" include nil nil [169217 169234])
+            ("declare-function" code nil nil [169358 169432])
+            ("declare-function" code nil nil [169433 169500])
+            ("rmail-speedbar-button" function (:arguments ("_text" "token" "_indent")) nil [169502 169702])
+            ("rmail-speedbar-find-file" function (:arguments ("text" "_token" "_indent")) nil [169704 169918])
+            ("declare-function" code nil nil [169920 169981])
+            ("rmail-speedbar-move-message-to-folder-on-line" function (:user-visible-flag t) nil [169983 170285])
+            ("rmail-speedbar-move-message" function (:arguments ("_text" "token" "_indent")) nil [170287 170758])
+            ("rmail-set-remote-password" function
+               (:user-visible-flag t
+                :arguments ("password"))
+                nil [171008 171346])
+            ("rmail-get-remote-password" function (:arguments ("imap")) nil [171348 171862])
+            ("rmail-have-password" function nil nil [171864 171953])
+            ("rmail-encode-string" function (:arguments ("string" "mask")) nil [171955 172805])
+            ("rmail-epa-decrypt-1" function (:arguments ("mime")) nil [172807 175307])
+            ("declare-function" code nil nil [175309 175374])
+            ("rmail-mime-render-html-function" variable nil nil [175533 175573])
+            ("rmail-epa-decrypt" function (:user-visible-flag t) nil [175597 178877])
+            ("rmail-restore-desktop-buffer" function (:arguments ("file-name" "_buffer-name" "_buffer-misc")) nil [178904 179252])
+            ("add-to-list" code nil nil [179254 179348])
+            ("rmail-message-encoding" variable nil nil [179452 179487])
+            ("rmail-write-region-annotate" function (:arguments ("start" "_end")) nil [179556 179957])
+            ("rmail-after-save-hook" function nil nil [180296 180568])
+            ("add-hook" code nil nil [180569 180619])
+            ("rmail" package nil nil [180622 180638]))          
+      :file "rmail.el.gz"
+      :pointmax 180663
+      :fsize 49318
+      :lastmodtime '(23661 22986 0 0)
+      :unmatched-syntax '((close-paren 169234 . 169235) (symbol 169199 . 169216) (open-paren 169198 . 169199)))
+    (semanticdb-table "semanticdb-table"
+      :file "rmail-loaddefs.el"
+      :fsize 7936
+      :lastmodtime '(24047 52239 0 0)))
+  :file "!usr!share!emacs!26.3!lisp!mail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

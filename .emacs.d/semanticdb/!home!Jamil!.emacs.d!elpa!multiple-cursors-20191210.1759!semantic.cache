@@ -1,0 +1,38 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("multiple-cursors-core" include nil nil [1045 1077])
+            ("rrm/anchor" variable (:default-value (make-marker)) nil [1079 1180])
+            ("rectangular-region-mode-map" variable (:default-value (make-sparse-keymap)) nil [1182 1301])
+            ("define-key" code nil nil [1303 1374])
+            ("define-key" code nil nil [1375 1464])
+            ("rectangular-region-mode" variable nil nil [1466 1502])
+            ("rrm/keyboard-quit" function (:user-visible-flag t) nil [1504 1675])
+            ("set-rectangular-region-anchor" function (:user-visible-flag t) nil [1768 2109])
+            ("rrm/remove-rectangular-region-overlays" function nil nil [2111 2399])
+            ("rrm/repaint" function nil nil [2401 3672])
+            ("rrm/switch-to-multiple-cursors" function
+               (:user-visible-flag t
+                :arguments ("forms"))
+                nil [3674 3866])
+            ("er/expand-region" function (:arguments ("before" "switch-from-rrm-to-mc" "activate")) nil [3868 4006])
+            ("kill-ring-save" function (:arguments ("before" "switch-from-rrm-to-mc" "activate")) nil [4008 4144])
+            ("define-minor-mode" code nil nil [4161 4636])
+            ("rectangular-region-mode" package nil nil [4638 4672]))          
+      :file "rectangular-region-mode.el"
+      :pointmax 4715
+      :fsize 4714
+      :lastmodtime '(24102 47443 12755 406000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "multiple-cursors-core.el"
+      :fsize 37123
+      :lastmodtime '(24102 47443 3755 442000)))
+  :file "!home!Jamil!.emacs.d!elpa!multiple-cursors-20191210.1759!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

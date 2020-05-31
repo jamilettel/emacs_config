@@ -1,0 +1,696 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_ARGUMENTS_HPP" variable (:constant-flag t) nil [119 139])
+            ("string" include (:system-flag t) nil [141 158])
+            ("Plazza" type
+               (:members 
+                  ( ("Args" type
+                       (:members 
+                          ( ("cookingTime" variable (:type "float") (reparse-symbol classsubparts) [206 224])
+                            ("nbCooks" variable (:type "int") (reparse-symbol classsubparts) [233 245])
+                            ("timeReplace" variable (:type "int") (reparse-symbol classsubparts) [254 270]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [184 277])
+                    ("Arguments" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [305 312])
+                            ("Arguments" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [331 338])
+                                    ("av" variable
+                                       (:pointer 2
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [339 349]))                                  
+                                :type ("Arguments" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [321 350])
+                            ("Arguments" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cookingTime" variable (:type "float") (reparse-symbol arg-sub-list) [369 387])
+                                    ("nbCooks" variable (:type "int") (reparse-symbol arg-sub-list) [388 400])
+                                    ("timeReplace" variable (:type "int") (reparse-symbol arg-sub-list) [401 417]))                                  
+                                :type ("Arguments" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [359 418])
+                            ("getArgs" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("Args" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [460 488])
+                            ("private" label nil (reparse-symbol classsubparts) [494 502])
+                            ("getCookingTimeArg" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ScookingTime" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [535 567]))                                  
+                                :type "float")
+                                (reparse-symbol classsubparts) [511 568])
+                            ("getNbCooksArg" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("SnbCooks" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [595 623]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [577 624])
+                            ("getTimeReplaceArg" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("StimeReplace" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [655 687]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [633 688])
+                            ("private" label nil (reparse-symbol classsubparts) [693 701])
+                            ("_args" variable (:type ("Args" type (:type "class") nil nil)) (reparse-symbol classsubparts) [710 721]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [283 728]))                  
+                :type "namespace")
+                nil [160 731]))          
+      :file "Arguments.hpp"
+      :pointmax 763
+      :fsize 762
+      :lastmodtime '(24239 9302 651977 410000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZZA_ARGUMENTS_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Error/ErrHandling/ErrHandling.hpp" include nil nil [82 126])
+            ("Arguments.hpp" include nil nil [127 151])
+            ("Plazza" using (:type ("Plazza" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [153 176])
+            ("Arguments" function
+               (:constructor-flag t
+                :parent "Arguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [199 206])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [207 217]))                  
+                :type ("Arguments" type (:type "class") nil nil))
+                nil [178 548])
+            ("getArgs" function
+               (:methodconst-flag t
+                :parent "Arguments"
+                :constant-flag t
+                :type ("Args" type (:type "class") nil nil))
+                nil [550 610])
+            ("getCookingTimeArg" function
+               (:parent "Arguments"
+                :arguments 
+                  ( ("ScookingTime" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [647 679]))                  
+                :type "float")
+                nil [612 813])
+            ("getNbCooksArg" function
+               (:parent "Arguments"
+                :arguments 
+                  ( ("SnbCooks" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [844 872]))                  
+                :type "int")
+                nil [815 984])
+            ("getTimeReplaceArg" function
+               (:parent "Arguments"
+                :arguments 
+                  ( ("StimeReplace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1019 1051]))                  
+                :type "int")
+                nil [986 1183])
+            ("Arguments" function
+               (:constructor-flag t
+                :parent "Arguments"
+                :arguments 
+                  ( ("cookingTime" variable (:type "float") (reparse-symbol arg-sub-list) [1206 1224])
+                    ("nbCooks" variable (:type "int") (reparse-symbol arg-sub-list) [1225 1237])
+                    ("timeReplace" variable (:type "int") (reparse-symbol arg-sub-list) [1238 1254]))                  
+                :type ("Arguments" type (:type "class") nil nil))
+                nil [1185 1361]))          
+      :file "Arguments.cpp"
+      :pointmax 1362
+      :fsize 1361
+      :lastmodtime '(24239 9309 208960 520000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_PIZZA_HPP" variable (:constant-flag t) nil [111 127])
+            ("enum.hpp" include nil nil [129 148])
+            ("string" include (:system-flag t) nil [149 166])
+            ("Plazza" type
+               (:members 
+                  ( ("Pizza" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [210 217])
+                            ("Pizza" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("PizzaInfo::PizzaType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [232 258])
+                                    ("size" variable (:type ("PizzaInfo::PizzaSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [259 285]))                                  
+                                :type ("Pizza" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [226 286])
+                            ("Pizza" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Pizza" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [295 303])
+                            ("==" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Pizza" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [449 466]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [433 473])
+                            ("setType" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("PizzaInfo::PizzaType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [495 521]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [482 522])
+                            ("setSize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("size" variable (:type ("PizzaInfo::PizzaSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [544 570]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [531 571])
+                            ("getType" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("PizzaInfo::PizzaType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [580 617])
+                            ("typeToString" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [626 659])
+                            ("sizeTostring" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [668 701])
+                            ("ItS" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("ig" variable (:type ("PizzaInfo::PizzaIngredient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [732 762]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [709 1467])
+                            ("private" label nil (reparse-symbol classsubparts) [1475 1483])
+                            ("_type" variable (:type ("PizzaInfo::PizzaType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1492 1519])
+                            ("_size" variable (:type ("PizzaInfo::PizzaSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1528 1555]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [192 1562]))                  
+                :type "namespace")
+                nil [168 1565]))          
+      :file "Pizza.hpp"
+      :pointmax 1593
+      :fsize 1582
+      :lastmodtime '(24242 48655 930098 30000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZZA_PIZZA_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Pizza.hpp" include nil nil [78 98])
+            ("Plazza" using (:type ("Plazza" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [100 123])
+            ("Pizza" function
+               (:constructor-flag t
+                :parent "Pizza"
+                :arguments 
+                  ( ("t" variable (:type ("PizzaInfo::PizzaType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [138 161])
+                    ("s" variable (:type ("PizzaInfo::PizzaSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162 185]))                  
+                :type ("Pizza" type (:type "class") nil nil))
+                nil [125 209])
+            ("Pizza" function
+               (:constructor-flag t
+                :parent "Pizza"
+                :type ("Pizza" type (:type "class") nil nil))
+                nil [211 316])
+            ("==" function
+               (:methodconst-flag t
+                :operator-flag t
+                :parent "Pizza"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Pizza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [341 358]))                  
+                :type "bool")
+                nil [318 423])
+            ("typeToString" function
+               (:methodconst-flag t
+                :parent "Pizza"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [425 843])
+            ("sizeTostring" function
+               (:methodconst-flag t
+                :parent "Pizza"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [845 1276])
+            ("getType" function
+               (:methodconst-flag t
+                :parent "Pizza"
+                :type ("PizzaInfo::PizzaType" type (:type "class") nil nil))
+                nil [1278 1345])
+            ("setType" function
+               (:parent "Pizza"
+                :arguments 
+                  ( ("type" variable (:type ("PizzaInfo::PizzaType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1367 1393]))                  
+                :type "void")
+                nil [1347 1415])
+            ("setSize" function
+               (:parent "Pizza"
+                :arguments 
+                  ( ("size" variable (:type ("PizzaInfo::PizzaSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1437 1463]))                  
+                :type "void")
+                nil [1417 1485]))          
+      :file "Pizza.cpp"
+      :pointmax 1487
+      :fsize 1506
+      :lastmodtime '(24242 48655 929098 29000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SMARTBUFFER_HPP_" variable (:constant-flag t) nil [112 128])
+            ("vector" include (:system-flag t) nil [130 147])
+            ("Error/Error.hpp" include nil nil [148 174])
+            ("string.h" include (:system-flag t) nil [175 194])
+            ("SMARTBUFFER_INITIAL_SIZE" variable (:constant-flag t) nil [204 228])
+            ("SMARTBUFFER_MIN_READ_SIZE" variable (:constant-flag t) nil [242 267])
+            ("SMARTBUFFER_MIN_READ_SIZE" variable (:constant-flag t) nil [242 267])
+            ("SMARTBUFFER_MIN_READ_SIZE" variable (:constant-flag t) nil [242 267])
+            ("Plazza" type
+               (:members 
+                  ( ("SmartBuffer" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [321 328])
+                            ("SmartBuffer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("SmartBuffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [337 351])
+                            ("SmartBuffer" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [360 375])
+                            ("<<" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("SmartBuffer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("var" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [555 568]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [501 864])
+                            (">>" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("SmartBuffer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("var" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [928 935]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [874 1345])
+                            ("writeOn" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1371 1378]))                                  
+                                :type ("ssize_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1355 1379])
+                            ("readFrom" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1405 1412]))                                  
+                                :type ("ssize_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1388 1413])
+                            ("getSize" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1422 1445])
+                            ("private" label nil (reparse-symbol classsubparts) [1451 1459])
+                            ("requestBytes" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("bytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1486 1499]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1468 1500])
+                            ("private" label nil (reparse-symbol classsubparts) [1506 1514])
+                            ("_buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [1523 1537])
+                            ("_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1546 1559])
+                            ("_max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1568 1580]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [297 1587]))                  
+                :type "namespace")
+                nil [273 1590]))          
+      :file "SmartBuffer.hpp"
+      :pointmax 1623
+      :fsize 1622
+      :lastmodtime '(24242 51884 831579 841000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SMARTBUFFER_HPP_")
+          ("SMARTBUFFER_INITIAL_SIZE" . ((number "4096" 229 . 233)))
+          ("SMARTBUFFER_MIN_READ_SIZE" . ((number "128" 268 . 271)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SmartBuffer.hpp" include nil nil [80 106])
+            ("unistd.h" include (:system-flag t) nil [107 126])
+            ("Plazza" using (:type ("Plazza" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [128 151])
+            ("SmartBuffer" function
+               (:constructor-flag t
+                :parent "SmartBuffer"
+                :type ("SmartBuffer" type (:type "class") nil nil))
+                nil [153 278])
+            ("SmartBuffer" function
+               (:destructor-flag t
+                :parent "SmartBuffer"
+                :type "void")
+                nil [280 333])
+            ("getSize" function
+               (:methodconst-flag t
+                :parent "SmartBuffer"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [335 394])
+            ("writeOn" function
+               (:parent "SmartBuffer"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [425 432]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [396 675])
+            ("readFrom" function
+               (:parent "SmartBuffer"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [707 714]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [677 952])
+            ("requestBytes" function
+               (:parent "SmartBuffer"
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [985 997]))                  
+                :type "void")
+                nil [954 1257]))          
+      :file "SmartBuffer.cpp"
+      :pointmax 1258
+      :fsize 1257
+      :lastmodtime '(24242 51979 592120 667000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLAZZA_ORDER_HPP" variable (:constant-flag t) nil [111 127])
+            ("vector" include (:system-flag t) nil [129 146])
+            ("Pizza.hpp" include nil nil [147 167])
+            ("Plazza" type
+               (:members 
+                  ( ("Order" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [211 218])
+                            ("attach" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("pizza" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Pizza" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [387 406]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [375 407])
+                            ("attachString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("order" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [434 459]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [416 460])
+                            ("viewOrder" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [469 492])
+                            ("getOrder" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Pizza" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [502 545])
+                            ("getOrderString" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [554 596])
+                            ("addCompletedPizza" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("pizza" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Pizza" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [629 648]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [606 649])
+                            ("isCompleted" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [658 683])
+                            ("private" label nil (reparse-symbol classsubparts) [689 697])
+                            ("_order" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Pizza" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [706 732])
+                            ("_orderString" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [741 766]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [193 773]))                  
+                :type "namespace")
+                nil [169 776]))          
+      :file "Order.hpp"
+      :pointmax 804
+      :fsize 803
+      :lastmodtime '(24241 37954 700199 840000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLAZZA_ORDER_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [78 98])
+            ("iostream" include (:system-flag t) nil [99 118])
+            ("Order.hpp" include nil nil [119 139])
+            ("Plazza" using (:type ("Plazza" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [141 164])
+            ("attach" function
+               (:parent "Order"
+                :arguments 
+                  ( ("pizza" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Pizza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [185 204]))                  
+                :type "void")
+                nil [166 237])
+            ("getOrder" function
+               (:methodconst-flag t
+                :parent "Order"
+                :constant-flag t
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("Pizza" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [239 311])
+            ("viewOrder" function
+               (:methodconst-flag t
+                :parent "Order"
+                :type "void")
+                nil [313 653])
+            ("attachString" function
+               (:parent "Order"
+                :arguments 
+                  ( ("order" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [680 705]))                  
+                :type "void")
+                nil [655 735])
+            ("getOrderString" function
+               (:methodconst-flag t
+                :parent "Order"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [737 816])
+            ("isCompleted" function
+               (:methodconst-flag t
+                :parent "Order"
+                :type "bool")
+                nil [818 924])
+            ("addCompletedPizza" function
+               (:parent "Order"
+                :arguments 
+                  ( ("pizza" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Pizza" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [956 975]))                  
+                :type "bool")
+                nil [926 1135]))          
+      :file "Order.cpp"
+      :pointmax 1136
+      :fsize 1135
+      :lastmodtime '(24239 8372 165622 621000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LOGGER_HPP_" variable (:constant-flag t) nil [102 113])
+            ("fstream" include (:system-flag t) nil [115 133])
+            ("Plazza" type
+               (:members 
+                  ( ("Logger" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [178 185])
+                            ("Logger" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("filePath" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [201 229]))                                  
+                                :type ("Logger" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [194 230])
+                            ("getFs" function
+                               (:prototype-flag t
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [363 386])
+                            ("private" label nil (reparse-symbol classsubparts) [392 400])
+                            ("checkFs" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [409 424])
+                            ("private" label nil (reparse-symbol classsubparts) [430 438])
+                            ("_filePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [447 469])
+                            ("_fs" variable (:type ("std::ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [478 496]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [159 503]))                  
+                :type "namespace")
+                nil [135 506]))          
+      :file "Logger.hpp"
+      :pointmax 534
+      :fsize 533
+      :lastmodtime '(24239 5265 689027 758000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LOGGER_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Logger.hpp" include nil nil [74 95])
+            ("Error/Error.hpp" include nil nil [96 122])
+            ("Plazza" using (:type ("Plazza" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [124 147])
+            ("Logger" function
+               (:constructor-flag t
+                :parent "Logger"
+                :arguments 
+                  ( ("filepath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [164 192]))                  
+                :type ("Logger" type (:type "class") nil nil))
+                nil [149 236])
+            ("checkFs" function
+               (:parent "Logger"
+                :type "void")
+                nil [238 430])
+            ("getFs" function
+               (:parent "Logger"
+                :type ("std::ofstream" type (:type "class") nil nil))
+                nil [432 499]))          
+      :file "Logger.cpp"
+      :pointmax 500
+      :fsize 499
+      :lastmodtime '(24239 5353 940826 176000)
+      :unmatched-syntax nil))
+  :file "!home!Jamil!delivery!Plazza!class!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

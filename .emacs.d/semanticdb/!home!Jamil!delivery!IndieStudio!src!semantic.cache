@@ -1,0 +1,119 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Exception.hpp" include nil nil [83 107])
+            ("Exception" function
+               (:constructor-flag t
+                :parent "is::exceptions::Exception"
+                :arguments 
+                  ( ("component" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146 175])
+                    ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [176 203]))                  
+                :type ("Exception" type (:type "class") nil nil))
+                nil [109 252])
+            ("getComponent" function
+               (:methodconst-flag t
+                :parent "is::exceptions::Exception"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [351 446])
+            ("ECSException" function
+               (:constructor-flag t
+                :parent "is::exceptions::ECSException"
+                :arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [491 518]))                  
+                :type ("ECSException" type (:type "class") nil nil))
+                nil [448 568]))          
+      :file "Exception.cpp"
+      :pointmax 569
+      :fsize 601
+      :lastmodtime '(24244 945 647023 353000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Game.hpp" include nil nil [87 106])
+            ("Scenes/SplashScreenScene.hpp" include nil nil [107 146])
+            ("Scenes/MainMenuScene.hpp" include nil nil [147 182])
+            ("Scenes/GameScene.hpp" include nil nil [183 214])
+            ("Exception.hpp" include nil nil [215 239])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [250 259])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [260 279]))                  
+                :type "int")
+                nil [241 1056]))          
+      :file "main.cpp"
+      :pointmax 1057
+      :fsize 1056
+      :lastmodtime '(24248 8019 520048 584000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Game.hpp" include nil nil [87 106])
+            ("is::Game::isRunning" variable
+               (:default-value "true"
+                :type "bool")
+                nil [109 141])
+            ("is::ecs::NOTHING" variable (:type "int") nil [183 200])
+            ("addScene" function
+               (:parent "is::Game"
+                :arguments 
+                  ( ("sceneType" variable (:type ("is::ecs::Scenes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [226 252])
+                    ("scene" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("is::ecs::IScene" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [253 299]))                  
+                :type "void")
+                nil [202 335])
+            ("switchScene" function
+               (:parent "is::Game"
+                :type "void")
+                nil [337 547])
+            ("launchGame" function
+               (:parent "is::Game"
+                :arguments 
+                  ( ("startScene" variable (:type ("is::ecs::Scenes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [575 602]))                  
+                :type "void")
+                nil [549 954])
+            ("setActualScene" function
+               (:parent "is::Game"
+                :arguments 
+                  ( ("scene" variable (:type ("is::ecs::Scenes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [986 1008]))                  
+                :type "void")
+                nil [956 1038]))          
+      :file "Game.cpp"
+      :pointmax 1039
+      :fsize 1038
+      :lastmodtime '(24247 61782 277919 897000)
+      :unmatched-syntax '((punctuation 181 . 182) (symbol 168 . 180) (punctuation 167 . 168) (punctuation 166 . 167) (symbol 162 . 166) (punctuation 161 . 162) (punctuation 160 . 161) (symbol 158 . 160) (symbol 151 . 157) (punctuation 150 . 151) (punctuation 149 . 150) (symbol 146 . 149) (punctuation 145 . 146) (punctuation 144 . 145) (symbol 142 . 144))))
+  :file "!home!Jamil!delivery!IndieStudio!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
