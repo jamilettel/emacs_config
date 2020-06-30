@@ -1,38 +1,96 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-backends
+   (quote
+    (company-bbdb company-eclim company-semantic company-xcode company-cmake company-capf company-files
+                  (company-dabbrev-code company-gtags company-etags company-keywords)
+                  company-oddmuse company-dabbrev)))
+ '(company-frontends
+   (quote
+    (company-pseudo-tooltip-unless-just-one-frontend company-echo-metadata-frontend company-preview-frontend)))
+ '(custom-safe-themes
+   (quote
+    ("76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" default)))
+ '(dap-gdb-lldb-debug-program
+   (quote
+    ("/home/jamil/.vscode-oss/extensions/webfreak.debug-0.25.0/out/src/gdb.js")))
+ '(dap-gdb-lldb-path "/home/jamil/.vscode-oss/extensions/webfreak.debug-0.25.0")
+ '(dap-gdb-lldb-path-lldb
+   (quote
+    ("/home/jamil/.vscode-oss/extensions/webfreak.debug-0.25.0/out/src/lldb.js")))
+ '(helm--remap-mouse-mode t)
+ '(helm-split-window-inside-p t)
+ '(helm-use-frame-when-dedicated-window nil)
+ '(inhibit-startup-screen t)
+ '(lsp-auto-guess-root t)
+ '(lsp-file-watch-threshold 10000)
+ '(lsp-python-ms-extra-paths
+   (quote
+    ("\"/home/jamil/delivery/PokerWebsite/game_server/\"")))
+ '(lsp-ui-doc-delay 2)
+ '(lsp-ui-doc-header t)
+ '(lsp-ui-doc-include-signature t)
+ '(package-selected-packages
+   (quote
+    (flycheck-pycheckers php-mode slime-volleyball poker cmake-mode treemacs-icons-dired diff-hl highlight-parentheses clang-format clang-format+ clang-capf lsp-dart lsp-docker lsp-elixir lsp-haskell lsp-intellij lsp-java lsp-javacomp lsp-julia lsp-latex lsp-mssql lsp-origami lsp-p4 lsp-pascal lsp-pyre lsp-python-ms lsp-scala lsp-sourcekit lush-theme treemacs-projectile vterm dap-mode helm-ag flycheck-pos-tip yasnippet major-mode-icons company-lsp lsp-ui emojify multiple-cursors drag-stuff doom-modeline doom-themes helm-lsp lsp-mode lsp-treemacs treemacs-magit flycheck magit company helm helm-projectile projectile projectile-git-autofetch treemacs)))
+ '(safe-local-variable-values
+   (quote
+    ((lsp-python-ms-extra-paths "/home/jamil/delivery/PokerWebsite/game_server/")
+     (lsp-python-ms-extra-paths list "/home/jamil/delivery/PokerWebsite/game_server/")
+     (projectile-project-run-cmd . "cmake --build . -j8 && ./bomberman")
+     (projectile-project-compilation-cmd . "cmake --build . -j8")
+     (projectile-project-compilation-dir . "build/")
+     (projectile-project-run-cmd . "cmake /home/jamil/delivery/IndieStudio/ -B /home/jamil/delivery/IndieStudio/build/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build . -j8 && ./bomberman")
+     (projectile-project-configure-cmd . "cmake /home/jamil/delivery/IndieStudio/ -B /home/jamil/delivery/IndieStudio/build/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON")
+     (projectile-project-compilation-cmd . "cmake /home/jamil/delivery/IndieStudio/ -B /home/jamil/delivery/IndieStudio/build/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build . -j8"))))
+ '(tab-width 4)
+ '(truncate-lines t)
+ '(x-gtk-use-system-tooltips nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
-;;; Code:
+;;; melpa:
+
+(require 'package)
+(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
+                    (not (gnutls-available-p))))
+       (proto (if no-ssl "http" "https")))
+  (when no-ssl (warn "\
+Your version of Emacs does not support SSL connections,
+which is unsafe because it allows man-in-the-middle attacks.
+There are two things you can do about this warning:
+1. Install an Emacs version that does support SSL and be safe.
+2. Remove this warning from your init file so you won't see it again."))
+  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
+  ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+  ;; and `package-pinned-packages`. Most users will not need or want to do this.
+  ;;(add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+  )
+(package-initialize)
+
+;;; epitech header
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (load "site-start.d/epitech-init.el")
 
-(package-initialize)
+;;; functions:
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(defun prev-window ()
+  "Switch to the previous window."
+   (interactive)
+   (other-window -1))
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
-(global-flycheck-mode)
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-
-(electric-pair-mode 't)
-
-(add-hook 'prog-mode-hook (lambda () (setq show-trailing-whitespace t)))
-(add-hook 'prog-mode-hook (lambda () (company-mode)))
-(add-hook 'prog-mode-hook (lambda () (display-line-numbers-mode)))
-
-;; (global-display-line-numbers-mode)
-
-(display-time)
-(column-number-mode)
-(mouse-wheel-mode 1)
-(global-set-key [mouse-4] 'scroll-down-line)
-(global-set-key [mouse-5] 'scroll-up-line)
-(xterm-mouse-mode)
-;; (global-company-mode)
-;; (global-display-line-numbers-mode)
-(show-paren-mode)
-
+(defun dont-kill-emacs()
+  "Disable binding that would have executed 'kill-emacs'."
+  (interactive)
+  (error (substitute-command-keys "To exit emacs: \\[kill-emacs]")))
 
 (defun split-and-follow-horizontally ()
   (interactive)
@@ -44,185 +102,49 @@
   (interactive)
   (split-window-right)
   (other-window 1))
+
+;;; key bindings:
+
+(global-set-key (kbd "C-<tab>") 'other-window)
+(global-set-key (kbd "C-S-<iso-lefttab>") 'prev-window)
 (global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
+(global-set-key (kbd "C-x p") 'prev-window)
+(global-set-key (kbd "C-.") 'comment-line)
+(global-set-key (kbd "C-M-i") 'company-complete)
 
+;;; packages
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(auto-hscroll-mode t)
- '(company-backends
-   (quote
-    (company-jedi company-c-headers company-bbdb company-eclim company-clang company-semantic company-xcode company-cmake company-capf company-files
-                  (company-dabbrev-code company-gtags company-etags company-keywords)
-                  company-oddmuse company-dabbrev)))
- '(company-c-headers-path-system
-   (quote
-    ("/usr/include/" "/usr/local/include/" "/usr/include/c++/9/" "/usr/include/irrlicht")))
- '(company-c-headers-path-user
-   (quote
-    ("./include/" "." "../include" "../../include" "../../../include/" "../../../../include/" "../../" "../")))
- '(company-clang-arguments
-   (quote
-    ("-Iinclude" "-I../include" "-I../../include" "-I../../../include" "-I../../../../include" "-I../" "-I../../" "-I../corewar/include" "-I../../corewar/include" "-I../../../corewar/include" "-I../rsrc")))
- '(company-dabbrev-minimum-length 2)
- '(company-idle-delay 0)
- '(company-irony-ignore-case nil)
- '(company-minimum-prefix-length 2)
- '(company-tooltip-flip-when-above nil)
- '(company-tooltip-idle-delay 0)
- '(company-tooltip-margin 2)
- '(custom-safe-themes
-   (quote
-    ("2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "f9cae16fd084c64bf0a9de797ef9caedc9ff4d463dd0288c30a3f89ecf36ca7e" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "7f791f743870983b9bb90c8285e1e0ba1bf1ea6e9c9a02c60335899ba20f3c94" "a83f05e5e2f2538376ea2bfdf9e3cd8b7f7593b16299238c1134c1529503fa88" "0ad7f1c71fd0289f7549f0454c9b12005eddf9b76b7ead32a24d9cb1d16cbcbd" "bc836bf29eab22d7e5b4c142d201bcce351806b7c1f94955ccafab8ce5b20208" "e1ecb0536abec692b5a5e845067d75273fe36f24d01210bf0aa5842f2a7e029f" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "b9e9ba5aeedcc5ba8be99f1cc9301f6679912910ff92fdf7980929c2fc83ab4d" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a339f231e63aab2a17740e5b3965469e8c0b85eccdfb1f9dbd58a30bdad8562b" default)))
- '(electric-pair-pairs (quote ((34 . 34) (8216 . 8217) (8220 . 8221))))
- '(fast-scroll-mode nil)
- '(flycheck-clang-include-path
-   (quote
-    ("./include/" "../include" "../../include" "../../../include" "../../../../include" "../../" "../" "../corewar/include" "../../corewar/include" "../../../corewar/include" "./rsrc/" "../rsrc")))
- '(flycheck-display-errors-delay 1)
- '(flycheck-highlighting-mode (quote symbols))
- '(flycheck-idle-change-delay 0.8)
- '(flycheck-pos-tip-mode t)
- '(focus-follows-mouse t)
- '(gdb-many-windows t)
- '(global-yascroll-bar-mode t)
- '(gmm-tool-bar-style (quote gnome))
- '(helm-allow-mouse t)
- '(helm-completion-style (quote emacs))
- '(hscroll-step 1)
- '(idle-highlight-exceptions nil)
- '(idle-highlight-idle-time 0.2)
- '(inhibit-startup-screen t)
- '(irony-additional-clang-options (quote ("-W" "-Wall" "-Wextra" "-Wshadow")))
- '(mouse-autoselect-window nil)
- '(mouse-scroll-delay 0)
- '(package-selected-packages
-   (quote
-    (cmake-ide indent-guide atom-dark-theme function-args c-eldoc irony-eldoc flycheck-irony company-irony company-irony-c-headers doom-modeline helm-rtags rtags flycheck-pos-tip quick-peek flycheck-inline treemacs-magit treemacs-projectile treemacs vterm emoji-github helm-ag ctune helm-company helm-gtags ag helm telephone-line scroll-restore fast-scroll jedi company-jedi irony nand2tetris autotetris-mode diff-hl doom-themes neotree drag-stuff nyan-mode srefactor clipboard-collector eww-lnum multiple-cursors flycheck-clang-analyzer magit ## yasnippet 2048-game term+ company-c-headers company flycheck)))
- '(projectile-indexing-method (quote hybrid))
- '(safe-local-variable-values
-   (quote
-    ((projectile-project-run-cmd . "cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build . -j8 && ./bomberman")
-     (projectile-project-compilation-cmd . "cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && cmake --build . -j8")
-     (projectile-project-compilation-dir . "build/")
-     (eval let
-           ((root
-             (projectile-project-root)))
-           (setq-local company-clang-arguments
-                       (list
-                        (concat "-I" root "include")
-                        (concat "-I" root "client/include")
-                        (concat "-I" root "lib/include")
-                        (concat "-I" root "server/include")))
-           (setq-local company-c-headers-path-user
-                       (list
-                        (concat root "include")
-                        (concat root "client/include")
-                        (concat root "lib/include")
-                        (concat root "server/include")))
-           (setq-local flycheck-clang-include-path
-                       (list
-                        (concat root "include")
-                        (concat root "client/include")
-                        (concat root "lib/include")
-                        (concat root "server/include"))))
-     (eval let
-           ((root
-             (projectile-project-root)))
-           (setq-local company-clang-arguments
-                       (list
-                        (concat "-I" root "include")
-                        (concat "-I" root "class")))
-           (setq-local company-c-headers-path-user
-                       (list
-                        (concat root "include")
-                        (concat root "class")))
-           (setq-local flycheck-clang-include-path
-                       (list
-                        (concat root "include")
-                        (concat root "class"))))
-     (eval let
-           ((root
-             (projectile-project-root)))
-           (setq-local company-clang-arguments
-                       (list
-                        (concat "-I" root "cmake-dependencies/include")
-                        (concat "-I" root "include")
-                        "-std=c++17"))
-           (setq-local flycheck-clang-args
-                       (list "-std=c++17"))
-           (setq-local company-c-headers-path-user
-                       (list
-                        (concat root "cmake-dependencies/include")
-                        (concat root "include")))
-           (setq-local flycheck-clang-include-path
-                       (list
-                        (concat root "cmake-dependencies/include")
-                        (concat root "include")))))))
- '(scroll-down-aggressively 0.0)
- '(scroll-margin 1)
- '(scroll-up-aggressively 0.0)
- '(spaceline-info-mode t)
- '(tab-width 4)
- '(tooltip-delay 0.5)
- '(tooltip-hide-delay 30)
- '(tooltip-mode t)
- '(treemacs-fringe-indicator-mode t)
- '(truncate-lines t)
- '(x-gtk-use-system-tooltips nil)
- '(yascroll:delay-to-hide 2))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(flycheck-error ((t (:foreground "#d02b61" :underline "#d02b61"))))
- '(flycheck-error-list-highlight ((t (:inherit highlight))))
- '(flycheck-error-list-warning ((t (:inherit warning))))
- '(flycheck-warning ((t (:foreground "color-202" :underline (:color "color-202" :style wave)))))
- '(idle-highlight ((t (:background "#393f4b")))))
+;; projectile
+(require 'projectile)
+(projectile-mode 't)
+(define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
 
-(load-theme 'doom-one)
+;; treemacs
+(require 'treemacs)
+(global-set-key (kbd "<f8>") 'treemacs)
+
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(winner-mode 1)
+(electric-pair-mode 1)
+(column-number-mode 1)
+(show-paren-mode 1)
+(add-hook 'prog-mode-hook (lambda () (display-line-numbers-mode)))
+(add-hook 'prog-mode-hook (lambda () (setq show-trailing-whitespace t)))
+
+(tooltip-mode 1)
+
+(add-hook 'shell-mode-hook (lambda () (compilation-shell-minor-mode 1)))
+(add-hook 'eshell-mode-hook (lambda () (compilation-shell-minor-mode 1)))
+(add-hook 'term-mode-hook (lambda () (compilation-shell-minor-mode 1)))
 
 (require 'company)
-(add-to-list 'company-backends 'company-c-headers)
-
-(add-to-list 'company-backends 'company-jedi)
-(add-hook 'python-mode-hook (lambda () (jedi-mode -1)))
-
-(add-to-list 'load-path "~/.emacs.d/column-marker")
-(load "column-marker")
-
-(require 'column-marker)
-(add-hook 'c-mode-hook (lambda () (interactive) (column-marker-2 80)))
-
-(add-hook 'c-mode-hook (lambda () (interactive) (hs-minor-mode)))
-(add-hook 'c++-mode-hook (lambda () (interactive) (hs-minor-mode)))
-(global-set-key (kbd "C-c h") 'hs-hide-block)
-(global-set-key (kbd "C-c s") 'hs-show-block)
-(global-set-key (kbd "C-c M-h") 'hs-hide-all)
-(global-set-key (kbd "C-c M-s") 'hs-show-all)
-
-(yas-global-mode)
-
-(require 'multiple-cursors)
-(add-hook 'c++-mode-hook (lambda () (interactive) (multiple-cursors-mode 1)))
-(add-hook 'c-mode-hook (lambda () (interactive) (multiple-cursors-mode 1)))
-(global-set-key (kbd "C-c m") 'mc/edit-lines)
-(global-set-key (kbd "M-{") 'mc/mark-next-like-this)
-(global-set-key (kbd "M-}") 'mc/unmark-next-like-this)
-(global-set-key (kbd "C-c <mouse-1>") 'mc/add-cursor-on-click)
-
-;; (global-set-key (kbd "C-x ESC ] <") 'mc/add-cursor-on-click)
-
-(global-set-key (kbd "C-x y") 'company-yasnippet)
-(global-set-key (kbd "C-c ;") 'comment-line)
+(add-hook 'prog-mode-hook (lambda () (company-mode)))
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 2)
 
 (require 'drag-stuff)
-
 (drag-stuff-global-mode 1)
 
 (global-set-key (kbd "<M-up>") 'drag-stuff-up)
@@ -230,59 +152,17 @@
 (global-set-key (kbd "<M-left>") 'drag-stuff-left)
 (global-set-key (kbd "<M-right>") 'drag-stuff-right)
 
-(add-to-list 'load-path "~/.local/share/icons-in-terminal/")
+(require 'multiple-cursors)
+(add-hook 'prog-mode-hook (lambda () (interactive) (multiple-cursors-mode 1)))
+(global-set-key (kbd "C-c m") 'mc/edit-lines)
+(global-set-key (kbd "M-{") 'mc/mark-next-like-this)
+(global-set-key (kbd "M-}") 'mc/unmark-next-like-this)
 
-(require 'treemacs)
-
-(global-set-key (kbd "<f8>") 'treemacs)
-
-(add-to-list 'load-path "~/.emacs.d/idle-highlight-mode")
-(load "idle-highlight-mode")
-(add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
-
-(setq projectile-project-search-path '("~/delivery/"))
-
-(require 'srefactor)
-(require 'srefactor-lisp)
-
-(define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
-(define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
-
-(require 'projectile)
-(projectile-mode 't)
-(define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
-
-(require 'fast-scroll)
-
-(add-hook 'fast-scroll-start-hook (lambda () (flycheck-mode -1)))
-(add-hook 'fast-scroll-end-hook (lambda () (flycheck-mode 1)))
-
-(add-hook 'fast-scroll-start-hook (lambda () (idle-highlight-mode -1)))
-(add-hook 'fast-scroll-end-hook (lambda () (flycheck-mode t)))
-
-(fast-scroll-config)
-(fast-scroll-mode 1)
-
-(put 'upcase-region 'disabled nil)
-(put 'downcase-region 'disabled nil)
-
-(require 'scroll-restore)
-(scroll-restore-mode 1)
-;; Allow scroll-restore to modify the cursor face
-(setq scroll-restore-handle-cursor t)
-;; Make the cursor invisible while POINT is off-screen
-(setq scroll-restore-cursor-type nil)
-;; Jump back to the original cursor position after scrolling
-(setq scroll-restore-jump-back t)
-(put 'scroll-left 'disabled nil)
-
-(require 'telephone-line)
-(telephone-line-mode 1)
-;; (require 'doom-modeline)
-;; (doom-modeline-mode 1)
+(require 'emojify)
+(add-hook 'magit-mode-hook (lambda () (interactive) (emojify-mode 1)))
+(add-hook 'text-mode-hook (lambda () (interactive) (emojify-mode 1)))
 
 (require 'helm)
-
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
@@ -299,74 +179,99 @@
 (require 'helm-projectile)
 (helm-projectile-on)
 
-(require 'helm-gtags)
-;; Enable helm-gtags-mode
-(add-hook 'dired-mode-hook 'helm-gtags-mode)
-(add-hook 'eshell-mode-hook 'helm-gtags-mode)
-(add-hook 'c-mode-hook 'helm-gtags-mode)
-(add-hook 'c++-mode-hook 'helm-gtags-mode)
-(add-hook 'asm-mode-hook 'helm-gtags-mode)
+(use-package lsp-mode
+  :commands lsp
+  :ensure t)
+(use-package lsp-ui :commands lsp-ui-mode :ensure t)
+(use-package company-lsp
+  :ensure t
+  :commands company-lsp
+  :config (push 'company-lsp company-backends)) ;; add company-lsp as a backend
 
-(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
-(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
-(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
-(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
-(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
-(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+(use-package ccls
+  :ensure t
+  :config
+  (setq ccls-executable "ccls")
+  (setq lsp-prefer-flymake nil)
+  (setq-default flycheck-disabled-checkers '(c/c++-clang c/c++-cppcheck c/c++-gcc))
+  :hook ((c-mode c++-mode objc-mode) .
+         (lambda () (require 'ccls) (lsp))))
+
+
+(require 'flycheck)
+(global-flycheck-mode 1)
+(flycheck-pos-tip-mode 1)
+
+(with-eval-after-load 'flycheck
+  (add-hook 'flycheck-mode-hook #'flycheck-pycheckers-setup)) ;; python
+
+(require 'yasnippet)
+(yas-reload-all)
+(add-hook 'prog-mode-hook (lambda () (yas-minor-mode-on)))
+(global-set-key (kbd "C-x y") 'company-yasnippet)
+
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+(use-package lsp-ui)
+(define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
+(define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)
+
+(use-package lsp-python-ms
+  :ensure t
+  :init (setq lsp-python-ms-auto-install-server t)
+  :config (progn
+            (setq lsp-python-ms-extra-paths '("/home/jamil/delivery/PokerWebsite/game_server/")))
+  :hook (python-mode . lsp))
+
+;;; dap, removed for the moment
+;; (setq dap-auto-configure-features '(sessions locals controls tooltip))
+
+;; (dap-auto-configure-mode 1)
+
+;; (add-hook 'dap-stopped-hook
+          ;; (lambda (arg) (call-interactively #'dap-hydra)))
+
+(add-to-list 'load-path "~/.emacs.d/elpa/dap-mode-20200529.126")
+(require 'dap-python)
+
+;; (require 'dap-lldb)
+;; (setq dap-lldb-debug-program "/bin/lldb-vscode")
+
+;; (require 'dap-gdb-lldb)
+;;; dap end
+
+
+(if (display-graphic-p)
+    (progn
+      (use-package doom-themes
+        :init (load-theme 'doom-city-lights t)
+        :config
+        ;; Enable flashing mode-line on errors
+        (doom-themes-visual-bell-config)
+        ;; Corrects (and improves) org-mode's native fontification.
+        (doom-themes-org-config)
+        ;; Enable custom treemacs theme (all-the-icons must be installed!)
+        (doom-themes-treemacs-config))
+      (normal-erase-is-backspace-mode 1)
+      (global-set-key (kbd "C-x C-c") 'dont-kill-emacs))
+  (load-theme 'doom-dark+)
+  )
 
 (add-hook 'prog-mode-hook (gdb-enable-debug 1))
 (add-hook 'prog-mode-hook (gdb-many-windows 1))
 (add-hook 'prog-mode-hook (gud-tooltip-mode 1))
+(xterm-mouse-mode 1)
 
-;; (require 'cc-mode)
-;; (require 'semantic)
+(setq-default scroll-down-aggressively 0.01)
+(setq-default scroll-up-aggressively 0.01)
+(setq-default scroll-margin 1)
 
-;; (global-semanticdb-minor-mode 1)
-;; (global-semantic-idle-scheduler-mode 1)
+(require 'highlight-parentheses)
+(global-highlight-parentheses-mode 1)
 
-;; (global-set-key (kbd "C-c d") 'semantic-ia-show-summary)
-
-;;; .emacs ends here
-
-
-(defun dont-kill-emacs()
-  "Disable binding that would have executed 'kill-emacs'."
-  (interactive)
-  (error (substitute-command-keys "To exit emacs: \\[kill-emacs]")))
-
-(if (display-graphic-p)
-    (progn
-      (normal-erase-is-backspace-mode 1)
-      (global-set-key (kbd "C-x C-c") 'dont-kill-emacs))
-  )
-
-(winner-mode 1)
-
-(defun prev-window ()
-  "Switch to the previous window."
-   (interactive)
-   (other-window -1))
-(define-key global-map (kbd "C-x p") 'prev-window)
-
-(global-set-key (kbd "C-<tab>") 'other-window)
-(global-set-key (kbd "C-S-<iso-lefttab>") 'prev-window)
-
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
-(add-hook 'objc-mode-hook 'irony-mode)
-
-(require 'company-irony-c-headers)
-;; Load with `irony-mode` as a grouped backend
-(eval-after-load 'company
-  '(add-to-list
-    'company-backends '(company-irony-c-headers company-irony)))
-
-(eval-after-load 'company
-  '(add-to-list 'company-backends 'company-irony))
-
-(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-
-(global-set-key (kbd "C-;") 'irony-get-type)
-
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+(add-hook 'prog-mode-hook 'hl-line-mode)
+(add-hook 'prog-mode-hook 'diff-hl-mode)
+(diff-hl-margin-mode 1)
+(add-hook 'magit-pre-refresh-hook 'diff-hl-magit-pre-refresh)
+(add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)

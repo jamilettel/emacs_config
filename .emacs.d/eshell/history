@@ -1,128 +1,97 @@
+ls
 ll
-ll
-clear
-fclean
-make fclean
 ls
 clear
+ll
+ll
+ls
+ls
+ls
+clear
+ls
+cd build/
+ls
+cmake ..
+cmake --build
+cmake --build .
+ls
+clear
+valgrind ./bomberman 
+ls
+clear
+ll
+clear
+clear
+Loaded texture: /home/jamil/delivery/IndieStudio/resources/ui/Save/Save_BTN_preslssed.png
+ls
+clear
+ls
+clear
+cmake --build . -j8
+valgrind ./bomberman 
+ls
 cd ../
 ls
-cd OOP_arcade_2019/
-ls
-clear
-make fclean
-ls
-clear
-make -j
-ls
-ls
-clear
-clear
-l
-l
-ll
-clear
-l
-cd ../
-ls
-make -j
-cd ..
-ls
-mak e-j
-make -j
-exit
-ls
-clear
-l
-cd ../.
-ls
-c d..
-ls
-cd ..
-ls
-clear
-zsh
-ls
-ls
-cd games/
-cd lib_arcade_nibbler/
-ls
-cd src/
-ls
-cat Nibbler.cpp
-emacs Nibbler.cpp
-emacsclient Nibbler.cpp
-cd lib/lib_arcade_sdl/
-ls
-cd src/
-ls
-emacsclient InputZone.o
-emacsclient InputZone.cpp 
-ls
-emacsclient SDLGraphical.cpp 
-ls
-clear
-ll
-ll
-clear
-clear
-clear
-l
-l
-cd ..
-ls
-cd ..
+cd tmp/
 ls
 clean
 ls
-ll
-ls
-cd ~/scripts/
-ls
-disable_touch.sh 
 cd ../
-files
-files 
-files .
-ls
-cd scripts/
-ls
-./files 
-cat files 
-nautilus .
-./qwerty.sh 
-./enable_touch 
-./disable_touch.sh 
-ls
-clear
-files
-ll
-cat files 
-ls
 ls
 clear
 ll
-clear
+ls
+ls
+cd CPE_corewar_2018/
+ls
+la
+ls
+ls
+ls
+ls
 ll
 ll
+ll
+ll
+l
+l
+l
+l
+la
+la
+la
+la
+la
+ls
 clear
+ls
 make
-cd ../
-fclean
-ll
-make
-clear
-ll
-make fclean
-make 
 ls
 clear
-ll
--rw-rw-r--   1 Jamil          Jamil    6asd.3k 2020-04-07 20:01 TAGS
+exit
+ls
 clear
 ls
-c d../..
+clear
+clear
 ls
-cd ../..
 ls
 ll
+ls
+ll
+clean
+ls
+rm test.c\~ 
+ls
+clear
+ls
+ll
+./a.out 
+clear
+gcc test.c -g
+clear
+ls
+rm truc.php5 
+ls
+rm truc.php\~
+ls

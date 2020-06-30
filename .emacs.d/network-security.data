@@ -1,0 +1,4 @@
+(
+ (:id "sha1:feddc3d2f17dba3213a2469ee5f69a79c6eecf14" :fingerprint "sha1:28:b0:73:69:36:5b:40:b5:32:90:f0:d6:29:43:a0:fb:24:bd:92:56" :host "websecu.epitech.eu:443" :conditions (:unknown-ca :invalid))
+ (:id "sha1:c6ad1dd21c80e9bb61568c004022b0b83e1ab06c" :fingerprint "sha1:28:b0:73:69:36:5b:40:b5:32:90:f0:d6:29:43:a0:fb:24:bd:92:56" :host "websecu.epitech.eu:1443" :conditions (:unknown-ca :invalid))
+)

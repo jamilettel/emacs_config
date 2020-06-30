@@ -3,26 +3,12 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-        backward-delete-char
-        c-electric-brace
-        c-electric-lt-gt
-        c-electric-paren
         c-electric-semi&comma
-        c-electric-slash
         c-electric-star
-        c-indent-line-or-region
-        indent-for-tab-command
-        nxml-electric-slash
-        overwrite-mode
-        previous-buffer
-        upcase-region
-        xterm-paste
+        electric-pair-delete-pair
         ))
 
 (setq mc/cmds-to-run-once
       '(
-        c-electric-colon
-        gud-tooltip-mouse-motion
-        helm-confirm-and-exit-minibuffer
-        mouse-buffer-menu
+        c-electric-paren
         ))
