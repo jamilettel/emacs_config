@@ -6,6 +6,7 @@
         c-electric-semi&comma
         c-electric-star
         electric-pair-delete-pair
+        python-indent-dedent-line
         ))
 
 (setq mc/cmds-to-run-once

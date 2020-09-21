@@ -1,7 +1,11 @@
 * Default
-** IndieStudio
- - path :: ~/delivery/IndieStudio
 ** tmp
  - path :: ~/delivery/tmp
 ** PokerWebsite
  - path :: ~/delivery/PokerWebsite
+** Babel
+ - path :: ~/delivery/Babel
+** Popeye
+ - path :: ~/delivery/Popeye
+** PopeyBS
+ - path :: ~/delivery/PopeyBS

@@ -1,0 +1,2 @@
+;;; Generated package description from /home/jamil/.emacs.d/elpa/whole-line-or-region-20200911.2339/whole-line-or-region.el  -*- no-byte-compile: t -*-
+(define-package "whole-line-or-region" "20200911.2339" "Operate on current line if region undefined" '((emacs "24.1") (cl-lib "0.6")) :commit "6c241866c5ce8acffca761b60812afc12565dcc6" :keywords '("convenience" "wp") :authors '(("Joe Casadonte" . "emacs@northbound-train.com")) :maintainer '("Steve Purcell" . "steve@sanityinc.com") :url "https://github.com/purcell/whole-line-or-region")

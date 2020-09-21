@@ -1,1 +1,1 @@
-("~/delivery/PokerWebsite/" "~/delivery/IndieStudio/" "~/delivery/tmp/" "~/delivery/CPool_Day05_2018/" "~/delivery/PSU_nmobjdump_2019/" "~/delivery/emacs_config/" "~/scripts/")
+("~/Downloads/babel/" "~/delivery/Babel/" "~/delivery/Popeye/" "~/delivery/PopeyBS/" "~/delivery/PokerWebsite/" "~/delivery/tmp/" "~/delivery/react_test/" "~/.emacs.d/elpa/vterm-20200917.221/" "~/scripts/" "/usr/lib/node_modules/pyright/" "~/.vscode-oss/extensions/webfreak.debug-0.25.0/")
